@@ -281,7 +281,7 @@ h3 {
 
 .tools {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 1px;
   overflow: hidden;
   border: 1px solid var(--line);
@@ -307,6 +307,10 @@ h3 {
 
 .pricing-copy {
   max-width: 440px;
+}
+
+.pricing-copy .button {
+  margin-top: 12px;
 }
 
 .table-wrap {
@@ -350,6 +354,44 @@ tr:last-child td {
 td:nth-child(3) {
   color: var(--green);
   font-weight: 800;
+}
+
+.proof {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.7fr) minmax(0, 1fr);
+  gap: 42px;
+}
+
+.proof-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--line);
+}
+
+.proof-grid article {
+  min-height: 158px;
+  padding: 18px;
+  background: var(--surface);
+}
+
+.proof-grid strong,
+.proof-grid span {
+  display: block;
+}
+
+.proof-grid strong {
+  margin-bottom: 12px;
+  color: var(--green);
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.proof-grid span {
+  color: var(--soft);
 }
 
 .note-list {
@@ -428,6 +470,7 @@ footer a {
   .two-column,
   .pricing,
   .notes,
+  .proof,
   .final {
     grid-template-columns: 1fr;
   }
@@ -442,7 +485,8 @@ footer a {
     width: min(340px, 100%);
   }
 
-  .tools {
+  .tools,
+  .proof-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -472,7 +516,8 @@ footer a {
   }
 
   .facts,
-  .tools {
+  .tools,
+  .proof-grid {
     grid-template-columns: 1fr;
   }
 
