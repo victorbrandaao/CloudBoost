@@ -1,8 +1,8 @@
 # CloudBoost
 
-Native macOS optimization toolkit for cloud and Mac gaming.
+Native macOS stability toolkit for cloud and Mac gaming.
 
-CloudBoost is a lightweight menu bar app built in Swift to reduce micro-stutters, ping spikes, and input lag during cloud gaming and local Mac gaming sessions. It focuses on temporary, reversible system tuning instead of permanent background services or opaque cleaner-style behavior.
+CloudBoost is a lightweight menu bar app built in Swift to make gaming sessions feel steadier on macOS. It targets micro-stutters, ping spikes, background interruptions, Wi-Fi/AWDL noise, and power-management issues with temporary, reversible session tuning.
 
 <p align="center">
   <img src="https://img.shields.io/github/v/release/victorbrandaao/CloudBoost?style=for-the-badge">
@@ -60,7 +60,7 @@ Current optimization areas include:
 | DNS refresh | Clears stale local DNS cache during session startup |
 | Power focus | Uses `caffeinate` to avoid sleep and session throttling |
 | Time Machine control | Pauses backup activity in selected presets |
-| Kernel-aware TCP tuning | Competitive mode can tune Darwin TCP delayed ACK and restore it later |
+| Network session tuning | Reduces local macOS interference around the gaming session without routing or converting game traffic |
 | Mouse profiles | Applies session mouse profiles for low-latency input |
 | Local game detection | Detects common Mac game launchers and selected foreground games |
 | Direct updater | Checks GitHub releases, downloads the DMG, and falls back to the release page |
@@ -69,26 +69,27 @@ All changes are designed to be temporary and reversible.
 
 ## CloudBoost PRO
 
-CloudBoost PRO unlocks advanced automation, presets, and observability add-ons. Core cloud gaming and Mac gaming profiles are available for free.
+CloudBoost PRO unlocks advanced automation, stability monitoring, and session intelligence. Core cloud gaming and Mac gaming profiles are available for free.
 
 | Feature | Free | PRO |
 |---|---:|---:|
-| GeForce NOW and xCloud support | Yes | Yes |
+| Cloud gaming profiles | Yes | Yes |
+| Mac gaming profiles | Yes | Yes |
 | Manual Boost | Yes | Yes |
 | AWDL Guard rollback protection | Yes | Yes |
 | Balanced preset | Yes | Yes |
-| Local Game profile | Yes | Yes |
-| Boosteroid, Moonlight, VoidLink Extreme | Yes | Yes |
-| Steam, Epic Games, Battle.net profiles | Yes | Yes |
 | Auto-Detect platform switching | No | Yes |
 | Auto Boost | No | Yes |
+| Smart Boost decisions | No | Yes |
+| Stability Guard | No | Yes |
+| Heat Guard | No | Yes |
+| Keep Alive for long sessions | No | Yes |
 | Competitive and Stream Quality presets | No | Yes |
-| Keep Alive | No | Yes |
-| Diagnostics export | No | Yes |
-| Adaptive Intelligence | No | Yes |
-| Stability Guard and Heat Guard | No | Yes |
+| Diagnostics export with before/after session view | No | Yes |
 
-Adaptive Intelligence monitors route type, latency, jitter, packet loss, thermal pressure, Low Power Mode, and common background interference to classify session health in real time.
+PRO is for hands-off stability. It helps with automatic session start, live health checks, thermal pressure, Low Power Mode, jitter trends, and before/after diagnostics so users can see whether the session is becoming smoother.
+
+CloudBoost is not sold as a magic FPS booster. The value is reducing interruptions and making sessions more consistent.
 
 To activate PRO, purchase a license on [Gumroad](https://victorbrandao0.gumroad.com/l/CloudBoost), then click any locked add-on in CloudBoost and enter the license key.
 
@@ -100,7 +101,7 @@ To activate PRO, purchase a license on [Gumroad](https://victorbrandao0.gumroad.
 - Presets for Balanced, Competitive, and Stream Quality behavior.
 - Floating HUD with live session statistics.
 - Direct updater that downloads the latest DMG from GitHub releases and opens the installer.
-- Local diagnostics and self-test tooling in development builds.
+- Local diagnostics and before/after session history for PRO users.
 
 ## Security And Transparency
 
