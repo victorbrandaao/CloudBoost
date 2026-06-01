@@ -6,7 +6,7 @@ CloudBoost is a lightweight menu bar app built in Swift to make gaming sessions 
 
 <p align="center">
   <img src="https://img.shields.io/github/v/release/victorbrandaao/CloudBoost?style=for-the-badge">
-  <img src="https://img.shields.io/github/downloads/victorbrandaao/CloudBoost/latest/total?cacheSeconds=300&style=for-the-badge">
+  <img src="https://img.shields.io/github/downloads/victorbrandaao/CloudBoost/total?style=for-the-badge">
   <img src="https://img.shields.io/github/license/victorbrandaao/CloudBoost?style=for-the-badge">
   <img src="https://img.shields.io/badge/macOS-Apple%20Silicon%20%26%20Intel-black?style=for-the-badge">
   <img src="https://img.shields.io/badge/Distribution-DMG-blue?style=for-the-badge">
