@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CloudBoost - Mac gaming stability tool</title>
-    <meta name="description" content="CloudBoost is a small macOS utility for steadier cloud gaming and Mac gaming sessions. It focuses on reversible network, power, and session tuning.">
+    <title>CloudBoost - a small Mac gaming stability app</title>
+    <meta name="description" content="CloudBoost is a small macOS menu bar app for making cloud gaming and Mac gaming sessions feel steadier.">
     <meta property="og:title" content="CloudBoost">
-    <meta property="og:description" content="A small macOS utility for smoother cloud and Mac gaming sessions.">
-    <meta property="og:image" content="assets/cloudboost-app.png">
+    <meta property="og:description" content="A small macOS menu bar app for steadier cloud and Mac gaming sessions.">
+    <meta property="og:image" content="assets/producthunt-stability.png">
     <meta property="og:type" content="website">
     <link rel="stylesheet" href="styles.css">
   </head>
@@ -30,18 +30,19 @@
     <main>
       <section class="hero">
         <div class="intro">
-          <p class="label">Cloud and Mac gaming stability</p>
-          <h1>Make gaming sessions feel steadier on macOS.</h1>
-          <p class="lead">CloudBoost is a menu bar app for reducing the small interruptions that make games feel unstable: Wi-Fi scans, background sync, sleep policy, DNS weirdness, thermal pressure, and process contention.</p>
+          <p class="label">Built for the annoying little spikes</p>
+          <h1>CloudBoost</h1>
+          <p class="lead">A small macOS menu bar app for cloud gaming and Mac gaming sessions that feel fine one minute, then randomly stutter the next.</p>
+          <p class="note">It does not promise magic FPS. It gives you a focused session mode, reversible system tweaks, and a clearer view of what may be getting in the way.</p>
 
           <div id="download" class="actions">
             <a class="button download" href="https://github.com/victorbrandaao/CloudBoost/releases/latest">Download DMG</a>
-            <a class="button pro" href="#pro">Compare Free and PRO</a>
+            <a class="button pro" href="#gallery">See what it watches</a>
           </div>
 
           <dl class="facts">
             <div>
-              <dt>Current build</dt>
+              <dt>Latest</dt>
               <dd>3.1.1</dd>
             </div>
             <div>
@@ -49,8 +50,8 @@
               <dd>macOS 12+</dd>
             </div>
             <div>
-              <dt>Install</dt>
-              <dd>Drag app to Applications</dd>
+              <dt>Free</dt>
+              <dd>All profiles</dd>
             </div>
           </dl>
         </div>
@@ -70,14 +71,32 @@
         <span>Battle.net</span>
       </section>
 
+      <section id="gallery" class="section gallery-section">
+        <div class="section-head">
+          <p class="label">What it is trying to make visible</p>
+          <h2>Most bad sessions are not one big failure. They are a pile of small interruptions.</h2>
+        </div>
+        <div class="gallery">
+          <figure>
+            <img src="assets/producthunt-stability.png" alt="CloudBoost stability overview">
+          </figure>
+          <figure>
+            <img src="assets/producthunt-diagnostics.png" alt="CloudBoost diagnostics overview">
+          </figure>
+          <figure>
+            <img src="assets/producthunt-free-pro.png" alt="CloudBoost Free and PRO comparison">
+          </figure>
+        </div>
+      </section>
+
       <section class="section two-column">
         <div>
-          <p class="label">Why it exists</p>
-          <h2>Most Mac gaming issues are spikes, not raw speed.</h2>
+          <p class="label">Why I built it</p>
+          <h2>Speed tests rarely explain the stutter.</h2>
         </div>
         <div class="copy">
-          <p>Cloud gaming can feel bad even when your speed test looks fine. Short Wi-Fi scans, background sync, sleep policy, DNS weirdness, thermal pressure, and process contention can all show up as stutter or input delay.</p>
-          <p>CloudBoost does not promise magic FPS. It gives you a focused session mode that tries to reduce the usual macOS interruptions and shows what is happening while you play.</p>
+          <p>I kept seeing the same thing on Mac: the connection looks fine, the game launches fine, and then tiny spikes make the session feel worse than it should.</p>
+          <p>CloudBoost is my attempt at a practical answer. Start a session, reduce the usual macOS interruptions, and restore things when you stop.</p>
         </div>
       </section>
 
@@ -109,8 +128,8 @@
       <section id="pro" class="section pricing">
         <div class="pricing-copy">
           <p class="label">Free vs PRO</p>
-          <h2>All game profiles are free. PRO adds hands-off stability.</h2>
-          <p>Use Free for manual boosting across cloud services and Mac launchers. Upgrade to PRO when you want the app to watch the session, react to spikes, and show before/after diagnostics.</p>
+          <h2>All game profiles are free. PRO is for the people who want it to stay out of their way.</h2>
+          <p>Use Free for manual boosting across cloud services and Mac launchers. Upgrade to PRO when you want automatic detection, session history, and stability checks while you play.</p>
           <a class="button download" href="https://victorbrandao0.gumroad.com/l/CloudBoost">Get CloudBoost PRO</a>
         </div>
 
@@ -177,7 +196,7 @@
         <div class="proof-grid">
           <article>
             <strong>Before</strong>
-            <span>Wi-Fi spikes, background tasks, thermal pressure, and manual fixes.</span>
+            <span>Wi-Fi spikes, background sync, thermal pressure, and manual fixes.</span>
           </article>
           <article>
             <strong>During</strong>
@@ -217,7 +236,7 @@
       <section class="final">
         <div>
           <p class="label">Ready to try it?</p>
-          <h2>Download the DMG, run one session, and see if your Mac feels calmer.</h2>
+          <h2>Download the DMG, run one session, and see if the Mac feels less noisy while you play.</h2>
         </div>
         <a class="button download" href="https://github.com/victorbrandaao/CloudBoost/releases/latest">Download CloudBoost</a>
       </section>
