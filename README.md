@@ -36,7 +36,7 @@ Visit the [CloudBoost website](https://victorbrandaao.github.io/CloudBoost/) or 
 
 Download the latest release from the [Releases page](https://github.com/victorbrandaao/CloudBoost/releases).
 
-For CloudBoost 3.1.2, download **CloudBoost_v3.1.2.dmg**, open the disk image, and drag **CloudBoost.app** to `/Applications`.
+For CloudBoost 3.1.3, download **CloudBoost_v3.1.3.dmg**, open the disk image, and drag **CloudBoost.app** to `/Applications`.
 
 > **Gatekeeper note:** Because CloudBoost is independently signed, macOS may show an "App is damaged" warning on first launch. To clear the quarantine flag, run:
 >
@@ -75,6 +75,8 @@ Current optimization areas include:
 | Power focus | Uses `caffeinate` to avoid sleep and session throttling |
 | Time Machine control | Pauses backup activity in selected presets |
 | Network session tuning | Reduces local macOS interference around the gaming session without routing or converting game traffic |
+| Lag Inspector | Explains likely lag-spike causes in plain language, with UDP probe context for PRO users |
+| Session Score | Shows a simple 0-100 stability score after sessions, with the main issue detected |
 | Mouse profiles | Applies session mouse profiles for low-latency input |
 | Local game detection | Detects common Mac game launchers and selected foreground games |
 | Direct updater | Checks GitHub releases, downloads the DMG, and falls back to the release page |
@@ -96,12 +98,14 @@ CloudBoost PRO unlocks advanced automation, stability monitoring, and session in
 | Auto Boost | No | Yes |
 | Smart Boost decisions | No | Yes |
 | Stability Guard | No | Yes |
+| Lag Inspector + UDP Probe | Basic status | Yes |
+| Session Score report | Basic score | Yes |
 | Heat Guard | No | Yes |
 | Keep Alive for long sessions | No | Yes |
 | Competitive and Stream Quality presets | No | Yes |
 | Diagnostics export with before/after session view | No | Yes |
 
-PRO is for hands-off stability. It helps with automatic session start, live health checks, thermal pressure, Low Power Mode, jitter trends, and before/after diagnostics so users can see whether the session is becoming smoother.
+PRO is for hands-off stability. It helps with automatic session start, live health checks, thermal pressure, Low Power Mode, jitter trends, Lag Inspector cause detection, UDP probe context, Session Score, and before/after diagnostics so users can see whether the session is becoming smoother.
 
 CloudBoost is not sold as a magic FPS booster. The value is reducing interruptions and making sessions more consistent.
 
@@ -114,6 +118,7 @@ To activate PRO, purchase a license on [Gumroad](https://victorbrandao0.gumroad.
 - One-click enable/disable flow with automatic restore.
 - Presets for Balanced, Competitive, and Stream Quality behavior.
 - Floating HUD with live session statistics.
+- Lag Inspector and Session Score for clearer PRO diagnostics.
 - Direct updater that downloads the latest DMG from GitHub releases and opens the installer.
 - Local diagnostics and before/after session history for PRO users.
 
