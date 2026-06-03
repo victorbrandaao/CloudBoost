@@ -36,7 +36,7 @@ Visit the [CloudBoost website](https://victorbrandaao.github.io/CloudBoost/) or 
 
 Download the latest release from the [Releases page](https://github.com/victorbrandaao/CloudBoost/releases).
 
-For CloudBoost 3.1.3, download **CloudBoost_v3.1.3.dmg**, open the disk image, and drag **CloudBoost.app** to `/Applications`.
+For CloudBoost 3.1.4, download **CloudBoost_v3.1.4.dmg**, open the disk image, and drag **CloudBoost.app** to `/Applications`.
 
 > **Gatekeeper note:** Because CloudBoost is independently signed, macOS may show an "App is damaged" warning on first launch. To clear the quarantine flag, run:
 >
@@ -55,6 +55,9 @@ This repository is used for public releases, documentation, and downloadable bin
 | Boosteroid | Free |
 | Moonlight | Free |
 | VoidLink Extreme | Free |
+| Counter-Strike 2 cloud/remote profile | Free |
+| League of Legends local/cloud profile | Free |
+| Dota 2 local/cloud profile | Free |
 | Local Game | Free |
 | Steam | Free |
 | Epic Games | Free |
@@ -75,9 +78,10 @@ Current optimization areas include:
 | Power focus | Uses `caffeinate` to avoid sleep and session throttling |
 | Time Machine control | Pauses backup activity in selected presets |
 | Network session tuning | Reduces local macOS interference around the gaming session without routing or converting game traffic |
+| Competitive profiles | Adds focused profiles for CS2, League of Legends, and Dota 2 |
 | Lag Inspector | Explains likely lag-spike causes in plain language, with UDP probe context for PRO users |
 | Session Score | Shows a simple 0-100 stability score after sessions, with the main issue detected |
-| Mouse profiles | Applies session mouse profiles for low-latency input |
+| Mouse profiles | Applies FPS or MOBA-oriented mouse profiles for low-latency input |
 | Local game detection | Detects common Mac game launchers and selected foreground games |
 | Direct updater | Checks GitHub releases, downloads the DMG, and falls back to the release page |
 
@@ -91,6 +95,7 @@ CloudBoost PRO unlocks advanced automation, stability monitoring, and session in
 |---|---:|---:|
 | Cloud gaming profiles | Yes | Yes |
 | Mac gaming profiles | Yes | Yes |
+| CS2, League, and Dota profiles | Yes | Yes |
 | Manual Boost | Yes | Yes |
 | AWDL Guard rollback protection | Yes | Yes |
 | Balanced preset | Yes | Yes |
@@ -117,6 +122,7 @@ To activate PRO, purchase a license on [Gumroad](https://victorbrandao0.gumroad.
 - Redesigned session monitor with CPU, ping, priority, network path, jitter, session health, trend, and AWDL Guard status.
 - One-click enable/disable flow with automatic restore.
 - Presets for Balanced, Competitive, and Stream Quality behavior.
+- Competitive profiles for Counter-Strike 2, League of Legends, and Dota 2.
 - Floating HUD with live session statistics.
 - Lag Inspector and Session Score for clearer PRO diagnostics.
 - Direct updater that downloads the latest DMG from GitHub releases and opens the installer.
