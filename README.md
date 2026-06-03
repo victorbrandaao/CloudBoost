@@ -17,20 +17,6 @@ CloudBoost is a lightweight menu bar app built in Swift to make gaming sessions 
   <img src="./assets/cloudboost-readme.png" alt="CloudBoost interface preview"/>
 </p>
 
-## Product Preview
-
-<p align="center">
-  <img src="./docs/assets/producthunt-stability.png" alt="CloudBoost stability overview"/>
-</p>
-
-<p align="center">
-  <img src="./docs/assets/producthunt-diagnostics.png" alt="CloudBoost diagnostics overview"/>
-</p>
-
-<p align="center">
-  <img src="./docs/assets/producthunt-free-pro.png" alt="CloudBoost Free and PRO overview"/>
-</p>
-
 ## Download
 
 Visit the [CloudBoost website](https://victorbrandaao.github.io/CloudBoost/) or download the latest release directly from GitHub.
