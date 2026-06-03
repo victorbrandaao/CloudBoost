@@ -218,6 +218,12 @@ h3 {
   color: var(--text);
 }
 
+.button.community {
+  border: 1px solid rgba(109, 181, 255, 0.34);
+  background: rgba(88, 101, 242, 0.16);
+  color: #dbe9ff;
+}
+
 .facts {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -536,6 +542,13 @@ code {
     rgba(255, 255, 255, 0.045);
 }
 
+.final-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  gap: 10px;
+}
+
 .final h2 {
   margin-bottom: 0;
   font-size: clamp(24px, 3vw, 34px);
@@ -632,6 +645,14 @@ footer a {
 
   .section {
     padding: 52px 0;
+  }
+
+  .final-actions {
+    justify-content: stretch;
+  }
+
+  .final-actions .button {
+    width: 100%;
   }
 
   th,

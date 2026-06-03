@@ -10,6 +10,7 @@ CloudBoost is a lightweight menu bar app built in Swift to make gaming sessions 
   <img src="https://img.shields.io/github/license/victorbrandaao/CloudBoost?style=for-the-badge">
   <img src="https://img.shields.io/badge/macOS-Apple%20Silicon%20%26%20Intel-black?style=for-the-badge">
   <img src="https://img.shields.io/badge/Distribution-DMG-blue?style=for-the-badge">
+  <a href="https://discord.gg/kU5trxtRb"><img src="https://img.shields.io/badge/Discord-Join%20community-5865F2?style=for-the-badge"></a>
 </p>
 
 <p align="center">
@@ -37,6 +38,8 @@ Visit the [CloudBoost website](https://victorbrandaao.github.io/CloudBoost/) or 
 Download the latest release from the [Releases page](https://github.com/victorbrandaao/CloudBoost/releases).
 
 For CloudBoost 3.1.4, download **CloudBoost_v3.1.4.dmg**, open the disk image, and drag **CloudBoost.app** to `/Applications`.
+
+Need help, setup tips, or PRO support? Join the [CloudBoost Discord](https://discord.gg/kU5trxtRb).
 
 > **Gatekeeper note:** Because CloudBoost is independently signed, macOS may show an "App is damaged" warning on first launch. To clear the quarantine flag, run:
 >
