@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CloudBoost - a small Mac gaming stability app</title>
-    <meta name="description" content="CloudBoost is a small macOS menu bar app for making cloud gaming and Mac gaming sessions feel steadier.">
+    <title>CloudBoost - Mac gaming stability for spikes, jitter, and noisy sessions</title>
+    <meta name="description" content="CloudBoost is a native macOS menu bar app for reducing local gaming-session noise and diagnosing spikes in cloud and Mac gaming.">
     <meta property="og:title" content="CloudBoost">
-    <meta property="og:description" content="A small macOS menu bar app for steadier cloud and Mac gaming sessions.">
-    <meta property="og:image" content="assets/producthunt-stability.png">
+    <meta property="og:description" content="Mac gaming stability for spikes, jitter, AWDL noise, background sync, and competitive cloud sessions.">
+    <meta property="og:image" content="assets/cloudboost-app.png">
     <meta property="og:type" content="website">
     <link rel="stylesheet" href="styles.css">
   </head>
@@ -22,6 +22,7 @@
       </a>
       <nav aria-label="Primary">
         <a href="#download">Download</a>
+        <a href="#competitive">Games</a>
         <a href="#pro">PRO</a>
         <a href="#notes">Notes</a>
       </nav>
@@ -30,30 +31,36 @@
     <main>
       <section class="hero">
         <div class="intro">
-          <p class="label">Built for the annoying little spikes</p>
+          <p class="label">CloudBoost 3.1.4</p>
           <h1>CloudBoost</h1>
-          <p class="lead">A small macOS menu bar app for cloud gaming and Mac gaming sessions that feel fine one minute, then randomly stutter the next.</p>
-          <p class="note">It does not promise magic FPS. It gives you a focused session mode, reversible system tweaks, and a clearer view of what may be getting in the way.</p>
+          <p class="lead">A native macOS menu bar app for the part of gaming that speed tests rarely explain: spikes, jitter, background traffic, and sessions that suddenly feel uneven.</p>
+          <p class="note">CloudBoost does not promise magic FPS. It starts a focused session, reduces common macOS interruptions, and shows what may be hurting stability.</p>
 
           <div id="download" class="actions">
             <a class="button download" href="https://github.com/victorbrandaao/CloudBoost/releases/latest">Download DMG</a>
-            <a class="button pro" href="#gallery">See what it watches</a>
+            <a class="button pro" href="https://victorbrandao0.gumroad.com/l/CloudBoost">Get PRO</a>
           </div>
 
           <dl class="facts">
             <div>
               <dt>Latest</dt>
-          <dd>3.1.4</dd>
+              <dd>3.1.4</dd>
             </div>
             <div>
-              <dt>System</dt>
-              <dd>macOS 12+</dd>
+              <dt>Profiles</dt>
+              <dd>All free</dd>
             </div>
             <div>
-              <dt>Free</dt>
-              <dd>All profiles</dd>
+              <dt>PRO</dt>
+              <dd>Diagnostics</dd>
             </div>
           </dl>
+
+          <div class="hero-proof" aria-label="Current focus">
+            <span>Lag Inspector</span>
+            <span>Session Score</span>
+            <span>UDP Probe</span>
+          </div>
         </div>
 
         <figure class="screenshot">
@@ -74,21 +81,52 @@
         <span>Battle.net</span>
       </section>
 
+      <section id="competitive" class="section spotlight">
+        <div class="section-head">
+          <p class="label">New in 3.1.4</p>
+          <h2>Competitive profiles for CS2, League of Legends, and Dota 2.</h2>
+          <p>CS2 is handled as a cloud/remote profile on macOS. League and Dota get local/cloud targeting, game-aware score thresholds, and the right mouse profile for FPS or MOBA sessions.</p>
+        </div>
+        <div class="game-grid">
+          <article>
+            <span class="game-tag">Cloud/remote</span>
+            <h3>Counter-Strike 2</h3>
+            <p>Focused on cloud or remote play on Mac, with stricter jitter thresholds for FPS sessions.</p>
+          </article>
+          <article>
+            <span class="game-tag">Local/cloud</span>
+            <h3>League of Legends</h3>
+            <p>Targets Riot/League processes and applies a MOBA-oriented mouse profile during Boost.</p>
+          </article>
+          <article>
+            <span class="game-tag">Local/cloud</span>
+            <h3>Dota 2</h3>
+            <p>Targets Dota/Steam sessions and avoids memory purge hitches during competitive play.</p>
+          </article>
+        </div>
+      </section>
+
       <section id="gallery" class="section gallery-section">
         <div class="section-head">
-          <p class="label">What it is trying to make visible</p>
-          <h2>Most bad sessions are not one big failure. They are a pile of small interruptions.</h2>
+          <p class="label">Proof over promises</p>
+          <h2>CloudBoost turns a messy session into signals you can actually understand.</h2>
         </div>
-        <div class="gallery">
-          <figure>
-            <img src="assets/producthunt-stability.png" alt="CloudBoost stability overview">
-          </figure>
-          <figure>
-            <img src="assets/producthunt-diagnostics.png" alt="CloudBoost diagnostics overview">
-          </figure>
-          <figure>
-            <img src="assets/producthunt-free-pro.png" alt="CloudBoost Free and PRO comparison">
-          </figure>
+        <div class="score-panel">
+          <article>
+            <strong>71/100</strong>
+            <span>Session Score</span>
+            <p>A simple score that reflects jitter, route quality, UDP probe behavior, background traffic, thermal state, and Low Power Mode.</p>
+          </article>
+          <article>
+            <strong>Background traffic</strong>
+            <span>Main issue</span>
+            <p>Lag Inspector explains likely causes in normal language instead of burying users in raw networking terms.</p>
+          </article>
+          <article>
+            <strong>UDP 36ms j2</strong>
+            <span>PRO probe</span>
+            <p>PRO diagnostics include UDP context so cloud and remote sessions are not judged only by basic ping.</p>
+          </article>
         </div>
       </section>
 
@@ -143,8 +181,8 @@
       <section id="pro" class="section pricing">
         <div class="pricing-copy">
           <p class="label">Free vs PRO</p>
-          <h2>All game profiles are free. PRO is for the people who want it to stay out of their way.</h2>
-          <p>Use Free for manual boosting across cloud services and Mac launchers. Upgrade to PRO when you want automatic detection, session history, and stability checks while you play.</p>
+          <h2>Profiles stay free. PRO sells the part people actually need when the problem is not obvious.</h2>
+          <p>Use Free for manual boosting across cloud services, Mac launchers, and competitive profiles. Upgrade to PRO for auto-detect, auto boost, UDP Probe, Session Score, session history, and before/after diagnostics.</p>
           <a class="button download" href="https://victorbrandao0.gumroad.com/l/CloudBoost">Get CloudBoost PRO</a>
         </div>
 
@@ -211,20 +249,20 @@
       <section class="section proof">
         <div>
           <p class="label">What PRO helps with</p>
-          <h2>Less babysitting during a session.</h2>
+          <h2>Less guessing when a match feels wrong.</h2>
         </div>
         <div class="proof-grid">
           <article>
             <strong>Before</strong>
-            <span>Wi-Fi spikes, background sync, thermal pressure, and manual fixes.</span>
+            <span>Start a focused session and reduce common local interruptions before the match.</span>
           </article>
           <article>
             <strong>During</strong>
-            <span>Auto Boost, Smart Boost, Stability Guard, Heat Guard, and Keep Alive.</span>
+            <span>Watch jitter, UDP behavior, AWDL Guard, thermal state, and background traffic.</span>
           </article>
           <article>
             <strong>After</strong>
-            <span>Diagnostics show session start vs current state, plus trend history.</span>
+            <span>Get a Session Score, main issue, before/after view, and trend history.</span>
           </article>
         </div>
       </section>
