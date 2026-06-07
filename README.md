@@ -23,7 +23,7 @@ Visit the [CloudBoost website](https://victorbrandaao.github.io/CloudBoost/) or 
 
 Download the latest release from the [Releases page](https://github.com/victorbrandaao/CloudBoost/releases).
 
-For CloudBoost 3.1.4, download **CloudBoost_v3.1.4.dmg**, open the disk image, and drag **CloudBoost.app** to `/Applications`.
+For CloudBoost 3.1.5, download **CloudBoost_v3.1.5.dmg**, open the disk image, and drag **CloudBoost.app** to `/Applications`.
 
 Need help, setup tips, or PRO support? Join the [CloudBoost Discord](https://discord.gg/kU5trxtRb).
 

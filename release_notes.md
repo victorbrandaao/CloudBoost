@@ -1,20 +1,18 @@
-CloudBoost 3.1.4 adds focused competitive game profiles on top of the 3.1 stability layer.
+CloudBoost 3.1.5 is a stability and polish release after the 3.1 competitive profile update.
 
-### What's New in 3.1.4
+### What's New in 3.1.5
 
-* **Competitive game profiles:** Added focused profiles for Counter-Strike 2, League of Legends, and Dota 2.
-* **CS2 cloud/remote profile:** Counter-Strike 2 is treated as a cloud/remote-first profile on macOS because modern CS2 does not have a native macOS release.
-* **League and Dota local/cloud profiles:** League of Legends and Dota 2 now get their own process targeting, profile labels, and launch behavior.
-* **Game-aware Session Score:** Session Doctor now uses stricter latency and jitter thresholds for FPS/MOBA sessions.
-* **FPS/MOBA mouse profiles:** CS2 keeps the raw FPS mouse profile; League and Dota use a MOBA-oriented mouse profile.
-* **Safer competitive tuning:** Competitive game profiles avoid memory purge hitches while still reducing local session noise.
-* **Session Doctor:** CloudBoost now explains likely lag-spike causes in plain language, including background traffic, jitter, packet loss, Wi-Fi/AWDL behavior, thermal pressure, and Low Power Mode.
-* **UDP Probe:** PRO diagnostics include a lightweight UDP-based probe so the app is not relying only on TCP-style latency checks.
-* **Free profiles remain free:** All cloud, Mac, and competitive game profiles remain available in the free version.
+* **Cleaner session UI:** The app now uses clearer session language across the main flow, including Start Session and Stop Session.
+* **Session Doctor polish:** Lag explanations are now presented as Session Doctor reports, with clearer wording for non-technical players.
+* **Better network probe handling:** CloudBoost now handles blocked ICMP or UDP probes more gracefully instead of showing false packet loss.
+* **Latency fallback targets:** The app now checks multiple network targets when measuring session latency.
+* **PRO unchanged for existing customers:** Existing PRO customers keep access to the PRO features they already purchased.
+* **Profiles stay free:** Cloud, Mac, and competitive game profiles remain available in the free version.
+* **Discord support:** Free and PRO users can use the CloudBoost Discord for setup help, release notes, troubleshooting, and license support.
 
 ### Installation
 
-1. Go to the **Assets** section below and download **CloudBoost_v3.1.4.dmg**.
+1. Go to the **Assets** section below and download **CloudBoost_v3.1.5.dmg**.
 2. Open the `.dmg` and drag **CloudBoost.app** to your `/Applications` folder.
 
 > **Note on macOS Gatekeeper:**
@@ -36,5 +34,3 @@ Existing PRO customers keep access to the PRO features they already purchased.
 If you need setup help, want to report a session issue, or want to follow future builds, join the CloudBoost Discord:
 
 https://discord.gg/kU5trxtRb
-
-The Discord is open to Free and PRO users. PRO customers can also use it for license and diagnostics support.
