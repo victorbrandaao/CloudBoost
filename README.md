@@ -68,7 +68,7 @@ Current optimization areas include:
 | Time Machine control | Pauses backup activity in selected presets |
 | Network session tuning | Reduces local macOS interference around the gaming session without routing or converting game traffic |
 | Competitive profiles | Adds focused profiles for CS2, League of Legends, and Dota 2 |
-| Lag Inspector | Explains likely lag-spike causes in plain language, with UDP probe context for PRO users |
+| Session Doctor | Explains likely lag-spike causes in plain language, with UDP probe context for PRO users |
 | Session Score | Shows a simple 0-100 stability score after sessions, with the main issue detected |
 | Mouse profiles | Applies FPS or MOBA-oriented mouse profiles for low-latency input |
 | Local game detection | Detects common Mac game launchers and selected foreground games |
@@ -85,23 +85,23 @@ CloudBoost PRO unlocks advanced automation, stability monitoring, and session in
 | Cloud gaming profiles | Yes | Yes |
 | Mac gaming profiles | Yes | Yes |
 | CS2, League, and Dota profiles | Yes | Yes |
-| Manual Boost | Yes | Yes |
+| Manual session mode | Yes | Yes |
 | AWDL Guard rollback protection | Yes | Yes |
 | Balanced preset | Yes | Yes |
 | Auto-Detect platform switching | No | Yes |
 | Auto Boost | No | Yes |
 | Smart Boost decisions | No | Yes |
 | Stability Guard | No | Yes |
-| Lag Inspector + UDP Probe | Basic status | Yes |
+| Session Doctor + UDP Probe | Basic status | Yes |
 | Session Score report | Basic score | Yes |
 | Heat Guard | No | Yes |
 | Keep Alive for long sessions | No | Yes |
 | Competitive and Stream Quality presets | No | Yes |
 | Diagnostics export with before/after session view | No | Yes |
 
-PRO is for hands-off stability. It helps with automatic session start, live health checks, thermal pressure, Low Power Mode, jitter trends, Lag Inspector cause detection, UDP probe context, Session Score, and before/after diagnostics so users can see whether the session is becoming smoother.
+PRO is for hands-off stability and full diagnostics. It helps with automatic session start, live health checks, thermal pressure, Low Power Mode, jitter trends, Session Doctor cause detection, UDP probe context, Session Score, and before/after diagnostics so users can see whether the session is becoming smoother.
 
-CloudBoost is not sold as a magic FPS booster. The value is reducing interruptions and making sessions more consistent.
+CloudBoost is not sold as a magic FPS booster and does not try to replace native gaming hardware. The value is reducing local interruptions and making unstable Mac gaming sessions easier to diagnose.
 
 To activate PRO, purchase a license on [Gumroad](https://victorbrandao0.gumroad.com/l/CloudBoost), then click any locked add-on in CloudBoost and enter the license key.
 
@@ -113,7 +113,7 @@ To activate PRO, purchase a license on [Gumroad](https://victorbrandao0.gumroad.
 - Presets for Balanced, Competitive, and Stream Quality behavior.
 - Competitive profiles for Counter-Strike 2, League of Legends, and Dota 2.
 - Floating HUD with live session statistics.
-- Lag Inspector and Session Score for clearer PRO diagnostics.
+- Session Doctor and Session Score for clearer PRO diagnostics.
 - Direct updater that downloads the latest DMG from GitHub releases and opens the installer.
 - Local diagnostics and before/after session history for PRO users.
 
@@ -122,6 +122,8 @@ To activate PRO, purchase a license on [Gumroad](https://victorbrandao0.gumroad.
 CloudBoost does not collect personal data, install kernel extensions, permanently modify protected system files, or run hidden daemons. The app uses supported macOS command-line tools and native APIs, and session changes are designed to be restored when CloudBoost is disabled or quits.
 
 CloudBoost may request administrator permission for specific system-level actions such as temporary network interface changes. These actions are session-based and are restored when the boost is disabled or when the app quits.
+
+CloudBoost does not bypass anti-cheat systems, modify games, inject into game processes, or promise that cloud/remote play will match a native Windows gaming PC.
 
 ## Roadmap
 
