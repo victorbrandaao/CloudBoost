@@ -30,3 +30,11 @@ The free version includes all cloud gaming, Mac gaming, and competitive game pro
 CloudBoost PRO unlocks Auto-Detect, Auto Boost, Smart Boost, Stability Guard, game-aware Session Doctor with UDP Probe, Session Score, Heat Guard, Keep Alive, Competitive and Smooth presets, diagnostics export, and before/after session history.
 
 Existing PRO customers keep access to the PRO features they already purchased.
+
+### Support and Community
+
+If you need setup help, want to report a session issue, or want to follow future builds, join the CloudBoost Discord:
+
+https://discord.gg/kU5trxtRb
+
+The Discord is open to Free and PRO users. PRO customers can also use it for license and diagnostics support.

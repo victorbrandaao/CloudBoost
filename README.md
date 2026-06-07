@@ -117,6 +117,10 @@ To activate PRO, purchase a license on [Gumroad](https://victorbrandao0.gumroad.
 - Direct updater that downloads the latest DMG from GitHub releases and opens the installer.
 - Local diagnostics and before/after session history for PRO users.
 
+## Community And Support
+
+The [CloudBoost Discord](https://discord.gg/kU5trxtRb) is open to Free and PRO users. Use it for setup help, release updates, issue reports, and PRO license support.
+
 ## Security And Transparency
 
 CloudBoost does not collect personal data, install kernel extensions, permanently modify protected system files, or run hidden daemons. The app uses supported macOS command-line tools and native APIs, and session changes are designed to be restored when CloudBoost is disabled or quits.

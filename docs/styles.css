@@ -26,25 +26,14 @@ html {
 
 body {
   margin: 0;
-  background:
-    linear-gradient(140deg, rgba(32, 230, 161, 0.18), transparent 30rem),
-    linear-gradient(220deg, rgba(109, 181, 255, 0.16), transparent 34rem),
-    linear-gradient(180deg, #0d121b 0%, var(--bg) 46rem);
+  background: #0b0f14;
   color: var(--text);
   font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
   line-height: 1.55;
 }
 
 body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  background:
-    linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
-  background-size: 42px 42px;
-  mask-image: linear-gradient(to bottom, black, transparent 760px);
+  content: none;
 }
 
 a {
@@ -126,11 +115,11 @@ footer a:hover {
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 360px;
-  gap: 64px;
+  grid-template-columns: minmax(0, 1fr) 390px;
+  gap: 54px;
   align-items: center;
-  min-height: calc(100vh - 72px);
-  padding: 36px 0 70px;
+  min-height: auto;
+  padding: 72px 0 78px;
 }
 
 .intro {
@@ -156,8 +145,8 @@ p {
 h1 {
   max-width: 760px;
   margin-bottom: 18px;
-  font-size: clamp(62px, 9vw, 112px);
-  line-height: 0.86;
+  font-size: clamp(44px, 7vw, 78px);
+  line-height: 0.96;
   letter-spacing: 0;
 }
 
@@ -177,8 +166,8 @@ h3 {
   max-width: 660px;
   margin-bottom: 12px;
   color: var(--soft);
-  font-size: 21px;
-  line-height: 1.38;
+  font-size: 19px;
+  line-height: 1.46;
 }
 
 .note {
@@ -207,9 +196,9 @@ h3 {
 }
 
 .button.download {
-  background: linear-gradient(135deg, var(--green), #16a3ff);
+  background: var(--green);
   color: #06130f;
-  box-shadow: 0 12px 34px rgba(32, 230, 161, 0.25);
+  box-shadow: none;
 }
 
 .button.pro {
@@ -274,21 +263,20 @@ h3 {
 
 .screenshot {
   justify-self: end;
-  width: 340px;
+  width: 370px;
   margin: 0;
-  padding: 12px;
+  padding: 0;
   border: 1px solid var(--line);
-  border-radius: 28px;
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.03)),
-    rgba(255, 255, 255, 0.05);
-  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.42);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.04);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.38);
+  overflow: hidden;
 }
 
 .screenshot img {
   display: block;
   width: 100%;
-  border-radius: 18px;
+  border-radius: 0;
 }
 
 .strip {
@@ -331,9 +319,7 @@ h3 {
 details {
   border: 1px solid var(--line);
   border-radius: 10px;
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.075), rgba(255, 255, 255, 0.035)),
-    var(--surface);
+  background: var(--surface);
 }
 
 .game-grid article,
@@ -537,9 +523,7 @@ code {
   padding: 30px;
   border: 1px solid rgba(32, 230, 161, 0.28);
   border-radius: 14px;
-  background:
-    linear-gradient(135deg, rgba(32, 230, 161, 0.14), rgba(109, 181, 255, 0.08)),
-    rgba(255, 255, 255, 0.045);
+  background: rgba(32, 230, 161, 0.07);
 }
 
 .final-actions {
@@ -617,7 +601,7 @@ footer a {
   }
 
   h1 {
-    font-size: 58px;
+    font-size: 42px;
   }
 
   .lead {
