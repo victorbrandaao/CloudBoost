@@ -181,7 +181,7 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
-  margin-bottom: 24px;
+  margin-bottom: 14px;
 }
 
 .button {
@@ -211,6 +211,27 @@ h3 {
   border: 1px solid rgba(109, 181, 255, 0.34);
   background: rgba(88, 101, 242, 0.16);
   color: #dbe9ff;
+}
+
+.press-link {
+  display: inline-flex;
+  margin-bottom: 24px;
+  color: var(--soft);
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.press-link::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  margin: 8px 8px 0 0;
+  border-radius: 999px;
+  background: var(--green);
+}
+
+.press-link:hover {
+  color: var(--text);
 }
 
 .facts {
@@ -306,7 +327,8 @@ h3 {
 }
 
 .game-grid,
-.score-panel {
+.score-panel,
+.fit-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 14px;
@@ -314,6 +336,7 @@ h3 {
 
 .game-grid article,
 .score-panel article,
+.fit-grid article,
 .tools article,
 .proof-grid article,
 details {
@@ -323,9 +346,22 @@ details {
 }
 
 .game-grid article,
-.score-panel article {
+.score-panel article,
+.fit-grid article {
   min-height: 210px;
   padding: 22px;
+}
+
+.fit-grid article {
+  min-height: 170px;
+}
+
+.fit-grid strong {
+  display: block;
+  margin-bottom: 12px;
+  color: var(--green);
+  font-size: 13px;
+  text-transform: uppercase;
 }
 
 .game-tag {
@@ -342,6 +378,7 @@ details {
 
 .game-grid p,
 .score-panel p,
+.fit-grid p,
 .tools p,
 .copy p,
 .pricing-copy p,
@@ -583,6 +620,7 @@ footer a {
 
   .game-grid,
   .score-panel,
+  .fit-grid,
   .tools,
   .proof-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -616,6 +654,7 @@ footer a {
   .facts,
   .game-grid,
   .score-panel,
+  .fit-grid,
   .tools,
   .proof-grid {
     grid-template-columns: 1fr;
@@ -623,6 +662,7 @@ footer a {
 
   .game-grid article,
   .score-panel article,
+  .fit-grid article,
   .tools article {
     min-height: 0;
   }

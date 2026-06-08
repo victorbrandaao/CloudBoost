@@ -4,6 +4,8 @@ Native macOS stability toolkit for cloud and Mac gaming.
 
 CloudBoost is a lightweight menu bar app built in Swift to make gaming sessions feel steadier on macOS. It targets micro-stutters, ping spikes, background interruptions, Wi-Fi/AWDL noise, and power-management issues with temporary, reversible session tuning.
 
+It is built for the moments where the game technically runs, but the session feels uneven: sudden stutters, jitter, background sync, AWDL/Wi-Fi interruptions, thermal pressure, or cloud gaming spikes that a normal speed test does not explain.
+
 <p align="center">
   <img src="https://img.shields.io/github/v/release/victorbrandaao/CloudBoost?style=for-the-badge">
   <img src="https://img.shields.io/github/downloads/victorbrandaao/CloudBoost/total?style=for-the-badge">
@@ -34,6 +36,16 @@ Need help, setup tips, or PRO support? Join the [CloudBoost Discord](https://dis
 > ```
 
 This repository is used for public releases, documentation, and downloadable binaries. CloudBoost is proprietary software and the source code is not publicly distributed.
+
+CloudBoost was covered by [MacMagazine](https://macmagazine.com.br/post/2026/06/01/cloudboost-otimiza-a-experiencia-de-jogos-na-nuvem-no-mac/).
+
+## Why Try It
+
+- All cloud, Mac, and competitive profiles are free.
+- Session changes are temporary and reversible.
+- PRO adds automation and diagnostics instead of locking the game profiles.
+- Session Doctor explains likely spike causes in plain language.
+- Discord support is open for Free and PRO users.
 
 ## Supported Platforms
 
@@ -79,6 +91,8 @@ All changes are designed to be temporary and reversible.
 ## CloudBoost PRO
 
 CloudBoost PRO unlocks advanced automation, stability monitoring, and session intelligence. Core cloud gaming and Mac gaming profiles are available for free.
+
+Use Free if you want manual session mode and the supported profiles. Upgrade to PRO if you want CloudBoost to auto-detect sessions, watch the connection, explain likely causes, and keep before/after diagnostics.
 
 | Feature | Free | PRO |
 |---|---:|---:|
