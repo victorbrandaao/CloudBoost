@@ -1,18 +1,18 @@
-CloudBoost 3.1.5 is a stability and polish release after the 3.1 competitive profile update.
+CloudBoost 3.1.6 adds a new diagnostics layer for players who want to understand spikes instead of only watching average ping.
 
-### What's New in 3.1.5
+### What's New in 3.1.6
 
-* **Cleaner session UI:** The app now uses clearer session language across the main flow, including Start Session and Stop Session.
-* **Session Doctor polish:** Lag explanations are now presented as Session Doctor reports, with clearer wording for non-technical players.
-* **Better network probe handling:** CloudBoost now handles blocked ICMP or UDP probes more gracefully instead of showing false packet loss.
-* **Latency fallback targets:** The app now checks multiple network targets when measuring session latency.
-* **PRO unchanged for existing customers:** Existing PRO customers keep access to the PRO features they already purchased.
+* **Session Lab:** PRO users can run an idle/load stability check to see how latency behaves when the connection is busy.
+* **Bufferbloat-style load check:** CloudBoost now compares normal samples with samples collected during a controlled download load, helping expose queueing issues that a regular speed test may miss.
+* **Stream Advisor:** The app now shows practical setup notes for the selected service or game profile. This is available to Free and PRO users.
+* **Better PRO diagnostics:** Session Lab results now connect with Session Doctor, UDP context, and before/after session reasoning.
+* **More honest gaming guidance:** Platform notes are clearer for GeForce NOW, xCloud, Boosteroid, Moonlight, CS2 cloud/remote play, League of Legends, Dota 2, Steam, Epic Games, and Battle.net.
+* **PRO unchanged for existing customers:** Existing PRO customers keep access to the features they already purchased.
 * **Profiles stay free:** Cloud, Mac, and competitive game profiles remain available in the free version.
-* **Discord support:** Free and PRO users can use the CloudBoost Discord for setup help, release notes, troubleshooting, and license support.
 
 ### Installation
 
-1. Go to the **Assets** section below and download **CloudBoost_v3.1.5.dmg**.
+1. Go to the **Assets** section below and download **CloudBoost_v3.1.6.dmg**.
 2. Open the `.dmg` and drag **CloudBoost.app** to your `/Applications` folder.
 
 > **Note on macOS Gatekeeper:**
@@ -23,11 +23,9 @@ CloudBoost 3.1.5 is a stability and polish release after the 3.1 competitive pro
 
 ### Free vs PRO
 
-The free version includes all cloud gaming, Mac gaming, and competitive game profiles, manual session mode, Balanced mode, AWDL Guard rollback protection, and basic session status.
+The free version includes all cloud gaming, Mac gaming, and competitive game profiles, manual session mode, Balanced mode, AWDL Guard rollback protection, basic session status, and Stream Advisor.
 
-CloudBoost PRO unlocks Auto-Detect, Auto Boost, Smart Boost, Stability Guard, game-aware Session Doctor with UDP Probe, Session Score, Heat Guard, Keep Alive, Competitive and Smooth presets, diagnostics export, and before/after session history.
-
-Existing PRO customers keep access to the PRO features they already purchased.
+CloudBoost PRO unlocks Auto-Detect, Auto Boost, Smart Boost, Stability Guard, Session Lab, game-aware Session Doctor with UDP Probe, Session Score, Heat Guard, Keep Alive, Competitive and Smooth presets, diagnostics export, and before/after session history.
 
 ### Support and Community
 

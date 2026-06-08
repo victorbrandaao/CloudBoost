@@ -25,7 +25,7 @@ Visit the [CloudBoost website](https://victorbrandaao.github.io/CloudBoost/) or 
 
 Download the latest release from the [Releases page](https://github.com/victorbrandaao/CloudBoost/releases).
 
-For CloudBoost 3.1.5, download **CloudBoost_v3.1.5.dmg**, open the disk image, and drag **CloudBoost.app** to `/Applications`.
+For CloudBoost 3.1.6, download **CloudBoost_v3.1.6.dmg**, open the disk image, and drag **CloudBoost.app** to `/Applications`.
 
 Need help, setup tips, or PRO support? Join the [CloudBoost Discord](https://discord.gg/kU5trxtRb).
 
@@ -45,6 +45,8 @@ CloudBoost was covered by [MacMagazine](https://macmagazine.com.br/post/2026/06/
 - Session changes are temporary and reversible.
 - PRO adds automation and diagnostics instead of locking the game profiles.
 - Session Doctor explains likely spike causes in plain language.
+- Session Lab checks how your connection behaves under load, not just at idle.
+- Stream Advisor gives setup notes for the selected service or game profile.
 - Discord support is open for Free and PRO users.
 
 ## Supported Platforms
@@ -81,6 +83,8 @@ Current optimization areas include:
 | Network session tuning | Reduces local macOS interference around the gaming session without routing or converting game traffic |
 | Competitive profiles | Adds focused profiles for CS2, League of Legends, and Dota 2 |
 | Session Doctor | Explains likely lag-spike causes in plain language, with UDP probe context for PRO users |
+| Session Lab | Runs an idle/load stability check to expose bufferbloat-style behavior and queueing |
+| Stream Advisor | Gives platform-aware setup notes for cloud, remote, and local Mac gaming sessions |
 | Session Score | Shows a simple 0-100 stability score after sessions, with the main issue detected |
 | Mouse profiles | Applies FPS or MOBA-oriented mouse profiles for low-latency input |
 | Local game detection | Detects common Mac game launchers and selected foreground games |
@@ -107,13 +111,15 @@ Use Free if you want manual session mode and the supported profiles. Upgrade to 
 | Smart Boost decisions | No | Yes |
 | Stability Guard | No | Yes |
 | Session Doctor + UDP Probe | Basic status | Yes |
+| Session Lab + load check | No | Yes |
+| Stream Advisor | Yes | Yes |
 | Session Score report | Basic score | Yes |
 | Heat Guard | No | Yes |
 | Keep Alive for long sessions | No | Yes |
 | Competitive and Stream Quality presets | No | Yes |
 | Diagnostics export with before/after session view | No | Yes |
 
-PRO is for hands-off stability and full diagnostics. It helps with automatic session start, live health checks, thermal pressure, Low Power Mode, jitter trends, Session Doctor cause detection, UDP probe context, Session Score, and before/after diagnostics so users can see whether the session is becoming smoother.
+PRO is for hands-off stability and full diagnostics. It helps with automatic session start, live health checks, thermal pressure, Low Power Mode, jitter trends, Session Doctor cause detection, Session Lab load checks, UDP probe context, Session Score, and before/after diagnostics so users can see whether the session is becoming smoother.
 
 CloudBoost is not sold as a magic FPS booster and does not try to replace native gaming hardware. The value is reducing local interruptions and making unstable Mac gaming sessions easier to diagnose.
 
@@ -128,6 +134,8 @@ To activate PRO, purchase a license on [Gumroad](https://victorbrandao0.gumroad.
 - Competitive profiles for Counter-Strike 2, League of Legends, and Dota 2.
 - Floating HUD with live session statistics.
 - Session Doctor and Session Score for clearer PRO diagnostics.
+- Session Lab for checking latency behavior while the connection is under load.
+- Stream Advisor with setup notes for the selected service or game.
 - Direct updater that downloads the latest DMG from GitHub releases and opens the installer.
 - Local diagnostics and before/after session history for PRO users.
 
