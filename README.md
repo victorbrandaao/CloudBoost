@@ -9,6 +9,7 @@ It is built for the moments where the game technically runs, but the session fee
 <p align="center">
   <img src="https://img.shields.io/github/v/release/victorbrandaao/CloudBoost?style=for-the-badge">
   <img src="https://img.shields.io/github/downloads/victorbrandaao/CloudBoost/total?style=for-the-badge">
+  <img src="https://img.shields.io/github/downloads/victorbrandaao/CloudBoost/latest/total?label=latest%20downloads&style=for-the-badge">
   <img src="https://img.shields.io/github/license/victorbrandaao/CloudBoost?style=for-the-badge">
   <img src="https://img.shields.io/badge/macOS-Apple%20Silicon%20%26%20Intel-black?style=for-the-badge">
   <img src="https://img.shields.io/badge/Distribution-DMG-blue?style=for-the-badge">
