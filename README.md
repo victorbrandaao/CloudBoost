@@ -28,7 +28,7 @@ Download the latest release from the [Releases page](https://github.com/victorbr
 
 For CloudBoost 3.1.7, download **CloudBoost_v3.1.7.dmg**, open the disk image, and drag **CloudBoost.app** to `/Applications`.
 
-Need help, setup tips, or PRO support? Join the [CloudBoost Discord](https://discord.gg/kU5trxtRb).
+Need help installing, understanding a warning, testing PRO, or reporting a session issue? The official support channel is the [CloudBoost Discord](https://discord.gg/kU5trxtRb).
 
 > **Gatekeeper note:** Because CloudBoost is independently signed, macOS may show an "App is damaged" warning on first launch. To clear the quarantine flag, run:
 >
@@ -146,7 +146,9 @@ To activate PRO, purchase a license on [Gumroad](https://victorbrandao0.gumroad.
 
 ## Community And Support
 
-The [CloudBoost Discord](https://discord.gg/kU5trxtRb) is open to Free and PRO users. Use it for setup help, release updates, issue reports, and PRO license support.
+The [CloudBoost Discord](https://discord.gg/kU5trxtRb) is open to Free and PRO users. Use it for setup help, release updates, issue reports, feature requests, and PRO license support.
+
+For support, include your macOS version, Mac model, selected profile, whether you are on Wi-Fi or Ethernet, and what the Session Doctor or Session Lab panel is showing.
 
 ## Security And Transparency
 

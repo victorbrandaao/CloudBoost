@@ -23,11 +23,13 @@ If macOS shows an "App is damaged" warning on first launch, open Terminal and ru
 xattr -cr /Applications/"CloudBoost.app"
 ```
 
-### Support
+### Official Support
 
-The CloudBoost Discord is open to Free and PRO users for setup help, issue reports, release updates, and PRO license support:
+The CloudBoost Discord is the official support channel for this release. It is open to Free and PRO users for install help, setup questions, issue reports, release updates, feature requests, and PRO license support:
 
 https://discord.gg/kU5trxtRb
+
+If you report a problem, include your macOS version, Mac model, selected profile, Wi-Fi/Ethernet status, and what Session Doctor or Session Lab is showing.
 
 ### Important Note
 
