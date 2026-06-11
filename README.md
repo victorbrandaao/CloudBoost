@@ -9,7 +9,7 @@ It is built for the moments where the game technically runs, but the session fee
 <p align="center">
   <img src="https://img.shields.io/github/v/release/victorbrandaao/CloudBoost?style=for-the-badge">
   <img src="https://img.shields.io/github/downloads/victorbrandaao/CloudBoost/total?cacheSeconds=300&label=total%20downloads&style=for-the-badge">
-  <img src="https://img.shields.io/github/downloads/victorbrandaao/CloudBoost/v3.1.7/total?cacheSeconds=300&label=v3.1.7%20downloads&style=for-the-badge">
+  <img src="https://img.shields.io/github/downloads/victorbrandaao/CloudBoost/v3.1.8/total?cacheSeconds=300&label=v3.1.8%20downloads&style=for-the-badge">
   <img src="https://img.shields.io/github/license/victorbrandaao/CloudBoost?style=for-the-badge">
   <img src="https://img.shields.io/badge/macOS-Apple%20Silicon%20%26%20Intel-black?style=for-the-badge">
   <img src="https://img.shields.io/badge/Distribution-DMG-blue?style=for-the-badge">
@@ -26,7 +26,7 @@ Visit the [CloudBoost website](https://victorbrandaao.github.io/CloudBoost/) or 
 
 Download the latest release from the [Releases page](https://github.com/victorbrandaao/CloudBoost/releases).
 
-For CloudBoost 3.1.7, download **CloudBoost_v3.1.7.dmg**, open the disk image, and drag **CloudBoost.app** to `/Applications`.
+For CloudBoost 3.1.8, download **CloudBoost_v3.1.8.dmg**, open the disk image, and drag **CloudBoost.app** to `/Applications`.
 
 Need help installing, understanding a warning, testing PRO, or reporting a session issue? The official support channel is the [CloudBoost Discord](https://discord.gg/kU5trxtRb).
 
@@ -141,7 +141,7 @@ To activate PRO, purchase a license on [Gumroad](https://victorbrandao0.gumroad.
 - PRO Widgets with quick stability, network, and system reads inside the app.
 - Session Lab for checking latency behavior while the connection is under load.
 - Stream Advisor with setup notes for the selected service or game.
-- Direct updater that downloads the latest DMG from GitHub releases and opens the installer.
+- Direct updater that downloads the latest DMG from GitHub releases, opens the installer, and links to Discord support after download.
 - Local diagnostics and before/after session history for PRO users.
 
 ## Community And Support
