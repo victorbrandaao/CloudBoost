@@ -9,7 +9,6 @@ It is built for the moments where the game technically runs, but the session fee
 <p align="center">
   <img src="https://img.shields.io/github/v/release/victorbrandaao/CloudBoost?style=for-the-badge">
   <img src="https://img.shields.io/github/downloads/victorbrandaao/CloudBoost/total?cacheSeconds=300&label=total%20downloads&style=for-the-badge">
-  <img src="https://img.shields.io/github/downloads/victorbrandaao/CloudBoost/v3.1.8/total?cacheSeconds=300&label=v3.1.8%20downloads&style=for-the-badge">
   <img src="https://img.shields.io/github/license/victorbrandaao/CloudBoost?style=for-the-badge">
   <img src="https://img.shields.io/badge/macOS-Apple%20Silicon%20%26%20Intel-black?style=for-the-badge">
   <img src="https://img.shields.io/badge/Distribution-DMG-blue?style=for-the-badge">
@@ -26,7 +25,7 @@ Visit the [CloudBoost website](https://victorbrandaao.github.io/CloudBoost/) or 
 
 Download the latest release from the [Releases page](https://github.com/victorbrandaao/CloudBoost/releases).
 
-For CloudBoost 3.1.8, download **CloudBoost_v3.1.8.dmg**, open the disk image, and drag **CloudBoost.app** to `/Applications`.
+Download the newest **CloudBoost_v*.dmg**, open the disk image, and drag **CloudBoost.app** to `/Applications`.
 
 Need help installing, understanding a warning, testing PRO, or reporting a session issue? The official support channel is the [CloudBoost Discord](https://discord.gg/kU5trxtRb).
 
@@ -78,6 +77,9 @@ Current optimization areas include:
 |---|---|
 | AWDL control | Temporarily disables `awdl0` to reduce AirDrop/Handoff Wi-Fi scanning spikes |
 | AWDL Guard | Restores `awdl0` automatically if CloudBoost stops unexpectedly |
+| AWDL Guard+ | PRO feature that keeps `awdl0` locked down during active sessions and blocks mid-session reactivation |
+| Kernel Watch | PRO+ feature that reads scheduler, memory, and interface counters from macOS/Darwin during sessions |
+| Background throttle | PRO+ feature that temporarily lowers priority for selected sync/indexing processes and restores them afterward |
 | Process priority | Raises priority for the active streaming client with `renice` |
 | DNS refresh | Clears stale local DNS cache during session startup |
 | Power focus | Uses `caffeinate` to avoid sleep and session throttling |
@@ -113,6 +115,7 @@ Use Free if you want manual session mode and the supported profiles. Upgrade to 
 | Auto Boost | No | Yes |
 | Smart Boost decisions | No | Yes |
 | Stability Guard | No | Yes |
+| AWDL Guard+ reactivation blocker | No | Yes |
 | Session Doctor + UDP Probe | Basic status | Yes |
 | Session Lab + load check | No | Yes |
 | PRO Widgets | No | Yes |
@@ -122,8 +125,12 @@ Use Free if you want manual session mode and the supported profiles. Upgrade to 
 | Keep Alive for long sessions | No | Yes |
 | Competitive and Stream Quality presets | No | Yes |
 | Diagnostics export with before/after session view | No | Yes |
+| Kernel Watch scheduler/memory/interface counters | No | PRO+ |
+| Background throttle for sync/indexing processes | No | PRO+ |
 
-PRO is for hands-off stability and full diagnostics. It helps with automatic session start, live health checks, thermal pressure, Low Power Mode, jitter trends, Session Doctor cause detection, Session Lab load checks, PRO Widgets, UDP probe context, Session Score, and before/after diagnostics so users can see whether the session is becoming smoother.
+PRO is for hands-off stability and full diagnostics. It helps with automatic session start, AWDL Guard+, live health checks, thermal pressure, Low Power Mode, jitter trends, Session Doctor cause detection, Session Lab load checks, PRO Widgets, UDP probe context, Session Score, and before/after diagnostics so users can see whether the session is becoming smoother.
+
+CloudBoost keeps the existing one-time PRO license working for current customers. PRO+ Kernel Access is a separate one-time US$25 upgrade for users who want priority Discord support, Kernel Watch, background throttle, AWDL Guard+, early access builds, advanced diagnostics, and upcoming signed lower-level networking work. CloudBoost does not market a feature as a kernel extension unless a real System Extension, Network Extension, DriverKit component, or kernel extension is shipped.
 
 CloudBoost is not sold as a magic FPS booster and does not try to replace native gaming hardware. The value is reducing local interruptions and making unstable Mac gaming sessions easier to diagnose.
 
@@ -138,6 +145,7 @@ To activate PRO, purchase a license on [Gumroad](https://victorbrandao0.gumroad.
 - Competitive profiles for Counter-Strike 2, League of Legends, and Dota 2.
 - Floating HUD with live session statistics.
 - Session Doctor and Session Score for clearer PRO diagnostics.
+- AWDL Guard+ for PRO users who want mid-session AWDL reactivation blocking.
 - PRO Widgets with quick stability, network, and system reads inside the app.
 - Session Lab for checking latency behavior while the connection is under load.
 - Stream Advisor with setup notes for the selected service or game.

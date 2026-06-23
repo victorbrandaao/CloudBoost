@@ -32,10 +32,10 @@
     <main>
       <section class="hero">
         <div class="intro">
-          <p class="label">CloudBoost 3.1.8</p>
+          <p class="label">CloudBoost latest release</p>
           <h1>Make Mac gaming sessions feel less random.</h1>
           <p class="lead">CloudBoost is a small macOS menu bar app for players who get sudden stutters, ping spikes, uneven cloud sessions, or background noise they cannot explain with a normal speed test.</p>
-          <p class="note">Start free with all game profiles. Upgrade to PRO when you want automatic sessions, PRO Widgets, Session Lab, Session Doctor, UDP Probe, Session Score, and before/after diagnostics. Setup help, update help, and issue reports are handled on Discord and GitHub Issues.</p>
+          <p class="note">Start free with all game profiles. Upgrade to PRO for automatic sessions, AWDL Guard+, PRO Widgets, Session Lab, Session Doctor, UDP Probe, Session Score, and before/after diagnostics. PRO+ Kernel Access is a one-time US$25 upgrade for Kernel Watch, background throttle, priority support, and future lower-level networking work.</p>
 
           <div id="download" class="actions">
             <a class="button download" href="https://github.com/victorbrandaao/CloudBoost/releases/latest">Download DMG</a>
@@ -48,7 +48,7 @@
           <dl class="facts">
             <div>
               <dt>Latest release</dt>
-              <dd>3.1.8</dd>
+              <dd>GitHub latest</dd>
             </div>
             <div>
               <dt>Profiles</dt>
@@ -184,6 +184,18 @@
             <p>Handles the AirDrop/Handoff interface during sessions and restores it afterward.</p>
           </article>
           <article>
+            <h3>AWDL Guard+</h3>
+            <p>PRO system-level protection that keeps AWDL locked down during active sessions and counts mid-session reactivation blocks.</p>
+          </article>
+          <article>
+            <h3>Kernel Watch</h3>
+            <p>PRO+ reads scheduler, memory, and interface counters from macOS/Darwin to explain deeper session pressure.</p>
+          </article>
+          <article>
+            <h3>Background Throttle</h3>
+            <p>PRO+ temporarily lowers priority for selected sync and indexing processes, then restores them when the session ends.</p>
+          </article>
+          <article>
             <h3>Smart Boost</h3>
             <p>Combines DNS refresh, sleep prevention, process priority, and preset tuning.</p>
           </article>
@@ -230,7 +242,7 @@
         <div class="pricing-copy">
           <p class="label">Free vs PRO</p>
           <h2>Profiles stay free. PRO is for players who want the app to watch the session.</h2>
-          <p>Use Free for manual session mode across cloud services, Mac launchers, and competitive profiles. Upgrade to PRO for auto-detect, auto boost, PRO Widgets, Session Lab, UDP Probe, Session Doctor, Session Score, session history, and before/after diagnostics.</p>
+          <p>Use Free for manual session mode across cloud services, Mac launchers, and competitive profiles. Upgrade to PRO for AWDL Guard+, auto-detect, auto boost, PRO Widgets, Session Lab, UDP Probe, Session Doctor, Session Score, session history, and before/after diagnostics. Existing one-time PRO licenses keep working; PRO+ Kernel Access is a separate one-time US$25 upgrade for Kernel Watch, background throttle, priority support, early builds, and future signed lower-level networking work.</p>
           <a class="button download" href="https://victorbrandao0.gumroad.com/l/CloudBoost">Get CloudBoost PRO</a>
         </div>
 
@@ -268,6 +280,16 @@
                 <td>Smart Boost, Stability Guard, Session Doctor, Session Lab, PRO Widgets, Heat Guard</td>
                 <td>-</td>
                 <td>Included</td>
+              </tr>
+              <tr>
+                <td>AWDL Guard+ mid-session reactivation blocker</td>
+                <td>-</td>
+                <td>Included</td>
+              </tr>
+              <tr>
+                <td>Kernel Watch and background throttle</td>
+                <td>-</td>
+                <td>PRO+</td>
               </tr>
               <tr>
                 <td>Stream Advisor</td>
@@ -327,6 +349,7 @@
         </div>
         <div class="copy">
           <p>The Discord is open to Free and PRO users. Use it to report issues, ask about settings, follow updates, or check whether a new release changes anything important for your setup.</p>
+          <p>PRO+ Kernel Access is a one-time US$25 upgrade for priority Discord support, Kernel Watch, background throttle, early access builds, advanced diagnostics, AWDL Guard+, and upcoming signed lower-level networking work.</p>
           <p>For faster help, include your macOS version, Mac model, selected profile, Wi-Fi/Ethernet status, and what Session Doctor or Session Lab is showing.</p>
           <a class="button community" href="https://discord.gg/kU5trxtRb">Join the CloudBoost Discord</a>
         </div>
@@ -343,7 +366,7 @@
           </details>
           <details>
             <summary>Does it install a kernel extension?</summary>
-            <p>No. CloudBoost does not use KEXTs, hidden daemons, or permanent system patches.</p>
+            <p>No. PRO+ Kernel Access uses kernel counters and reversible macOS/Darwin session controls. CloudBoost does not use KEXTs, hidden daemons, or permanent system patches.</p>
           </details>
           <details>
             <summary>Does it bypass anti-cheat or modify games?</summary>
