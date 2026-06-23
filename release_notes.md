@@ -1,19 +1,22 @@
-CloudBoost 3.1.8 is a support and usability patch for the updater and Session Lab.
+CloudBoost 3.1.10 is a readability, Remote Play, and PRO diagnostics update.
 
-### What's New in 3.1.8
+### What's New in 3.1.10
 
-* **Discord support in the update flow:** After CloudBoost downloads a new DMG, the "Update Ready" dialog now includes a **Discord Support** button.
-* **Clearer update guidance:** The update dialog now explains that Discord is an official CloudBoost support channel, alongside GitHub Issues, for install help, setup questions, PRO support, and bug reports.
-* **Session Lab actions are clearer:** The Session Lab card now makes it clearer that it updates when the user clicks **Run Lab**. It is not a live ticker.
-* **Visible Session Lab controls:** The Session Lab action buttons now have a more reliable horizontal layout so **Run Lab**, **Details**, and **Advisor** are easier to see.
+* **Larger UI for external displays:** CloudBoost now has UI Size modes: Auto, Small, Large, and XL. Auto uses a larger popover on high-resolution displays, and XL can be selected manually.
+* **PS Remote Play profile:** PS Remote Play is now included as a free remote-play profile alongside Moonlight and VoidLink.
+* **Cleaner platform groups:** Cloud profiles, remote play profiles, competitive/native profiles, and Mac launcher profiles are separated more clearly.
+* **Session Proof report:** PRO diagnostics now include a shareable session summary with start/latest state, trend, jitter, packet loss, and main background issues.
+* **Cleaner session history:** Starting a new session now resets the before/after baseline, so reports are tied to the current session instead of older samples.
 
 ### PRO
 
-Existing PRO licenses continue to work. The game and streaming profiles remain free. PRO remains focused on automation and diagnostics: Auto Boost, Auto-Detect, Smart Boost, Stability Guard, Session Doctor, Session Lab, PRO Widgets, UDP Probe, Session Score, Heat Guard, Keep Alive, advanced presets, and before/after session history.
+Existing PRO licenses continue to work. The game, streaming, and remote-play profiles remain free. PRO remains focused on automation and diagnostics: Auto Boost, Auto-Detect, Smart Boost, Stability Guard, Session Doctor, Session Lab, PRO Widgets, UDP Probe, Session Score, Heat Guard, Keep Alive, advanced presets, before/after session history, and Session Proof export.
+
+PRO+ Kernel Access remains a separate one-time US$25 upgrade for Kernel Watch, background throttle, AWDL Guard+, priority Discord support, early builds, and future signed lower-level networking work.
 
 ### Installation
 
-Download **CloudBoost_v3.1.8.dmg** from the Assets section, open it, and drag **CloudBoost.app** to `/Applications`.
+Download **CloudBoost_v3.1.10.dmg** from the Assets section, open it, and drag **CloudBoost.app** to `/Applications`.
 
 If macOS shows an "App is damaged" warning on first launch, open Terminal and run:
 

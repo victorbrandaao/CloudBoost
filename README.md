@@ -1,10 +1,10 @@
 # CloudBoost
 
-Native macOS stability toolkit for cloud and Mac gaming.
+Native macOS stability toolkit for cloud, remote play, and Mac gaming.
 
 CloudBoost is a lightweight menu bar app built in Swift to make gaming sessions feel steadier on macOS. It targets micro-stutters, ping spikes, background interruptions, Wi-Fi/AWDL noise, and power-management issues with temporary, reversible session tuning.
 
-It is built for the moments where the game technically runs, but the session feels uneven: sudden stutters, jitter, background sync, AWDL/Wi-Fi interruptions, thermal pressure, or cloud gaming spikes that a normal speed test does not explain.
+It is built for the moments where the game technically runs, but the session feels uneven: sudden stutters, jitter, background sync, AWDL/Wi-Fi interruptions, thermal pressure, remote-play instability, or cloud gaming spikes that a normal speed test does not explain.
 
 <p align="center">
   <img src="https://img.shields.io/github/v/release/victorbrandaao/CloudBoost?style=for-the-badge">
@@ -46,6 +46,8 @@ CloudBoost was covered by [MacMagazine](https://macmagazine.com.br/post/2026/06/
 - PRO adds automation and diagnostics instead of locking the game profiles.
 - Session Doctor explains likely spike causes in plain language.
 - Session Lab checks how your connection behaves under load, not just at idle.
+- Session Proof export gives PRO users a shareable before/latest session summary.
+- UI Size modes make the app easier to read on laptops, 2K monitors, and 4K displays.
 - PRO Widgets show quick stability, network, and system reads during a session.
 - Stream Advisor gives setup notes for the selected service or game profile.
 - Discord support is open for Free and PRO users.
@@ -58,6 +60,7 @@ CloudBoost was covered by [MacMagazine](https://macmagazine.com.br/post/2026/06/
 | Xbox Cloud Gaming (xCloud) | Free |
 | Boosteroid | Free |
 | Moonlight | Free |
+| PS Remote Play | Free |
 | VoidLink Extreme | Free |
 | Counter-Strike 2 cloud/remote profile | Free |
 | League of Legends local/cloud profile | Free |
@@ -86,11 +89,14 @@ Current optimization areas include:
 | Time Machine control | Pauses backup activity in selected presets |
 | Network session tuning | Reduces local macOS interference around the gaming session without routing or converting game traffic |
 | Competitive profiles | Adds focused profiles for CS2, League of Legends, and Dota 2 |
+| Remote Play profiles | Adds free Moonlight, PS Remote Play, and VoidLink-oriented stability profiles |
 | Session Doctor | Explains likely lag-spike causes in plain language, with UDP probe context for PRO users |
 | Session Lab | Runs an idle/load stability check to expose bufferbloat-style behavior and queueing |
 | PRO Widgets | Shows compact live cards for stability, network, and system status during a session |
 | Stream Advisor | Gives platform-aware setup notes for cloud, remote, and local Mac gaming sessions |
 | Session Score | Shows a simple 0-100 stability score after sessions, with the main issue detected |
+| Session Proof report | PRO diagnostics export a shareable session summary with before/latest state, trend, jitter, packet loss, and main background issues |
+| UI Size control | Auto, Small, Large, and XL modes make the popover easier to read on laptops, 2K monitors, and 4K displays |
 | Mouse profiles | Applies FPS or MOBA-oriented mouse profiles for low-latency input |
 | Local game detection | Detects common Mac game launchers and selected foreground games |
 | Direct updater | Checks GitHub releases, downloads the DMG, and falls back to the release page |
@@ -121,6 +127,7 @@ Use Free if you want manual session mode and the supported profiles. Upgrade to 
 | PRO Widgets | No | Yes |
 | Stream Advisor | Yes | Yes |
 | Session Score report | Basic score | Yes |
+| Shareable Session Proof report | No | Yes |
 | Heat Guard | No | Yes |
 | Keep Alive for long sessions | No | Yes |
 | Competitive and Stream Quality presets | No | Yes |
@@ -128,7 +135,7 @@ Use Free if you want manual session mode and the supported profiles. Upgrade to 
 | Kernel Watch scheduler/memory/interface counters | No | PRO+ |
 | Background throttle for sync/indexing processes | No | PRO+ |
 
-PRO is for hands-off stability and full diagnostics. It helps with automatic session start, AWDL Guard+, live health checks, thermal pressure, Low Power Mode, jitter trends, Session Doctor cause detection, Session Lab load checks, PRO Widgets, UDP probe context, Session Score, and before/after diagnostics so users can see whether the session is becoming smoother.
+PRO is for hands-off stability and full diagnostics. It helps with automatic session start, AWDL Guard+, live health checks, thermal pressure, Low Power Mode, jitter trends, Session Doctor cause detection, Session Lab load checks, PRO Widgets, UDP probe context, Session Score, before/after diagnostics, and a shareable Session Proof report so users can see whether the session is becoming smoother.
 
 CloudBoost keeps the existing one-time PRO license working for current customers. PRO+ Kernel Access is a separate one-time US$25 upgrade for users who want priority Discord support, Kernel Watch, background throttle, AWDL Guard+, early access builds, advanced diagnostics, and upcoming signed lower-level networking work. CloudBoost does not market a feature as a kernel extension unless a real System Extension, Network Extension, DriverKit component, or kernel extension is shipped.
 
@@ -143,6 +150,8 @@ To activate PRO, purchase a license on [Gumroad](https://victorbrandao0.gumroad.
 - One-click enable/disable flow with automatic restore.
 - Presets for Balanced, Competitive, and Stream Quality behavior.
 - Competitive profiles for Counter-Strike 2, League of Legends, and Dota 2.
+- Free remote play profiles for Moonlight, PS Remote Play, and VoidLink.
+- UI Size modes for laptop, 2K, and 4K monitor readability.
 - Floating HUD with live session statistics.
 - Session Doctor and Session Score for clearer PRO diagnostics.
 - AWDL Guard+ for PRO users who want mid-session AWDL reactivation blocking.
@@ -150,7 +159,7 @@ To activate PRO, purchase a license on [Gumroad](https://victorbrandao0.gumroad.
 - Session Lab for checking latency behavior while the connection is under load.
 - Stream Advisor with setup notes for the selected service or game.
 - Direct updater that downloads the latest DMG from GitHub releases, opens the installer, and links to Discord support after download.
-- Local diagnostics and before/after session history for PRO users.
+- Local diagnostics, before/after session history, and Session Proof export for PRO users.
 
 ## Community And Support
 

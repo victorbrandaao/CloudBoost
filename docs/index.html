@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CloudBoost - make Mac gaming sessions feel less random</title>
-    <meta name="description" content="CloudBoost is a native macOS menu bar app that helps reduce local session noise and diagnose spikes in cloud and Mac gaming.">
+    <title>CloudBoost - make Mac gaming and remote play feel less random</title>
+    <meta name="description" content="CloudBoost is a native macOS menu bar app that helps reduce local session noise and diagnose spikes in cloud, remote play, and Mac gaming.">
     <meta property="og:title" content="CloudBoost">
     <meta property="og:description" content="A small macOS menu bar app for reducing local gaming-session noise and understanding spikes, jitter, AWDL behavior, and background traffic.">
     <meta property="og:image" content="assets/cloudboost-app.png">
@@ -33,9 +33,9 @@
       <section class="hero">
         <div class="intro">
           <p class="label">CloudBoost latest release</p>
-          <h1>Make Mac gaming sessions feel less random.</h1>
-          <p class="lead">CloudBoost is a small macOS menu bar app for players who get sudden stutters, ping spikes, uneven cloud sessions, or background noise they cannot explain with a normal speed test.</p>
-          <p class="note">Start free with all game profiles. Upgrade to PRO for automatic sessions, AWDL Guard+, PRO Widgets, Session Lab, Session Doctor, UDP Probe, Session Score, and before/after diagnostics. PRO+ Kernel Access is a one-time US$25 upgrade for Kernel Watch, background throttle, priority support, and future lower-level networking work.</p>
+          <h1>Make Mac gaming and remote play feel less random.</h1>
+          <p class="lead">CloudBoost is a small macOS menu bar app for players who get sudden stutters, ping spikes, uneven remote-play sessions, or background noise they cannot explain with a normal speed test.</p>
+          <p class="note">Start free with all game profiles, including PS Remote Play. Upgrade to PRO for automatic sessions, AWDL Guard+, PRO Widgets, Session Lab, Session Doctor, UDP Probe, Session Score, before/after diagnostics, and Session Proof export. PRO+ Kernel Access is a one-time US$25 upgrade for Kernel Watch, background throttle, priority support, and future lower-level networking work.</p>
 
           <div id="download" class="actions">
             <a class="button download" href="https://github.com/victorbrandaao/CloudBoost/releases/latest">Download DMG</a>
@@ -63,6 +63,7 @@
           <div class="hero-proof" aria-label="Current focus">
             <span>Reversible changes</span>
             <span>No game injection</span>
+            <span>Readable on 2K/4K</span>
             <span>Discord support</span>
           </div>
         </div>
@@ -77,6 +78,7 @@
         <span>xCloud</span>
         <span>Boosteroid</span>
         <span>Moonlight</span>
+        <span>PS Remote Play</span>
         <span>CS2</span>
         <span>League of Legends</span>
         <span>Dota 2</span>
@@ -94,7 +96,7 @@
         <div class="fit-grid">
           <article>
             <strong>Good fit</strong>
-            <p>Cloud gaming, remote play, Mac game launchers, or competitive sessions where random spikes matter more than average FPS.</p>
+            <p>Cloud gaming, PS Remote Play, Moonlight, Mac game launchers, or competitive sessions where random spikes matter more than average FPS.</p>
           </article>
           <article>
             <strong>Not a fit</strong>
@@ -102,7 +104,7 @@
           </article>
           <article>
             <strong>Why PRO</strong>
-            <p>PRO is for players who want CloudBoost to auto-detect sessions, show live widgets, test the connection under load, and explain what changed before, during, and after play.</p>
+            <p>PRO is for players who want CloudBoost to auto-detect sessions, show live widgets, test the connection under load, and export a simple proof report after play.</p>
           </article>
         </div>
       </section>
@@ -110,14 +112,19 @@
       <section id="competitive" class="section spotlight">
         <div class="section-head">
           <p class="label">Game profiles</p>
-          <h2>Cloud gaming, Mac launchers, and competitive profiles in one menu.</h2>
-          <p>CS2 is treated as a cloud/remote profile on macOS. League and Dota get local/cloud targeting, game-aware score thresholds, and the right mouse profile for FPS or MOBA sessions.</p>
+          <h2>Cloud gaming, Remote Play, Mac launchers, and competitive profiles in one menu.</h2>
+          <p>PS Remote Play, Moonlight, and VoidLink get free remote-play profiles. CS2 is treated as a cloud/remote profile on macOS. League and Dota get local/cloud targeting, game-aware score thresholds, and the right mouse profile for FPS or MOBA sessions.</p>
         </div>
         <div class="game-grid">
           <article>
             <span class="game-tag">Cloud/remote</span>
             <h3>Counter-Strike 2</h3>
             <p>Focused on cloud or remote play on Mac, with stricter jitter thresholds for FPS sessions.</p>
+          </article>
+          <article>
+            <span class="game-tag">Remote play</span>
+            <h3>PS Remote Play</h3>
+            <p>Targets the Mac side of console streaming: Wi-Fi/AWDL noise, background traffic, and load behavior.</p>
           </article>
           <article>
             <span class="game-tag">Local/cloud</span>
@@ -159,6 +166,16 @@
             <p>CloudBoost checks whether latency stays stable while the connection is busy, which helps expose queueing and bufferbloat-style issues.</p>
           </article>
           <article>
+            <strong>Proof export</strong>
+            <span>PRO report</span>
+            <p>PRO exports a shareable summary with start/latest state, trend, jitter, packet loss, and main background issues.</p>
+          </article>
+          <article>
+            <strong>UI Size</strong>
+            <span>2K/4K readability</span>
+            <p>Auto, Small, Large, and XL modes make the popover easier to read on external monitors.</p>
+          </article>
+          <article>
             <strong>Live cards</strong>
             <span>PRO Widgets</span>
             <p>Compact stability, network, and system cards keep the important signals visible during a session.</p>
@@ -190,6 +207,10 @@
           <article>
             <h3>Kernel Watch</h3>
             <p>PRO+ reads scheduler, memory, and interface counters from macOS/Darwin to explain deeper session pressure.</p>
+          </article>
+          <article>
+            <h3>PS Remote Play</h3>
+            <p>Free profile for console streaming on Mac, focused on LAN/Wi-Fi stability and background interference.</p>
           </article>
           <article>
             <h3>Background Throttle</h3>
@@ -232,6 +253,10 @@
             <p>PRO diagnostics compare the start of a session with the current state.</p>
           </article>
           <article>
+            <h3>Session Proof Export</h3>
+            <p>PRO diagnostics export a clean report that is easier to share in Discord or GitHub Issues.</p>
+          </article>
+          <article>
             <h3>Direct Updater</h3>
             <p>Downloads the latest DMG from GitHub releases, opens the installer, and links to Discord support after download.</p>
           </article>
@@ -242,7 +267,7 @@
         <div class="pricing-copy">
           <p class="label">Free vs PRO</p>
           <h2>Profiles stay free. PRO is for players who want the app to watch the session.</h2>
-          <p>Use Free for manual session mode across cloud services, Mac launchers, and competitive profiles. Upgrade to PRO for AWDL Guard+, auto-detect, auto boost, PRO Widgets, Session Lab, UDP Probe, Session Doctor, Session Score, session history, and before/after diagnostics. Existing one-time PRO licenses keep working; PRO+ Kernel Access is a separate one-time US$25 upgrade for Kernel Watch, background throttle, priority support, early builds, and future signed lower-level networking work.</p>
+          <p>Use Free for manual session mode across cloud services, PS Remote Play, Moonlight, Mac launchers, and competitive profiles. Upgrade to PRO for AWDL Guard+, auto-detect, auto boost, PRO Widgets, Session Lab, UDP Probe, Session Doctor, Session Score, session history, before/after diagnostics, and Session Proof export. Existing one-time PRO licenses keep working; PRO+ Kernel Access is a separate one-time US$25 upgrade for Kernel Watch, background throttle, priority support, early builds, and future signed lower-level networking work.</p>
           <a class="button download" href="https://victorbrandao0.gumroad.com/l/CloudBoost">Get CloudBoost PRO</a>
         </div>
 
@@ -257,7 +282,7 @@
             </thead>
             <tbody>
               <tr>
-                <td>GeForce NOW, xCloud, Boosteroid, Moonlight, VoidLink</td>
+                <td>GeForce NOW, xCloud, Boosteroid, Moonlight, PS Remote Play, VoidLink</td>
                 <td>Included</td>
                 <td>Included</td>
               </tr>
@@ -307,7 +332,7 @@
                 <td>Included</td>
               </tr>
               <tr>
-                <td>Before/after diagnostics and session history</td>
+                <td>Before/after diagnostics, session history, and Session Proof export</td>
                 <td>-</td>
                 <td>Included</td>
               </tr>
