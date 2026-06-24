@@ -9,7 +9,7 @@ It is built for the moments where the game technically runs, but the session fee
 <p align="center">
   <img src="https://img.shields.io/github/v/release/victorbrandaao/CloudBoost?style=for-the-badge">
   <img src="https://img.shields.io/github/downloads/victorbrandaao/CloudBoost/total?cacheSeconds=300&label=total%20downloads&style=for-the-badge">
-  <img src="https://img.shields.io/github/downloads/victorbrandaao/CloudBoost/v3.1.10/total?cacheSeconds=300&label=v3.1.10%20downloads&style=for-the-badge">
+  <img src="https://img.shields.io/github/downloads/victorbrandaao/CloudBoost/v3.1.11/total?cacheSeconds=300&label=v3.1.11%20downloads&style=for-the-badge">
   <img src="https://img.shields.io/github/license/victorbrandaao/CloudBoost?style=for-the-badge">
   <img src="https://img.shields.io/badge/macOS-Apple%20Silicon%20%26%20Intel-black?style=for-the-badge">
   <img src="https://img.shields.io/badge/Distribution-DMG-blue?style=for-the-badge">
@@ -46,9 +46,10 @@ CloudBoost was covered by [MacMagazine](https://macmagazine.com.br/post/2026/06/
 - Session changes are temporary and reversible.
 - PRO adds automation and diagnostics instead of locking the game profiles.
 - Session Doctor explains likely spike causes in plain language.
-- Session Lab checks how your connection behaves under load, not just at idle.
-- Session Proof export gives PRO users a shareable before/latest session summary.
+- Session Lab now includes Stream Signal, a PRO stability score for p95 latency, jitter, packet loss, load impact, UDP availability, and local Mac pressure.
+- Session Proof export gives PRO users a shareable before/latest session summary with average ping, p95 ping, jitter, packet loss, and main issues.
 - UI Size modes make the app easier to read on laptops, 2K monitors, and 4K displays.
+- The floating HUD follows UI Size and now includes an OK/CHK/FIX quality glance.
 - PRO Widgets show quick stability, network, and system reads during a session.
 - Stream Advisor gives setup notes for the selected service or game profile.
 - Discord support is open for Free and PRO users.
@@ -93,11 +94,13 @@ Current optimization areas include:
 | Remote Play profiles | Adds free Moonlight, PS Remote Play, and VoidLink-oriented stability profiles |
 | Session Doctor | Explains likely lag-spike causes in plain language, with UDP probe context for PRO users |
 | Session Lab | Runs an idle/load stability check to expose bufferbloat-style behavior and queueing |
+| Stream Signal | PRO Session Lab score focused on p95 latency, jitter, packet loss, load impact, and platform-specific playability |
 | PRO Widgets | Shows compact live cards for stability, network, and system status during a session |
 | Stream Advisor | Gives platform-aware setup notes for cloud, remote, and local Mac gaming sessions |
 | Session Score | Shows a simple 0-100 stability score after sessions, with the main issue detected |
-| Session Proof report | PRO diagnostics export a shareable session summary with before/latest state, trend, jitter, packet loss, and main background issues |
+| Session Proof report | PRO diagnostics export a shareable session summary with before/latest state, trend, average ping, p95 ping, jitter, packet loss, and main background issues |
 | UI Size control | Auto, Small, Large, and XL modes make the popover easier to read on laptops, 2K monitors, and 4K displays |
+| HUD Quality Glance | Floating HUD includes a quick OK/CHK/FIX quality read and follows the app UI size setting |
 | Mouse profiles | Applies FPS or MOBA-oriented mouse profiles for low-latency input |
 | Local game detection | Detects common Mac game launchers and selected foreground games |
 | Direct updater | Checks GitHub releases, downloads the DMG, and falls back to the release page |
@@ -125,6 +128,7 @@ Use Free if you want manual session mode and the supported profiles. Upgrade to 
 | AWDL Guard+ reactivation blocker | No | Yes |
 | Session Doctor + UDP Probe | Basic status | Yes |
 | Session Lab + load check | No | Yes |
+| Stream Signal quality score | No | Yes |
 | PRO Widgets | No | Yes |
 | Stream Advisor | Yes | Yes |
 | Session Score report | Basic score | Yes |
@@ -136,7 +140,7 @@ Use Free if you want manual session mode and the supported profiles. Upgrade to 
 | Kernel Watch scheduler/memory/interface counters | No | PRO+ |
 | Background throttle for sync/indexing processes | No | PRO+ |
 
-PRO is for hands-off stability and full diagnostics. It helps with automatic session start, AWDL Guard+, live health checks, thermal pressure, Low Power Mode, jitter trends, Session Doctor cause detection, Session Lab load checks, PRO Widgets, UDP probe context, Session Score, before/after diagnostics, and a shareable Session Proof report so users can see whether the session is becoming smoother.
+PRO is for hands-off stability and full diagnostics. It helps with automatic session start, AWDL Guard+, live health checks, thermal pressure, Low Power Mode, jitter trends, Session Doctor cause detection, Session Lab load checks, Stream Signal scoring, PRO Widgets, UDP probe context, Session Score, before/after diagnostics, and a shareable Session Proof report so users can see whether the session is becoming smoother.
 
 CloudBoost keeps the existing one-time PRO license working for current customers. PRO+ Kernel Access is a separate one-time US$25 upgrade for users who want priority Discord support, Kernel Watch, background throttle, AWDL Guard+, early access builds, advanced diagnostics, and upcoming signed lower-level networking work. CloudBoost does not market a feature as a kernel extension unless a real System Extension, Network Extension, DriverKit component, or kernel extension is shipped.
 
@@ -153,11 +157,11 @@ To activate PRO, purchase a license on [Gumroad](https://victorbrandao0.gumroad.
 - Competitive profiles for Counter-Strike 2, League of Legends, and Dota 2.
 - Free remote play profiles for Moonlight, PS Remote Play, and VoidLink.
 - UI Size modes for laptop, 2K, and 4K monitor readability.
-- Floating HUD with live session statistics.
+- Floating HUD with live session statistics and an OK/CHK/FIX quality glance.
 - Session Doctor and Session Score for clearer PRO diagnostics.
 - AWDL Guard+ for PRO users who want mid-session AWDL reactivation blocking.
 - PRO Widgets with quick stability, network, and system reads inside the app.
-- Session Lab for checking latency behavior while the connection is under load.
+- Session Lab with Stream Signal for checking native/cloud stability behavior while the connection and system are under load.
 - Stream Advisor with setup notes for the selected service or game.
 - Direct updater that downloads the latest DMG from GitHub releases, opens the installer, and links to Discord support after download.
 - Local diagnostics, before/after session history, and Session Proof export for PRO users.
@@ -175,6 +179,8 @@ CloudBoost does not collect personal data, install kernel extensions, permanentl
 CloudBoost may request administrator permission for specific system-level actions such as temporary network interface changes. These actions are session-based and are restored when the boost is disabled or when the app quits.
 
 CloudBoost does not bypass anti-cheat systems, modify games, inject into game processes, or promise that cloud/remote play will match a native Windows gaming PC.
+
+Some CloudBoost diagnostics and HUD ideas are inspired by [Better xCloud](https://github.com/redphx/better-xcloud) by redphx, especially its clear stream stats and player-focused troubleshooting approach. CloudBoost does not use Better xCloud code and focuses on native macOS session diagnostics.
 
 ## Roadmap
 

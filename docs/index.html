@@ -35,7 +35,7 @@
           <p class="label">CloudBoost latest release</p>
           <h1>Make Mac gaming and remote play feel less random.</h1>
           <p class="lead">CloudBoost is a small macOS menu bar app for players who get sudden stutters, ping spikes, uneven remote-play sessions, or background noise they cannot explain with a normal speed test.</p>
-          <p class="note">Start free with all game profiles, including PS Remote Play. Upgrade to PRO for automatic sessions, AWDL Guard+, PRO Widgets, Session Lab, Session Doctor, UDP Probe, Session Score, before/after diagnostics, and Session Proof export. PRO+ Kernel Access is a one-time US$25 upgrade for Kernel Watch, background throttle, priority support, and future lower-level networking work.</p>
+          <p class="note">Start free with all game profiles, including PS Remote Play. Upgrade to PRO for automatic sessions, AWDL Guard+, PRO Widgets, Session Lab, Stream Signal, Session Doctor, UDP Probe, Session Score, before/after diagnostics, and Session Proof export. PRO+ Kernel Access is a one-time US$25 upgrade for Kernel Watch, background throttle, priority support, and future lower-level networking work.</p>
 
           <div id="download" class="actions">
             <a class="button download" href="https://github.com/victorbrandaao/CloudBoost/releases/latest">Download DMG</a>
@@ -166,9 +166,14 @@
             <p>CloudBoost checks whether latency stays stable while the connection is busy, which helps expose queueing and bufferbloat-style issues.</p>
           </article>
           <article>
+            <strong>90/100</strong>
+            <span>Stream Signal</span>
+            <p>PRO Session Lab adds a stream/native stability score based on p95 latency, jitter, packet loss, UDP availability, load impact, and local Mac pressure.</p>
+          </article>
+          <article>
             <strong>Proof export</strong>
             <span>PRO report</span>
-            <p>PRO exports a shareable summary with start/latest state, trend, jitter, packet loss, and main background issues.</p>
+            <p>PRO exports a shareable summary with start/latest state, trend, average ping, p95 ping, jitter, packet loss, and main background issues.</p>
           </article>
           <article>
             <strong>UI Size</strong>
@@ -237,8 +242,16 @@
             <p>Runs an idle and under-load stability check so users can see whether spikes appear when the connection gets busy.</p>
           </article>
           <article>
+            <h3>Stream Signal</h3>
+            <p>Turns Session Lab into a clearer PRO quality score for stream, remote play, and native Mac stability.</p>
+          </article>
+          <article>
             <h3>PRO Widgets</h3>
             <p>Shows quick stability, network, and system reads inside the app while a session is running.</p>
+          </article>
+          <article>
+            <h3>HUD Quality Glance</h3>
+            <p>Shows OK, CHK, or FIX in the floating HUD and follows the selected UI size for external monitors.</p>
           </article>
           <article>
             <h3>Stream Advisor</h3>
@@ -267,7 +280,7 @@
         <div class="pricing-copy">
           <p class="label">Free vs PRO</p>
           <h2>Profiles stay free. PRO is for players who want the app to watch the session.</h2>
-          <p>Use Free for manual session mode across cloud services, PS Remote Play, Moonlight, Mac launchers, and competitive profiles. Upgrade to PRO for AWDL Guard+, auto-detect, auto boost, PRO Widgets, Session Lab, UDP Probe, Session Doctor, Session Score, session history, before/after diagnostics, and Session Proof export. Existing one-time PRO licenses keep working; PRO+ Kernel Access is a separate one-time US$25 upgrade for Kernel Watch, background throttle, priority support, early builds, and future signed lower-level networking work.</p>
+          <p>Use Free for manual session mode across cloud services, PS Remote Play, Moonlight, Mac launchers, and competitive profiles. Upgrade to PRO for AWDL Guard+, auto-detect, auto boost, PRO Widgets, Session Lab, Stream Signal, UDP Probe, Session Doctor, Session Score, session history, before/after diagnostics, and Session Proof export. Existing one-time PRO licenses keep working; PRO+ Kernel Access is a separate one-time US$25 upgrade for Kernel Watch, background throttle, priority support, early builds, and future signed lower-level networking work.</p>
           <a class="button download" href="https://victorbrandao0.gumroad.com/l/CloudBoost">Get CloudBoost PRO</a>
         </div>
 
@@ -302,7 +315,7 @@
                 <td>Included</td>
               </tr>
               <tr>
-                <td>Smart Boost, Stability Guard, Session Doctor, Session Lab, PRO Widgets, Heat Guard</td>
+                <td>Smart Boost, Stability Guard, Session Doctor, Session Lab, Stream Signal, PRO Widgets, Heat Guard</td>
                 <td>-</td>
                 <td>Included</td>
               </tr>
@@ -322,7 +335,7 @@
                 <td>Included</td>
               </tr>
               <tr>
-                <td>Session Score and UDP Probe</td>
+                <td>Stream Signal, Session Score, and UDP Probe</td>
                 <td>-</td>
                 <td>Included</td>
               </tr>
@@ -332,7 +345,7 @@
                 <td>Included</td>
               </tr>
               <tr>
-                <td>Before/after diagnostics, session history, and Session Proof export</td>
+                <td>Before/after diagnostics, session history, p95 latency, and Session Proof export</td>
                 <td>-</td>
                 <td>Included</td>
               </tr>
@@ -358,11 +371,11 @@
           </article>
           <article>
             <strong>During</strong>
-            <span>Watch jitter, UDP behavior, AWDL Guard, thermal state, background traffic, and load-check behavior.</span>
+            <span>Watch jitter, p95 latency, UDP behavior, AWDL Guard, thermal state, background traffic, and load-check behavior.</span>
           </article>
           <article>
             <strong>After</strong>
-            <span>Get a Session Score, main issue, before/after view, and trend history.</span>
+            <span>Get Stream Signal, Session Score, main issue, before/after view, p95 latency, and trend history.</span>
           </article>
         </div>
       </section>
@@ -400,6 +413,10 @@
           <details>
             <summary>Will it make cloud gaming feel native?</summary>
             <p>No. Cloud and remote play still depend on servers, routing, encoding, decoding, and your network. CloudBoost is for reducing local interruptions and explaining spikes.</p>
+          </details>
+          <details>
+            <summary>Does CloudBoost use Better xCloud code?</summary>
+            <p>No. Some diagnostics and HUD ideas are inspired by Better xCloud's clear stream stats and troubleshooting approach, but CloudBoost does not use Better xCloud code and focuses on native macOS session diagnostics.</p>
           </details>
           <details>
             <summary>Can I use it without paying?</summary>
