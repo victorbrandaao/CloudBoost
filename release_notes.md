@@ -1,30 +1,25 @@
-CloudBoost 3.1.11 is a PRO diagnostics and in-game readability update.
+CloudBoost 4.0 is focused on clarity.
 
-### What's New in 3.1.11
+This release does not change the Free, PRO, or PRO+ access model. Existing PRO customers keep their current access. The goal of 4.0 is to make CloudBoost easier to understand while we keep improving the tools already in the app.
 
-* **Stream Signal:** Session Lab now produces a separate stream/native stability score based on p95 latency, jitter, packet loss, load impact, UDP availability, thermal state, Low Power Mode, and background interference.
-* **HUD Quality Glance:** The floating HUD now shows a compact OK/CHK/FIX quality read and follows the app UI size setting.
-* **Better Session Lab details:** The Session Lab card now explains the score, current signal, suggested mode, and platform-specific checklist instead of showing vague static text.
-* **Session Proof 2.0:** Diagnostics now include p95 latency in the proof report, which is more useful for spike complaints than average ping alone.
-* **Background traffic clarity:** Session Doctor now explains what CloudBoost can control directly, such as Time Machine, and what should be paused inside the original app, such as iCloud Drive, Dropbox, OneDrive, Photos, or Spotlight.
-* **Less noisy background detection:** Sync/indexing warnings now require stronger or sustained activity before being shown.
-* **HUD scaling:** UI size options now also resize the floating HUD for external monitors.
+### What's New
 
-### PRO
+* **Signal Console UI:** the app now has a cleaner session-first layout instead of a dense stack of disconnected panels.
+* **Session Control:** the selected profile and session focus are shown before starting, so it is clearer what CloudBoost is about to optimize.
+* **Cleaner visual language:** green is used for healthy/active states, blue for actions and modes, amber for things that need attention.
+* **Session Doctor score bar:** Session Doctor now includes a visual score bar so the 0-100 result is easier to read quickly.
+* **HUD refresh:** the in-game HUD was adjusted to better match the app and stay readable during play.
+* **Website and README cleanup:** the public page and README were simplified to explain what CloudBoost does without overpromising.
 
-Existing PRO licenses continue to work. Free keeps all cloud, remote play, native Mac, and competitive profiles unlocked. PRO remains focused on automation and diagnostics: Auto Boost, Auto-Detect, Smart Boost, Stability Guard, Session Doctor, Session Lab, Stream Signal, PRO Widgets, UDP Probe, Session Score, Heat Guard, Keep Alive, advanced presets, before/after session history, and Session Proof export.
+### PRO And PRO+
 
-PRO+ Kernel Access remains a separate one-time US$25 upgrade for Kernel Watch, background throttle, AWDL Guard+, priority Discord support, early builds, and future signed lower-level networking work.
+PRO remains focused on automation and diagnostics: Auto Boost, Auto-Detect, Smart Boost, Stability Guard, AWDL Guard+, Session Doctor, Session Lab, Stream Signal, PRO Widgets, Heat Guard, Keep Alive, advanced presets, before/after history, and Session Proof export.
 
-### Credits
-
-Some Session Lab and HUD ideas are inspired by Better xCloud by redphx, especially its clear stream stats and player-focused troubleshooting approach. CloudBoost does not use Better xCloud code and focuses on native macOS session diagnostics.
-
-https://github.com/redphx/better-xcloud
+PRO+ Kernel Access remains a separate one-time US$25 upgrade for Kernel Watch, background throttle, priority Discord support, early builds, and future lower-level networking work.
 
 ### Installation
 
-Download **CloudBoost_v3.1.11.dmg** from the Assets section, open it, and drag **CloudBoost.app** to `/Applications`.
+Download **CloudBoost_v4.0.dmg** from the Assets section, open it, and drag **CloudBoost.app** to `/Applications`.
 
 If macOS shows an "App is damaged" warning on first launch, open Terminal and run:
 
@@ -32,14 +27,16 @@ If macOS shows an "App is damaged" warning on first launch, open Terminal and ru
 xattr -cr /Applications/"CloudBoost.app"
 ```
 
-### Official Support
+### Support
 
-The CloudBoost Discord is an official support channel for this release, alongside GitHub Issues. It is open to Free and PRO users for install help, setup questions, issue reports, release updates, feature requests, and PRO license support:
+If something is confusing, broken, or unclear, please report it. Screenshots help.
+
+GitHub Issues and Discord are both supported:
 
 https://discord.gg/kU5trxtRb
 
-If you report a problem, include your macOS version, Mac model, selected profile, Wi-Fi/Ethernet status, and what Session Doctor or Session Lab is showing.
+Useful details: macOS version, Mac model, selected profile, Wi-Fi/Ethernet status, VPN/firewall/private relay status, and what Session Doctor or Session Lab is showing.
 
-### Important Note
+### Note
 
-CloudBoost is not an FPS booster and does not modify games, bypass anti-cheat, inject code, or install kernel extensions. For native Mac games, the goal is reducing local macOS interruptions and explaining stability problems such as background sync, thermal pressure, Low Power Mode, AWDL/Wi-Fi noise, and session pressure.
+CloudBoost does not modify games, inject code, bypass anti-cheat, or install kernel extensions. It focuses on temporary macOS session tuning and diagnostics around cloud, remote play, and native Mac gaming.

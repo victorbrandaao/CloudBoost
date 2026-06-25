@@ -1,19 +1,17 @@
 # CloudBoost
 
-Native macOS stability toolkit for cloud, remote play, and Mac gaming.
+CloudBoost is a native macOS menu bar app for cleaner gaming sessions.
 
-CloudBoost is a lightweight menu bar app built in Swift to make gaming sessions feel steadier on macOS. It targets micro-stutters, ping spikes, background interruptions, Wi-Fi/AWDL noise, and power-management issues with temporary, reversible session tuning.
+It is built for cloud gaming, remote play, and native Mac games where the main problem is not always average FPS or average ping. Sometimes the problem is the session around the game: background sync, AWDL/Wi-Fi interruptions, thermal pressure, Low Power Mode, packet loss, jitter, or a Mac that simply gets noisy at the wrong moment.
 
-It is built for the moments where the game technically runs, but the session feels uneven: sudden stutters, jitter, background sync, AWDL/Wi-Fi interruptions, thermal pressure, remote-play instability, or cloud gaming spikes that a normal speed test does not explain.
+CloudBoost starts a focused session, applies temporary macOS tuning, watches the local signals, and restores changes when the session ends.
 
 <p align="center">
   <img src="https://img.shields.io/github/v/release/victorbrandaao/CloudBoost?style=for-the-badge">
   <img src="https://img.shields.io/github/downloads/victorbrandaao/CloudBoost/total?cacheSeconds=300&label=total%20downloads&style=for-the-badge">
-  <img src="https://img.shields.io/github/downloads/victorbrandaao/CloudBoost/v3.1.11/total?cacheSeconds=300&label=v3.1.11%20downloads&style=for-the-badge">
-  <img src="https://img.shields.io/github/license/victorbrandaao/CloudBoost?style=for-the-badge">
-  <img src="https://img.shields.io/badge/macOS-Apple%20Silicon%20%26%20Intel-black?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Distribution-DMG-blue?style=for-the-badge">
-  <a href="https://discord.gg/kU5trxtRb"><img src="https://img.shields.io/badge/Discord-Join%20community-5865F2?style=for-the-badge"></a>
+  <img src="https://img.shields.io/github/downloads/victorbrandaao/CloudBoost/v4.0/total?cacheSeconds=300&label=v4.0%20downloads&style=for-the-badge">
+  <img src="https://img.shields.io/badge/macOS-12%2B-black?style=for-the-badge">
+  <a href="https://discord.gg/kU5trxtRb"><img src="https://img.shields.io/badge/Discord-Support-5865F2?style=for-the-badge"></a>
 </p>
 
 <p align="center">
@@ -22,176 +20,137 @@ It is built for the moments where the game technically runs, but the session fee
 
 ## Download
 
-Visit the [CloudBoost website](https://victorbrandaao.github.io/CloudBoost/) or download the latest release directly from GitHub.
+Download the latest DMG from the [Releases page](https://github.com/victorbrandaao/CloudBoost/releases/latest).
 
-Download the latest release from the [Releases page](https://github.com/victorbrandaao/CloudBoost/releases).
+Install:
 
-Download the newest **CloudBoost_v*.dmg**, open the disk image, and drag **CloudBoost.app** to `/Applications`.
+1. Download **CloudBoost_v4.0.dmg**.
+2. Open the DMG.
+3. Drag **CloudBoost.app** to `/Applications`.
+4. Open CloudBoost from the macOS menu bar.
 
-Need help installing, understanding a warning, testing PRO, or reporting a session issue? The official support channel is the [CloudBoost Discord](https://discord.gg/kU5trxtRb).
+If macOS says the app is damaged, clear quarantine:
 
-> **Gatekeeper note:** Because CloudBoost is independently signed, macOS may show an "App is damaged" warning on first launch. To clear the quarantine flag, run:
->
-> ```bash
-> xattr -cr /Applications/"CloudBoost.app"
-> ```
+```bash
+xattr -cr /Applications/"CloudBoost.app"
+```
 
-This repository is used for public releases, documentation, and downloadable binaries. CloudBoost is proprietary software and the source code is not publicly distributed.
+Need help? Join the [CloudBoost Discord](https://discord.gg/kU5trxtRb). It is the fastest place for install help, bug reports, PRO/PRO+ license support, and feature requests.
 
-CloudBoost was covered by [MacMagazine](https://macmagazine.com.br/post/2026/06/01/cloudboost-otimiza-a-experiencia-de-jogos-na-nuvem-no-mac/).
+## What's New In 4.0
 
-## Why Try It
+Version 4.0 focuses on making the app clearer and easier to trust.
 
-- All cloud, Mac, and competitive profiles are free.
-- Session changes are temporary and reversible.
-- PRO adds automation and diagnostics instead of locking the game profiles.
-- Session Doctor explains likely spike causes in plain language.
-- Session Lab now includes Stream Signal, a PRO stability score for p95 latency, jitter, packet loss, load impact, UDP availability, and local Mac pressure.
-- Session Proof export gives PRO users a shareable before/latest session summary with average ping, p95 ping, jitter, packet loss, and main issues.
-- UI Size modes make the app easier to read on laptops, 2K monitors, and 4K displays.
-- The floating HUD follows UI Size and now includes an OK/CHK/FIX quality glance.
-- PRO Widgets show quick stability, network, and system reads during a session.
-- Stream Advisor gives setup notes for the selected service or game profile.
-- Discord support is open for Free and PRO users.
+- New **Signal Console** interface with a more direct session flow.
+- New **Session Control** card showing the selected profile before starting.
+- Cleaner color system: green for ready/healthy states, blue for mode/actions, amber only for attention.
+- Session Doctor now includes a visual score bar for faster reading.
+- HUD styling now matches the main app and remains readable during play.
+- The public website was simplified into a cleaner black-and-white landing page.
+- Existing Free, PRO, and PRO+ access remains unchanged.
 
-## Supported Platforms
+## What CloudBoost Does
 
-| Platform | Availability |
+CloudBoost does not modify games, inject code, bypass anti-cheat, or promise magic FPS gains.
+
+It focuses on the Mac session around the game:
+
+| Area | What it helps with |
+|---|---|
+| AWDL Guard | Reduces AirDrop/Handoff Wi-Fi interruptions during a session |
+| DNS refresh | Clears local DNS cache before a focused session |
+| Power focus | Uses macOS session tools to prevent sleep/throttling interruptions |
+| Process priority | Gives the selected game/client more breathing room |
+| Time Machine control | Pauses selected backup activity while playing |
+| Session Doctor | Explains likely spike causes in plain language |
+| Session Lab | Runs a short stability check for PRO users |
+| Stream Signal | Scores p95 latency, jitter, packet loss, UDP availability, thermal state, and local pressure |
+| HUD | Shows a small live overlay for quick session reads |
+| Session Proof | Exports a before/latest report for PRO users |
+
+All changes are designed to be temporary and reversible.
+
+## Supported Profiles
+
+All game and service profiles are free.
+
+| Profile | Availability |
 |---|---|
 | GeForce NOW | Free |
-| Xbox Cloud Gaming (xCloud) | Free |
+| Xbox Cloud Gaming | Free |
 | Boosteroid | Free |
 | Moonlight | Free |
 | PS Remote Play | Free |
 | VoidLink Extreme | Free |
 | Counter-Strike 2 cloud/remote profile | Free |
-| League of Legends local/cloud profile | Free |
-| Dota 2 local/cloud profile | Free |
+| League of Legends native/cloud profile | Free |
+| Dota 2 native/cloud profile | Free |
 | Local Game | Free |
 | Steam | Free |
 | Epic Games | Free |
 | Battle.net | Free |
 
-## What CloudBoost Does
+## Free, PRO, And PRO+
 
-macOS background services can interfere with latency-sensitive video streaming. When you enable CloudBoost, the app applies temporary optimizations for the selected session and restores the system when the session ends.
+Free is for manual sessions and all supported profiles.
 
-Current optimization areas include:
+PRO is for automation and diagnostics.
 
-| Area | Purpose |
-|---|---|
-| AWDL control | Temporarily disables `awdl0` to reduce AirDrop/Handoff Wi-Fi scanning spikes |
-| AWDL Guard | Restores `awdl0` automatically if CloudBoost stops unexpectedly |
-| AWDL Guard+ | PRO feature that keeps `awdl0` locked down during active sessions and blocks mid-session reactivation |
-| Kernel Watch | PRO+ feature that reads scheduler, memory, and interface counters from macOS/Darwin during sessions |
-| Background throttle | PRO+ feature that temporarily lowers priority for selected sync/indexing processes and restores them afterward |
-| Process priority | Raises priority for the active streaming client with `renice` |
-| DNS refresh | Clears stale local DNS cache during session startup |
-| Power focus | Uses `caffeinate` to avoid sleep and session throttling |
-| Time Machine control | Pauses backup activity in selected presets |
-| Network session tuning | Reduces local macOS interference around the gaming session without routing or converting game traffic |
-| Competitive profiles | Adds focused profiles for CS2, League of Legends, and Dota 2 |
-| Remote Play profiles | Adds free Moonlight, PS Remote Play, and VoidLink-oriented stability profiles |
-| Session Doctor | Explains likely lag-spike causes in plain language, with UDP probe context for PRO users |
-| Session Lab | Runs an idle/load stability check to expose bufferbloat-style behavior and queueing |
-| Stream Signal | PRO Session Lab score focused on p95 latency, jitter, packet loss, load impact, and platform-specific playability |
-| PRO Widgets | Shows compact live cards for stability, network, and system status during a session |
-| Stream Advisor | Gives platform-aware setup notes for cloud, remote, and local Mac gaming sessions |
-| Session Score | Shows a simple 0-100 stability score after sessions, with the main issue detected |
-| Session Proof report | PRO diagnostics export a shareable session summary with before/latest state, trend, average ping, p95 ping, jitter, packet loss, and main background issues |
-| UI Size control | Auto, Small, Large, and XL modes make the popover easier to read on laptops, 2K monitors, and 4K displays |
-| HUD Quality Glance | Floating HUD includes a quick OK/CHK/FIX quality read and follows the app UI size setting |
-| Mouse profiles | Applies FPS or MOBA-oriented mouse profiles for low-latency input |
-| Local game detection | Detects common Mac game launchers and selected foreground games |
-| Direct updater | Checks GitHub releases, downloads the DMG, and falls back to the release page |
+PRO+ is for deeper system diagnostics, priority support, early builds, and the heavier session tools.
 
-All changes are designed to be temporary and reversible.
+| Feature | Free | PRO | PRO+ |
+|---|---:|---:|---:|
+| All profiles | Yes | Yes | Yes |
+| Manual session mode | Yes | Yes | Yes |
+| Balanced preset | Yes | Yes | Yes |
+| AWDL rollback protection | Yes | Yes | Yes |
+| Auto-detect | No | Yes | Yes |
+| Auto Boost | No | Yes | Yes |
+| Smart Boost | No | Yes | Yes |
+| Stability Guard | No | Yes | Yes |
+| AWDL Guard+ | No | Yes | Yes |
+| Session Doctor with UDP probe | Basic | Yes | Yes |
+| Session Lab | No | Yes | Yes |
+| Stream Signal | No | Yes | Yes |
+| PRO Widgets | No | Yes | Yes |
+| Heat Guard | No | Yes | Yes |
+| Keep Alive | No | Yes | Yes |
+| Session Proof export | No | Yes | Yes |
+| Kernel Watch | No | No | Yes |
+| Background throttle | No | No | Yes |
+| Priority Discord support | No | No | Yes |
 
-## CloudBoost PRO
+Existing one-time PRO licenses continue to work. PRO+ Kernel Access is a separate one-time US$25 upgrade.
 
-CloudBoost PRO unlocks advanced automation, stability monitoring, and session intelligence. Core cloud gaming and Mac gaming profiles are available for free.
+Buy PRO: [Gumroad](https://victorbrandao0.gumroad.com/l/CloudBoost)
 
-Use Free if you want manual session mode and the supported profiles. Upgrade to PRO if you want CloudBoost to auto-detect sessions, watch the connection, explain likely causes, and keep before/after diagnostics.
+Buy PRO+: [Gumroad](https://victorbrandao0.gumroad.com/l/cloudboost-pro-plus)
 
-| Feature | Free | PRO |
-|---|---:|---:|
-| Cloud gaming profiles | Yes | Yes |
-| Mac gaming profiles | Yes | Yes |
-| CS2, League, and Dota profiles | Yes | Yes |
-| Manual session mode | Yes | Yes |
-| AWDL Guard rollback protection | Yes | Yes |
-| Balanced preset | Yes | Yes |
-| Auto-Detect platform switching | No | Yes |
-| Auto Boost | No | Yes |
-| Smart Boost decisions | No | Yes |
-| Stability Guard | No | Yes |
-| AWDL Guard+ reactivation blocker | No | Yes |
-| Session Doctor + UDP Probe | Basic status | Yes |
-| Session Lab + load check | No | Yes |
-| Stream Signal quality score | No | Yes |
-| PRO Widgets | No | Yes |
-| Stream Advisor | Yes | Yes |
-| Session Score report | Basic score | Yes |
-| Shareable Session Proof report | No | Yes |
-| Heat Guard | No | Yes |
-| Keep Alive for long sessions | No | Yes |
-| Competitive and Stream Quality presets | No | Yes |
-| Diagnostics export with before/after session view | No | Yes |
-| Kernel Watch scheduler/memory/interface counters | No | PRO+ |
-| Background throttle for sync/indexing processes | No | PRO+ |
+## Support
 
-PRO is for hands-off stability and full diagnostics. It helps with automatic session start, AWDL Guard+, live health checks, thermal pressure, Low Power Mode, jitter trends, Session Doctor cause detection, Session Lab load checks, Stream Signal scoring, PRO Widgets, UDP probe context, Session Score, before/after diagnostics, and a shareable Session Proof report so users can see whether the session is becoming smoother.
+For bugs or confusing diagnostics, please open a GitHub issue or post in Discord.
 
-CloudBoost keeps the existing one-time PRO license working for current customers. PRO+ Kernel Access is a separate one-time US$25 upgrade for users who want priority Discord support, Kernel Watch, background throttle, AWDL Guard+, early access builds, advanced diagnostics, and upcoming signed lower-level networking work. CloudBoost does not market a feature as a kernel extension unless a real System Extension, Network Extension, DriverKit component, or kernel extension is shipped.
+Useful details:
 
-CloudBoost is not sold as a magic FPS booster and does not try to replace native gaming hardware. The value is reducing local interruptions and making unstable Mac gaming sessions easier to diagnose.
+- macOS version
+- Mac model
+- selected profile
+- Wi-Fi or Ethernet
+- screenshot of Session Doctor or Session Lab
+- whether a VPN, firewall, or private relay is active
 
-To activate PRO, purchase a license on [Gumroad](https://victorbrandao0.gumroad.com/l/CloudBoost), then click any locked add-on in CloudBoost and enter the license key.
+Discord: [https://discord.gg/kU5trxtRb](https://discord.gg/kU5trxtRb)
 
-## Features
+## Security
 
-- Native macOS menu bar app.
-- Redesigned session monitor with CPU, ping, priority, network path, jitter, session health, trend, and AWDL Guard status.
-- One-click enable/disable flow with automatic restore.
-- Presets for Balanced, Competitive, and Stream Quality behavior.
-- Competitive profiles for Counter-Strike 2, League of Legends, and Dota 2.
-- Free remote play profiles for Moonlight, PS Remote Play, and VoidLink.
-- UI Size modes for laptop, 2K, and 4K monitor readability.
-- Floating HUD with live session statistics and an OK/CHK/FIX quality glance.
-- Session Doctor and Session Score for clearer PRO diagnostics.
-- AWDL Guard+ for PRO users who want mid-session AWDL reactivation blocking.
-- PRO Widgets with quick stability, network, and system reads inside the app.
-- Session Lab with Stream Signal for checking native/cloud stability behavior while the connection and system are under load.
-- Stream Advisor with setup notes for the selected service or game.
-- Direct updater that downloads the latest DMG from GitHub releases, opens the installer, and links to Discord support after download.
-- Local diagnostics, before/after session history, and Session Proof export for PRO users.
+CloudBoost is proprietary software. The public repository contains releases, documentation, and downloadable binaries, not the full source code.
 
-## Community And Support
+CloudBoost does not install kernel extensions, hidden daemons, permanent system patches, game injections, or anti-cheat bypasses. Some actions may ask for administrator permission because macOS requires it for temporary system-level session changes.
 
-The [CloudBoost Discord](https://discord.gg/kU5trxtRb) is open to Free and PRO users. Use it for setup help, release updates, issue reports, feature requests, and PRO license support.
+Some diagnostics and HUD ideas are inspired by [Better xCloud](https://github.com/redphx/better-xcloud) by redphx. CloudBoost does not use Better xCloud code.
 
-For support, include your macOS version, Mac model, selected profile, whether you are on Wi-Fi or Ethernet, and what the Session Doctor or Session Lab panel is showing.
-
-## Security And Transparency
-
-CloudBoost does not collect personal data, install kernel extensions, permanently modify protected system files, or run hidden daemons. The app uses supported macOS command-line tools and native APIs, and session changes are designed to be restored when CloudBoost is disabled or quits.
-
-CloudBoost may request administrator permission for specific system-level actions such as temporary network interface changes. These actions are session-based and are restored when the boost is disabled or when the app quits.
-
-CloudBoost does not bypass anti-cheat systems, modify games, inject into game processes, or promise that cloud/remote play will match a native Windows gaming PC.
-
-Some CloudBoost diagnostics and HUD ideas are inspired by [Better xCloud](https://github.com/redphx/better-xcloud) by redphx, especially its clear stream stats and player-focused troubleshooting approach. CloudBoost does not use Better xCloud code and focuses on native macOS session diagnostics.
-
-## Roadmap
-
-- More platform-specific tuning profiles.
-- Better browser-session detection.
-- Expanded Adaptive Intelligence recommendations.
-- Optional advanced diagnostics panel.
-- More cloud gaming platform integrations.
+CloudBoost was covered by [MacMagazine](https://macmagazine.com.br/post/2026/06/01/cloudboost-otimiza-a-experiencia-de-jogos-na-nuvem-no-mac/).
 
 ## License
 
-CloudBoost is proprietary software. No permission is granted to copy, modify,
-distribute, or create derivative works from the code or app without prior
-written authorization. See the [LICENSE](LICENSE) file for the full terms.
+CloudBoost is proprietary software. No permission is granted to copy, modify, distribute, or create derivative works from the code or app without prior written authorization. See [LICENSE](LICENSE).
