@@ -9,7 +9,7 @@ CloudBoost starts a focused session, applies temporary macOS tuning, watches the
 <p align="center">
   <img src="https://img.shields.io/github/v/release/victorbrandaao/CloudBoost?style=for-the-badge">
   <img src="https://img.shields.io/github/downloads/victorbrandaao/CloudBoost/total?cacheSeconds=300&label=total%20downloads&style=for-the-badge">
-  <img src="https://img.shields.io/github/downloads/victorbrandaao/CloudBoost/v4.0/total?cacheSeconds=300&label=v4.0%20downloads&style=for-the-badge">
+  <img src="https://img.shields.io/github/downloads/victorbrandaao/CloudBoost/v4.0.1/total?cacheSeconds=300&label=v4.0.1%20downloads&style=for-the-badge">
   <img src="https://img.shields.io/badge/macOS-12%2B-black?style=for-the-badge">
   <a href="https://discord.gg/kU5trxtRb"><img src="https://img.shields.io/badge/Discord-Support-5865F2?style=for-the-badge"></a>
 </p>
@@ -24,7 +24,7 @@ Download the latest DMG from the [Releases page](https://github.com/victorbranda
 
 Install:
 
-1. Download **CloudBoost_v4.0.dmg**.
+1. Download **CloudBoost_v4.0.1.dmg**.
 2. Open the DMG.
 3. Drag **CloudBoost.app** to `/Applications`.
 4. Open CloudBoost from the macOS menu bar.
@@ -37,16 +37,16 @@ xattr -cr /Applications/"CloudBoost.app"
 
 Need help? Join the [CloudBoost Discord](https://discord.gg/kU5trxtRb). It is the fastest place for install help, bug reports, PRO/PRO+ license support, and feature requests.
 
-## What's New In 4.0
+## What's New In 4.0.1
 
-Version 4.0 focuses on making the app clearer and easier to trust.
+Version 4.0.1 is a stability and trust update after the 4.0 redesign.
 
-- New **Signal Console** interface with a more direct session flow.
-- New **Session Control** card showing the selected profile before starting.
-- Cleaner color system: green for ready/healthy states, blue for mode/actions, amber only for attention.
-- Session Doctor now includes a visual score bar for faster reading.
-- HUD styling now matches the main app and remains readable during play.
-- The public website was simplified into a cleaner black-and-white landing page.
+- Safer restore when CloudBoost closes during an active session.
+- Better diagnostics for privileged actions, showing what macOS accepted.
+- More private AWDL Guard and PRO+ Kernel Access heartbeat files.
+- Update downloads can now validate a SHA-256 checksum when the release provides one.
+- More flexible Gumroad store URL configuration while preserving existing PRO and PRO+ licenses.
+- More resilient app layout for future UI changes.
 - Existing Free, PRO, and PRO+ access remains unchanged.
 
 ## What CloudBoost Does
