@@ -114,6 +114,10 @@ footer a:hover,
   max-width: 610px;
 }
 
+.review-hero {
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 360px);
+}
+
 .kicker {
   margin: 0 0 14px;
   color: var(--muted);
@@ -176,6 +180,10 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   gap: 18px;
+}
+
+.tight-actions {
+  margin-top: 24px;
 }
 
 .button {
@@ -291,6 +299,30 @@ h3 {
   padding: 0;
 }
 
+.review-card {
+  align-self: center;
+  margin: 0;
+  padding: 34px;
+  border: 2px solid var(--text);
+  background: var(--page);
+}
+
+.review-card span {
+  display: inline-flex;
+  margin-bottom: 26px;
+  font-size: 13px;
+  font-weight: 950;
+  text-transform: uppercase;
+}
+
+.review-card h2 {
+  font-size: clamp(38px, 5vw, 62px);
+}
+
+.review-card p {
+  color: var(--soft);
+}
+
 .text-link {
   display: inline-flex;
   margin-top: 8px;
@@ -404,7 +436,8 @@ footer a {
   .hero,
   .two-col,
   .feature-list,
-  .plans {
+  .plans,
+  .review-hero {
     grid-template-columns: 1fr;
   }
 

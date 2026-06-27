@@ -5,6 +5,7 @@ CloudBoost is a native macOS menu bar app and gaming session optimizer for cloud
 Primary URL: https://victorbrandaao.github.io/CloudBoost/
 GitHub releases: https://github.com/victorbrandaao/CloudBoost/releases/latest
 Support: https://discord.gg/kU5trxtRb
+Reviews: https://victorbrandaao.github.io/CloudBoost/reviews.html
 
 ## What It Does
 
@@ -38,6 +39,13 @@ CloudBoost helps users diagnose and reduce local macOS session issues that can a
 ## Important Limits
 
 CloudBoost does not modify games, inject code, bypass anti-cheat, install kernel extensions, or promise magic FPS gains. It focuses on the local macOS session around the game.
+
+## Reviews
+
+CloudBoost collects public user reviews through GitHub Issues using the user-review template. Reviews should include the plan used, Mac model, macOS version, network type, game or service, and what changed during the session.
+
+Review page: https://victorbrandaao.github.io/CloudBoost/reviews.html
+Review form: https://github.com/victorbrandaao/CloudBoost/issues/new?template=user-review.yml
 
 ## Plans
 

@@ -1,6 +1,6 @@
-CloudBoost 4.0.2 is focused on a simpler paid plan and more value for existing PRO customers.
+CloudBoost 4.0.3 is focused on trust, public feedback, and more value for existing PRO customers.
 
-Free keeps all supported profiles, manual Balanced sessions, basic signal checks, Stream Advisor, and rollback protection. PRO now includes the complete paid toolset, including the former deeper system tools. Existing PRO customers keep access and receive the expanded PRO feature set.
+Free keeps all supported profiles, manual Balanced sessions, basic signal checks, Stream Advisor, and rollback protection. PRO includes the complete paid toolset, including the former deeper system tools. Existing PRO customers keep access and receive the expanded PRO feature set.
 
 ### What's New
 
@@ -8,6 +8,7 @@ Free keeps all supported profiles, manual Balanced sessions, basic signal checks
 * **Free is clearer:** all profiles remain free, but automation, HUD, full reports, widgets, advanced presets, history, and deeper diagnostics are PRO.
 * **Existing customers are protected:** current one-time PRO customers automatically receive the expanded PRO feature set. Legacy higher-tier keys still validate.
 * **Cleaner product model:** CloudBoost now presents one paid plan instead of splitting advanced diagnostics across multiple paid tiers.
+* **Public reviews:** CloudBoost now has a public reviews page and GitHub review template so users can share real setup-specific feedback.
 
 ### Free And PRO
 
@@ -17,7 +18,7 @@ PRO is for regular use: Auto Boost, Auto-Detect, Smart Boost, Stability Guard, H
 
 ### Installation
 
-Download **CloudBoost_v4.0.2.dmg** from the Assets section, open it, and drag **CloudBoost.app** to `/Applications`.
+Download **CloudBoost_v4.0.3.dmg** from the Assets section, open it, and drag **CloudBoost.app** to `/Applications`.
 
 If macOS shows an "App is damaged" warning on first launch, open Terminal and run:
 

@@ -1,0 +1,67 @@
+name: User review
+description: Share your CloudBoost experience publicly
+title: "User review: "
+labels: ["review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to leave a real review.
+
+        Specific reviews help other Mac gamers decide whether CloudBoost is useful for their setup. Honest criticism is welcome.
+  - type: input
+    id: plan
+    attributes:
+      label: Plan used
+      description: Free or PRO?
+      placeholder: "Free / PRO"
+    validations:
+      required: true
+  - type: input
+    id: mac
+    attributes:
+      label: Mac model
+      placeholder: "Example: MacBook Pro M3 Pro, Mac mini M2, MacBook Air M4"
+    validations:
+      required: true
+  - type: input
+    id: macos
+    attributes:
+      label: macOS version
+      placeholder: "Example: macOS 14.6, macOS 15, macOS 26 beta"
+    validations:
+      required: true
+  - type: input
+    id: game
+    attributes:
+      label: Game or service
+      placeholder: "Example: GeForce NOW, Xbox Cloud Gaming, PS Remote Play, Dota 2, Moonlight"
+    validations:
+      required: true
+  - type: dropdown
+    id: network
+    attributes:
+      label: Network type
+      options:
+        - Wi-Fi
+        - Ethernet
+        - Both
+        - Not sure
+    validations:
+      required: true
+  - type: textarea
+    id: review
+    attributes:
+      label: Review
+      description: What changed, what did not change, and what should be improved?
+      placeholder: "Tell people what happened in your real setup."
+    validations:
+      required: true
+  - type: textarea
+    id: proof
+    attributes:
+      label: Optional proof or notes
+      description: Screenshots, Session Doctor text, Session Lab result, HUD notes, before/after details, VPN/firewall/private relay status.
+      placeholder: "Add anything that makes the review easier to understand."
+    validations:
+      required: false

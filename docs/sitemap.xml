@@ -13,4 +13,10 @@
       <image:caption>CloudBoost app interface showing gaming session diagnostics, latency, jitter, Session Lab and PRO widgets.</image:caption>
     </image:image>
   </url>
+  <url>
+    <loc>https://victorbrandaao.github.io/CloudBoost/reviews.html</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>

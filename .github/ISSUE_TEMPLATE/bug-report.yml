@@ -1,0 +1,40 @@
+name: Bug report
+description: Report a CloudBoost problem
+title: "Bug: "
+labels: ["bug"]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: CloudBoost version
+      placeholder: "Example: 4.0.2"
+    validations:
+      required: true
+  - type: input
+    id: mac
+    attributes:
+      label: Mac model and macOS version
+      placeholder: "Example: MacBook Pro M2, macOS 15.5"
+    validations:
+      required: true
+  - type: input
+    id: profile
+    attributes:
+      label: Selected profile
+      placeholder: "Example: GFN, XCL, PS5, DOTA, Local Game"
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      placeholder: "Describe the issue and what you expected to happen."
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Useful details
+      description: Wi-Fi/Ethernet, VPN/firewall/private relay, Session Doctor text, Session Lab result, screenshots.
+    validations:
+      required: false

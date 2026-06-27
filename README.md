@@ -9,7 +9,7 @@ CloudBoost starts a focused session, applies temporary macOS tuning, watches the
 <p align="center">
   <img src="https://img.shields.io/github/v/release/victorbrandaao/CloudBoost?style=for-the-badge">
   <img src="https://img.shields.io/github/downloads/victorbrandaao/CloudBoost/total?cacheSeconds=300&label=total%20downloads&style=for-the-badge">
-  <img src="https://img.shields.io/github/downloads/victorbrandaao/CloudBoost/v4.0.2/total?cacheSeconds=300&label=v4.0.2%20downloads&style=for-the-badge">
+  <img src="https://img.shields.io/github/downloads/victorbrandaao/CloudBoost/v4.0.3/total?cacheSeconds=300&label=v4.0.3%20downloads&style=for-the-badge">
   <img src="https://img.shields.io/badge/macOS-12%2B-black?style=for-the-badge">
   <a href="https://discord.gg/kU5trxtRb"><img src="https://img.shields.io/badge/Discord-Support-5865F2?style=for-the-badge"></a>
 </p>
@@ -30,7 +30,7 @@ Download the latest DMG from the [Releases page](https://github.com/victorbranda
 
 Install:
 
-1. Download **CloudBoost_v4.0.2.dmg**.
+1. Download **CloudBoost_v4.0.3.dmg**.
 2. Open the DMG.
 3. Drag **CloudBoost.app** to `/Applications`.
 4. Open CloudBoost from the macOS menu bar.
@@ -43,10 +43,13 @@ xattr -cr /Applications/"CloudBoost.app"
 
 Need help? Join the [CloudBoost Discord](https://discord.gg/kU5trxtRb). It is the fastest place for install help, bug reports, PRO license support, and feature requests.
 
-## What's New In 4.0.2
+## What's New In 4.0.3
 
-Version 4.0.2 is a product-model update after the 4.0 redesign.
+Version 4.0.3 is a trust and feedback update after the 4.0 redesign.
 
+- New public reviews page.
+- New GitHub review form for real setup-specific feedback.
+- New app footer button to leave a review.
 - Free remains useful for trying CloudBoost with every profile, manual sessions, Balanced preset, basic signal checks, Stream Advisor, and rollback protection.
 - PRO is now the complete paid plan.
 - Former higher-tier tools are now included in PRO: Kernel Watch, background throttle, priority Discord support, and early builds.
@@ -157,6 +160,22 @@ Useful details:
 - whether a VPN, firewall, or private relay is active
 
 Discord: [https://discord.gg/kU5trxtRb](https://discord.gg/kU5trxtRb)
+
+## Reviews
+
+CloudBoost uses public GitHub feedback instead of hidden testimonials.
+
+Leave a review if you have used the app and can share useful setup details:
+
+- plan used: Free or PRO
+- Mac model and macOS version
+- game or service tested
+- Wi-Fi or Ethernet
+- what improved, what did not, and what still feels confusing
+
+Leave a public review: [GitHub review form](https://github.com/victorbrandaao/CloudBoost/issues/new?template=user-review.yml)
+
+Read reviews: [CloudBoost reviews page](https://victorbrandaao.github.io/CloudBoost/reviews.html)
 
 ## FAQ
 
