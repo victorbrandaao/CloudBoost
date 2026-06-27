@@ -1,26 +1,23 @@
-CloudBoost 4.0.1 is focused on stability, trust, and clearer macOS gaming diagnostics.
+CloudBoost 4.0.2 is focused on a simpler paid plan and more value for existing PRO customers.
 
-This release does not change the Free, PRO, or PRO+ access model. Existing PRO customers keep their current access. The goal is to make CloudBoost easier to understand while improving the tools already in the app for cloud gaming, remote play, and native Mac gaming sessions.
+Free keeps all supported profiles, manual Balanced sessions, basic signal checks, Stream Advisor, and rollback protection. PRO now includes the complete paid toolset, including the former deeper system tools. Existing PRO customers keep access and receive the expanded PRO feature set.
 
 ### What's New
 
-* **Safer session restore:** CloudBoost now restores temporary macOS gaming-session changes more reliably if the app closes during an active session.
-* **Clearer privileged diagnostics:** the log now shows more detail about what macOS accepted when CloudBoost applies system-level session tuning.
-* **Stricter temporary guard files:** AWDL Guard and PRO+ Kernel Access heartbeat files now use a more private temporary location and tighter permissions.
-* **Checksum-ready updater:** update downloads can validate a SHA-256 checksum when the GitHub release provides one.
-* **Cleaner store configuration:** Gumroad URLs can be configured without breaking existing PRO or PRO+ licenses.
-* **Layout resilience:** the app layout is less fragile for future UI changes.
-* **Website and README cleanup:** the public page and README now explain CloudBoost as a macOS gaming optimizer for GeForce NOW, Xbox Cloud Gaming, PS Remote Play, Moonlight, Steam Link, and native Mac gaming without overpromising.
+* **PRO now includes the former higher-tier tools:** Kernel Watch, background throttle, priority Discord support, early builds, and deeper system diagnostics are now part of PRO.
+* **Free is clearer:** all profiles remain free, but automation, HUD, full reports, widgets, advanced presets, history, and deeper diagnostics are PRO.
+* **Existing customers are protected:** current one-time PRO customers automatically receive the expanded PRO feature set. Legacy higher-tier keys still validate.
+* **Cleaner product model:** CloudBoost now presents one paid plan instead of splitting advanced diagnostics across multiple paid tiers.
 
-### PRO And PRO+
+### Free And PRO
 
-PRO remains focused on automation and diagnostics: Auto Boost, Auto-Detect, Smart Boost, Stability Guard, AWDL Guard+, Session Doctor, Session Lab, Stream Signal, PRO Widgets, Heat Guard, Keep Alive, advanced presets, before/after history, and Session Proof export.
+Free is for trying CloudBoost with every supported profile, manual session mode, Balanced preset, basic signal checks, Stream Advisor, and rollback protection.
 
-PRO+ Kernel Access remains a separate one-time US$25 upgrade for Kernel Watch, background throttle, priority Discord support, early builds, and future lower-level networking work.
+PRO is for regular use: Auto Boost, Auto-Detect, Smart Boost, Stability Guard, HUD, AWDL Guard+, Session Doctor full reports, Session Lab, Stream Signal, PRO Widgets, Heat Guard, Keep Alive, advanced presets, before/after history, Session Proof export, Kernel Watch, background throttle, priority Discord support, early builds, and future lower-level networking work.
 
 ### Installation
 
-Download **CloudBoost_v4.0.1.dmg** from the Assets section, open it, and drag **CloudBoost.app** to `/Applications`.
+Download **CloudBoost_v4.0.2.dmg** from the Assets section, open it, and drag **CloudBoost.app** to `/Applications`.
 
 If macOS shows an "App is damaged" warning on first launch, open Terminal and run:
 

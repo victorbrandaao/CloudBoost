@@ -41,6 +41,5 @@ CloudBoost does not modify games, inject code, bypass anti-cheat, install kernel
 
 ## Plans
 
-Free includes manual sessions and all supported profiles.
-PRO adds automation, Session Lab, Stream Signal, PRO Widgets, Heat Guard, Keep Alive, Session Proof, and deeper diagnostics.
-PRO+ adds heavier system tools, Kernel Watch, background throttle, priority Discord support, early builds, and future lower-level networking work.
+Free includes manual sessions, all supported profiles, Balanced preset, basic signal checks, Stream Advisor, and rollback protection.
+PRO adds automation, HUD, Session Lab, Stream Signal, PRO Widgets, Heat Guard, Keep Alive, Session Proof, Kernel Watch, background throttle, priority Discord support, early builds, and deeper diagnostics.

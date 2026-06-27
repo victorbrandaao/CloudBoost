@@ -9,7 +9,7 @@ CloudBoost starts a focused session, applies temporary macOS tuning, watches the
 <p align="center">
   <img src="https://img.shields.io/github/v/release/victorbrandaao/CloudBoost?style=for-the-badge">
   <img src="https://img.shields.io/github/downloads/victorbrandaao/CloudBoost/total?cacheSeconds=300&label=total%20downloads&style=for-the-badge">
-  <img src="https://img.shields.io/github/downloads/victorbrandaao/CloudBoost/v4.0.1/total?cacheSeconds=300&label=v4.0.1%20downloads&style=for-the-badge">
+  <img src="https://img.shields.io/github/downloads/victorbrandaao/CloudBoost/v4.0.2/total?cacheSeconds=300&label=v4.0.2%20downloads&style=for-the-badge">
   <img src="https://img.shields.io/badge/macOS-12%2B-black?style=for-the-badge">
   <a href="https://discord.gg/kU5trxtRb"><img src="https://img.shields.io/badge/Discord-Support-5865F2?style=for-the-badge"></a>
 </p>
@@ -30,7 +30,7 @@ Download the latest DMG from the [Releases page](https://github.com/victorbranda
 
 Install:
 
-1. Download **CloudBoost_v4.0.1.dmg**.
+1. Download **CloudBoost_v4.0.2.dmg**.
 2. Open the DMG.
 3. Drag **CloudBoost.app** to `/Applications`.
 4. Open CloudBoost from the macOS menu bar.
@@ -41,19 +41,17 @@ If macOS says the app is damaged, clear quarantine:
 xattr -cr /Applications/"CloudBoost.app"
 ```
 
-Need help? Join the [CloudBoost Discord](https://discord.gg/kU5trxtRb). It is the fastest place for install help, bug reports, PRO/PRO+ license support, and feature requests.
+Need help? Join the [CloudBoost Discord](https://discord.gg/kU5trxtRb). It is the fastest place for install help, bug reports, PRO license support, and feature requests.
 
-## What's New In 4.0.1
+## What's New In 4.0.2
 
-Version 4.0.1 is a stability and trust update after the 4.0 redesign.
+Version 4.0.2 is a product-model update after the 4.0 redesign.
 
-- Safer restore when CloudBoost closes during an active session.
-- Better diagnostics for privileged actions, showing what macOS accepted.
-- More private AWDL Guard and PRO+ Kernel Access heartbeat files.
-- Update downloads can now validate a SHA-256 checksum when the release provides one.
-- More flexible Gumroad store URL configuration while preserving existing PRO and PRO+ licenses.
-- More resilient app layout for future UI changes.
-- Existing Free, PRO, and PRO+ access remains unchanged.
+- Free remains useful for trying CloudBoost with every profile, manual sessions, Balanced preset, basic signal checks, Stream Advisor, and rollback protection.
+- PRO is now the complete paid plan.
+- Former higher-tier tools are now included in PRO: Kernel Watch, background throttle, priority Discord support, and early builds.
+- Existing one-time PRO licenses continue to work and receive the expanded PRO feature set.
+- Legacy higher-tier keys still validate, but the app now presents a single paid plan: PRO.
 
 ## What CloudBoost Does
 
@@ -110,41 +108,40 @@ CloudBoost is designed for players searching for practical fixes around:
 
 CloudBoost is not a replacement for Ethernet, a strong router, or a properly configured game. It is a small utility for making the macOS side of the session easier to control and understand.
 
-## Free, PRO, And PRO+
+## Free And PRO
 
-Free is for manual sessions and all supported profiles.
+Free is for trying CloudBoost: all supported profiles, manual session mode, Balanced preset, basic signal checks, Stream Advisor, and rollback protection.
 
-PRO is for automation and diagnostics.
+PRO is for people who use CloudBoost regularly and want the complete toolset.
 
-PRO+ is for deeper system diagnostics, priority support, early builds, and the heavier session tools.
+| Feature | Free | PRO |
+|---|---:|---:|
+| All profiles | Yes | Yes |
+| Manual session mode | Yes | Yes |
+| Balanced preset | Yes | Yes |
+| Basic signal checks | Yes | Yes |
+| AWDL rollback protection | Yes | Yes |
+| Auto-detect | No | Yes |
+| Auto Boost | No | Yes |
+| Smart Boost | No | Yes |
+| Stability Guard | No | Yes |
+| HUD | No | Yes |
+| AWDL Guard+ | No | Yes |
+| Session Doctor full reports with UDP probe | No | Yes |
+| Session Lab | No | Yes |
+| Stream Signal | No | Yes |
+| PRO Widgets | No | Yes |
+| Heat Guard | No | Yes |
+| Keep Alive | No | Yes |
+| Fastest and Smooth presets | No | Yes |
+| Session Proof export | No | Yes |
+| Kernel Watch | No | Yes |
+| Background throttle | No | Yes |
+| Priority Discord support | No | Yes |
 
-| Feature | Free | PRO | PRO+ |
-|---|---:|---:|---:|
-| All profiles | Yes | Yes | Yes |
-| Manual session mode | Yes | Yes | Yes |
-| Balanced preset | Yes | Yes | Yes |
-| AWDL rollback protection | Yes | Yes | Yes |
-| Auto-detect | No | Yes | Yes |
-| Auto Boost | No | Yes | Yes |
-| Smart Boost | No | Yes | Yes |
-| Stability Guard | No | Yes | Yes |
-| AWDL Guard+ | No | Yes | Yes |
-| Session Doctor with UDP probe | Basic | Yes | Yes |
-| Session Lab | No | Yes | Yes |
-| Stream Signal | No | Yes | Yes |
-| PRO Widgets | No | Yes | Yes |
-| Heat Guard | No | Yes | Yes |
-| Keep Alive | No | Yes | Yes |
-| Session Proof export | No | Yes | Yes |
-| Kernel Watch | No | No | Yes |
-| Background throttle | No | No | Yes |
-| Priority Discord support | No | No | Yes |
-
-Existing one-time PRO licenses continue to work. PRO+ Kernel Access is a separate one-time US$25 upgrade.
+Existing one-time PRO licenses continue to work. The former higher-tier tools are now included in PRO.
 
 Buy PRO: [Gumroad](https://victorbrandao0.gumroad.com/l/CloudBoost)
-
-Buy PRO+: [Gumroad](https://victorbrandao0.gumroad.com/l/cloudboost-pro-plus)
 
 ## Support
 
@@ -185,7 +182,7 @@ CloudBoost is not a magic FPS booster. Its main goal is steadier gaming sessions
 
 ### Is CloudBoost free?
 
-Yes. Manual sessions and all supported profiles are free. PRO adds automation and deeper diagnostics. PRO+ adds heavier system tools, priority support, early builds, and future lower-level networking work.
+Yes. Manual sessions, all supported profiles, Balanced preset, basic signal checks, Stream Advisor, and rollback protection are free. PRO adds automation, HUD, full diagnostics, Session Lab, widgets, history, Session Proof, Kernel Watch, background throttle, priority support, and early builds.
 
 ## Security
 
