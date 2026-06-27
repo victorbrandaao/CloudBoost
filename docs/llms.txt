@@ -1,0 +1,46 @@
+# CloudBoost
+
+CloudBoost is a native macOS menu bar app and gaming session optimizer for cloud gaming, remote play, and native Mac games.
+
+Primary URL: https://victorbrandaao.github.io/CloudBoost/
+GitHub releases: https://github.com/victorbrandaao/CloudBoost/releases/latest
+Support: https://discord.gg/kU5trxtRb
+
+## What It Does
+
+CloudBoost helps users diagnose and reduce local macOS session issues that can affect gaming:
+
+- latency spikes
+- jitter
+- packet loss
+- background traffic
+- AWDL, AirDrop, Handoff, and Wi-Fi interruptions
+- DNS state
+- Low Power Mode
+- thermal pressure
+- process priority
+- local system pressure
+
+## Supported Use Cases
+
+- GeForce NOW on Mac
+- Xbox Cloud Gaming on Mac
+- Boosteroid on Mac
+- Moonlight on Mac
+- PS Remote Play on Mac
+- Steam Link on Mac
+- native Mac gaming
+- Dota 2 on Mac
+- League of Legends on Mac
+- CS2 cloud or remote play sessions
+- Steam, Epic Games, and Battle.net sessions
+
+## Important Limits
+
+CloudBoost does not modify games, inject code, bypass anti-cheat, install kernel extensions, or promise magic FPS gains. It focuses on the local macOS session around the game.
+
+## Plans
+
+Free includes manual sessions and all supported profiles.
+PRO adds automation, Session Lab, Stream Signal, PRO Widgets, Heat Guard, Keep Alive, Session Proof, and deeper diagnostics.
+PRO+ adds heavier system tools, Kernel Watch, background throttle, priority Discord support, early builds, and future lower-level networking work.

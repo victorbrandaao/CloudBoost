@@ -1,8 +1,8 @@
-# CloudBoost
+# CloudBoost - macOS Gaming Optimizer
 
-CloudBoost is a native macOS menu bar app for cleaner gaming sessions.
+CloudBoost is a native macOS gaming optimizer and menu bar app for cleaner cloud gaming, remote play, and native Mac gaming sessions.
 
-It is built for cloud gaming, remote play, and native Mac games where the main problem is not always average FPS or average ping. Sometimes the problem is the session around the game: background sync, AWDL/Wi-Fi interruptions, thermal pressure, Low Power Mode, packet loss, jitter, or a Mac that simply gets noisy at the wrong moment.
+It is built for GeForce NOW, Xbox Cloud Gaming, Boosteroid, Moonlight, PS Remote Play, Steam Link, local Mac games, and gaming sessions where the main problem is not always average FPS or average ping. Sometimes the problem is the session around the game: background sync, AWDL/Wi-Fi interruptions, thermal pressure, Low Power Mode, packet loss, jitter, or a Mac that simply gets noisy at the wrong moment.
 
 CloudBoost starts a focused session, applies temporary macOS tuning, watches the local signals, and restores changes when the session ends.
 
@@ -19,10 +19,12 @@ CloudBoost starts a focused session, applies temporary macOS tuning, watches the
 </p>
 
 <p align="center">
-  <img src="./assets/cloudboost-readme.png" alt="CloudBoost interface preview"/>
+  <img src="./assets/cloudboost-macos-gaming-optimizer.png" alt="CloudBoost macOS gaming optimizer interface showing latency, jitter, Wi-Fi path, Session Lab and PRO widgets"/>
 </p>
 
 ## Download
+
+Website: [https://victorbrandaao.github.io/CloudBoost/](https://victorbrandaao.github.io/CloudBoost/)
 
 Download the latest DMG from the [Releases page](https://github.com/victorbrandaao/CloudBoost/releases/latest).
 
@@ -57,7 +59,7 @@ Version 4.0.1 is a stability and trust update after the 4.0 redesign.
 
 CloudBoost does not modify games, inject code, bypass anti-cheat, or promise magic FPS gains.
 
-It focuses on the Mac session around the game:
+It focuses on the Mac session around the game. That makes it useful for cloud gaming on Mac, remote play on Mac, and native Mac gaming sessions where the issue is local interruption instead of raw game rendering.
 
 | Area | What it helps with |
 |---|---|
@@ -93,6 +95,20 @@ All game and service profiles are free.
 | Steam | Free |
 | Epic Games | Free |
 | Battle.net | Free |
+
+## Common Use Cases
+
+CloudBoost is designed for players searching for practical fixes around:
+
+- GeForce NOW lag spikes on Mac
+- Xbox Cloud Gaming jitter on macOS
+- PS Remote Play stutter on Mac
+- Moonlight or Steam Link instability
+- Mac Wi-Fi gaming spikes caused by AWDL, AirDrop, Handoff, or background traffic
+- native Mac game stutter caused by local pressure, thermal pressure, power state, or background tasks
+- Dota 2, League of Legends, CS2 cloud/remote sessions, Steam, Epic Games, and Battle.net session cleanup
+
+CloudBoost is not a replacement for Ethernet, a strong router, or a properly configured game. It is a small utility for making the macOS side of the session easier to control and understand.
 
 ## Free, PRO, And PRO+
 
@@ -144,6 +160,32 @@ Useful details:
 - whether a VPN, firewall, or private relay is active
 
 Discord: [https://discord.gg/kU5trxtRb](https://discord.gg/kU5trxtRb)
+
+## FAQ
+
+### Does CloudBoost work with GeForce NOW on Mac?
+
+Yes. CloudBoost includes a free GeForce NOW profile. It focuses on local macOS problems that can make GeForce NOW feel worse, including jitter, packet loss, background traffic, AWDL/Wi-Fi interruptions, DNS state, thermal pressure, and Low Power Mode.
+
+### Does CloudBoost work with Xbox Cloud Gaming on Mac?
+
+Yes. Xbox Cloud Gaming is supported through the free xCloud profile. CloudBoost cannot change Microsoft's servers or your ISP route, but it can help keep the local Mac session quieter and show useful diagnostics when spikes happen.
+
+### Does CloudBoost work with PS Remote Play, Moonlight, or Steam Link?
+
+Yes. CloudBoost includes profiles for PS Remote Play, Moonlight, and general local/remote sessions. It is useful when the Mac side is causing Wi-Fi noise, background traffic, packet loss, jitter, power-state issues, or local system pressure.
+
+### Does CloudBoost help native Mac games?
+
+Sometimes. CloudBoost does not modify the game or promise large FPS gains. It can help native games when the problem is macOS session noise: background tasks, thermal pressure, Low Power Mode, Wi-Fi behavior, or process priority.
+
+### Does CloudBoost improve FPS?
+
+CloudBoost is not a magic FPS booster. Its main goal is steadier gaming sessions and better diagnosis of latency spikes, jitter, packet loss, background traffic, AWDL/Wi-Fi behavior, and local system pressure.
+
+### Is CloudBoost free?
+
+Yes. Manual sessions and all supported profiles are free. PRO adds automation and deeper diagnostics. PRO+ adds heavier system tools, priority support, early builds, and future lower-level networking work.
 
 ## Security
 
