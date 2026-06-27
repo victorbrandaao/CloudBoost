@@ -15,6 +15,10 @@ CloudBoost starts a focused session, applies temporary macOS tuning, watches the
 </p>
 
 <p align="center">
+  <a href="https://feitonobrasil.dev.br"><img src="https://selo.feitonobrasil.dev.br/en/serio/colorido/1x.svg" alt="Made in Brazil" height="56" loading="lazy"></a>
+</p>
+
+<p align="center">
   <img src="./assets/cloudboost-readme.png" alt="CloudBoost interface preview"/>
 </p>
 
