@@ -9,7 +9,7 @@ CloudBoost starts a focused session, applies temporary macOS tuning, watches the
 <p align="center">
   <img src="https://img.shields.io/github/v/release/victorbrandaao/CloudBoost?style=for-the-badge">
   <img src="https://img.shields.io/github/downloads/victorbrandaao/CloudBoost/total?cacheSeconds=300&label=total%20downloads&style=for-the-badge">
-  <img src="https://img.shields.io/github/downloads/victorbrandaao/CloudBoost/v4.0.3/total?cacheSeconds=300&label=v4.0.3%20downloads&style=for-the-badge">
+  <img src="https://img.shields.io/github/downloads/victorbrandaao/CloudBoost/v4.0.4/total?cacheSeconds=300&label=v4.0.4%20downloads&style=for-the-badge">
   <img src="https://img.shields.io/badge/macOS-12%2B-black?style=for-the-badge">
   <a href="https://discord.gg/kU5trxtRb"><img src="https://img.shields.io/badge/Discord-Support-5865F2?style=for-the-badge"></a>
 </p>
@@ -30,7 +30,7 @@ Download the latest DMG from the [Releases page](https://github.com/victorbranda
 
 Install:
 
-1. Download **CloudBoost_v4.0.3.dmg**.
+1. Download **CloudBoost_v4.0.4.dmg**.
 2. Open the DMG.
 3. Drag **CloudBoost.app** to `/Applications`.
 4. Open CloudBoost from the macOS menu bar.
@@ -43,18 +43,17 @@ xattr -cr /Applications/"CloudBoost.app"
 
 Need help? Join the [CloudBoost Discord](https://discord.gg/kU5trxtRb). It is the fastest place for install help, bug reports, PRO license support, and feature requests.
 
-## What's New In 4.0.3
+## What's New In 4.0.4
 
-Version 4.0.3 is a trust and feedback update after the 4.0 redesign.
+Version 4.0.4 adds CrossOver/Whisky-aware diagnostics to PRO and keeps the 4.0 product model simpler.
 
-- New public reviews page.
-- New GitHub review form for real setup-specific feedback.
-- New app footer button to leave a review.
-- Free remains useful for trying CloudBoost with every profile, manual sessions, Balanced preset, basic signal checks, Stream Advisor, and rollback protection.
-- PRO is now the complete paid plan.
-- Former higher-tier tools are now included in PRO: Kernel Watch, background throttle, priority Discord support, and early builds.
+- New PRO profile for CrossOver, Whisky, Wine, and Game Porting Toolkit sessions.
+- CloudBoost can detect Windows compatibility sessions and treat them as local Mac gaming diagnostics.
+- Session Lab and Stream Signal now include guidance for memory pressure, thermal pressure, Low Power Mode, background sync, and bottle-session stability.
+- The app does not edit CrossOver bottles, install translation patches, or bypass anti-cheat.
+- Free remains useful for trying CloudBoost with cloud, remote play, native Mac, and competitive profiles, manual sessions, Balanced preset, basic signal checks, Stream Advisor, and rollback protection.
+- PRO remains the complete paid plan, now including CrossOver/Whisky diagnostics.
 - Existing one-time PRO licenses continue to work and receive the expanded PRO feature set.
-- Legacy higher-tier keys still validate, but the app now presents a single paid plan: PRO.
 
 ## What CloudBoost Does
 
@@ -71,6 +70,7 @@ It focuses on the Mac session around the game. That makes it useful for cloud ga
 | Time Machine control | Pauses selected backup activity while playing |
 | Session Doctor | Explains likely spike causes in plain language |
 | Session Lab | Runs a short stability check for PRO users |
+| CrossOver Check | Diagnoses macOS-side pressure around CrossOver, Whisky, Wine, and GPTK sessions |
 | Stream Signal | Scores p95 latency, jitter, packet loss, UDP availability, thermal state, and local pressure |
 | HUD | Shows a small live overlay for quick session reads |
 | Session Proof | Exports a before/latest report for PRO users |
@@ -79,7 +79,7 @@ All changes are designed to be temporary and reversible.
 
 ## Supported Profiles
 
-All game and service profiles are free.
+Core game and service profiles are free. CrossOver/Whisky diagnostics are PRO because they add compatibility-layer checks and local bottleneck guidance.
 
 | Profile | Availability |
 |---|---|
@@ -93,6 +93,7 @@ All game and service profiles are free.
 | League of Legends native/cloud profile | Free |
 | Dota 2 native/cloud profile | Free |
 | Local Game | Free |
+| CrossOver / Windows Games | PRO |
 | Steam | Free |
 | Epic Games | Free |
 | Battle.net | Free |
@@ -105,6 +106,7 @@ CloudBoost is designed for players searching for practical fixes around:
 - Xbox Cloud Gaming jitter on macOS
 - PS Remote Play stutter on Mac
 - Moonlight or Steam Link instability
+- CrossOver, Whisky, Wine, or Game Porting Toolkit sessions that need macOS-side bottleneck checks
 - Mac Wi-Fi gaming spikes caused by AWDL, AirDrop, Handoff, or background traffic
 - native Mac game stutter caused by local pressure, thermal pressure, power state, or background tasks
 - Dota 2, League of Legends, CS2 cloud/remote sessions, Steam, Epic Games, and Battle.net session cleanup
@@ -113,13 +115,14 @@ CloudBoost is not a replacement for Ethernet, a strong router, or a properly con
 
 ## Free And PRO
 
-Free is for trying CloudBoost: all supported profiles, manual session mode, Balanced preset, basic signal checks, Stream Advisor, and rollback protection.
+Free is for trying CloudBoost: cloud, remote play, native Mac, and competitive profiles, manual session mode, Balanced preset, basic signal checks, Stream Advisor, and rollback protection.
 
 PRO is for people who use CloudBoost regularly and want the complete toolset.
 
 | Feature | Free | PRO |
 |---|---:|---:|
-| All profiles | Yes | Yes |
+| Core cloud, remote play, native Mac, and competitive profiles | Yes | Yes |
+| CrossOver / Whisky diagnostics | No | Yes |
 | Manual session mode | Yes | Yes |
 | Balanced preset | Yes | Yes |
 | Basic signal checks | Yes | Yes |
@@ -201,7 +204,7 @@ CloudBoost is not a magic FPS booster. Its main goal is steadier gaming sessions
 
 ### Is CloudBoost free?
 
-Yes. Manual sessions, all supported profiles, Balanced preset, basic signal checks, Stream Advisor, and rollback protection are free. PRO adds automation, HUD, full diagnostics, Session Lab, widgets, history, Session Proof, Kernel Watch, background throttle, priority support, and early builds.
+Yes. Manual sessions, cloud/remote/native/competitive profiles, Balanced preset, basic signal checks, Stream Advisor, and rollback protection are free. PRO adds automation, HUD, CrossOver/Whisky diagnostics, full diagnostics, Session Lab, widgets, history, Session Proof, Kernel Watch, background throttle, priority support, and early builds.
 
 ## Security
 

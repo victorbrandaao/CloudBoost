@@ -38,7 +38,7 @@ CloudBoost helps users diagnose and reduce local macOS session issues that can a
 
 ## Important Limits
 
-CloudBoost does not modify games, inject code, bypass anti-cheat, install kernel extensions, or promise magic FPS gains. It focuses on the local macOS session around the game.
+CloudBoost does not modify games, inject code, bypass anti-cheat, edit CrossOver bottles, install kernel extensions, or promise magic FPS gains. It focuses on the local macOS session around the game.
 
 ## Reviews
 
@@ -49,5 +49,5 @@ Review form: https://github.com/victorbrandaao/CloudBoost/issues/new?template=us
 
 ## Plans
 
-Free includes manual sessions, all supported profiles, Balanced preset, basic signal checks, Stream Advisor, and rollback protection.
-PRO adds automation, HUD, Session Lab, Stream Signal, PRO Widgets, Heat Guard, Keep Alive, Session Proof, Kernel Watch, background throttle, priority Discord support, early builds, and deeper diagnostics.
+Free includes manual sessions, core cloud, remote play, native Mac, and competitive profiles, Balanced preset, basic signal checks, Stream Advisor, and rollback protection.
+PRO adds automation, HUD, CrossOver/Whisky diagnostics, Session Lab, Stream Signal, PRO Widgets, Heat Guard, Keep Alive, Session Proof, Kernel Watch, background throttle, priority Discord support, early builds, and deeper diagnostics.
