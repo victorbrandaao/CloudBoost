@@ -103,7 +103,7 @@ footer a:hover,
 .hero {
   position: relative;
   display: grid;
-  grid-template-columns: minmax(0, 0.94fr) minmax(280px, 360px);
+  grid-template-columns: minmax(0, 0.82fr) minmax(420px, 1fr);
   gap: 52px;
   align-items: center;
   min-height: 560px;
@@ -213,16 +213,15 @@ h3 {
 .app-preview {
   margin: 0;
   justify-self: end;
-  width: 315px;
-  border: 2px solid var(--text);
-  background: var(--page);
+  width: min(560px, 100%);
+  background: transparent;
   overflow: hidden;
 }
 
 .app-preview img {
   display: block;
   width: 100%;
-  filter: grayscale(1) contrast(1.08);
+  height: auto;
 }
 
 .quick-notes {
