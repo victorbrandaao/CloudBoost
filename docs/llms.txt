@@ -1,53 +1,50 @@
 # CloudBoost
 
-CloudBoost is a native macOS menu bar app and gaming session optimizer for cloud gaming, remote play, and native Mac games.
+CloudBoost is a native macOS menu bar app for cleaner gaming sessions on Mac.
 
 Primary URL: https://victorbrandaao.github.io/CloudBoost/
 GitHub releases: https://github.com/victorbrandaao/CloudBoost/releases/latest
 Support: https://discord.gg/kU5trxtRb
 Reviews: https://victorbrandaao.github.io/CloudBoost/reviews.html
 
-## What It Does
+## Summary
 
-CloudBoost helps users diagnose and reduce local macOS session issues that can affect gaming:
+CloudBoost helps Mac players start a focused gaming session, reduce local macOS interruptions, and understand latency spikes that normal speed tests often miss.
+
+It is built for:
+
+- GeForce NOW
+- Xbox Cloud Gaming
+- Boosteroid
+- Moonlight
+- PS Remote Play
+- Steam Link
+- native Mac games
+- Dota 2, League of Legends, and CS2 cloud or remote sessions
+- Steam, Epic Games, and Battle.net sessions
+- PRO diagnostics for CrossOver, Whisky, Wine, and Game Porting Toolkit
+
+## What It Watches
 
 - latency spikes
 - jitter
 - packet loss
+- UDP availability
 - background traffic
 - AWDL, AirDrop, Handoff, and Wi-Fi interruptions
 - DNS state
 - Low Power Mode
 - thermal pressure
-- process priority
-- local system pressure
+- CPU and local system pressure
 
-## Supported Use Cases
+## Limits
 
-- GeForce NOW on Mac
-- Xbox Cloud Gaming on Mac
-- Boosteroid on Mac
-- Moonlight on Mac
-- PS Remote Play on Mac
-- Steam Link on Mac
-- native Mac gaming
-- Dota 2 on Mac
-- League of Legends on Mac
-- CS2 cloud or remote play sessions
-- Steam, Epic Games, and Battle.net sessions
+CloudBoost is not a magic FPS booster.
 
-## Important Limits
-
-CloudBoost does not modify games, inject code, bypass anti-cheat, edit CrossOver bottles, install kernel extensions, or promise magic FPS gains. It focuses on the local macOS session around the game.
-
-## Reviews
-
-CloudBoost collects public user reviews through GitHub Issues using the user-review template. Reviews should include the plan used, Mac model, macOS version, network type, game or service, and what changed during the session.
-
-Review page: https://victorbrandaao.github.io/CloudBoost/reviews.html
-Review form: https://github.com/victorbrandaao/CloudBoost/issues/new?template=user-review.yml
+It does not modify games, inject code, bypass anti-cheat, edit CrossOver bottles, install kernel extensions, or promise large FPS gains. It focuses on the local macOS session around the game.
 
 ## Plans
 
-Free includes manual sessions, core cloud, remote play, native Mac, and competitive profiles, Balanced preset, basic signal checks, Stream Advisor, and rollback protection.
-PRO adds automation, HUD, CrossOver/Whisky diagnostics, Session Lab, Stream Signal, PRO Widgets, Heat Guard, Keep Alive, Session Proof, Kernel Watch, background throttle, priority Discord support, early builds, and deeper diagnostics.
+Free includes manual sessions, core cloud, remote play, native Mac and competitive profiles, Balanced preset, basic signal checks, Stream Advisor, and rollback protection.
+
+PRO adds automation, HUD, Session Doctor full reports, Session Lab, Stream Signal, PRO Widgets, Heat Guard, Keep Alive, Session Proof, Kernel Watch, background throttle, CrossOver/Whisky diagnostics, priority Discord support, early builds, and deeper diagnostics.

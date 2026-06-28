@@ -3,22 +3,22 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CloudBoost - macOS Gaming Optimizer for Cloud Gaming, Remote Play and Native Games</title>
-    <meta name="description" content="CloudBoost is a native macOS gaming optimizer for GeForce NOW, Xbox Cloud Gaming, PS Remote Play, Moonlight, Steam Link, CS2, Dota 2 and native Mac games. Diagnose latency spikes, jitter, packet loss, background traffic, Wi-Fi/AWDL interference and session instability.">
-    <meta name="keywords" content="macOS gaming optimizer, Mac gaming optimizer, GeForce NOW Mac lag, Xbox Cloud Gaming Mac, PS Remote Play Mac, Moonlight Mac, Steam Link Mac, CS2 Mac, Dota 2 Mac, cloud gaming Mac, Mac latency spikes, Mac jitter, packet loss, AWDL Wi-Fi gaming, macOS gaming performance">
+    <title>CloudBoost - macOS Gaming Session Optimizer</title>
+    <meta name="description" content="CloudBoost is a native macOS menu bar app for cleaner cloud gaming, remote play, native Mac gaming and PRO CrossOver/Whisky diagnostics. Diagnose jitter, latency spikes, packet loss, background traffic, Wi-Fi/AWDL noise and system pressure.">
+    <meta name="keywords" content="macOS gaming optimizer, Mac gaming optimizer, GeForce NOW Mac lag, Xbox Cloud Gaming Mac, PS Remote Play Mac, Moonlight Mac, Steam Link Mac, CrossOver Mac gaming, Whisky Mac gaming, Dota 2 Mac, CS2 Mac, Mac latency spikes, Mac jitter, AWDL Wi-Fi gaming">
     <meta name="author" content="Victor Brandao">
     <meta name="robots" content="index,follow,max-image-preview:large">
     <link rel="canonical" href="https://victorbrandaao.github.io/CloudBoost/">
     <meta property="og:site_name" content="CloudBoost">
-    <meta property="og:title" content="CloudBoost - macOS Gaming Optimizer">
-    <meta property="og:description" content="A native macOS menu bar app for cleaner cloud gaming, remote play and native Mac gaming sessions. Diagnose jitter, latency spikes, packet loss, AWDL/Wi-Fi noise and background traffic.">
+    <meta property="og:title" content="CloudBoost - macOS Gaming Session Optimizer">
+    <meta property="og:description" content="A native macOS menu bar app for cleaner cloud gaming, remote play, native Mac gaming and PRO CrossOver/Whisky diagnostics.">
     <meta property="og:image" content="https://victorbrandaao.github.io/CloudBoost/assets/cloudboost-macos-gaming-optimizer.png">
-    <meta property="og:image:alt" content="CloudBoost macOS app showing gaming session diagnostics, latency, jitter, Session Lab and PRO widgets">
+    <meta property="og:image:alt" content="CloudBoost app interface showing macOS gaming session diagnostics, latency, jitter, profiles and PRO widgets">
     <meta property="og:url" content="https://victorbrandaao.github.io/CloudBoost/">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="CloudBoost - macOS Gaming Optimizer">
-    <meta name="twitter:description" content="Cleaner macOS gaming sessions for cloud gaming, remote play and native Mac games.">
+    <meta name="twitter:title" content="CloudBoost - macOS Gaming Session Optimizer">
+    <meta name="twitter:description" content="Cleaner gaming sessions on Mac. Diagnose the spikes normal speed tests miss.">
     <meta name="twitter:image" content="https://victorbrandaao.github.io/CloudBoost/assets/cloudboost-macos-gaming-optimizer.png">
     <meta name="theme-color" content="#ffffff">
     <link rel="sitemap" type="application/xml" href="https://victorbrandaao.github.io/CloudBoost/sitemap.xml">
@@ -31,10 +31,14 @@
         "operatingSystem": "macOS 12 or later",
         "applicationCategory": "UtilitiesApplication",
         "applicationSubCategory": "Gaming utility",
-        "description": "CloudBoost is a native macOS gaming optimizer for cleaner cloud gaming, remote play and native Mac gaming sessions. It helps diagnose latency spikes, jitter, packet loss, background traffic, Wi-Fi/AWDL interference and local system pressure.",
+        "softwareVersion": "4.0.4",
+        "description": "CloudBoost is a native macOS menu bar app for cleaner cloud gaming, remote play, native Mac gaming and PRO CrossOver/Whisky diagnostics. It helps diagnose jitter, latency spikes, packet loss, background traffic, AWDL/Wi-Fi noise and local system pressure.",
         "image": "https://victorbrandaao.github.io/CloudBoost/assets/cloudboost-macos-gaming-optimizer.png",
         "downloadUrl": "https://github.com/victorbrandaao/CloudBoost/releases/latest",
-        "softwareVersion": "4.0.4",
+        "author": {
+          "@type": "Person",
+          "name": "Victor Brandao"
+        },
         "offers": [
           {
             "@type": "Offer",
@@ -49,10 +53,6 @@
             "priceCurrency": "USD"
           }
         ],
-        "author": {
-          "@type": "Person",
-          "name": "Victor Brandao"
-        },
         "sameAs": [
           "https://github.com/victorbrandaao/CloudBoost",
           "https://macmagazine.com.br/post/2026/06/01/cloudboost-otimiza-a-experiencia-de-jogos-na-nuvem-no-mac/"
@@ -66,10 +66,18 @@
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "Does CloudBoost work with GeForce NOW on Mac?",
+            "name": "Is CloudBoost an FPS booster?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes. CloudBoost includes a free GeForce NOW profile and focuses on local macOS issues that can make cloud gaming feel worse, such as jitter, background traffic, AWDL/Wi-Fi interruptions, packet loss and thermal pressure."
+              "text": "No. CloudBoost focuses on macOS session stability, latency spikes, jitter, packet loss, background traffic and local pressure. It does not promise magic FPS gains."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does CloudBoost work with cloud gaming on Mac?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. CloudBoost includes free profiles for GeForce NOW, Xbox Cloud Gaming, Boosteroid, Moonlight, PS Remote Play and other remote play sessions."
             }
           },
           {
@@ -77,31 +85,15 @@
             "name": "Does CloudBoost help native Mac games?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "CloudBoost can help keep the macOS session cleaner for native Mac games by reducing local interruptions and showing session diagnostics. It does not promise magic FPS gains or modify game code."
+              "text": "Sometimes. It can help when the problem is local macOS pressure, background traffic, Wi-Fi behavior, power state or thermal pressure. It does not modify the game."
             }
           },
           {
             "@type": "Question",
-            "name": "Does CloudBoost improve FPS?",
+            "name": "Does CloudBoost modify games or bypass anti-cheat?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "CloudBoost is not an FPS booster. It focuses on session stability, latency spikes, jitter, packet loss, background traffic and local macOS pressure around the game."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Does CloudBoost work with PS Remote Play and Moonlight?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes. CloudBoost includes free profiles for PS Remote Play and Moonlight, plus diagnostics that can help identify Wi-Fi, UDP, latency and background traffic issues."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Is CloudBoost free?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "CloudBoost has a free version with manual sessions, Balanced preset, basic signal checks, and core cloud, remote play, native Mac, and competitive profiles. PRO adds automation, HUD, CrossOver and Whisky diagnostics, full diagnostics, widgets, Session Lab, Session Proof, Kernel Watch, background throttle, priority support and early builds."
+              "text": "No. CloudBoost does not inject code, edit game files, bypass anti-cheat, edit CrossOver bottles or install kernel extensions."
             }
           }
         ]
@@ -113,11 +105,11 @@
       <header class="site-header">
         <a class="brand" href="#">
           <span class="mark" aria-hidden="true"></span>
-          <strong>CloudBoost</strong>
+          <span>CloudBoost</span>
         </a>
         <nav aria-label="Primary">
           <a href="#download">Download</a>
-          <a href="#what">What it does</a>
+          <a href="#use-cases">Use cases</a>
           <a href="#pro">PRO</a>
           <a href="reviews.html">Reviews</a>
           <a href="#support">Support</a>
@@ -127,145 +119,122 @@
       <main>
         <section class="hero" id="download">
           <div class="hero-copy">
-            <p class="kicker">CloudBoost 4.0.4 for macOS</p>
+            <p class="eyebrow">CloudBoost 4.0.4 for macOS</p>
             <h1>Cleaner gaming sessions on Mac.</h1>
-            <p class="subtitle">A native macOS gaming optimizer for GeForce NOW, Xbox Cloud Gaming, PS Remote Play, Moonlight, Steam Link, CS2, Dota 2, native Mac games, and PRO CrossOver/Whisky diagnostics. CloudBoost helps explain the spikes a normal speed test usually misses: jitter, packet loss, AWDL/Wi-Fi noise, background traffic, Low Power Mode, thermal pressure and uneven sessions.</p>
-
-            <div class="dots" aria-hidden="true">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-
+            <p class="lead">A native menu bar app for players who want fewer random spikes and clearer diagnostics, not fake boost promises.</p>
+            <p class="sublead">CloudBoost watches the Mac side of the session: jitter, packet loss, route latency, background traffic, AWDL/Wi-Fi noise, thermal pressure, Low Power Mode and local CPU pressure.</p>
             <div class="actions">
               <a class="button primary" href="https://github.com/victorbrandaao/CloudBoost/releases/latest">Download DMG</a>
-              <a class="button secondary" href="#pro">See PRO</a>
+              <a class="button secondary" href="https://victorbrandao0.gumroad.com/l/CloudBoost">Get PRO</a>
             </div>
+            <p class="microcopy">Free core profiles. PRO adds automation, deeper diagnostics, reports and priority support.</p>
           </div>
 
           <figure class="app-preview">
-            <img src="assets/cloudboost-macos-gaming-optimizer.png" alt="CloudBoost macOS gaming optimizer showing latency, jitter, Wi-Fi path, Session Lab and PRO widgets">
+            <img src="assets/cloudboost-macos-gaming-optimizer.png" alt="CloudBoost app showing macOS gaming session diagnostics">
           </figure>
         </section>
 
-        <section class="quick-notes" aria-label="Highlights">
-          <span>Signal Console UI</span>
-          <span>GeForce NOW, xCloud, PS Remote Play and native Mac profiles</span>
-          <span>Temporary changes</span>
+        <section class="trust-row" aria-label="Trust signals">
           <span>No game injection</span>
-          <span><a href="https://macmagazine.com.br/post/2026/06/01/cloudboost-otimiza-a-experiencia-de-jogos-na-nuvem-no-mac/">Covered by MacMagazine</a></span>
+          <span>No anti-cheat bypass</span>
+          <span>No kernel extension</span>
+          <span>Temporary session changes</span>
+          <a href="https://macmagazine.com.br/post/2026/06/01/cloudboost-otimiza-a-experiencia-de-jogos-na-nuvem-no-mac/">Covered by MacMagazine</a>
           <a class="made-in-brazil" href="https://feitonobrasil.dev.br" aria-label="Made in Brazil">
-            <img src="https://selo.feitonobrasil.dev.br/en/serio/colorido/1x.svg" alt="Made in Brazil" height="44" loading="lazy">
+            <img src="https://selo.feitonobrasil.dev.br/en/serio/colorido/1x.svg" alt="Made in Brazil" height="42" loading="lazy">
           </a>
         </section>
 
-        <section class="section two-col">
+        <section class="section split" id="use-cases">
           <div>
-            <p class="kicker">Version 4.0.4</p>
-            <h2>The same 4.0 interface, now with CrossOver-aware diagnostics in PRO.</h2>
+            <p class="eyebrow">Use Cases</p>
+            <h2>For the moments where average ping is not the whole story.</h2>
           </div>
           <div class="copy">
-            <p>CloudBoost is for cloud gaming, Xbox Cloud Gaming, GeForce NOW, PS Remote Play, Moonlight, Steam Link, native Mac sessions, and Windows compatibility sessions where random spikes matter more than average FPS.</p>
-            <p>Version 4.0.4 adds PRO diagnostics for CrossOver, Whisky, Wine, and Game Porting Toolkit sessions. It checks macOS-side pressure without modifying bottles or bypassing anti-cheat.</p>
+            <p>CloudBoost is useful when a game feels fine for a while, then suddenly stutters, spikes, or becomes inconsistent.</p>
+            <p>It helps with cloud gaming, remote play, native Mac gaming, and PRO diagnostics for Windows compatibility layers such as CrossOver, Whisky, Wine and Game Porting Toolkit.</p>
           </div>
         </section>
 
-        <section class="section" id="what">
-          <p class="kicker">What it does</p>
-          <div class="feature-list">
-            <article>
-              <h3>macOS gaming session cleanup</h3>
-              <p>Handles AWDL, DNS refresh, sleep prevention, selected backup behavior, and process priority during a focused gaming session.</p>
-            </article>
-            <article>
-              <h3>Latency spike diagnosis</h3>
-              <p>Explains likely causes such as background traffic, packet loss, Low Power Mode, thermal pressure, route latency, or Wi-Fi noise, now with a faster score read.</p>
-            </article>
-            <article>
-              <h3>Cloud, remote play and native profiles</h3>
-              <p>GeForce NOW, xCloud, Boosteroid, Moonlight, PS Remote Play, VoidLink, CS2, League, Dota, Steam, Epic, Battle.net, Local Game, and PRO CrossOver/Whisky diagnostics.</p>
-            </article>
-          </div>
-        </section>
-
-        <section class="section two-col" id="pro">
-          <div>
-            <p class="kicker">PRO</p>
-            <h2>For players who want diagnostics, not vague boost claims.</h2>
-          </div>
-          <div class="pro-box">
-            <p><strong>Session Lab</strong> checks idle and under-load behavior.</p>
-            <p><strong>Stream Signal</strong> scores p95 latency, jitter, packet loss, UDP availability, load impact, thermal state, Low Power Mode, and background interference.</p>
-            <p><strong>CrossOver/Whisky diagnostics</strong> help identify macOS-side bottlenecks around Windows games without modifying bottles or bypassing anti-cheat.</p>
-            <p><strong>PRO now includes everything paid:</strong> HUD, Session Proof, Kernel Watch, background throttle, priority Discord support, early builds, and before/latest reports.</p>
-            <a class="text-link" href="https://victorbrandao0.gumroad.com/l/CloudBoost">Buy PRO license</a>
-          </div>
-        </section>
-
-        <section class="plans">
+        <section class="cards">
           <article>
-            <span>Free</span>
-            <h3>Try CloudBoost with the core profiles</h3>
-            <p>Manual sessions, Balanced preset, basic signal checks, Stream Advisor, rollback protection, and core cloud, remote play, Mac launcher, and competitive profiles.</p>
+            <span>Cloud and remote play</span>
+            <h3>GeForce NOW, xCloud, Boosteroid, Moonlight, PS Remote Play and Steam Link.</h3>
+            <p>Reduce local macOS noise and see whether the issue looks like Wi-Fi, UDP, packet loss, route latency or background traffic.</p>
           </article>
           <article>
-            <span>PRO</span>
-            <h3>The complete paid toolset</h3>
-            <p>Auto Boost, HUD, Smart Boost, Stability Guard, Session Doctor full reports, Session Lab, CrossOver/Whisky diagnostics, Stream Signal, PRO Widgets, Heat Guard, Keep Alive, Session Proof, Kernel Watch, background throttle, priority support, and early builds.</p>
+            <span>Native Mac games</span>
+            <h3>Dota 2, League, Steam, Epic, Battle.net and local game sessions.</h3>
+            <p>Watch CPU pressure, thermal pressure, Low Power Mode and background work that can make a session feel uneven.</p>
+          </article>
+          <article>
+            <span>PRO compatibility diagnostics</span>
+            <h3>CrossOver, Whisky, Wine and GPTK checks without touching the bottle.</h3>
+            <p>CloudBoost does not patch games. It helps separate a compatibility-layer issue from a noisy macOS session.</p>
           </article>
         </section>
 
-        <section class="section two-col" id="reviews">
+        <section class="section split" id="pro">
           <div>
-            <p class="kicker">Public Feedback</p>
-            <h2>Reviews should be visible, specific, and real.</h2>
+            <p class="eyebrow">Free and PRO</p>
+            <h2>Free is useful. PRO is for people who use it every week.</h2>
+          </div>
+          <div class="plan-grid">
+            <article>
+              <h3>Free</h3>
+              <p>Manual sessions, Balanced preset, rollback protection, basic signal checks, Stream Advisor, and the core cloud, remote play, native Mac and competitive profiles.</p>
+            </article>
+            <article>
+              <h3>PRO</h3>
+              <p>Automation, HUD, Session Doctor full reports, Session Lab, Stream Signal, PRO Widgets, Heat Guard, Keep Alive, Session Proof, Kernel Watch, background throttle, CrossOver/Whisky diagnostics and priority Discord support.</p>
+              <a class="text-link" href="https://victorbrandao0.gumroad.com/l/CloudBoost">Buy PRO license</a>
+            </article>
+          </div>
+        </section>
+
+        <section class="section split">
+          <div>
+            <p class="eyebrow">Version 4.0.4</p>
+            <h2>More honest diagnostics for Mac gaming.</h2>
           </div>
           <div class="copy">
-            <p>CloudBoost does not use fake testimonials. If you use the app, leave a public review with your Mac model, macOS version, game or service, and what changed in your session.</p>
-            <p>Reviews live on GitHub so people can read them in context, ask follow-up questions, and see what we are improving.</p>
-            <div class="actions tight-actions">
-              <a class="button primary" href="reviews.html">Read or leave a review</a>
-              <a class="button secondary" href="https://github.com/victorbrandaao/CloudBoost/issues/new?template=user-review.yml">Write on GitHub</a>
+            <p>The latest release adds PRO diagnostics for CrossOver, Whisky, Wine and Game Porting Toolkit sessions.</p>
+            <p>Former PRO+ features are now included in PRO. Existing PRO customers keep their access and receive the expanded feature set.</p>
+          </div>
+        </section>
+
+        <section class="section split" id="support">
+          <div>
+            <p class="eyebrow">Support</p>
+            <h2>Bring the screenshot. We will help read it.</h2>
+          </div>
+          <div class="copy">
+            <p>Discord is open to Free and PRO users for install help, license support, bug reports, confusing diagnostics and feature requests.</p>
+            <p>For faster help, include macOS version, Mac model, selected profile, Wi-Fi or Ethernet, VPN/firewall status, and a screenshot of Session Doctor or Session Lab.</p>
+            <div class="actions small-actions">
+              <a class="button primary" href="https://discord.gg/kU5trxtRb">Join Discord</a>
+              <a class="button secondary" href="https://github.com/victorbrandaao/CloudBoost/issues/new?template=user-review.yml">Leave a review</a>
             </div>
           </div>
         </section>
 
-        <section class="section two-col" id="support">
-          <div>
-            <p class="kicker">Support</p>
-            <h2>Have a weird session? Bring the details.</h2>
-          </div>
-          <div class="copy">
-            <p>The Discord is open to Free and PRO users for install help, license support, screenshots, bug reports, and feature requests.</p>
-            <p>For faster help, include your macOS version, Mac model, selected profile, Wi-Fi or Ethernet status, and what Session Doctor or Session Lab is showing.</p>
-            <a class="button secondary" href="https://discord.gg/kU5trxtRb">Join Discord</a>
-          </div>
-        </section>
-
-        <section class="notes">
+        <section class="faq">
           <details open>
-            <summary>Does CloudBoost work with GeForce NOW, Xbox Cloud Gaming and Boosteroid?</summary>
-            <p>Yes. CloudBoost includes free profiles for GeForce NOW, Xbox Cloud Gaming and Boosteroid. It focuses on the local Mac session around the stream: jitter, packet loss, Wi-Fi/AWDL behavior, background traffic, DNS, power state and thermal pressure.</p>
+            <summary>Does CloudBoost improve FPS?</summary>
+            <p>Not directly. CloudBoost is about session stability and diagnosis. It can help when stutter comes from local macOS pressure, background tasks, power state or Wi-Fi behavior, but it does not modify the game renderer.</p>
           </details>
           <details>
-            <summary>Does CloudBoost work with PS Remote Play, Moonlight and Steam Link?</summary>
-            <p>Yes. CloudBoost can be used with remote play tools such as PS Remote Play, Moonlight and Steam Link. It cannot improve the remote device itself, but it can help diagnose and reduce local macOS interruptions that make remote play feel unstable.</p>
+            <summary>Does it work for native Mac games?</summary>
+            <p>Yes, when the problem is around the game rather than inside the game: thermal pressure, Low Power Mode, background traffic, Wi-Fi/AWDL behavior, CPU pressure or uneven local session state.</p>
           </details>
           <details>
-            <summary>Does CloudBoost help native Mac games like Dota 2, CS2 profiles or Steam games?</summary>
-            <p>CloudBoost can help keep the macOS session quieter for native Mac games and local launchers. It does not modify games or promise large FPS gains. It is more useful when stutter is caused by local pressure, background tasks, Wi-Fi behavior, power state or thermal pressure.</p>
+            <summary>Does it work with PS Remote Play and Moonlight?</summary>
+            <p>Yes. CloudBoost includes free profiles for remote play and can help identify local Mac-side causes such as Wi-Fi noise, UDP issues, route latency and background traffic.</p>
           </details>
           <details>
-            <summary>Will CloudBoost improve FPS?</summary>
-            <p>CloudBoost is not a magic FPS booster. The main goal is steadier sessions: fewer local interruptions, clearer diagnosis of latency spikes, and better visibility into jitter, packet loss, background traffic and system pressure.</p>
-          </details>
-          <details>
-            <summary>Does CloudBoost install a kernel extension?</summary>
-            <p>No. CloudBoost does not install KEXTs, hidden daemons, or permanent system patches. PRO uses reversible macOS/Darwin session controls and counters where available.</p>
-          </details>
-          <details>
-            <summary>Does it modify games or bypass anti-cheat?</summary>
-            <p>No. It does not inject into games, bypass anti-cheat systems, or modify game files. It works around the local macOS session.</p>
+            <summary>Does it install a kernel extension?</summary>
+            <p>No. CloudBoost does not install KEXTs, hidden daemons, permanent system patches, game injections or anti-cheat bypasses. Some features may ask for administrator permission because macOS requires it for temporary system-level session changes.</p>
           </details>
           <details>
             <summary>What if macOS says the app is damaged?</summary>
@@ -274,7 +243,7 @@
         </section>
 
         <section class="final">
-          <h2>Try a session. If something is confusing, tell us.</h2>
+          <h2>Try one session and see what CloudBoost reports.</h2>
           <div class="actions">
             <a class="button primary" href="https://github.com/victorbrandaao/CloudBoost/releases/latest">Download CloudBoost</a>
             <a class="button secondary" href="https://discord.gg/kU5trxtRb">Ask in Discord</a>
