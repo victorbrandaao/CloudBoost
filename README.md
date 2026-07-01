@@ -8,8 +8,8 @@ It is built for cloud gaming, remote play, native Mac games, and PRO diagnostics
 
 <p align="center">
   <img src="https://img.shields.io/github/v/release/victorbrandaao/CloudBoost?style=for-the-badge">
-  <img src="https://img.shields.io/github/downloads/victorbrandaao/CloudBoost/total?cacheSeconds=300&label=total%20downloads&style=for-the-badge">
-  <img src="https://img.shields.io/github/downloads/victorbrandaao/CloudBoost/v4.0.6/total?cacheSeconds=300&label=v4.0.6%20downloads&style=for-the-badge">
+  <img src="https://img.shields.io/github/downloads/victorbrandaao/CloudBoost/latest/total?cacheSeconds=300&label=latest%20downloads&style=for-the-badge">
+  <img src="https://img.shields.io/github/downloads/victorbrandaao/CloudBoost/total?cacheSeconds=300&label=all-time%20downloads&style=for-the-badge">
   <img src="https://img.shields.io/badge/macOS-12%2B-black?style=for-the-badge">
   <a href="https://discord.gg/kU5trxtRb"><img src="https://img.shields.io/badge/Discord-Support-5865F2?style=for-the-badge"></a>
 </p>
@@ -28,16 +28,22 @@ Website: [victorbrandaao.github.io/CloudBoost](https://victorbrandaao.github.io/
 
 Latest release: [GitHub Releases](https://github.com/victorbrandaao/CloudBoost/releases/latest)
 
-Launch week offer: **for the next 7 days, CloudBoost PRO costs $4.99**.
+Launch price test: **CloudBoost PRO is currently $4.99**.
 
-This is the full PRO v4.x license at a temporary price. One-time payment. No subscription.
+This is the full PRO v4.x license at a temporary price. One-time payment. No subscription. Existing PRO customers keep their access.
 
 Install:
 
-1. Download the latest `CloudBoost_v4.0.6.dmg`.
+1. Download the latest `CloudBoost_v4.x.dmg`.
 2. Open the DMG.
 3. Drag `CloudBoost.app` to `/Applications`.
 4. Open CloudBoost from the macOS menu bar.
+
+Updates:
+
+- Manual installs use the DMG from GitHub Releases.
+- In-app updates use the verified ZIP asset when available, then replace and relaunch CloudBoost automatically.
+- The README counters show both downloads from the latest release and all-time downloads across release assets.
 
 If macOS says the app is damaged, clear quarantine:
 
@@ -109,7 +115,7 @@ PRO is for people who use it regularly and want deeper diagnostics, automation, 
 | CrossOver, Whisky, Wine, and GPTK diagnostics | No | Yes |
 | Priority Discord support | No | Yes |
 
-Launch week: **for the next 7 days, CloudBoost PRO costs $4.99**.
+Launch price test: **CloudBoost PRO is currently $4.99**.
 
 This is the full PRO v4.x license at a temporary price. One-time payment. No subscription.
 
