@@ -28,6 +28,10 @@ Website: [victorbrandaao.github.io/CloudBoost](https://victorbrandaao.github.io/
 
 Latest release: [GitHub Releases](https://github.com/victorbrandaao/CloudBoost/releases/latest)
 
+Launch week offer: **CloudBoost PRO is $4.99 for 7 days**.
+
+One-time payment. No subscription. Includes the PRO toolset for CloudBoost 4.x.
+
 Install:
 
 1. Download the latest `CloudBoost_v4.0.4.dmg`.
@@ -105,7 +109,11 @@ PRO is for people who use it regularly and want deeper diagnostics, automation, 
 | CrossOver, Whisky, Wine, and GPTK diagnostics | No | Yes |
 | Priority Discord support | No | Yes |
 
-Buy PRO: [Gumroad](https://victorbrandao0.gumroad.com/l/CloudBoost)
+Launch week: **CloudBoost PRO is $4.99 for 7 days**.
+
+One-time payment. No subscription. Includes the PRO toolset for CloudBoost 4.x.
+
+Unlock PRO: [Gumroad](https://victorbrandao0.gumroad.com/l/CloudBoost)
 
 Existing PRO customers keep access to the expanded PRO feature set. The previous PRO+ feature set has been folded into PRO.
 

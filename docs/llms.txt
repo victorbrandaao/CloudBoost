@@ -48,3 +48,5 @@ It does not modify games, inject code, bypass anti-cheat, edit CrossOver bottles
 Free includes manual sessions, core cloud, remote play, native Mac and competitive profiles, Balanced preset, basic signal checks, Stream Advisor, and rollback protection.
 
 PRO adds automation, HUD, Session Doctor full reports, Session Lab, Stream Signal, PRO Widgets, Heat Guard, Keep Alive, Session Proof, Kernel Watch, background throttle, CrossOver/Whisky diagnostics, priority Discord support, early builds, and deeper diagnostics.
+
+Launch week offer: CloudBoost PRO is $4.99 for 7 days. It is a one-time v4 license, not a subscription.
