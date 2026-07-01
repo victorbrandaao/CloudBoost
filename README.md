@@ -9,7 +9,7 @@ It is built for cloud gaming, remote play, native Mac games, and PRO diagnostics
 <p align="center">
   <img src="https://img.shields.io/github/v/release/victorbrandaao/CloudBoost?style=for-the-badge">
   <img src="https://img.shields.io/github/downloads/victorbrandaao/CloudBoost/total?cacheSeconds=300&label=total%20downloads&style=for-the-badge">
-  <img src="https://img.shields.io/github/downloads/victorbrandaao/CloudBoost/v4.0.4/total?cacheSeconds=300&label=v4.0.4%20downloads&style=for-the-badge">
+  <img src="https://img.shields.io/github/downloads/victorbrandaao/CloudBoost/v4.0.5/total?cacheSeconds=300&label=v4.0.5%20downloads&style=for-the-badge">
   <img src="https://img.shields.io/badge/macOS-12%2B-black?style=for-the-badge">
   <a href="https://discord.gg/kU5trxtRb"><img src="https://img.shields.io/badge/Discord-Support-5865F2?style=for-the-badge"></a>
 </p>
@@ -34,7 +34,7 @@ One-time payment. No subscription. Includes the PRO toolset for CloudBoost 4.x.
 
 Install:
 
-1. Download the latest `CloudBoost_v4.0.4.dmg`.
+1. Download the latest `CloudBoost_v4.0.5.dmg`.
 2. Open the DMG.
 3. Drag `CloudBoost.app` to `/Applications`.
 4. Open CloudBoost from the macOS menu bar.
@@ -132,15 +132,16 @@ Common cases:
 
 CloudBoost cannot fix a bad router, bad ISP route, overloaded game server, or remote machine problem. It gives you a cleaner local session and better information when something feels off.
 
-## Version 4.0.4
+## Version 4.0.5
 
-Version 4.0.4 keeps the 4.0 interface and adds PRO diagnostics for CrossOver, Whisky, Wine, and Game Porting Toolkit sessions.
+Version 4.0.5 keeps the 4.0 interface, adds the 7-day PRO launch price notice in the app, and continues the CrossOver, Whisky, Wine, and Game Porting Toolkit diagnostics introduced in 4.0.4.
 
 Highlights:
 
 - CrossOver / Windows Games profile in PRO
 - detection for CrossOver, Whisky, Wine, and GPTK sessions
 - macOS-side pressure checks for compatibility-layer gaming
+- in-app PRO launch price notice for Free users
 - clearer Session Lab and Stream Signal guidance
 - public Free profiles remain available for cloud, remote play, native Mac, and competitive sessions
 - former PRO+ tools are now included in PRO
