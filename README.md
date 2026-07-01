@@ -28,9 +28,9 @@ Website: [victorbrandaao.github.io/CloudBoost](https://victorbrandaao.github.io/
 
 Latest release: [GitHub Releases](https://github.com/victorbrandaao/CloudBoost/releases/latest)
 
-Launch week offer: **CloudBoost PRO is $4.99 for 7 days**.
+Launch week offer: **for the next 7 days, CloudBoost PRO costs $4.99**.
 
-One-time payment. No subscription. Includes the PRO toolset for CloudBoost 4.x.
+This is the full PRO v4.x license at a temporary price. One-time payment. No subscription.
 
 Install:
 
@@ -109,9 +109,9 @@ PRO is for people who use it regularly and want deeper diagnostics, automation, 
 | CrossOver, Whisky, Wine, and GPTK diagnostics | No | Yes |
 | Priority Discord support | No | Yes |
 
-Launch week: **CloudBoost PRO is $4.99 for 7 days**.
+Launch week: **for the next 7 days, CloudBoost PRO costs $4.99**.
 
-One-time payment. No subscription. Includes the PRO toolset for CloudBoost 4.x.
+This is the full PRO v4.x license at a temporary price. One-time payment. No subscription.
 
 Unlock PRO: [Gumroad](https://victorbrandao0.gumroad.com/l/CloudBoost)
 
@@ -134,7 +134,7 @@ CloudBoost cannot fix a bad router, bad ISP route, overloaded game server, or re
 
 ## Version 4.0.5
 
-Version 4.0.5 keeps the 4.0 interface, adds the 7-day PRO launch price notice in the app, and continues the CrossOver, Whisky, Wine, and Game Porting Toolkit diagnostics introduced in 4.0.4.
+Version 4.0.5 keeps the 4.0 interface, adds the temporary PRO launch price notice in the app, and continues the CrossOver, Whisky, Wine, and Game Porting Toolkit diagnostics introduced in 4.0.4.
 
 Highlights:
 

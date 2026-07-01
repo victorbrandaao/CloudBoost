@@ -49,4 +49,4 @@ Free includes manual sessions, core cloud, remote play, native Mac and competiti
 
 PRO adds automation, HUD, Session Doctor full reports, Session Lab, Stream Signal, PRO Widgets, Heat Guard, Keep Alive, Session Proof, Kernel Watch, background throttle, CrossOver/Whisky diagnostics, priority Discord support, early builds, and deeper diagnostics.
 
-Launch week offer: CloudBoost PRO is $4.99 for 7 days. It is a one-time v4 license, not a subscription.
+Launch week offer: for the next 7 days, CloudBoost PRO costs $4.99. It is the full one-time CloudBoost 4.x PRO license, not a 7-day rental or subscription.
