@@ -11,6 +11,8 @@ Reviews: https://victorbrandaao.github.io/CloudBoost/reviews.html
 
 CloudBoost helps Mac players start a focused gaming session, reduce local macOS interruptions, and understand latency spikes that normal speed tests often miss.
 
+Version 4.0.7 adds Test My Setup, a What CloudBoost did checklist, Session Doctor Fix actions, Can Fix / Manual Check wording, before/after summaries, and PRO session end reports.
+
 It is built for:
 
 - GeForce NOW
@@ -49,4 +51,6 @@ Free includes manual sessions, core cloud, remote play, native Mac and competiti
 
 PRO adds automation, HUD, Session Doctor full reports, Session Lab, Stream Signal, PRO Widgets, Heat Guard, Keep Alive, Session Proof, Kernel Watch, background throttle, CrossOver/Whisky diagnostics, priority Discord support, early builds, and deeper diagnostics.
 
-Launch week offer: for the next 7 days, CloudBoost PRO costs $4.99. It is the full one-time CloudBoost 4.x PRO license, not a 7-day rental or subscription.
+PRO also includes Session Doctor Fix actions, session end reports, and deeper before/after diagnostics.
+
+Launch price test: CloudBoost PRO is currently $4.99. It is the full one-time CloudBoost 4.x PRO license, not a 7-day rental or subscription.

@@ -8,7 +8,7 @@ It is built for cloud gaming, remote play, native Mac games, and PRO diagnostics
 
 <p align="center">
   <img src="https://img.shields.io/github/v/release/victorbrandaao/CloudBoost?style=for-the-badge">
-  <img src="https://img.shields.io/github/downloads/victorbrandaao/CloudBoost/v4.0.6/total?label=latest%20release%20downloads&amp;style=for-the-badge&amp;color=2ea44f&amp;v=2">
+  <img src="https://img.shields.io/github/downloads/victorbrandaao/CloudBoost/v4.0.7/total?label=latest%20release%20downloads&amp;style=for-the-badge&amp;color=2ea44f&amp;v=3">
   <img src="https://img.shields.io/github/downloads/victorbrandaao/CloudBoost/total?label=all-time%20downloads&amp;style=for-the-badge&amp;color=111111&amp;v=2">
   <img src="https://img.shields.io/badge/macOS-12%2B-black?style=for-the-badge">
   <a href="https://discord.gg/kU5trxtRb"><img src="https://img.shields.io/badge/Discord-Support-5865F2?style=for-the-badge"></a>
@@ -103,12 +103,16 @@ PRO is for people who use it regularly and want deeper diagnostics, automation, 
 | Rollback protection | Yes | Yes |
 | Auto-detect and Auto Boost | No | Yes |
 | Smart Boost and Stability Guard | No | Yes |
+| Test My Setup quick check | Yes | Yes |
+| What CloudBoost did checklist | Basic | Full |
+| Session Doctor Fix actions | No | Yes |
 | Fastest and Smooth presets | No | Yes |
 | HUD | No | Yes |
 | Session Doctor full reports with UDP probe | No | Yes |
 | Session Lab | No | Yes |
 | Stream Signal | No | Yes |
 | PRO Widgets | No | Yes |
+| Session end report | No | Yes |
 | Heat Guard and Keep Alive | No | Yes |
 | Session Proof export | No | Yes |
 | Kernel Watch and background throttle | No | Yes |
@@ -138,16 +142,22 @@ Common cases:
 
 CloudBoost cannot fix a bad router, bad ISP route, overloaded game server, or remote machine problem. It gives you a cleaner local session and better information when something feels off.
 
-## Version 4.0.6
+## Version 4.0.7
 
-Version 4.0.6 improves the update system. CloudBoost now ships a ZIP package for in-app updates, stages the verified app locally, and can replace/relaunch CloudBoost with a helper instead of only opening the release page or DMG.
+Version 4.0.7 makes CloudBoost more actionable. The app now shows what it actually did during the session, separates issues CloudBoost can help with from manual checks, and gives PRO users a clearer end-of-session report.
 
 Highlights:
 
+- What CloudBoost did panel with applied actions and manual checks
+- Test My Setup quick check before starting a session
+- Session Doctor Fix button for temporary session actions
+- clearer Can Fix / Manual Check wording in Session Doctor
+- before/after summary inside Session Lab
+- PRO session end report with score, duration, main issue, trend, and next step
+- preset descriptions for Fastest, Balanced, and Smooth
 - CrossOver / Windows Games profile in PRO
 - detection for CrossOver, Whisky, Wine, and GPTK sessions
 - macOS-side pressure checks for compatibility-layer gaming
-- in-app PRO launch price notice for Free users
 - ZIP-based in-app updater with staged install and relaunch
 - DMG remains available for manual installs
 - clearer Session Lab and Stream Signal guidance
