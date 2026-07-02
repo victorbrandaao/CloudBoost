@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PS Remote Play on Mac latency guide</title>
+    <meta name="description" content="PS Remote Play on Mac setup notes for LAN stability, Wi-Fi, Ethernet, UDP, jitter and background traffic.">
+    <meta name="robots" content="index,follow,max-image-preview:large">
+    <link rel="canonical" href="https://victorbrandaao.github.io/CloudBoost/guides/ps-remote-play-mac.html">
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body>
+    <div class="page content-page">
+      <header class="site-header">
+        <a class="brand" href="../index.html"><span class="mark" aria-hidden="true"></span><span>CloudBoost</span></a>
+        <nav><a href="../guides.html">Guides</a><a href="../trust.html">Trust</a><a href="https://discord.gg/kU5trxtRb">Discord</a></nav>
+      </header>
+      <main>
+        <section class="hero">
+          <p class="eyebrow">PS Remote Play</p>
+          <h1>LAN can still stutter.</h1>
+          <p class="lead">Remote Play over the same network is usually better than cloud gaming, but it can still suffer from Wi-Fi roaming, AWDL, background traffic and UDP/firewall behavior.</p>
+        </section>
+        <section class="article-section">
+          <h2>Useful setup checks</h2>
+          <ul class="plain-list">
+            <li>Use Ethernet for the console when possible.</li>
+            <li>Keep the Mac close to the router or use Ethernet for the Mac too.</li>
+            <li>Disable VPN while testing Remote Play behavior.</li>
+            <li>Pause iCloud Drive, Dropbox, Photos and Time Machine during the test.</li>
+            <li>Lower Remote Play quality/resolution if jitter appears under load.</li>
+          </ul>
+        </section>
+        <section class="article-section">
+          <h2>Where CloudBoost helps</h2>
+          <p>CloudBoost can help identify local Mac-side noise and produce a Session Proof report that shows whether the problem looks like Wi-Fi/AWDL, background traffic, local pressure or blocked UDP tests.</p>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

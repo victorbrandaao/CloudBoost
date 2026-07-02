@@ -35,6 +35,6 @@ body:
     id: details
     attributes:
       label: Useful details
-      description: Wi-Fi/Ethernet, VPN/firewall/private relay, Session Doctor text, Session Lab result, screenshots.
+      description: Wi-Fi/Ethernet, VPN/firewall/private relay, Session Doctor text, Session Lab result, screenshots. PRO users can paste the Session Proof report from the app.
     validations:
       required: false

@@ -8,7 +8,7 @@ It is built for cloud gaming, remote play, native Mac games, and PRO diagnostics
 
 <p align="center">
   <img src="https://img.shields.io/github/v/release/victorbrandaao/CloudBoost?style=for-the-badge">
-  <img src="https://img.shields.io/github/downloads/victorbrandaao/CloudBoost/v4.0.7/total?label=latest%20release%20downloads&amp;style=for-the-badge&amp;color=2ea44f&amp;v=3">
+  <img src="https://img.shields.io/github/downloads/victorbrandaao/CloudBoost/v4.0.8/total?label=latest%20release%20downloads&amp;style=for-the-badge&amp;color=2ea44f&amp;v=4">
   <img src="https://img.shields.io/github/downloads/victorbrandaao/CloudBoost/total?label=all-time%20downloads&amp;style=for-the-badge&amp;color=111111&amp;v=2">
   <img src="https://img.shields.io/badge/macOS-12%2B-black?style=for-the-badge">
   <a href="https://discord.gg/kU5trxtRb"><img src="https://img.shields.io/badge/Discord-Support-5865F2?style=for-the-badge"></a>
@@ -52,6 +52,10 @@ xattr -cr /Applications/"CloudBoost.app"
 ```
 
 Need help? Join Discord: [discord.gg/kU5trxtRb](https://discord.gg/kU5trxtRb)
+
+Trust Center: [what CloudBoost does, does not do, and can ask permission for](https://victorbrandaao.github.io/CloudBoost/trust.html)
+
+Guides: [Mac gaming setup notes by service and game](https://victorbrandaao.github.io/CloudBoost/guides.html)
 
 ## What CloudBoost Is
 
@@ -114,7 +118,7 @@ PRO is for people who use it regularly and want deeper diagnostics, automation, 
 | PRO Widgets | No | Yes |
 | Session end report | No | Yes |
 | Heat Guard and Keep Alive | No | Yes |
-| Session Proof export | No | Yes |
+| Session Proof copy/export for Discord and GitHub support | No | Yes |
 | Kernel Watch and background throttle | No | Yes |
 | CrossOver, Whisky, Wine, and GPTK diagnostics | No | Yes |
 | Priority Discord support | No | Yes |
@@ -142,12 +146,16 @@ Common cases:
 
 CloudBoost cannot fix a bad router, bad ISP route, overloaded game server, or remote machine problem. It gives you a cleaner local session and better information when something feels off.
 
-## Version 4.0.7
+## Version 4.0.8
 
-Version 4.0.7 makes CloudBoost more actionable. The app now shows what it actually did during the session, separates issues CloudBoost can help with from manual checks, and gives PRO users a clearer end-of-session report.
+Version 4.0.8 focuses on trust, support, and clearer proof of what happened during a session.
 
 Highlights:
 
+- new PRO `Proof` action that copies a clean Session Proof report for Discord or GitHub Issues
+- support report includes profile, preset, session state, Session Doctor, Session Lab, before/after summary and recent CloudBoost events
+- new Trust Center page explaining what CloudBoost does, does not do, and when macOS may ask for administrator permission
+- new public guides for GeForce NOW, PS Remote Play, Dota 2, CS2, CrossOver/Whisky and Moonlight-style remote sessions
 - What CloudBoost did panel with applied actions and manual checks
 - Test My Setup quick check before starting a session
 - Session Doctor Fix button for temporary session actions
@@ -178,6 +186,9 @@ When asking for help, include:
 - Wi-Fi or Ethernet
 - VPN/firewall/private relay status
 - screenshot of Session Doctor or Session Lab
+- Session Proof report copied from the app when using PRO
+
+The Session Proof report does not include license keys, personal files, hostnames, or browser history.
 
 ## Reviews
 
@@ -200,6 +211,8 @@ Read reviews: [CloudBoost reviews page](https://victorbrandaao.github.io/CloudBo
 CloudBoost is proprietary software. The public repository contains releases, documentation, and downloadable binaries, not the full source code.
 
 CloudBoost does not install KEXTs, hidden daemons, permanent system patches, game injections, or anti-cheat bypasses. Some actions may ask for administrator permission because macOS requires it for temporary system-level session changes.
+
+Read the Trust Center: [victorbrandaao.github.io/CloudBoost/trust.html](https://victorbrandaao.github.io/CloudBoost/trust.html)
 
 Some diagnostics and HUD ideas are inspired by [Better xCloud](https://github.com/redphx/better-xcloud) by redphx. CloudBoost does not use Better xCloud code.
 

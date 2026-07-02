@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CloudBoost - macOS Gaming Session Optimizer</title>
-    <meta name="description" content="CloudBoost is a native macOS menu bar app for cleaner cloud gaming, remote play, native Mac gaming and PRO CrossOver/Whisky diagnostics. Diagnose jitter, latency spikes, packet loss, background traffic, Wi-Fi/AWDL noise and system pressure.">
+    <meta name="description" content="CloudBoost is a native macOS menu bar app for cleaner cloud gaming, remote play, native Mac gaming and PRO CrossOver/Whisky diagnostics. Diagnose jitter, latency spikes, packet loss, background traffic, Wi-Fi/AWDL noise and system pressure, then copy a Session Proof report for support.">
     <meta name="keywords" content="macOS gaming optimizer, Mac gaming optimizer, GeForce NOW Mac lag, Xbox Cloud Gaming Mac, PS Remote Play Mac, Moonlight Mac, Steam Link Mac, CrossOver Mac gaming, Whisky Mac gaming, Dota 2 Mac, CS2 Mac, Mac latency spikes, Mac jitter, AWDL Wi-Fi gaming">
     <meta name="author" content="Victor Brandao">
     <meta name="robots" content="index,follow,max-image-preview:large">
@@ -31,8 +31,8 @@
         "operatingSystem": "macOS 12 or later",
         "applicationCategory": "UtilitiesApplication",
         "applicationSubCategory": "Gaming utility",
-        "softwareVersion": "4.0.7",
-        "description": "CloudBoost is a native macOS menu bar app for cleaner cloud gaming, remote play, native Mac gaming and PRO CrossOver/Whisky diagnostics. It helps diagnose jitter, latency spikes, packet loss, background traffic, AWDL/Wi-Fi noise and local system pressure, then shows what was applied during the session.",
+        "softwareVersion": "4.0.8",
+        "description": "CloudBoost is a native macOS menu bar app for cleaner cloud gaming, remote play, native Mac gaming and PRO CrossOver/Whisky diagnostics. It helps diagnose jitter, latency spikes, packet loss, background traffic, AWDL/Wi-Fi noise and local system pressure, then shows what was applied during the session and can copy a Session Proof report for support.",
         "image": "https://victorbrandaao.github.io/CloudBoost/assets/cloudboost-macos-gaming-optimizer.png",
         "downloadUrl": "https://github.com/victorbrandaao/CloudBoost/releases/latest",
         "author": {
@@ -111,7 +111,9 @@
         <nav aria-label="Primary">
           <a href="#download">Download</a>
           <a href="#use-cases">Use cases</a>
+          <a href="guides.html">Guides</a>
           <a href="#pro">PRO</a>
+          <a href="trust.html">Trust</a>
           <a href="reviews.html">Reviews</a>
           <a href="#support">Support</a>
         </nav>
@@ -120,7 +122,7 @@
       <main>
         <section class="hero" id="download">
           <div class="hero-copy">
-            <p class="eyebrow">CloudBoost 4.0.7 for macOS</p>
+            <p class="eyebrow">CloudBoost 4.0.8 for macOS</p>
             <h1>Cleaner gaming sessions on Mac.</h1>
             <p class="lead">A native menu bar app for players who want fewer random spikes and clearer diagnostics, not fake boost promises.</p>
             <p class="sublead">CloudBoost watches the Mac side of the session: jitter, packet loss, route latency, background traffic, AWDL/Wi-Fi noise, thermal pressure, Low Power Mode and local CPU pressure.</p>
@@ -141,6 +143,8 @@
           <span>No anti-cheat bypass</span>
           <span>No kernel extension</span>
           <span>Temporary session changes</span>
+          <a href="trust.html">Trust Center</a>
+          <a href="guides.html">Setup guides</a>
           <a href="https://macmagazine.com.br/post/2026/06/01/cloudboost-otimiza-a-experiencia-de-jogos-na-nuvem-no-mac/">Covered by MacMagazine</a>
           <a class="made-in-brazil" href="https://feitonobrasil.dev.br" aria-label="Made in Brazil">
             <img src="https://selo.feitonobrasil.dev.br/en/serio/colorido/1x.svg" alt="Made in Brazil" height="42" loading="lazy">
@@ -179,6 +183,11 @@
             <h3>Test setup, see what was applied, then get a plain-language next step.</h3>
             <p>CloudBoost now separates issues it can help with from manual checks such as ISP route, VPN/firewall, server region or app-side sync settings.</p>
           </article>
+          <article>
+            <span>Session Proof</span>
+            <h3>Copy a support-ready report instead of explaining everything from scratch.</h3>
+            <p>PRO users can copy a clean report with profile, preset, Session Doctor, Session Lab, before/after summary, and recent app events.</p>
+          </article>
         </section>
 
         <section class="section split" id="pro">
@@ -193,7 +202,7 @@
             </article>
             <article>
               <h3>PRO</h3>
-              <p>Automation, HUD, Session Doctor full reports and Fix actions, Session Lab, Stream Signal, PRO Widgets, Heat Guard, Keep Alive, Session Proof, Kernel Watch, background throttle, CrossOver/Whisky diagnostics and priority Discord support.</p>
+              <p>Automation, HUD, Session Doctor full reports and Fix actions, Session Lab, Stream Signal, PRO Widgets, Heat Guard, Keep Alive, Session Proof copy/export, Kernel Watch, background throttle, CrossOver/Whisky diagnostics and priority Discord support.</p>
               <p><strong>Launch price test:</strong> PRO is currently $4.99. This is the full CloudBoost 4.x PRO license, not a 7-day rental.</p>
               <a class="text-link" href="https://victorbrandao0.gumroad.com/l/CloudBoost">Unlock PRO license</a>
             </article>
@@ -202,11 +211,12 @@
 
         <section class="section split">
           <div>
-            <p class="eyebrow">Version 4.0.7</p>
-            <h2>More actionable diagnostics for Mac gaming.</h2>
+            <p class="eyebrow">Version 4.0.8</p>
+            <h2>More trust, better support, clearer proof.</h2>
           </div>
           <div class="copy">
-            <p>The latest release adds Test My Setup, a What CloudBoost did checklist, Session Doctor Fix actions, clearer Can Fix / Manual Check wording, and a PRO session end report.</p>
+            <p>The latest release adds a one-click Session Proof report for PRO users, a public Trust Center, and practical setup guides for common Mac gaming cases.</p>
+            <p>Session Proof gives support enough context to help faster: profile, preset, Session Doctor, Session Lab, before/after summary and recent CloudBoost events.</p>
             <p>The ZIP updater remains available for in-app updates, and the DMG remains available for manual installs. Existing PRO customers keep their access and receive the expanded feature set.</p>
           </div>
         </section>
@@ -219,9 +229,10 @@
           <div class="copy">
             <p>Discord is open to Free and PRO users for install help, license support, bug reports, confusing diagnostics and feature requests.</p>
             <p>For faster help, include macOS version, Mac model, selected profile, Wi-Fi or Ethernet, VPN/firewall status, and a screenshot of Session Doctor or Session Lab.</p>
+            <p>PRO users can also paste the Session Proof report from the app, which is usually faster than describing the whole setup manually.</p>
             <div class="actions small-actions">
               <a class="button primary" href="https://discord.gg/kU5trxtRb">Join Discord</a>
-              <a class="button secondary" href="https://github.com/victorbrandaao/CloudBoost/issues/new?template=user-review.yml">Leave a review</a>
+              <a class="button secondary" href="trust.html">Read Trust Center</a>
             </div>
           </div>
         </section>
@@ -244,6 +255,10 @@
             <p>No. CloudBoost does not install KEXTs, hidden daemons, permanent system patches, game injections or anti-cheat bypasses. Some features may ask for administrator permission because macOS requires it for temporary system-level session changes.</p>
           </details>
           <details>
+            <summary>What is Session Proof?</summary>
+            <p>Session Proof is a PRO support report that can be copied from the app. It includes the selected profile, preset, Session Doctor, Session Lab, before/after summary and recent CloudBoost events. It does not include license keys, personal files, hostnames or browser history.</p>
+          </details>
+          <details>
             <summary>What if macOS says the app is damaged?</summary>
             <p>Because CloudBoost is distributed outside the App Store, you may need to clear quarantine after installing: <code>xattr -cr /Applications/"CloudBoost.app"</code></p>
           </details>
@@ -263,6 +278,8 @@
       <span>CloudBoost is proprietary software.</span>
       <a href="https://github.com/victorbrandaao/CloudBoost">GitHub</a>
       <a href="https://victorbrandao0.gumroad.com/l/CloudBoost">PRO</a>
+      <a href="guides.html">Guides</a>
+      <a href="trust.html">Trust</a>
       <a href="reviews.html">Reviews</a>
       <a href="https://discord.gg/kU5trxtRb">Discord</a>
     </footer>

@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CloudBoost Trust Center</title>
+    <meta name="description" content="What CloudBoost does, what it does not do, why macOS may ask for permission, and what is included in a Session Proof support report.">
+    <meta name="robots" content="index,follow,max-image-preview:large">
+    <link rel="canonical" href="https://victorbrandaao.github.io/CloudBoost/trust.html">
+    <meta property="og:title" content="CloudBoost Trust Center">
+    <meta property="og:description" content="A plain explanation of CloudBoost safety, limits, permissions and support reports.">
+    <meta property="og:image" content="https://victorbrandaao.github.io/CloudBoost/assets/cloudboost-macos-gaming-optimizer.png">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="page content-page">
+      <header class="site-header">
+        <a class="brand" href="index.html"><span class="mark" aria-hidden="true"></span><span>CloudBoost</span></a>
+        <nav aria-label="Primary">
+          <a href="index.html#download">Download</a>
+          <a href="guides.html">Guides</a>
+          <a href="reviews.html">Reviews</a>
+          <a href="https://discord.gg/kU5trxtRb">Discord</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero">
+          <p class="eyebrow">Trust Center</p>
+          <h1>What CloudBoost does, and what it will not do.</h1>
+          <p class="lead">CloudBoost is a macOS session utility. It tries to reduce local interruptions around a gaming session and explain likely spike causes in plain language.</p>
+        </section>
+
+        <section class="guide-grid" aria-label="Trust summary">
+          <article class="info-block">
+            <span>Does</span>
+            <h3>Temporary session tuning</h3>
+            <p>CloudBoost can start a focused session, keep the Mac awake, refresh DNS, watch Wi-Fi/AWDL state, monitor local pressure and restore temporary changes when the session ends.</p>
+          </article>
+          <article class="info-block">
+            <span>Does not</span>
+            <h3>No game injection</h3>
+            <p>It does not inject code into games, edit game files, bypass anti-cheat, modify CrossOver bottles, install KEXTs or promise magic FPS gains.</p>
+          </article>
+          <article class="info-block">
+            <span>Support</span>
+            <h3>Session Proof</h3>
+            <p>PRO users can copy a report with profile, preset, Session Doctor, Session Lab, before/after summary and recent CloudBoost events.</p>
+          </article>
+        </section>
+
+        <section class="article-section">
+          <h2>Why macOS may ask for permission</h2>
+          <p>Some actions touch system-level session behavior, such as network interface state, DNS cache, process priority or Time Machine pause/resume. macOS requires administrator permission for some of these actions.</p>
+          <p>CloudBoost should not ask for permission just to open the app, view basic diagnostics or use free manual profiles. Permission prompts are tied to actions that macOS protects.</p>
+        </section>
+
+        <section class="article-section">
+          <h2>What Session Proof includes</h2>
+          <ul class="plain-list">
+            <li>App version, macOS version, current plan and selected profile.</li>
+            <li>Session state, preset, AWDL Guard state and selected diagnostic toggles.</li>
+            <li>Latest Session Doctor title, score, cause, recommendation and UDP probe summary.</li>
+            <li>Latest Session Lab result when the user has run it.</li>
+            <li>Before/after summary and recent CloudBoost app events.</li>
+          </ul>
+          <div class="callout">
+            <p>Session Proof does not include license keys, personal files, hostnames, browser history or the contents of other apps.</p>
+          </div>
+        </section>
+
+        <section class="article-section">
+          <h2>Known limits</h2>
+          <p>CloudBoost cannot fix an overloaded ISP route, a bad router, a remote game server issue, a VPN/firewall blocking UDP, or a game engine problem. In those cases it should point the user toward the next check instead of pretending to solve it.</p>
+          <p>For native Mac games, CloudBoost does not measure FPS yet. It focuses on local session pressure that can contribute to stutter or uneven frame pacing.</p>
+        </section>
+      </main>
+    </div>
+
+    <footer>
+      <span>CloudBoost is proprietary software.</span>
+      <a href="index.html">Home</a>
+      <a href="guides.html">Guides</a>
+      <a href="https://discord.gg/kU5trxtRb">Discord</a>
+    </footer>
+  </body>
+</html>

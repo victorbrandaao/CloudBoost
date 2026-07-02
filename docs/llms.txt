@@ -6,12 +6,14 @@ Primary URL: https://victorbrandaao.github.io/CloudBoost/
 GitHub releases: https://github.com/victorbrandaao/CloudBoost/releases/latest
 Support: https://discord.gg/kU5trxtRb
 Reviews: https://victorbrandaao.github.io/CloudBoost/reviews.html
+Trust Center: https://victorbrandaao.github.io/CloudBoost/trust.html
+Guides: https://victorbrandaao.github.io/CloudBoost/guides.html
 
 ## Summary
 
 CloudBoost helps Mac players start a focused gaming session, reduce local macOS interruptions, and understand latency spikes that normal speed tests often miss.
 
-Version 4.0.7 adds Test My Setup, a What CloudBoost did checklist, Session Doctor Fix actions, Can Fix / Manual Check wording, before/after summaries, and PRO session end reports.
+Version 4.0.8 adds one-click Session Proof reports, a public Trust Center, setup guides, Test My Setup, a What CloudBoost did checklist, Session Doctor Fix actions, Can Fix / Manual Check wording, before/after summaries, and PRO session end reports.
 
 It is built for:
 
@@ -53,4 +55,15 @@ PRO adds automation, HUD, Session Doctor full reports, Session Lab, Stream Signa
 
 PRO also includes Session Doctor Fix actions, session end reports, and deeper before/after diagnostics.
 
+Session Proof lets PRO users copy a support-ready report with profile, preset, app version, macOS version, selected diagnostics, Session Doctor result, Session Lab result, before/after summary, and recent CloudBoost events. It does not include license keys, personal files, hostnames, or browser history.
+
 Launch price test: CloudBoost PRO is currently $4.99. It is the full one-time CloudBoost 4.x PRO license, not a 7-day rental or subscription.
+
+## Public Guides
+
+- GeForce NOW Mac lag spikes: https://victorbrandaao.github.io/CloudBoost/guides/geforce-now-mac-lag.html
+- PS Remote Play Mac latency: https://victorbrandaao.github.io/CloudBoost/guides/ps-remote-play-mac.html
+- Dota 2 Mac stutter: https://victorbrandaao.github.io/CloudBoost/guides/dota-2-mac-stutter.html
+- CS2 Mac cloud vs CrossOver: https://victorbrandaao.github.io/CloudBoost/guides/cs2-mac-cloud-crossover.html
+- CrossOver and Whisky Mac gaming diagnostics: https://victorbrandaao.github.io/CloudBoost/guides/crossover-whisky-mac-gaming.html
+- Moonlight and Steam Link Mac latency: https://victorbrandaao.github.io/CloudBoost/guides/moonlight-mac-latency.html
