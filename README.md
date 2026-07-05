@@ -19,7 +19,7 @@ It is built for cloud gaming, remote play, native Mac games, and PRO diagnostics
 </p>
 
 <p align="center">
-  <img src="./assets/cloudboost-macos-gaming-optimizer.png" alt="CloudBoost macOS gaming optimizer showing session diagnostics, latency, jitter, Session Lab, PRO widgets and game profiles">
+  <img src="./assets/cloudboost-clean-readme.png" alt="CloudBoost macOS gaming optimizer showing session diagnostics, latency, jitter, Session Lab, PRO widgets and game profiles">
 </p>
 
 ## Download
@@ -32,6 +32,20 @@ Launch price test: **CloudBoost PRO is currently $4.99**.
 
 This is the full PRO v4.x license at a temporary price. One-time payment. No subscription. Existing PRO customers keep their access.
 
+Install with Homebrew:
+
+```bash
+brew tap victorbrandaao/cloudboost
+brew install --cask cloudboost
+```
+
+Update with Homebrew:
+
+```bash
+brew update
+brew upgrade --cask cloudboost
+```
+
 Install:
 
 1. Download the latest `CloudBoost_v4.x.dmg`.
@@ -41,6 +55,7 @@ Install:
 
 Updates:
 
+- Homebrew installs can be updated with `brew upgrade --cask cloudboost`.
 - Manual installs use the DMG from GitHub Releases.
 - In-app updates use the verified ZIP asset when available, then replace and relaunch CloudBoost automatically.
 - The README counters show both downloads from the latest release and all-time downloads across release assets.

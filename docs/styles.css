@@ -218,6 +218,31 @@ h3 {
   color: var(--ink);
 }
 
+.install-command {
+  display: grid;
+  gap: 8px;
+  max-width: 430px;
+  margin-top: 18px;
+  padding: 14px 16px;
+  border: 2px solid var(--ink);
+  background: #fbfbf8;
+}
+
+.install-command span {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 950;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.install-command code {
+  display: block;
+  padding: 0;
+  background: transparent;
+  line-height: 1.55;
+}
+
 .app-preview {
   margin: 0;
   justify-self: end;
