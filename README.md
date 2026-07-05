@@ -128,6 +128,7 @@ PRO is for people who use it regularly and want deeper diagnostics, automation, 
 | Fastest and Smooth presets | No | Yes |
 | HUD | No | Yes |
 | Session Doctor full reports with UDP probe | No | Yes |
+| VPN Route Doctor | No | Yes |
 | Session Lab | No | Yes |
 | Stream Signal | No | Yes |
 | PRO Widgets | No | Yes |
@@ -161,12 +162,19 @@ Common cases:
 
 CloudBoost cannot fix a bad router, bad ISP route, overloaded game server, or remote machine problem. It gives you a cleaner local session and better information when something feels off.
 
-## Version 4.0.9
+## Version 4.1
 
-Version 4.0.9 focuses on safer updates, clearer diagnostics, and fewer confusing PRO support cases.
+Version 4.1 focuses on clearer diagnostics for real gaming setups, especially VPNs, route behavior, support reports, and the new visual presentation of the app.
 
 Highlights:
 
+- new VPN Route Doctor for PRO diagnostics
+- detects common VPN/tunnel tools and flags when the default route is going through a tunnel
+- Session Doctor now explains VPN-related UDP blocks, route latency, packet loss, and jitter more clearly
+- Path status can show `VPN` when the active gaming route is tunneled
+- Session Proof and diagnostics exports now include VPN status and split-tunneling guidance
+- new README, website, and social images built from real app screenshots
+- Payhip/Mercado Pago license path is available as fallback while Gumroad remains the main checkout
 - in-app updater now requires a published SHA256 checksum before installing or opening a downloaded package
 - Gumroad license validation now handles encoded product IDs and temporary server errors more safely
 - Background Traffic wording is clearer about what CloudBoost can pause, what it can throttle, and what must be paused inside the sync app itself
