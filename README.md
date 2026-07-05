@@ -146,12 +146,20 @@ Common cases:
 
 CloudBoost cannot fix a bad router, bad ISP route, overloaded game server, or remote machine problem. It gives you a cleaner local session and better information when something feels off.
 
-## Version 4.0.8
+## Version 4.0.9
 
-Version 4.0.8 focuses on trust, support, and clearer proof of what happened during a session.
+Version 4.0.9 focuses on safer updates, clearer diagnostics, and fewer confusing PRO support cases.
 
 Highlights:
 
+- in-app updater now requires a published SHA256 checksum before installing or opening a downloaded package
+- Gumroad license validation now handles encoded product IDs and temporary server errors more safely
+- Background Traffic wording is clearer about what CloudBoost can pause, what it can throttle, and what must be paused inside the sync app itself
+- What CloudBoost did now separates verified actions from requested actions when macOS accepts a privileged session change
+- CrossOver / Windows Games is now treated as a compatibility-layer profile instead of a native Mac profile in Session Lab and Stream Signal
+- anonymous telemetry avoids duplicate first-run `app_opened` events
+- telemetry failure logs are cleaner for Session Proof reports
+- release script now writes `.release/checksums.md` so ZIP/DMG checksums are harder to forget
 - new PRO `Proof` action that copies a clean Session Proof report for Discord or GitHub Issues
 - support report includes profile, preset, session state, Session Doctor, Session Lab, before/after summary and recent CloudBoost events
 - new Trust Center page explaining what CloudBoost does, does not do, and when macOS may ask for administrator permission

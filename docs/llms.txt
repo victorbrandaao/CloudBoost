@@ -13,7 +13,7 @@ Guides: https://victorbrandaao.github.io/CloudBoost/guides.html
 
 CloudBoost helps Mac players start a focused gaming session, reduce local macOS interruptions, and understand latency spikes that normal speed tests often miss.
 
-Version 4.0.8 adds one-click Session Proof reports, a public Trust Center, setup guides, Test My Setup, a What CloudBoost did checklist, Session Doctor Fix actions, Can Fix / Manual Check wording, before/after summaries, and PRO session end reports.
+Version 4.0.9 hardens the in-app updater with required SHA256 verification, improves Gumroad license validation, clarifies Background Traffic wording, separates verified vs requested session actions, and treats CrossOver/Whisky as compatibility-layer profiles instead of native Mac profiles.
 
 It is built for:
 
