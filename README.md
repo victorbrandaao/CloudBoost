@@ -8,7 +8,7 @@ It is built for cloud gaming, remote play, native Mac games, and PRO diagnostics
 
 <p align="center">
   <img src="https://img.shields.io/github/v/release/victorbrandaao/CloudBoost?style=for-the-badge">
-  <img src="https://img.shields.io/github/downloads/victorbrandaao/CloudBoost/v4.0.8/total?label=latest%20release%20downloads&amp;style=for-the-badge&amp;color=2ea44f&amp;v=4">
+  <img src="https://img.shields.io/github/downloads/victorbrandaao/CloudBoost/latest/total?label=latest%20release%20downloads&amp;style=for-the-badge&amp;color=2ea44f&amp;v=5">
   <img src="https://img.shields.io/github/downloads/victorbrandaao/CloudBoost/total?label=all-time%20downloads&amp;style=for-the-badge&amp;color=111111&amp;v=2">
   <img src="https://img.shields.io/badge/macOS-12%2B-black?style=for-the-badge">
   <a href="https://discord.gg/kU5trxtRb"><img src="https://img.shields.io/badge/Discord-Support-5865F2?style=for-the-badge"></a>
