@@ -28,9 +28,9 @@ Website: [victorbrandaao.github.io/CloudBoost](https://victorbrandaao.github.io/
 
 Latest release: [GitHub Releases](https://github.com/victorbrandaao/CloudBoost/releases/latest)
 
-Launch price test: **CloudBoost PRO is currently $4.99**.
+CloudBoost PRO is currently **$10**.
 
-This is the full PRO v4.x license at a temporary price. One-time payment. No subscription. Existing PRO customers keep their access.
+This is the full PRO v4.x license. One-time payment. No subscription. Existing PRO customers keep their access.
 
 Install with Homebrew:
 
@@ -141,9 +141,9 @@ PRO is for people who use it regularly and want deeper diagnostics, automation, 
 | CrossOver, Whisky, Wine, and GPTK diagnostics | No | Yes |
 | Priority Discord support | No | Yes |
 
-Launch price test: **CloudBoost PRO is currently $4.99**.
+CloudBoost PRO is currently **$10**.
 
-This is the full PRO v4.x license at a temporary price. One-time payment. No subscription.
+This is the full PRO v4.x license. One-time payment. No subscription.
 
 Unlock PRO: [Gumroad](https://victorbrandao0.gumroad.com/l/CloudBoost)
 

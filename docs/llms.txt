@@ -61,7 +61,7 @@ PRO also includes VPN Route Doctor, Session Doctor Fix actions, session end repo
 
 Session Proof lets PRO users copy a support-ready report with profile, preset, app version, macOS version, selected diagnostics, Session Doctor result, Session Lab result, before/after summary, and recent CloudBoost events. It does not include license keys, personal files, hostnames, or browser history.
 
-Launch price test: CloudBoost PRO is currently $4.99. It is the full one-time CloudBoost 4.x PRO license, not a 7-day rental or subscription.
+CloudBoost PRO is currently $10. It is the full one-time CloudBoost 4.x PRO license, not a rental or subscription.
 
 ## Public Guides
 
