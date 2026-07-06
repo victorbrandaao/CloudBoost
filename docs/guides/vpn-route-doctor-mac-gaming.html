@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>VPN Route Doctor for Mac gaming</title>
+    <meta name="description" content="How VPNs can affect Mac gaming sessions through route latency, UDP blocks, NAT changes, packet loss and jitter, and how CloudBoost PRO diagnoses it.">
+    <meta name="robots" content="index,follow,max-image-preview:large">
+    <link rel="canonical" href="https://victorbrandaao.github.io/CloudBoost/guides/vpn-route-doctor-mac-gaming.html">
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body>
+    <div class="page content-page">
+      <header class="site-header">
+        <a class="brand" href="../index.html"><span class="mark" aria-hidden="true"></span><span>CloudBoost</span></a>
+        <nav><a href="../guides.html">Guides</a><a href="../trust.html">Trust</a><a href="https://discord.gg/kU5trxtRb">Discord</a></nav>
+      </header>
+      <main>
+        <section class="hero text-hero">
+          <p class="eyebrow">VPN Route Doctor</p>
+          <h1>A VPN can hide the real reason a stream feels bad.</h1>
+          <p class="lead">VPNs can add route latency, block UDP checks, change NAT behavior, increase jitter, or make the game service choose a worse route.</p>
+        </section>
+        <section class="article-section">
+          <h2>What CloudBoost detects</h2>
+          <ul class="plain-list">
+            <li>Common VPN or tunnel interfaces on macOS.</li>
+            <li>Whether the default route appears to be tunneled.</li>
+            <li>UDP checks that fail while a VPN is active.</li>
+            <li>Packet loss or jitter that happens while the tunnel is active.</li>
+            <li>When split tunneling is a better next test than changing game settings.</li>
+          </ul>
+        </section>
+        <section class="article-section">
+          <h2>What to try</h2>
+          <p>Test once with VPN off. If the session improves, use split tunneling for GeForce NOW, Xbox Cloud Gaming, Boosteroid, Shadow, Moonlight, Steam Link, PS Remote Play or the browser used for cloud gaming.</p>
+          <p>If the VPN is required, prefer a nearby region and a UDP/WireGuard-style mode when your provider supports it.</p>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

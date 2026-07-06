@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shadow PC on Mac: remote PC latency, jitter and VPN diagnostics</title>
+    <meta name="description" content="Shadow PC on Mac troubleshooting guide for remote PC latency, jitter, packet loss, VPN routing, UDP checks, Wi-Fi/AWDL behavior and local macOS pressure.">
+    <meta name="robots" content="index,follow,max-image-preview:large">
+    <link rel="canonical" href="https://victorbrandaao.github.io/CloudBoost/guides/shadow-pc-mac-latency.html">
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body>
+    <div class="page content-page">
+      <header class="site-header">
+        <a class="brand" href="../index.html"><span class="mark" aria-hidden="true"></span><span>CloudBoost</span></a>
+        <nav><a href="../guides.html">Guides</a><a href="../trust.html">Trust</a><a href="https://discord.gg/kU5trxtRb">Discord</a></nav>
+      </header>
+      <main>
+        <section class="hero text-hero">
+          <p class="eyebrow">Shadow PC on Mac</p>
+          <h1>Remote PC streaming needs a quiet Mac session too.</h1>
+          <p class="lead">Shadow performance depends on the remote PC, the route to it, the Mac receiving side and anything that changes network behavior during the stream.</p>
+        </section>
+        <section class="article-section">
+          <h2>What to check first</h2>
+          <ul class="plain-list">
+            <li>Compare Shadow's own ping with an external session diagnostic.</li>
+            <li>Test Ethernet or a cleaner Wi-Fi channel before changing Shadow settings.</li>
+            <li>Turn off VPN or use split tunneling for Shadow during testing.</li>
+            <li>Watch jitter and packet loss when input feels inconsistent.</li>
+            <li>Pause iCloud Drive, Dropbox, Photos, OneDrive and backup tools.</li>
+          </ul>
+        </section>
+        <section class="article-section">
+          <h2>Where CloudBoost helps</h2>
+          <p>CloudBoost watches the Mac side of the Shadow session: local pressure, Wi-Fi/AWDL behavior, VPN/tunnel routing, UDP availability, route latency and background traffic signals.</p>
+          <p>It cannot improve the remote PC hardware or Shadow's server load, but it can help prove whether the Mac receiving side looks clean.</p>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

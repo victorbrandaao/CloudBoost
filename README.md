@@ -4,7 +4,7 @@ CloudBoost is a native macOS menu bar app for cleaner gaming sessions on Mac.
 
 It helps players start a focused session, reduce local macOS interruptions, and understand the spikes that a normal speed test usually misses: jitter, packet loss, AWDL/Wi-Fi noise, background traffic, thermal pressure, Low Power Mode, and uneven system load.
 
-It is built for cloud gaming, remote play, native Mac games, and PRO diagnostics around CrossOver, Whisky, Wine, and Game Porting Toolkit sessions.
+It is built for cloud gaming, remote play, home streaming, native Mac games, Steam, Epic Games, Battle.net, and PRO diagnostics around CrossOver, Whisky, Wine, and Game Porting Toolkit sessions.
 
 <p align="center">
   <img src="https://img.shields.io/github/v/release/victorbrandaao/CloudBoost?style=for-the-badge">
@@ -71,6 +71,8 @@ Need help? Join Discord: [discord.gg/kU5trxtRb](https://discord.gg/kU5trxtRb)
 Trust Center: [what CloudBoost does, does not do, and can ask permission for](https://victorbrandaao.github.io/CloudBoost/trust.html)
 
 Guides: [Mac gaming setup notes by service and game](https://victorbrandaao.github.io/CloudBoost/guides.html)
+
+AI-readable summary: [CloudBoost AI Summary](https://victorbrandaao.github.io/CloudBoost/ai-summary.html)
 
 ## What CloudBoost Is
 
@@ -155,10 +157,12 @@ Common cases:
 
 - GeForce NOW feels smooth, then suddenly spikes
 - Xbox Cloud Gaming or Boosteroid has jitter bursts on Mac
+- Shadow PC or remote PC streaming feels inconsistent on macOS
 - PS Remote Play, Moonlight, or Steam Link feels inconsistent
+- Steam or Epic keeps downloading, syncing, overlaying, or scanning during a session
 - Dota 2, League, or a native Mac game stutters when macOS is under pressure
 - CrossOver or Whisky sessions need local Mac-side diagnostics
-- Wi-Fi/AWDL, AirDrop, Handoff, backups, sync tools, thermal pressure, or Low Power Mode interfere with a session
+- Wi-Fi/AWDL, AirDrop, Handoff, VPN routing, backups, sync tools, thermal pressure, or Low Power Mode interfere with a session
 
 CloudBoost cannot fix a bad router, bad ISP route, overloaded game server, or remote machine problem. It gives you a cleaner local session and better information when something feels off.
 

@@ -4,67 +4,34 @@
   xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://victorbrandaao.github.io/CloudBoost/</loc>
-    <lastmod>2026-07-02</lastmod>
+    <lastmod>2026-07-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://victorbrandaao.github.io/CloudBoost/assets/cloudboost-clean-social.png</image:loc>
-      <image:title>CloudBoost macOS gaming optimizer</image:title>
-      <image:caption>CloudBoost app interface showing gaming session diagnostics, latency, jitter, Session Lab, PRO widgets and actionable session checks.</image:caption>
+      <image:title>CloudBoost macOS gaming diagnostics</image:title>
+      <image:caption>CloudBoost app interface showing gaming session diagnostics, latency, jitter, VPN-aware checks, PRO widgets and actionable session reports.</image:caption>
     </image:image>
   </url>
-  <url>
-    <loc>https://victorbrandaao.github.io/CloudBoost/reviews.html</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://victorbrandaao.github.io/CloudBoost/trust.html</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://victorbrandaao.github.io/CloudBoost/guides.html</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://victorbrandaao.github.io/CloudBoost/guides/geforce-now-mac-lag.html</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://victorbrandaao.github.io/CloudBoost/guides/ps-remote-play-mac.html</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://victorbrandaao.github.io/CloudBoost/guides/dota-2-mac-stutter.html</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://victorbrandaao.github.io/CloudBoost/guides/cs2-mac-cloud-crossover.html</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://victorbrandaao.github.io/CloudBoost/guides/crossover-whisky-mac-gaming.html</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://victorbrandaao.github.io/CloudBoost/guides/moonlight-mac-latency.html</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
+  <url><loc>https://victorbrandaao.github.io/CloudBoost/ai-summary.html</loc><lastmod>2026-07-06</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://victorbrandaao.github.io/CloudBoost/reviews.html</loc><lastmod>2026-07-06</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://victorbrandaao.github.io/CloudBoost/trust.html</loc><lastmod>2026-07-06</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://victorbrandaao.github.io/CloudBoost/guides.html</loc><lastmod>2026-07-06</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://victorbrandaao.github.io/CloudBoost/guides/cloud-gaming-mac.html</loc><lastmod>2026-07-06</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://victorbrandaao.github.io/CloudBoost/guides/geforce-now-mac-lag.html</loc><lastmod>2026-07-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://victorbrandaao.github.io/CloudBoost/guides/xbox-cloud-gaming-mac.html</loc><lastmod>2026-07-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://victorbrandaao.github.io/CloudBoost/guides/boosteroid-mac-lag.html</loc><lastmod>2026-07-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://victorbrandaao.github.io/CloudBoost/guides/shadow-pc-mac-latency.html</loc><lastmod>2026-07-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://victorbrandaao.github.io/CloudBoost/guides/remote-play-mac.html</loc><lastmod>2026-07-06</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://victorbrandaao.github.io/CloudBoost/guides/ps-remote-play-mac.html</loc><lastmod>2026-07-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://victorbrandaao.github.io/CloudBoost/guides/native-mac-gaming.html</loc><lastmod>2026-07-06</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://victorbrandaao.github.io/CloudBoost/guides/dota-2-mac-stutter.html</loc><lastmod>2026-07-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://victorbrandaao.github.io/CloudBoost/guides/league-of-legends-mac-stutter.html</loc><lastmod>2026-07-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://victorbrandaao.github.io/CloudBoost/guides/cs2-mac-cloud-crossover.html</loc><lastmod>2026-07-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://victorbrandaao.github.io/CloudBoost/guides/battlenet-mac-gaming.html</loc><lastmod>2026-07-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://victorbrandaao.github.io/CloudBoost/guides/steam-epic-mac-gaming.html</loc><lastmod>2026-07-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://victorbrandaao.github.io/CloudBoost/guides/crossover-whisky-mac-gaming.html</loc><lastmod>2026-07-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://victorbrandaao.github.io/CloudBoost/guides/moonlight-mac-latency.html</loc><lastmod>2026-07-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://victorbrandaao.github.io/CloudBoost/guides/steam-link-mac-latency.html</loc><lastmod>2026-07-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://victorbrandaao.github.io/CloudBoost/guides/vpn-route-doctor-mac-gaming.html</loc><lastmod>2026-07-06</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 </urlset>

@@ -4,14 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CloudBoost - macOS Gaming Session Optimizer</title>
-    <meta name="description" content="CloudBoost is a native macOS menu bar app for cleaner cloud gaming, remote play, native Mac gaming and PRO CrossOver/Whisky diagnostics. Diagnose jitter, latency spikes, packet loss, background traffic, Wi-Fi/AWDL noise and system pressure, then copy a Session Proof report for support.">
-    <meta name="keywords" content="macOS gaming optimizer, Mac gaming optimizer, GeForce NOW Mac lag, Xbox Cloud Gaming Mac, PS Remote Play Mac, Moonlight Mac, Steam Link Mac, CrossOver Mac gaming, Whisky Mac gaming, Dota 2 Mac, CS2 Mac, Mac latency spikes, Mac jitter, AWDL Wi-Fi gaming">
+    <meta name="description" content="CloudBoost is a native macOS menu bar app for cleaner cloud gaming, remote play, Shadow PC, PS Remote Play, Steam Link, native Mac gaming and PRO CrossOver/Whisky diagnostics. Diagnose jitter, latency spikes, packet loss, VPN routing, background traffic, Wi-Fi/AWDL noise and system pressure.">
+    <meta name="keywords" content="macOS gaming optimizer, Mac gaming optimizer, cloud gaming Mac, GeForce NOW Mac lag, Xbox Cloud Gaming Mac, Boosteroid Mac lag, Shadow PC Mac latency, PS Remote Play Mac, Moonlight Mac, Steam Link Mac, Steam Mac gaming, Epic Games Mac, Battle.net Mac, CrossOver Mac gaming, Whisky Mac gaming, Dota 2 Mac, League of Legends Mac, CS2 Mac, Mac latency spikes, Mac jitter, VPN gaming Mac, AWDL Wi-Fi gaming">
     <meta name="author" content="Victor Brandao">
     <meta name="robots" content="index,follow,max-image-preview:large">
     <link rel="canonical" href="https://victorbrandaao.github.io/CloudBoost/">
     <meta property="og:site_name" content="CloudBoost">
     <meta property="og:title" content="CloudBoost - macOS Gaming Session Optimizer">
-    <meta property="og:description" content="A native macOS menu bar app for cleaner cloud gaming, remote play, native Mac gaming and PRO CrossOver/Whisky diagnostics.">
+    <meta property="og:description" content="A native macOS menu bar app for cleaner cloud gaming, remote play, native Mac gaming, VPN-aware diagnostics and PRO CrossOver/Whisky checks.">
     <meta property="og:image" content="https://victorbrandaao.github.io/CloudBoost/assets/cloudboost-clean-social.png">
     <meta property="og:image:alt" content="CloudBoost app interface showing macOS gaming session diagnostics, latency, jitter, profiles and PRO widgets">
     <meta property="og:url" content="https://victorbrandaao.github.io/CloudBoost/">
@@ -32,7 +32,7 @@
         "applicationCategory": "UtilitiesApplication",
         "applicationSubCategory": "Gaming utility",
         "softwareVersion": "4.1",
-        "description": "CloudBoost is a native macOS menu bar app for cleaner cloud gaming, remote play, native Mac gaming and PRO CrossOver/Whisky diagnostics. It helps diagnose jitter, latency spikes, packet loss, background traffic, AWDL/Wi-Fi noise and local system pressure, then shows what was applied during the session and can copy a Session Proof report for support.",
+        "description": "CloudBoost is a native macOS menu bar app for cleaner cloud gaming, remote play, native Mac gaming, VPN-aware diagnostics and PRO CrossOver/Whisky checks. It helps diagnose jitter, latency spikes, packet loss, VPN routing, background traffic, AWDL/Wi-Fi noise and local system pressure, then shows what was applied during the session and can copy a Session Proof report for support.",
         "image": "https://victorbrandaao.github.io/CloudBoost/assets/cloudboost-clean-social.png",
         "downloadUrl": "https://github.com/victorbrandaao/CloudBoost/releases/latest",
         "author": {
@@ -78,7 +78,23 @@
             "name": "Does CloudBoost work with cloud gaming on Mac?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes. CloudBoost includes free profiles for GeForce NOW, Xbox Cloud Gaming, Boosteroid, Moonlight, PS Remote Play and other remote play sessions."
+              "text": "Yes. CloudBoost includes profiles and guidance for GeForce NOW, Xbox Cloud Gaming, Boosteroid, Shadow PC, Moonlight, Steam Link, PS Remote Play and other cloud or remote play sessions on Mac."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does CloudBoost work with VPNs?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "CloudBoost is not a VPN service, but PRO includes VPN Route Doctor, which can identify VPN or tunnel routes, blocked UDP checks, VPN-related route latency, packet loss and jitter, then suggest split tunneling when appropriate."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does CloudBoost work with Shadow PC and other remote PC services on Mac?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. CloudBoost can help diagnose the Mac receiving side of Shadow PC, remote PC streaming and home streaming sessions by watching jitter, packet loss, route latency, VPN routing, Wi-Fi/AWDL behavior, background traffic and local system pressure."
             }
           },
           {
@@ -95,6 +111,14 @@
             "acceptedAnswer": {
               "@type": "Answer",
               "text": "No. CloudBoost does not inject code, edit game files, bypass anti-cheat, edit CrossOver bottles or install kernel extensions."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why does CloudBoost ask for the macOS administrator password?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "CloudBoost may ask for the macOS administrator password only when applying temporary system-level session actions that macOS protects, such as DNS refresh, AWDL changes, Time Machine pause requests or lower-level session fixes."
             }
           }
         ]
@@ -170,12 +194,12 @@
         <section class="cards">
           <article>
             <span>Cloud and remote play</span>
-            <h3>GeForce NOW, xCloud, Boosteroid, Moonlight, PS Remote Play and Steam Link.</h3>
+            <h3>GeForce NOW, xCloud, Boosteroid, Shadow PC, Moonlight, PS Remote Play and Steam Link.</h3>
             <p>Reduce local macOS noise and see whether the issue looks like Wi-Fi, UDP, packet loss, route latency or background traffic.</p>
           </article>
           <article>
             <span>Native Mac games</span>
-            <h3>Dota 2, League, Steam, Epic, Battle.net and local game sessions.</h3>
+            <h3>Dota 2, League, Steam, Epic, Battle.net and local Mac game sessions.</h3>
             <p>Watch CPU pressure, thermal pressure, Low Power Mode and background work that can make a session feel uneven.</p>
           </article>
           <article>
@@ -256,8 +280,20 @@
             <p>Yes. CloudBoost includes free profiles for remote play and can help identify local Mac-side causes such as Wi-Fi noise, UDP issues, route latency and background traffic.</p>
           </details>
           <details>
+            <summary>Does it work with Shadow PC and other remote PC services?</summary>
+            <p>Yes. CloudBoost can help diagnose the Mac receiving side of Shadow, remote PC and home streaming sessions: route latency, jitter, packet loss, VPN routing, UDP behavior, Wi-Fi/AWDL noise and local pressure.</p>
+          </details>
+          <details>
+            <summary>Does CloudBoost work with VPNs?</summary>
+            <p>CloudBoost is not a VPN service. PRO includes VPN Route Doctor, which can detect tunnel routes, blocked UDP checks and VPN-related route latency, then suggest testing with VPN off or using split tunneling for the game, client or browser.</p>
+          </details>
+          <details>
             <summary>Does it install a kernel extension?</summary>
             <p>No. CloudBoost does not install KEXTs, hidden daemons, permanent system patches, game injections or anti-cheat bypasses. Some features may ask for administrator permission because macOS requires it for temporary system-level session changes.</p>
+          </details>
+          <details>
+            <summary>Why does it ask for the macOS password?</summary>
+            <p>Only protected system-level actions should ask for administrator permission, such as DNS refresh, AWDL changes, Time Machine pause requests or lower-level session fixes. Viewing diagnostics and using basic profiles should not need a password.</p>
           </details>
           <details>
             <summary>What is Session Proof?</summary>
