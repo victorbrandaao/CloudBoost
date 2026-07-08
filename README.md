@@ -229,7 +229,7 @@ The Session Proof report does not include license keys, personal files, hostname
 
 CloudBoost uses public GitHub feedback instead of hidden testimonials.
 
-Leave a review if you have used the app and can share useful details:
+The in-app `Review` button opens the same public GitHub review form. Leave a review if you have used the app and can share useful details:
 
 - Free or PRO
 - Mac model and macOS version
