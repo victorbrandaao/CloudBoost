@@ -166,12 +166,15 @@ Common cases:
 
 CloudBoost cannot fix a bad router, bad ISP route, overloaded game server, or remote machine problem. It gives you a cleaner local session and better information when something feels off.
 
-## Version 4.1
+## Version 4.1.1
 
-Version 4.1 focuses on clearer diagnostics for real gaming setups, especially VPNs, route behavior, support reports, and the new visual presentation of the app.
+Version 4.1.1 is a small production update on top of 4.1. It keeps the VPN-aware diagnostics and support report work from 4.1, and fixes the new Review flow so feedback goes directly to the public GitHub review form.
 
 Highlights:
 
+- Review button now opens the public GitHub review form
+- Session end review prompt now asks for useful Mac/game/network details
+- README and website now point users to public reviews, Discord support, and the current PRO price
 - new VPN Route Doctor for PRO diagnostics
 - detects common VPN/tunnel tools and flags when the default route is going through a tunnel
 - Session Doctor now explains VPN-related UDP blocks, route latency, packet loss, and jitter more clearly

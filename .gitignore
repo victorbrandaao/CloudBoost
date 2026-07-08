@@ -2,3 +2,5 @@
 .build/
 .release/
 *.dmg
+CloudBoost_v*.zip
+checksums_v*.md
