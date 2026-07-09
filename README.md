@@ -244,6 +244,14 @@ Leave a review: [GitHub review form](https://github.com/victorbrandaao/CloudBoos
 
 Read reviews: [CloudBoost reviews page](https://victorbrandaao.github.io/CloudBoost/reviews.html)
 
+### First public feedback
+
+> “Seems to keep my connection more stable on Wi-Fi. On ethernet I never get high ping but it does stop background processes from hurting your ping. Don't do many reviews but this one is worth it.”
+>
+> CloudBoost PRO user on a MacBook Air M4, macOS 26.5.2, using Shadow PC over Wi-Fi and Ethernet. [Read the public review](https://github.com/victorbrandaao/CloudBoost/issues/18).
+
+This is one user's report, not a benchmark or a guaranteed result. More setup-specific feedback is welcome.
+
 ## Security And Limits
 
 CloudBoost is proprietary software. The public repository contains releases, documentation, and downloadable binaries, not the full source code.

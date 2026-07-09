@@ -352,6 +352,55 @@ h3 {
   color: var(--muted);
 }
 
+.featured-feedback {
+  display: grid;
+  grid-template-columns: minmax(0, 0.75fr) minmax(320px, 1fr);
+  gap: 54px;
+  align-items: start;
+}
+
+.section-intro {
+  max-width: 440px;
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.feedback-quote {
+  margin: 0;
+  padding: 28px 30px;
+  border-left: 3px solid var(--accent);
+  background: var(--paper);
+}
+
+.feedback-quote blockquote {
+  margin: 0 0 24px;
+  font-size: clamp(22px, 2.5vw, 31px);
+  font-weight: 760;
+  line-height: 1.24;
+}
+
+.feedback-quote figcaption {
+  display: grid;
+  gap: 5px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.feedback-quote figcaption strong {
+  color: var(--ink);
+}
+
+.feedback-quote figcaption a {
+  width: fit-content;
+  margin-top: 8px;
+  color: var(--ink);
+  font-weight: 800;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
 .plan-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -514,7 +563,8 @@ footer a {
   .split,
   .cards,
   .plan-grid,
-  .review-hero {
+  .review-hero,
+  .featured-feedback {
     grid-template-columns: 1fr;
   }
 
