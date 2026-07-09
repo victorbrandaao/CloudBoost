@@ -19,7 +19,7 @@ It is built for cloud gaming, remote play, home streaming, native Mac games, Ste
 </p>
 
 <p align="center">
-  <img src="./assets/cloudboost-clean-readme.png" alt="CloudBoost macOS gaming optimizer showing session diagnostics, latency, jitter, Session Lab, PRO widgets and game profiles">
+  <img src="./assets/cloudboost-4-2-spike-timeline.png" alt="CloudBoost 4.2 showing a live Mac gaming session, applied actions, latency, jitter and the spike timeline">
 </p>
 
 ## Download
@@ -145,7 +145,9 @@ CloudBoost PRO is currently **$10**.
 
 This is the full PRO v4.x license. One-time payment. No subscription.
 
-Unlock PRO: [Gumroad](https://victorbrandao0.gumroad.com/l/CloudBoost)
+Unlock PRO: [Payhip](https://payhip.com/b/Jb0XO)
+
+Payhip is the checkout for new purchases. Existing Gumroad license keys remain supported inside the app.
 
 Existing PRO customers keep access to the expanded PRO feature set. The previous PRO+ feature set has been folded into PRO.
 
@@ -166,11 +168,21 @@ Common cases:
 
 CloudBoost cannot fix a bad router, bad ISP route, overloaded game server, or remote machine problem. It gives you a cleaner local session and better information when something feels off.
 
-## Version 4.1.1
+## Version 4.2.0
 
-Version 4.1.1 is a small production update on top of 4.1. It keeps the VPN-aware diagnostics and support report work from 4.1, and fixes the new Review flow so feedback goes directly to the public GitHub review form.
+Version 4.2.0 makes the session view easier to read and turns spike history into something players can actually use. It also moves new PRO purchases to Payhip while preserving every existing Gumroad license.
 
 Highlights:
+
+- new local Spike Timeline records confirmed latency, jitter, packet-loss, thermal, VPN, and background-activity events
+- current session health is clearly separated from earlier spikes, so a recovered connection no longer looks broken
+- Session Lab keeps the before/after comparison visible in Session Doctor details
+- Session actions now separates changes CloudBoost applied from checks that still need the player
+- optional alerts fire once for newly confirmed severe spikes instead of repeating the same warning
+- session-end reports include the Timeline summary
+- cleaner visual hierarchy, solid primary action, tighter cards, and the session action above the PRO offer
+- Payhip is now the primary checkout and license-validation path for new purchases
+- existing Gumroad and legacy PRO+ keys continue to validate and unlock the complete PRO plan
 
 - Review button now opens the public GitHub review form
 - Session end review prompt now asks for useful Mac/game/network details
@@ -181,7 +193,7 @@ Highlights:
 - Path status can show `VPN` when the active gaming route is tunneled
 - Session Proof and diagnostics exports now include VPN status and split-tunneling guidance
 - new README, website, and social images built from real app screenshots
-- Payhip/Mercado Pago license path is available as fallback while Gumroad remains the main checkout
+- Payhip/Mercado Pago is the primary checkout for new purchases while Gumroad remains available for existing customers
 - in-app updater now requires a published SHA256 checksum before installing or opening a downloaded package
 - Gumroad license validation now handles encoded product IDs and temporary server errors more safely
 - Background Traffic wording is clearer about what CloudBoost can pause, what it can throttle, and what must be paused inside the sync app itself

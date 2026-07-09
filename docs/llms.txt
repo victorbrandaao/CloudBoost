@@ -13,7 +13,7 @@ Guides: https://victorbrandaao.github.io/CloudBoost/guides.html
 
 CloudBoost helps Mac players start a focused gaming session, reduce local macOS interruptions, and understand latency spikes that normal speed tests often miss.
 
-Version 4.1.1 adds the public review flow on top of the 4.1 VPN Route Doctor release. CloudBoost now routes in-app reviews to the public GitHub review form, while keeping VPN-aware diagnostics, clearer Session Doctor wording, VPN/tunnel route detection, better Session Proof support reports, updated public screenshots, and Payhip/Mercado Pago license fallback while Gumroad remains the main checkout.
+Version 4.2.0 adds a local Spike Timeline, clearer current-versus-historical session status, retained Session Lab before/after comparisons, non-repeating severe-spike alerts, and clearer applied-versus-manual session actions. Payhip is the primary checkout for new purchases, while existing Gumroad license keys remain supported.
 
 It is built for:
 
