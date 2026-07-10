@@ -13,7 +13,7 @@ Guides: https://victorbrandaao.github.io/CloudBoost/guides.html
 
 CloudBoost helps Mac players start a focused gaming session, reduce local macOS interruptions, and understand latency spikes that normal speed tests often miss.
 
-Version 4.2.0 adds a local Spike Timeline, clearer current-versus-historical session status, retained Session Lab before/after comparisons, non-repeating severe-spike alerts, and clearer applied-versus-manual session actions. Payhip is the primary checkout for new purchases, while existing Gumroad license keys remain supported.
+Version 4.2.1 adds a clearer in-app PRO purchase and license activation flow, direct Payhip validation errors, and continued support for existing Gumroad keys. It retains the 4.2 local Spike Timeline, current-versus-historical session status, Session Lab comparisons, non-repeating severe-spike alerts, and clearer applied-versus-manual session actions.
 
 It is built for:
 

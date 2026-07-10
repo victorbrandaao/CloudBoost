@@ -168,59 +168,18 @@ Common cases:
 
 CloudBoost cannot fix a bad router, bad ISP route, overloaded game server, or remote machine problem. It gives you a cleaner local session and better information when something feels off.
 
-## Version 4.2.0
+## Version 4.2.1
 
-Version 4.2.0 makes the session view easier to read and turns spike history into something players can actually use. It also moves new PRO purchases to Payhip while preserving every existing Gumroad license.
+Version 4.2.1 makes buying and activating PRO easier without changing access for existing customers.
 
 Highlights:
 
-- new local Spike Timeline records confirmed latency, jitter, packet-loss, thermal, VPN, and background-activity events
-- current session health is clearly separated from earlier spikes, so a recovered connection no longer looks broken
-- Session Lab keeps the before/after comparison visible in Session Doctor details
-- Session actions now separates changes CloudBoost applied from checks that still need the player
-- optional alerts fire once for newly confirmed severe spikes instead of repeating the same warning
-- session-end reports include the Timeline summary
-- cleaner visual hierarchy, solid primary action, tighter cards, and the session action above the PRO offer
-- Payhip is now the primary checkout and license-validation path for new purchases
-- existing Gumroad and legacy PRO+ keys continue to validate and unlock the complete PRO plan
-
-- Review button now opens the public GitHub review form
-- Session end review prompt now asks for useful Mac/game/network details
-- README and website now point users to public reviews, Discord support, and the current PRO price
-- new VPN Route Doctor for PRO diagnostics
-- detects common VPN/tunnel tools and flags when the default route is going through a tunnel
-- Session Doctor now explains VPN-related UDP blocks, route latency, packet loss, and jitter more clearly
-- Path status can show `VPN` when the active gaming route is tunneled
-- Session Proof and diagnostics exports now include VPN status and split-tunneling guidance
-- new README, website, and social images built from real app screenshots
-- Payhip/Mercado Pago is the primary checkout for new purchases while Gumroad remains available for existing customers
-- in-app updater now requires a published SHA256 checksum before installing or opening a downloaded package
-- Gumroad license validation now handles encoded product IDs and temporary server errors more safely
-- Background Traffic wording is clearer about what CloudBoost can pause, what it can throttle, and what must be paused inside the sync app itself
-- What CloudBoost did now separates verified actions from requested actions when macOS accepts a privileged session change
-- CrossOver / Windows Games is now treated as a compatibility-layer profile instead of a native Mac profile in Session Lab and Stream Signal
-- anonymous telemetry avoids duplicate first-run `app_opened` events
-- telemetry failure logs are cleaner for Session Proof reports
-- release script now writes `.release/checksums.md` so ZIP/DMG checksums are harder to forget
-- new PRO `Proof` action that copies a clean Session Proof report for Discord or GitHub Issues
-- support report includes profile, preset, session state, Session Doctor, Session Lab, before/after summary and recent CloudBoost events
-- new Trust Center page explaining what CloudBoost does, does not do, and when macOS may ask for administrator permission
-- new public guides for GeForce NOW, PS Remote Play, Dota 2, CS2, CrossOver/Whisky and Moonlight-style remote sessions
-- What CloudBoost did panel with applied actions and manual checks
-- Test My Setup quick check before starting a session
-- Session Doctor Fix button for temporary session actions
-- clearer Can Fix / Manual Check wording in Session Doctor
-- before/after summary inside Session Lab
-- PRO session end report with score, duration, main issue, trend, and next step
-- preset descriptions for Fastest, Balanced, and Smooth
-- CrossOver / Windows Games profile in PRO
-- detection for CrossOver, Whisky, Wine, and GPTK sessions
-- macOS-side pressure checks for compatibility-layer gaming
-- ZIP-based in-app updater with staged install and relaunch
-- DMG remains available for manual installs
-- clearer Session Lab and Stream Signal guidance
-- public Free profiles remain available for cloud, remote play, native Mac, and competitive sessions
-- former PRO+ tools are now included in PRO
+- the PRO dialog now has a visible license field and separate `Activate License` and `Buy on Payhip` actions
+- activation errors identify Payhip problems directly instead of ending with a misleading Gumroad 404
+- Payhip is the primary checkout for new purchases, with Mercado Pago where available
+- existing Gumroad and legacy PRO+ keys remain supported
+- the PRO explanation is shorter and easier to scan
+- the local Spike Timeline, current-versus-historical health, Session Lab comparisons, VPN Route Doctor, Session Proof, and updater checksum verification introduced in 4.2 remain available
 
 ## Support
 
