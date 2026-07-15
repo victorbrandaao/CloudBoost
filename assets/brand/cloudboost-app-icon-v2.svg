@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">CloudBoost app icon</title>
+  <desc id="desc">A dark macOS app icon with the CloudBoost route mark.</desc>
+  <rect x="44" y="44" width="936" height="936" rx="214" fill="#0F1115"/>
+  <rect x="61" y="61" width="902" height="902" rx="198" fill="none" stroke="#FFFFFF" stroke-opacity=".12" stroke-width="14"/>
+  <g transform="translate(88 88) scale(.828125)" fill="none" stroke="#1FDB94" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M760 232H458C294 232 190 338 190 512s104 280 268 280h302" stroke-width="118"/>
+    <path d="M346 512h478" stroke-width="118"/>
+  </g>
+  <circle cx="770.5" cy="512" r="48.9" fill="#F4F4F1"/>
+</svg>

@@ -8,7 +8,7 @@
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://victorbrandaao.github.io/CloudBoost/assets/cloudboost-clean-social.png</image:loc>
+      <image:loc>https://victorbrandaao.github.io/CloudBoost/assets/cloudboost-social-v2.png</image:loc>
       <image:title>CloudBoost macOS gaming diagnostics</image:title>
       <image:caption>CloudBoost app interface showing gaming session diagnostics, latency, jitter, VPN-aware checks, PRO widgets and actionable session reports.</image:caption>
     </image:image>

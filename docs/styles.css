@@ -62,20 +62,10 @@ footer,
 }
 
 .mark {
-  position: relative;
-  display: inline-grid;
-  place-items: center;
-  width: 30px;
-  height: 34px;
-  background: var(--accent);
-  clip-path: polygon(50% 0, 92% 14%, 84% 70%, 50% 100%, 16% 70%, 8% 14%);
-}
-
-.mark span {
-  width: 10px;
-  height: 20px;
-  background: var(--ink);
-  clip-path: polygon(55% 0, 100% 0, 70% 42%, 100% 42%, 25% 100%, 42% 57%, 10% 57%);
+  display: block;
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
 }
 
 nav {

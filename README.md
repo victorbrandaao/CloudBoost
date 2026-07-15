@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./assets/brand/cloudboost-logo-v2.svg" alt="CloudBoost" width="480">
+</p>
+
 # CloudBoost
 
 CloudBoost is a native macOS menu bar app that shows what is happening around a gaming session: latency spikes, jitter, packet loss, Wi-Fi/AWDL noise, VPN routing, background activity, thermal pressure, and local system load.
@@ -13,7 +17,7 @@ It does not modify games or promise artificial FPS gains. It helps players run a
 </p>
 
 <p align="center">
-  <img src="./assets/cloudboost-4-2-spike-timeline.png" alt="CloudBoost showing a live Mac gaming session, applied actions, latency, jitter and the spike timeline" width="620">
+  <img src="./assets/cloudboost-app-session-branded.png" alt="CloudBoost showing a live Mac gaming session, applied actions, latency, jitter and the spike timeline" width="620">
 </p>
 
 ## Start Here

@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CloudBoost Product Hunt Gallery</title>
+    <style>
+      :root {
+        color-scheme: light;
+        font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
+        --ink: #111315;
+        --paper: #f4f3ef;
+        --white: #ffffff;
+        --muted: #62686f;
+        --line: #ccd0d2;
+        --accent: #00a982;
+        --accent-dark: #007d62;
+        --panel: #171c22;
+      }
+
+      * { box-sizing: border-box; }
+      html, body { width: 1270px; height: 760px; margin: 0; overflow: hidden; }
+      body { background: var(--paper); color: var(--ink); }
+
+      .slide {
+        display: none;
+        width: 1270px;
+        height: 760px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      body[data-slide="1"] #slide-1,
+      body[data-slide="2"] #slide-2,
+      body[data-slide="3"] #slide-3,
+      body[data-slide="4"] #slide-4,
+      body[data-slide="5"] #slide-5 { display: flex; }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 13px;
+        font-size: 24px;
+        font-weight: 760;
+        letter-spacing: 0;
+      }
+
+      .shield {
+        display: inline-block;
+        flex: 0 0 auto;
+        width: 34px;
+        height: 39px;
+        background: url("../assets/brand/cloudboost-mark-v2.svg") center / contain no-repeat;
+      }
+
+      .shield::after {
+        display: none;
+      }
+      .eyebrow { margin: 0 0 18px; color: var(--accent-dark); font-size: 15px; font-weight: 800; text-transform: uppercase; }
+      h1 { max-width: 650px; margin: 0; font-size: 61px; line-height: 1.02; letter-spacing: 0; }
+      h2 { margin: 0; font-size: 44px; line-height: 1.06; letter-spacing: 0; }
+      p { margin: 0; }
+      .lede { max-width: 610px; margin-top: 25px; color: var(--muted); font-size: 24px; line-height: 1.36; }
+      .fine { color: var(--muted); font-size: 15px; }
+
+      .app-frame {
+        position: relative;
+        overflow: hidden;
+        border: 1px solid #60666d;
+        border-radius: 8px;
+        background: #222831;
+        box-shadow: 0 28px 70px rgba(0,0,0,.23);
+      }
+
+      .app-frame::before {
+        content: "";
+        position: absolute;
+        z-index: 2;
+        top: 14px;
+        left: 15px;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: #ff5f57;
+        box-shadow: 18px 0 #febc2e, 36px 0 #28c840;
+      }
+
+      .app-frame img { display: block; width: 100%; height: 100%; object-fit: cover; }
+
+      /* Slide 1 */
+      #slide-1 { padding: 54px 66px; background: var(--paper); }
+      #slide-1 .copy { position: relative; z-index: 3; width: 58%; padding-top: 4px; }
+      #slide-1 .brand { margin-bottom: 106px; }
+      #slide-1 h1 { max-width: 620px; }
+      #slide-1 .meta { display: flex; gap: 28px; margin-top: 54px; font-size: 16px; font-weight: 700; }
+      #slide-1 .meta span { padding-top: 12px; border-top: 2px solid var(--ink); }
+      #slide-1 .app-frame { position: absolute; top: 58px; right: 58px; width: 405px; height: 644px; }
+      #slide-1 .app-frame img { object-position: center top; }
+      #slide-1 .version-fix { position: absolute; z-index: 4; top: 45px; left: 48px; min-width: 135px; padding: 2px 4px; background: #252c34; color: #9ba5b5; font-size: 11px; font-weight: 700; }
+
+      /* Slide 2 */
+      #slide-2 { align-items: stretch; background: #0c1014; color: var(--white); }
+      #slide-2 .visual { width: 51%; padding: 58px 0 58px 66px; }
+      #slide-2 .app-frame { width: 500px; height: 644px; border-color: #4a525b; }
+      #slide-2 .app-frame::before,
+      #slide-3 .app-frame::before { display: none; }
+      #slide-2 .app-frame img { object-position: center 59%; }
+      #slide-2 .copy { width: 49%; padding: 70px 72px 50px 36px; }
+      #slide-2 .brand { margin-bottom: 102px; }
+      #slide-2 .eyebrow { color: #32d7ad; }
+      #slide-2 .lede { color: #afb6bf; }
+      .signal-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; margin-top: 45px; background: #343a42; border: 1px solid #343a42; }
+      .signal-list div { min-height: 74px; padding: 16px 18px; background: #151a20; }
+      .signal-list strong { display: block; margin-bottom: 5px; font-size: 17px; }
+      .signal-list span { color: #929aa5; font-size: 14px; }
+
+      /* Slide 3 */
+      #slide-3 { flex-direction: column; padding: 54px 66px; background: var(--white); }
+      #slide-3 .top { display: flex; justify-content: space-between; align-items: center; }
+      #slide-3 .content { display: grid; grid-template-columns: 1.02fr .98fr; gap: 58px; align-items: center; flex: 1; padding-top: 22px; }
+      #slide-3 h1 { max-width: 560px; font-size: 55px; }
+      .platform-grid { display: grid; grid-template-columns: repeat(2, 1fr); border: 1px solid var(--ink); }
+      .platform-grid div { min-height: 112px; padding: 20px 22px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+      .platform-grid div:nth-child(2n) { border-right: 0; }
+      .platform-grid div:nth-last-child(-n+2) { border-bottom: 0; }
+      .platform-grid strong { display: block; margin-bottom: 8px; font-size: 18px; }
+      .platform-grid span { color: var(--muted); font-size: 15px; line-height: 1.4; }
+      #slide-3 .app-frame { width: 430px; height: 520px; justify-self: end; box-shadow: 0 24px 55px rgba(0,0,0,.16); }
+      #slide-3 .app-frame img { object-position: center 75%; }
+
+      /* Slide 4 */
+      #slide-4 { padding: 54px 66px; background: var(--paper); }
+      #slide-4 .brand { position: absolute; top: 54px; left: 66px; }
+      #slide-4 .headline { position: absolute; top: 130px; left: 66px; width: 1138px; display: flex; justify-content: space-between; align-items: end; }
+      #slide-4 .headline h1 { max-width: 700px; font-size: 54px; }
+      #slide-4 .price { text-align: right; }
+      #slide-4 .price strong { display: block; font-size: 42px; }
+      #slide-4 .price span { color: var(--muted); font-size: 16px; }
+      .plan-grid { position: absolute; top: 300px; left: 66px; width: 1138px; display: grid; grid-template-columns: 1fr 1fr; border: 1px solid var(--ink); }
+      .plan { min-height: 370px; padding: 30px 34px; }
+      .plan + .plan { border-left: 1px solid var(--ink); background: var(--ink); color: var(--white); }
+      .plan-label { display: flex; justify-content: space-between; align-items: center; margin-bottom: 34px; font-size: 22px; font-weight: 800; }
+      .plan-label span { color: var(--accent-dark); font-size: 13px; text-transform: uppercase; }
+      .plan + .plan .plan-label span { color: #35dbb1; }
+      .plan ul { display: grid; gap: 19px; margin: 0; padding: 0; list-style: none; }
+      .plan li { position: relative; padding-left: 24px; color: var(--muted); font-size: 18px; }
+      .plan + .plan li { color: #c5cbd1; }
+      .plan li::before { content: "✓"; position: absolute; left: 0; color: var(--accent-dark); font-weight: 900; }
+      .plan + .plan li::before { color: #35dbb1; }
+
+      /* Slide 5 */
+      #slide-5 { flex-direction: column; padding: 54px 66px; background: var(--white); }
+      #slide-5 .top { display: flex; justify-content: space-between; align-items: center; }
+      #slide-5 .content { display: grid; grid-template-columns: .86fr 1.14fr; gap: 64px; align-items: center; flex: 1; }
+      #slide-5 h1 { max-width: 500px; font-size: 58px; }
+      #slide-5 .lede { font-size: 22px; }
+      .proof-grid { display: grid; grid-template-columns: repeat(2, 1fr); border-top: 2px solid var(--ink); border-left: 2px solid var(--ink); }
+      .proof-grid div { min-height: 170px; padding: 26px; border-right: 2px solid var(--ink); border-bottom: 2px solid var(--ink); }
+      .proof-grid strong { display: block; margin-bottom: 10px; font-size: 33px; }
+      .proof-grid span { color: var(--muted); font-size: 16px; line-height: 1.38; }
+      .quote { grid-column: 1 / -1; min-height: 142px !important; background: var(--paper); }
+      .quote strong { font-size: 20px; line-height: 1.38; }
+      .quote span { display: block; margin-top: 12px; font-size: 14px; }
+    </style>
+  </head>
+  <body data-slide="1">
+    <section class="slide" id="slide-1">
+      <div class="copy">
+        <div class="brand"><span class="shield" aria-hidden="true"></span><span>CloudBoost</span></div>
+        <p class="eyebrow">Gaming session diagnostics for macOS</p>
+        <h1>Find the cause of a bad session.</h1>
+        <p class="lede">See jitter, packet loss, VPN routes and local Mac pressure when a normal speed test says everything is fine.</p>
+        <div class="meta"><span>macOS 12+</span><span>Free core</span><span>$10 PRO · one-time</span></div>
+      </div>
+      <div class="app-frame"><img src="../assets/cloudboost-app-session-branded.png" alt="CloudBoost session diagnostics"><span class="version-fix">v4.2.3</span></div>
+    </section>
+
+    <section class="slide" id="slide-2">
+      <div class="visual"><div class="app-frame"><img src="../assets/cloudboost-app-session-branded.png" alt="CloudBoost spike timeline"></div></div>
+      <div class="copy">
+        <div class="brand"><span class="shield" aria-hidden="true"></span><span>CloudBoost</span></div>
+        <p class="eyebrow">Session Doctor</p>
+        <h2>See the spike.<br>Keep the context.</h2>
+        <p class="lede">CloudBoost watches the receiving Mac while you play and explains which measured signal deserves attention.</p>
+        <div class="signal-list">
+          <div><strong>Network</strong><span>Jitter, loss, p95 and UDP</span></div>
+          <div><strong>Route</strong><span>VPN and tunnel context</span></div>
+          <div><strong>System</strong><span>CPU, heat and power mode</span></div>
+          <div><strong>Interference</strong><span>AWDL and background activity</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" id="slide-3">
+      <div class="top"><div class="brand"><span class="shield" aria-hidden="true"></span><span>CloudBoost</span></div><span class="fine">One app · three session types</span></div>
+      <div class="content">
+        <div>
+          <p class="eyebrow">Profiles with honest boundaries</p>
+          <h1>Cloud, remote play and native Mac gaming.</h1>
+          <p class="lede">Choose the session you are running. CloudBoost changes the diagnosis instead of blaming every stutter on the network.</p>
+          <div class="platform-grid">
+            <div><strong>Cloud gaming</strong><span>GeForce NOW, xCloud, Boosteroid</span></div>
+            <div><strong>Remote play</strong><span>Shadow, Moonlight, PS Remote Play</span></div>
+            <div><strong>Native Mac</strong><span>Dota 2, League, Steam, Battle.net</span></div>
+            <div><strong>Compatibility</strong><span>CrossOver, Whisky, Wine, GPTK</span></div>
+          </div>
+        </div>
+        <div class="app-frame"><img src="../assets/cloudboost-app-lab.png" alt="CloudBoost gaming profiles and Session Lab"></div>
+      </div>
+    </section>
+
+    <section class="slide" id="slide-4">
+      <div class="brand"><span class="shield" aria-hidden="true"></span><span>CloudBoost</span></div>
+      <div class="headline">
+        <div><p class="eyebrow">Straightforward pricing</p><h1>Start free. Upgrade for the full story.</h1></div>
+        <div class="price"><strong>$10</strong><span>one-time CloudBoost 4.x PRO license</span></div>
+      </div>
+      <div class="plan-grid">
+        <div class="plan">
+          <div class="plan-label">Free <span>No account required</span></div>
+          <ul>
+            <li>Cloud, remote play and native profiles</li>
+            <li>Manual gaming sessions</li>
+            <li>Balanced mode and basic signal checks</li>
+            <li>Rollback protection</li>
+          </ul>
+        </div>
+        <div class="plan">
+          <div class="plan-label">PRO <span>Full diagnostics</span></div>
+          <ul>
+            <li>Session Lab and Spike Timeline</li>
+            <li>VPN Route Doctor and UDP diagnostics</li>
+            <li>HUD, automation and system guards</li>
+            <li>Session Proof and priority Discord support</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" id="slide-5">
+      <div class="top"><div class="brand"><span class="shield" aria-hidden="true"></span><span>CloudBoost</span></div><span class="fine">Public results · public limitations · public support</span></div>
+      <div class="content">
+        <div>
+          <p class="eyebrow">Trust is part of the product</p>
+          <h1>Evidence before claims.</h1>
+          <p class="lede">CloudBoost publishes its measurement method, setup-specific reports and the problems it cannot diagnose.</p>
+        </div>
+        <div class="proof-grid">
+          <div><strong>1,000+</strong><span>downloads across distribution channels</span></div>
+          <div><strong>Public</strong><span>results, reviews and measurement method</span></div>
+          <div><strong>MacMagazine</strong><span>independent Brazilian coverage</span></div>
+          <div><strong>Discord</strong><span>support for Free and PRO users</span></div>
+          <div class="quote"><strong>“Seems to keep my connection more stable on Wi-Fi.”</strong><span>Public Shadow PC user review · MacBook Air M4</span></div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const slide = new URLSearchParams(location.search).get("slide") || "1";
+      document.body.dataset.slide = /^[1-5]$/.test(slide) ? slide : "1";
+    </script>
+  </body>
+</html>

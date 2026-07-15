@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 400" role="img" aria-labelledby="title desc">
+  <title id="title">CloudBoost</title>
+  <desc id="desc">CloudBoost route mark and light wordmark for dark backgrounds.</desc>
+  <g transform="translate(34 34) scale(.32421875)" fill="none" stroke="#1FDB94" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M760 232H458C294 232 190 338 190 512s104 280 268 280h302" stroke-width="118"/>
+    <path d="M346 512h478" stroke-width="118"/>
+  </g>
+  <circle cx="301" cy="200" r="19" fill="#F4F4F1"/>
+  <text x="398" y="246" fill="#F4F4F1" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="138" font-weight="750" letter-spacing="-3">CloudBoost</text>
+</svg>
