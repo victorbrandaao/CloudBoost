@@ -21,8 +21,9 @@ It does not modify games or promise artificial FPS gains. It helps players run a
 - [Download the latest DMG](https://github.com/victorbrandaao/CloudBoost/releases/latest)
 - [Visit the website](https://victorbrandaao.github.io/CloudBoost/)
 - [Read the Trust Center](https://victorbrandaao.github.io/CloudBoost/trust.html)
+- [See public results and measurement method](https://victorbrandaao.github.io/CloudBoost/results.html?utm_source=github&utm_medium=organic&utm_campaign=readme)
 - [Join the Discord](https://discord.gg/kU5trxtRb)
-- [Get CloudBoost PRO](https://payhip.com/b/Jb0XO)
+- [Get CloudBoost PRO](https://payhip.com/b/Jb0XO?utm_source=github&utm_medium=organic&utm_campaign=readme_pro)
 
 CloudBoost has passed **1,000 downloads across its distribution channels**. GitHub badges above update automatically for release assets.
 
@@ -66,7 +67,7 @@ Free is a useful manual session tool. PRO adds automation, deeper diagnostics, r
 
 **CloudBoost PRO costs $10.** It is a one-time CloudBoost 4.x license, not a subscription.
 
-New purchases use [Payhip](https://payhip.com/b/Jb0XO). Existing Gumroad and legacy PRO+ license keys remain supported in the app.
+New purchases use [Payhip](https://payhip.com/b/Jb0XO?utm_source=github&utm_medium=organic&utm_campaign=readme_pro). Existing Gumroad and legacy PRO+ license keys remain supported in the app.
 
 ## Install
 
@@ -98,25 +99,26 @@ If macOS reports that the independently distributed app is damaged, clear its qu
 xattr -cr /Applications/"CloudBoost.app"
 ```
 
-## Current Release: 4.2.2
+## Current Release: 4.2.3
 
-- Payhip activation repaired while existing Gumroad and legacy PRO+ keys remain supported
-- native and compatibility diagnostics now separate measured Mac pressure from unmeasured shader, asset-streaming, engine, and Rosetta/translation stalls
-- Session Lab shows Mac-side health first for local games and keeps latency as context
-- safer rollback and privileged-action reporting
-- updater verifies the staged app signature before replacement
-- CPU/process sampling and support reports are more accurate
+- the review request now waits for five sessions lasting at least three minutes
+- Free and PRO users can leave a public review, send private feedback through Discord, or postpone the request
+- choosing `Not Now` waits another three completed sessions before asking again
+- PRO users no longer receive the session report and review request back to back
+- review-funnel telemetry respects the existing Anonymous Stats setting
+- the public Results page documents Session Lab's method, current evidence, limitations, and setup-specific reports
 
 See the complete notes and checksums on the [release page](https://github.com/victorbrandaao/CloudBoost/releases/latest).
 
 ### A note about native-game stutter
 
-CloudBoost can measure macOS pressure, thermal state, power mode, background activity, and network context. It cannot directly measure shader compilation, asset streaming, renderer frame time, game-engine stalls, or Rosetta/translation work. Version 4.2.2 makes that boundary visible in Session Lab instead of treating every stutter as a network problem.
+CloudBoost can measure macOS pressure, thermal state, power mode, background activity, and network context. It cannot directly measure shader compilation, asset streaming, renderer frame time, game-engine stalls, or Rosetta/translation work. Since version 4.2.2, Session Lab makes that boundary visible instead of treating every stutter as a network problem.
 
 ## Public Proof And Support
 
 - Covered by [MacMagazine](https://macmagazine.com.br/post/2026/06/01/cloudboost-otimiza-a-experiencia-de-jogos-na-nuvem-no-mac/)
 - Public user feedback is available on the [reviews page](https://victorbrandaao.github.io/CloudBoost/reviews.html)
+- Setup-specific evidence and the Session Lab method are documented on the [Results page](https://victorbrandaao.github.io/CloudBoost/results.html?utm_source=github&utm_medium=organic&utm_campaign=readme_results)
 - The in-app `Review` button opens the public [GitHub review form](https://github.com/victorbrandaao/CloudBoost/issues/new?template=user-review.yml)
 - Free and PRO support is available on [Discord](https://discord.gg/kU5trxtRb)
 

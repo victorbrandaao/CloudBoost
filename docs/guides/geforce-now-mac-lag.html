@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>GeForce NOW lag spikes on Mac</title>
-    <meta name="description" content="How to troubleshoot GeForce NOW lag spikes, jitter, UDP issues, Wi-Fi/AWDL noise and background traffic on macOS.">
+    <title>GeForce NOW jitter on Mac despite low ping</title>
+    <meta name="description" content="Why GeForce NOW can stutter on Mac despite low average ping, and how to check jitter, p95 latency, packet loss, UDP, Wi-Fi/AWDL noise and background traffic.">
     <meta name="robots" content="index,follow,max-image-preview:large">
     <link rel="canonical" href="https://victorbrandaao.github.io/CloudBoost/guides/geforce-now-mac-lag.html">
     <link rel="stylesheet" href="../styles.css">
@@ -22,6 +22,11 @@
           <p class="lead">A GeForce NOW session can feel smooth for 20 minutes and still get ruined by short jitter bursts, Wi-Fi/AWDL noise, background sync or a bad route to the selected server region.</p>
         </section>
         <section class="article-section">
+          <h2>Why low ping can still feel bad</h2>
+          <p>A 20 ms average can hide a short jump to 80 or 120 ms. Cloud gaming reacts to those tail-latency events because video delivery and input acknowledgements must keep arriving on time.</p>
+          <p>Compare average latency with jitter, packet loss and p95 latency. If the average stays low while p95 or jitter climbs, the problem is consistency rather than baseline distance to the server.</p>
+        </section>
+        <section class="article-section">
           <h2>What to check first</h2>
           <ul class="plain-list">
             <li>Test Ethernet or a reliable USB-C adapter before changing app settings.</li>
@@ -35,6 +40,7 @@
           <h2>Where CloudBoost helps</h2>
           <p>CloudBoost focuses on the Mac side: DNS cache, AWDL/Wi-Fi interruptions, local pressure, Low Power Mode, background traffic signals and session proof for support.</p>
           <p>It cannot fix an overloaded GFN server or a bad ISP route, but it can help show when the issue is local versus network path related.</p>
+          <p>Use the <a href="../results.html">public measurement method</a> to understand what Session Lab samples and what the result cannot prove.</p>
         </section>
       </main>
     </div>

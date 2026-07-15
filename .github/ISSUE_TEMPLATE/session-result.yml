@@ -1,0 +1,96 @@
+name: Share a session result
+description: Publish a reproducible CloudBoost result with setup details
+title: "Session result: "
+labels:
+  - result
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for sharing a real setup. Positive, neutral, and negative results are all useful. Do not include license keys, email addresses, IP addresses, or other personal information.
+
+  - type: dropdown
+    id: plan
+    attributes:
+      label: CloudBoost plan
+      options:
+        - Free
+        - PRO
+    validations:
+      required: true
+
+  - type: input
+    id: mac
+    attributes:
+      label: Mac model
+      placeholder: MacBook Air M4, Mac mini M2, Intel MacBook Pro...
+    validations:
+      required: true
+
+  - type: input
+    id: macos
+    attributes:
+      label: macOS version
+      placeholder: macOS 15.5
+    validations:
+      required: true
+
+  - type: input
+    id: game
+    attributes:
+      label: Game or service
+      placeholder: GeForce NOW, Dota 2, Moonlight, CrossOver...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: connection
+    attributes:
+      label: Connection
+      options:
+        - Ethernet
+        - Wi-Fi 6 / 6E / 7
+        - Wi-Fi 5 or older
+        - Other / not relevant
+    validations:
+      required: true
+
+  - type: textarea
+    id: before
+    attributes:
+      label: Before CloudBoost
+      description: Describe the original problem and how often it happened.
+      placeholder: Random jitter bursts every few minutes, Dota stutter after updates, thermal pressure during long sessions...
+    validations:
+      required: true
+
+  - type: textarea
+    id: after
+    attributes:
+      label: After using CloudBoost
+      description: Say what improved, stayed the same, or became worse.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proof
+    attributes:
+      label: Session Proof or measurements
+      description: Paste the PRO Session Proof report or add before/after latency, jitter, packet loss, score, and screenshots. Remove anything you do not want public.
+      render: shell
+
+  - type: checkboxes
+    id: permission
+    attributes:
+      label: Public use
+      options:
+        - label: CloudBoost may link to this public result from its Results page. My words must not be changed beyond shortening for display.
+          required: true
+
+  - type: checkboxes
+    id: honesty
+    attributes:
+      label: Confirmation
+      options:
+        - label: This reflects my actual experience. I understand one setup is not a universal benchmark.
+          required: true

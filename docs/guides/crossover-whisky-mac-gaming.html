@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CrossOver and Whisky Mac gaming diagnostics</title>
-    <meta name="description" content="CloudBoost PRO diagnostics for CrossOver, Whisky, Wine and Game Porting Toolkit sessions on macOS without editing bottles or bypassing anti-cheat.">
+    <title>CrossOver stutter on Mac: Rosetta, shaders or system pressure?</title>
+    <meta name="description" content="Separate CrossOver and Whisky stutter caused by macOS pressure from shader compilation, Rosetta translation, D3DMetal, DXVK and game-engine behavior.">
     <meta name="robots" content="index,follow,max-image-preview:large">
     <link rel="canonical" href="https://victorbrandaao.github.io/CloudBoost/guides/crossover-whisky-mac-gaming.html">
     <link rel="stylesheet" href="../styles.css">
@@ -22,6 +22,16 @@
           <p class="lead">Compatibility-layer gaming can stutter for many reasons. CloudBoost PRO focuses on local macOS pressure and session context without modifying your bottle.</p>
         </section>
         <section class="article-section">
+          <h2>Four different causes can look the same</h2>
+          <ul class="plain-list">
+            <li><strong>macOS pressure:</strong> heat, Low Power Mode, memory pressure or background processes.</li>
+            <li><strong>Shader compilation:</strong> a first-use hitch after an update, new map or new effect.</li>
+            <li><strong>Translation:</strong> Rosetta, Wine, D3DMetal or DXVK work around code and graphics APIs.</li>
+            <li><strong>Game engine:</strong> asset streaming, frame-time spikes or an unsupported anti-cheat path.</li>
+          </ul>
+          <p>CloudBoost can measure the first category and provide context around the others. It cannot directly inspect shader compilation or renderer frame time.</p>
+        </section>
+        <section class="article-section">
           <h2>Good checks before changing bottle settings</h2>
           <ul class="plain-list">
             <li>Confirm Low Power Mode is off while plugged in.</li>
@@ -33,6 +43,7 @@
         <section class="article-section">
           <h2>Important limit</h2>
           <p>CloudBoost does not edit CrossOver bottles, install patches, bypass anti-cheat or claim compatibility fixes. It helps diagnose the Mac session around the game.</p>
+          <p>If Session Lab reports clean Mac-side signals, change one compatibility option at a time and reproduce the same scene before comparing results.</p>
         </section>
       </main>
     </div>

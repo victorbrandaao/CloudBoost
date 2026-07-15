@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Moonlight and Steam Link latency on Mac</title>
-    <meta name="description" content="Moonlight, Steam Link and home streaming setup notes for Mac latency, jitter, Wi-Fi/AWDL, host load and background traffic.">
+    <title>Moonlight packet loss and latency bursts on Mac</title>
+    <meta name="description" content="Troubleshoot Moonlight and Steam Link packet loss, latency bursts, jitter, Wi-Fi/AWDL interference, host load and background processes on Mac.">
     <meta name="robots" content="index,follow,max-image-preview:large">
     <link rel="canonical" href="https://victorbrandaao.github.io/CloudBoost/guides/moonlight-mac-latency.html">
     <link rel="stylesheet" href="../styles.css">
@@ -22,6 +22,11 @@
           <p class="lead">Moonlight and Steam Link depend on both sides: host machine load, network path, Mac Wi-Fi behavior, display settings and local background activity.</p>
         </section>
         <section class="article-section">
+          <h2>Isolate a short latency burst</h2>
+          <p>Average ping is not enough for home streaming. A brief Wi-Fi scan, AWDL event, sync upload or host-side frame-time spike can interrupt delivery without changing the long-term average very much.</p>
+          <p>Use the Spike Timeline to mark when the burst happened, then compare the timestamp with active sync, backup, launcher and capture processes. CloudBoost can report known Mac-side pressure, but host encoding time still needs to be checked in Moonlight/Sunshine statistics.</p>
+        </section>
+        <section class="article-section">
           <h2>Useful checks</h2>
           <ul class="plain-list">
             <li>Use Ethernet on the host PC or console first.</li>
@@ -34,6 +39,7 @@
         <section class="article-section">
           <h2>Where CloudBoost helps</h2>
           <p>CloudBoost helps with the Mac receiving side: local pressure, AWDL/Wi-Fi behavior, background traffic signals, jitter and support-ready reports.</p>
+          <p>It cannot pause every third-party sync service automatically or inspect the host renderer. Session Proof makes the receiving-side evidence easier to compare with host statistics.</p>
         </section>
       </main>
     </div>

@@ -6,6 +6,7 @@ Primary URL: https://victorbrandaao.github.io/CloudBoost/
 GitHub releases: https://github.com/victorbrandaao/CloudBoost/releases/latest
 Support: https://discord.gg/kU5trxtRb
 Reviews: https://victorbrandaao.github.io/CloudBoost/reviews.html
+Results and measurement method: https://victorbrandaao.github.io/CloudBoost/results.html
 Trust Center: https://victorbrandaao.github.io/CloudBoost/trust.html
 Guides: https://victorbrandaao.github.io/CloudBoost/guides.html
 
@@ -13,7 +14,7 @@ Guides: https://victorbrandaao.github.io/CloudBoost/guides.html
 
 CloudBoost helps Mac players start a focused gaming session, reduce local macOS interruptions, and understand latency spikes that normal speed tests often miss.
 
-Version 4.2.2 repairs Payhip activation, preserves existing Gumroad keys, hardens rollback and update verification, and makes native-game diagnostics more honest. Session Lab now separates measured macOS pressure from shader compilation, asset streaming, game-engine stalls, and Rosetta/translation work that CloudBoost cannot measure directly.
+Version 4.2.3 asks for a review only after five sessions lasting at least three minutes, lets Free and PRO users choose public review, private Discord feedback, or postponement, and avoids consecutive end-of-session dialogs. The public Results page documents Session Lab's measurement method, current evidence, and limitations.
 
 It is built for:
 

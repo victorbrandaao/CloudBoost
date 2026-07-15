@@ -1,24 +1,22 @@
-# CloudBoost 4.2.2
+# CloudBoost 4.2.3
 
-CloudBoost 4.2.2 fixes license activation and makes native-game diagnostics more honest.
+CloudBoost 4.2.3 makes the review and feedback flow less intrusive and easier to verify publicly.
 
 ## What changed
 
-- Payhip license activation is repaired.
-- Existing Gumroad and legacy PRO+ keys remain supported.
-- Native and compatibility Session Lab reports now lead with measured Mac-side pressure instead of treating ping as the likely cause of every stutter.
-- Clean local results explicitly point users toward shader compilation, asset streaming, game-engine stalls, and Rosetta/translation as possible causes CloudBoost cannot measure directly.
-- Dota 2 guidance now covers first-use shader compilation after game updates.
-- Rollback keeps its recovery snapshot when a restore action fails.
-- Protected system actions report real failures instead of silently appearing successful.
-- The updater verifies the staged app signature before replacing the installed copy.
-- CPU/process sampling and Session Proof details are more accurate.
+- The app waits for five completed sessions lasting at least three minutes before asking for a review.
+- Free and PRO users can leave a public GitHub review, send private feedback through Discord, or choose `Not Now`.
+- `Not Now` postpones the request for another three completed sessions.
+- PRO users receive one end-of-session dialog instead of a report immediately followed by a review request.
+- Review prompt events respect the existing Anonymous Stats setting.
+- The new public Results page explains Session Lab's measurement method, current evidence, limitations, and setup-specific reports.
+- A structured GitHub form accepts positive, neutral, and negative session results with enough context to compare setups.
 
-CloudBoost does not modify games, bypass anti-cheat, install kernel extensions, or claim to fix shader compilation. It diagnoses and reduces measurable macOS-side session interference.
+The diagnostic and activation fixes from 4.2.2 remain included. CloudBoost does not modify games, bypass anti-cheat, install kernel extensions, or promise universal performance gains.
 
 ## Install
 
-Download the DMG, open it, and drag CloudBoost to `/Applications`. Existing users can also use the in-app updater after 4.2.2 is published.
+Download the DMG, open it, and drag CloudBoost to `/Applications`. Existing users can also use the in-app updater after 4.2.3 is published.
 
 Homebrew users can update with:
 
@@ -31,11 +29,11 @@ brew upgrade --cask cloudboost
 
 Discord: https://discord.gg/kU5trxtRb
 
-Include your Mac model, macOS version, selected profile, connection type, VPN status, and a Session Proof report when possible.
+Public results and measurement method: https://victorbrandaao.github.io/CloudBoost/results.html
 
 ## Checksums
 
 ```text
-ZIP SHA256: 4427a60256a7d253fb016393daf988a029b6ded7743dfe38fdd08ce96e9bda65
-DMG SHA256: 70fdfe1d0c768391d3acb415e1dc66f746cbafcdb7f2041fed0e703add8cd93d
+ZIP SHA256: eda2c71038773fba9a5e105743bab6907dd15240ea22436d89128838e4b9c78a
+DMG SHA256: 1b7ce598ed019783b45ccee93cd5a6a9b3432ee19a518cf57974a922d807b13d
 ```
