@@ -13,7 +13,7 @@ Guides: https://victorbrandaao.github.io/CloudBoost/guides.html
 
 CloudBoost helps Mac players start a focused gaming session, reduce local macOS interruptions, and understand latency spikes that normal speed tests often miss.
 
-Version 4.2.1 adds a clearer in-app PRO purchase and license activation flow, direct Payhip validation errors, and continued support for existing Gumroad keys. It retains the 4.2 local Spike Timeline, current-versus-historical session status, Session Lab comparisons, non-repeating severe-spike alerts, and clearer applied-versus-manual session actions.
+Version 4.2.2 repairs Payhip activation, preserves existing Gumroad keys, hardens rollback and update verification, and makes native-game diagnostics more honest. Session Lab now separates measured macOS pressure from shader compilation, asset streaming, game-engine stalls, and Rosetta/translation work that CloudBoost cannot measure directly.
 
 It is built for:
 
@@ -49,7 +49,7 @@ It is built for:
 
 CloudBoost is not a magic FPS booster.
 
-It does not modify games, inject code, bypass anti-cheat, edit CrossOver bottles, install kernel extensions, or promise large FPS gains. It focuses on the local macOS session around the game.
+It does not modify games, inject code, bypass anti-cheat, edit CrossOver bottles, install kernel extensions, or promise large FPS gains. It focuses on the local macOS session around the game. It cannot directly measure shader compilation, asset streaming, renderer frame time, game-engine stalls, or Rosetta/translation work.
 
 ## Plans
 

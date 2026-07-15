@@ -1,239 +1,142 @@
 # CloudBoost
 
-CloudBoost is a native macOS menu bar app for cleaner gaming sessions on Mac.
+CloudBoost is a native macOS menu bar app that shows what is happening around a gaming session: latency spikes, jitter, packet loss, Wi-Fi/AWDL noise, VPN routing, background activity, thermal pressure, and local system load.
 
-It helps players start a focused session, reduce local macOS interruptions, and understand the spikes that a normal speed test usually misses: jitter, packet loss, AWDL/Wi-Fi noise, background traffic, thermal pressure, Low Power Mode, and uneven system load.
-
-It is built for cloud gaming, remote play, home streaming, native Mac games, Steam, Epic Games, Battle.net, and PRO diagnostics around CrossOver, Whisky, Wine, and Game Porting Toolkit sessions.
+It does not modify games or promise artificial FPS gains. It helps players run a quieter Mac session, understand a problem, and leave with a useful next step.
 
 <p align="center">
-  <img src="https://img.shields.io/github/v/release/victorbrandaao/CloudBoost?style=for-the-badge">
-  <img src="https://img.shields.io/github/downloads/victorbrandaao/CloudBoost/latest/total?label=latest%20release%20downloads&amp;style=for-the-badge&amp;color=2ea44f&amp;v=5">
-  <img src="https://img.shields.io/github/downloads/victorbrandaao/CloudBoost/total?label=all-time%20downloads&amp;style=for-the-badge&amp;color=111111&amp;v=2">
-  <img src="https://img.shields.io/badge/macOS-12%2B-black?style=for-the-badge">
-  <a href="https://discord.gg/kU5trxtRb"><img src="https://img.shields.io/badge/Discord-Support-5865F2?style=for-the-badge"></a>
+  <a href="https://github.com/victorbrandaao/CloudBoost/releases/latest"><img src="https://img.shields.io/github/v/release/victorbrandaao/CloudBoost?style=flat-square" alt="Latest release"></a>
+  <img src="https://img.shields.io/github/downloads/victorbrandaao/CloudBoost/latest/total?label=latest%20release&amp;style=flat-square&amp;color=111111" alt="Latest release downloads">
+  <img src="https://img.shields.io/github/downloads/victorbrandaao/CloudBoost/total?label=GitHub%20downloads&amp;style=flat-square&amp;color=111111" alt="All GitHub release downloads">
+  <img src="https://img.shields.io/badge/macOS-12%2B-111111?style=flat-square" alt="macOS 12 or later">
+  <a href="https://discord.gg/kU5trxtRb"><img src="https://img.shields.io/badge/Discord-support-5865F2?style=flat-square" alt="Discord support"></a>
 </p>
 
 <p align="center">
-  <a href="https://feitonobrasil.dev.br"><img src="https://selo.feitonobrasil.dev.br/en/serio/colorido/1x.svg" alt="Made in Brazil" height="56" loading="lazy"></a>
+  <img src="./assets/cloudboost-4-2-spike-timeline.png" alt="CloudBoost showing a live Mac gaming session, applied actions, latency, jitter and the spike timeline" width="620">
 </p>
 
-<p align="center">
-  <img src="./assets/cloudboost-4-2-spike-timeline.png" alt="CloudBoost 4.2 showing a live Mac gaming session, applied actions, latency, jitter and the spike timeline">
-</p>
+## Start Here
 
-## Download
+- [Download the latest DMG](https://github.com/victorbrandaao/CloudBoost/releases/latest)
+- [Visit the website](https://victorbrandaao.github.io/CloudBoost/)
+- [Read the Trust Center](https://victorbrandaao.github.io/CloudBoost/trust.html)
+- [Join the Discord](https://discord.gg/kU5trxtRb)
+- [Get CloudBoost PRO](https://payhip.com/b/Jb0XO)
 
-Website: [victorbrandaao.github.io/CloudBoost](https://victorbrandaao.github.io/CloudBoost/)
+CloudBoost has passed **1,000 downloads across its distribution channels**. GitHub badges above update automatically for release assets.
 
-Latest release: [GitHub Releases](https://github.com/victorbrandaao/CloudBoost/releases/latest)
+## What Happens During A Session
 
-CloudBoost PRO is currently **$10**.
+1. **Watch**: CloudBoost samples latency, jitter, packet loss, route state, Wi-Fi/AWDL behavior, thermal pressure, and local load.
+2. **Explain**: Session Doctor separates a live issue from an earlier spike and describes the likely cause in plain language.
+3. **Act and restore**: CloudBoost applies selected temporary session actions, records what happened, and restores temporary changes when the session ends.
 
-This is the full PRO v4.x license. One-time payment. No subscription. Existing PRO customers keep their access.
+CloudBoost cannot fix an overloaded server, a bad ISP route, a weak router, or a game-engine problem. It can make the Mac side easier to control and diagnose.
 
-Install with Homebrew:
+## Where It Helps
+
+| Type | Profiles and scenarios |
+|---|---|
+| Cloud gaming | GeForce NOW, Xbox Cloud Gaming, Boosteroid, Shadow PC |
+| Remote play | Moonlight, PS Remote Play, Steam Link, home streaming |
+| Native Mac gaming | Dota 2, League of Legends, Steam, Epic Games, Battle.net, local games |
+| Compatibility layers | CrossOver, Whisky, Wine, Game Porting Toolkit diagnostics in PRO |
+
+## Free And PRO
+
+Free is a useful manual session tool. PRO adds automation, deeper diagnostics, reports, and support features for regular users.
+
+| Feature | Free | PRO |
+|---|:---:|:---:|
+| Core cloud, remote play, native Mac, and competitive profiles | Yes | Yes |
+| Manual session and Balanced preset | Yes | Yes |
+| Basic signal checks and rollback protection | Yes | Yes |
+| Test My Setup | Yes | Yes |
+| Auto-detect, Auto Boost, and Smart Boost | No | Yes |
+| Stability Guard, Heat Guard, and Keep Alive | No | Yes |
+| Session Doctor full report, Fix actions, and UDP probe | No | Yes |
+| VPN Route Doctor and AWDL Guard+ | No | Yes |
+| Spike Timeline, Session Lab, and session history | No | Yes |
+| HUD, Stream Signal, and PRO Widgets | No | Yes |
+| Session Proof copy/export | No | Yes |
+| CrossOver, Whisky, Wine, and GPTK diagnostics | No | Yes |
+| Kernel Watch and background throttle | No | Yes |
+| Priority Discord support | No | Yes |
+
+**CloudBoost PRO costs $10.** It is a one-time CloudBoost 4.x license, not a subscription.
+
+New purchases use [Payhip](https://payhip.com/b/Jb0XO). Existing Gumroad and legacy PRO+ license keys remain supported in the app.
+
+## Install
+
+### Homebrew
 
 ```bash
 brew tap victorbrandaao/cloudboost
 brew install --cask cloudboost
 ```
 
-Update with Homebrew:
+Update later with:
 
 ```bash
 brew update
 brew upgrade --cask cloudboost
 ```
 
-Install:
+### DMG
 
-1. Download the latest `CloudBoost_v4.x.dmg`.
-2. Open the DMG.
-3. Drag `CloudBoost.app` to `/Applications`.
-4. Open CloudBoost from the macOS menu bar.
+1. Download the latest `CloudBoost_v4.x.dmg` from [GitHub Releases](https://github.com/victorbrandaao/CloudBoost/releases/latest).
+2. Open the DMG and drag `CloudBoost.app` to `/Applications`.
+3. Open CloudBoost from the macOS menu bar.
 
-Updates:
+The in-app updater downloads the published ZIP, verifies its SHA256 checksum, replaces the app, and relaunches it. The DMG remains available for manual installation.
 
-- Homebrew installs can be updated with `brew upgrade --cask cloudboost`.
-- Manual installs use the DMG from GitHub Releases.
-- In-app updates use the verified ZIP asset when available, then replace and relaunch CloudBoost automatically.
-- The README counters show both downloads from the latest release and all-time downloads across release assets.
-
-If macOS says the app is damaged, clear quarantine:
+If macOS reports that the independently distributed app is damaged, clear its quarantine attribute:
 
 ```bash
 xattr -cr /Applications/"CloudBoost.app"
 ```
 
-Need help? Join Discord: [discord.gg/kU5trxtRb](https://discord.gg/kU5trxtRb)
+## Current Release: 4.2.2
 
-Trust Center: [what CloudBoost does, does not do, and can ask permission for](https://victorbrandaao.github.io/CloudBoost/trust.html)
+- Payhip activation repaired while existing Gumroad and legacy PRO+ keys remain supported
+- native and compatibility diagnostics now separate measured Mac pressure from unmeasured shader, asset-streaming, engine, and Rosetta/translation stalls
+- Session Lab shows Mac-side health first for local games and keeps latency as context
+- safer rollback and privileged-action reporting
+- updater verifies the staged app signature before replacement
+- CPU/process sampling and support reports are more accurate
 
-Guides: [Mac gaming setup notes by service and game](https://victorbrandaao.github.io/CloudBoost/guides.html)
+See the complete notes and checksums on the [release page](https://github.com/victorbrandaao/CloudBoost/releases/latest).
 
-AI-readable summary: [CloudBoost AI Summary](https://victorbrandaao.github.io/CloudBoost/ai-summary.html)
+### A note about native-game stutter
 
-## What CloudBoost Is
+CloudBoost can measure macOS pressure, thermal state, power mode, background activity, and network context. It cannot directly measure shader compilation, asset streaming, renderer frame time, game-engine stalls, or Rosetta/translation work. Version 4.2.2 makes that boundary visible in Session Lab instead of treating every stutter as a network problem.
 
-CloudBoost is not a magic FPS booster.
+## Public Proof And Support
 
-It does not modify games, inject code, bypass anti-cheat, edit CrossOver bottles, or install kernel extensions.
+- Covered by [MacMagazine](https://macmagazine.com.br/post/2026/06/01/cloudboost-otimiza-a-experiencia-de-jogos-na-nuvem-no-mac/)
+- Public user feedback is available on the [reviews page](https://victorbrandaao.github.io/CloudBoost/reviews.html)
+- The in-app `Review` button opens the public [GitHub review form](https://github.com/victorbrandaao/CloudBoost/issues/new?template=user-review.yml)
+- Free and PRO support is available on [Discord](https://discord.gg/kU5trxtRb)
 
-It focuses on the Mac session around the game:
-
-- starts and stops focused gaming sessions
-- applies temporary macOS session tuning
-- watches latency, jitter, packet loss, route behavior, Wi-Fi path, and local pressure
-- explains likely spike causes in plain language
-- restores temporary changes when the session ends
-
-## Supported Profiles
-
-Core profiles are free. CrossOver/Whisky diagnostics are part of PRO because they add compatibility-layer checks and deeper local bottleneck guidance.
-
-| Profile | Plan |
-|---|---|
-| GeForce NOW | Free |
-| Xbox Cloud Gaming | Free |
-| Boosteroid | Free |
-| Moonlight | Free |
-| PS Remote Play | Free |
-| VoidLink Extreme | Free |
-| Counter-Strike 2 cloud/remote profile | Free |
-| League of Legends native/cloud profile | Free |
-| Dota 2 native/cloud profile | Free |
-| Local Game | Free |
-| Steam | Free |
-| Epic Games | Free |
-| Battle.net | Free |
-| CrossOver / Windows Games | PRO |
-
-## Free vs PRO
-
-Free is for trying CloudBoost and running manual sessions.
-
-PRO is for people who use it regularly and want deeper diagnostics, automation, reports, widgets, and priority support.
-
-| Feature | Free | PRO |
-|---|---:|---:|
-| Cloud, remote play, native Mac, and competitive profiles | Yes | Yes |
-| Manual session mode | Yes | Yes |
-| Balanced preset | Yes | Yes |
-| Basic signal checks | Yes | Yes |
-| Rollback protection | Yes | Yes |
-| Auto-detect and Auto Boost | No | Yes |
-| Smart Boost and Stability Guard | No | Yes |
-| Test My Setup quick check | Yes | Yes |
-| What CloudBoost did checklist | Basic | Full |
-| Session Doctor Fix actions | No | Yes |
-| Fastest and Smooth presets | No | Yes |
-| HUD | No | Yes |
-| Session Doctor full reports with UDP probe | No | Yes |
-| VPN Route Doctor | No | Yes |
-| Session Lab | No | Yes |
-| Stream Signal | No | Yes |
-| PRO Widgets | No | Yes |
-| Session end report | No | Yes |
-| Heat Guard and Keep Alive | No | Yes |
-| Session Proof copy/export for Discord and GitHub support | No | Yes |
-| Kernel Watch and background throttle | No | Yes |
-| CrossOver, Whisky, Wine, and GPTK diagnostics | No | Yes |
-| Priority Discord support | No | Yes |
-
-CloudBoost PRO is currently **$10**.
-
-This is the full PRO v4.x license. One-time payment. No subscription.
-
-Unlock PRO: [Payhip](https://payhip.com/b/Jb0XO)
-
-Payhip is the checkout for new purchases. Existing Gumroad license keys remain supported inside the app.
-
-Existing PRO customers keep access to the expanded PRO feature set. The previous PRO+ feature set has been folded into PRO.
-
-## What It Helps With
-
-CloudBoost is useful when the game itself is not the only problem.
-
-Common cases:
-
-- GeForce NOW feels smooth, then suddenly spikes
-- Xbox Cloud Gaming or Boosteroid has jitter bursts on Mac
-- Shadow PC or remote PC streaming feels inconsistent on macOS
-- PS Remote Play, Moonlight, or Steam Link feels inconsistent
-- Steam or Epic keeps downloading, syncing, overlaying, or scanning during a session
-- Dota 2, League, or a native Mac game stutters when macOS is under pressure
-- CrossOver or Whisky sessions need local Mac-side diagnostics
-- Wi-Fi/AWDL, AirDrop, Handoff, VPN routing, backups, sync tools, thermal pressure, or Low Power Mode interfere with a session
-
-CloudBoost cannot fix a bad router, bad ISP route, overloaded game server, or remote machine problem. It gives you a cleaner local session and better information when something feels off.
-
-## Version 4.2.1
-
-Version 4.2.1 makes buying and activating PRO easier without changing access for existing customers.
-
-Highlights:
-
-- the PRO dialog now has a visible license field and separate `Activate License` and `Buy on Payhip` actions
-- activation errors identify Payhip problems directly instead of ending with a misleading Gumroad 404
-- Payhip is the primary checkout for new purchases, with Mercado Pago where available
-- existing Gumroad and legacy PRO+ keys remain supported
-- the PRO explanation is shorter and easier to scan
-- the local Spike Timeline, current-versus-historical health, Session Lab comparisons, VPN Route Doctor, Session Proof, and updater checksum verification introduced in 4.2 remain available
-
-## Support
-
-Discord is the fastest place for setup help, license support, bug reports, screenshots, and feature requests:
-
-[discord.gg/kU5trxtRb](https://discord.gg/kU5trxtRb)
-
-When asking for help, include:
-
-- macOS version
-- Mac model
-- selected profile
-- Wi-Fi or Ethernet
-- VPN/firewall/private relay status
-- screenshot of Session Doctor or Session Lab
-- Session Proof report copied from the app when using PRO
-
-The Session Proof report does not include license keys, personal files, hostnames, or browser history.
-
-## Reviews
-
-CloudBoost uses public GitHub feedback instead of hidden testimonials.
-
-The in-app `Review` button opens the same public GitHub review form. Leave a review if you have used the app and can share useful details:
-
-- Free or PRO
-- Mac model and macOS version
-- game or service tested
-- Wi-Fi or Ethernet
-- what improved, what did not, and what was confusing
-
-Leave a review: [GitHub review form](https://github.com/victorbrandaao/CloudBoost/issues/new?template=user-review.yml)
-
-Read reviews: [CloudBoost reviews page](https://victorbrandaao.github.io/CloudBoost/reviews.html)
-
-### First public feedback
-
-> “Seems to keep my connection more stable on Wi-Fi. On ethernet I never get high ping but it does stop background processes from hurting your ping. Don't do many reviews but this one is worth it.”
+> “Seems to keep my connection more stable on Wi-Fi. On ethernet I never get high ping but it does stop background processes from hurting your ping.”
 >
-> CloudBoost PRO user on a MacBook Air M4, macOS 26.5.2, using Shadow PC over Wi-Fi and Ethernet. [Read the public review](https://github.com/victorbrandaao/CloudBoost/issues/18).
+> CloudBoost PRO user on a MacBook Air M4. [Read the full public review](https://github.com/victorbrandaao/CloudBoost/issues/18).
 
-This is one user's report, not a benchmark or a guaranteed result. More setup-specific feedback is welcome.
+This is one user's experience, not a benchmark or guaranteed result.
 
 ## Security And Limits
 
-CloudBoost is proprietary software. The public repository contains releases, documentation, and downloadable binaries, not the full source code.
+CloudBoost does not install kernel extensions, hidden daemons, permanent system patches, game injections, or anti-cheat bypasses. Protected temporary actions may ask for the macOS administrator password.
 
-CloudBoost does not install KEXTs, hidden daemons, permanent system patches, game injections, or anti-cheat bypasses. Some actions may ask for administrator permission because macOS requires it for temporary system-level session changes.
+The public repository contains releases, documentation, and binaries, not the full source code. Read the [Trust Center](https://victorbrandaao.github.io/CloudBoost/trust.html) for the exact behavior and permission model.
 
-Read the Trust Center: [victorbrandaao.github.io/CloudBoost/trust.html](https://victorbrandaao.github.io/CloudBoost/trust.html)
+Some diagnostic and HUD ideas are inspired by [Better xCloud](https://github.com/redphx/better-xcloud) by redphx. CloudBoost does not use Better xCloud code.
 
-Some diagnostics and HUD ideas are inspired by [Better xCloud](https://github.com/redphx/better-xcloud) by redphx. CloudBoost does not use Better xCloud code.
-
-CloudBoost was covered by [MacMagazine](https://macmagazine.com.br/post/2026/06/01/cloudboost-otimiza-a-experiencia-de-jogos-na-nuvem-no-mac/).
+<p align="center">
+  <a href="https://feitonobrasil.dev.br"><img src="https://selo.feitonobrasil.dev.br/en/serio/colorido/1x.svg" alt="Made in Brazil" height="48" loading="lazy"></a>
+</p>
 
 ## License
 

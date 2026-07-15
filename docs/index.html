@@ -3,24 +3,25 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CloudBoost - macOS Gaming Session Optimizer</title>
-    <meta name="description" content="CloudBoost is a native macOS menu bar app for cleaner cloud gaming, remote play, Shadow PC, PS Remote Play, Steam Link, native Mac gaming and PRO CrossOver/Whisky diagnostics. Diagnose jitter, latency spikes, packet loss, VPN routing, background traffic, Wi-Fi/AWDL noise and system pressure.">
+    <title>CloudBoost - Mac Gaming Session Diagnostics</title>
+    <meta name="description" content="See what is affecting your Mac gaming session. CloudBoost watches jitter, latency spikes, packet loss, VPN routing, background traffic, Wi-Fi/AWDL noise, thermal pressure and local system load.">
     <meta name="keywords" content="macOS gaming optimizer, Mac gaming optimizer, cloud gaming Mac, GeForce NOW Mac lag, Xbox Cloud Gaming Mac, Boosteroid Mac lag, Shadow PC Mac latency, PS Remote Play Mac, Moonlight Mac, Steam Link Mac, Steam Mac gaming, Epic Games Mac, Battle.net Mac, CrossOver Mac gaming, Whisky Mac gaming, Dota 2 Mac, League of Legends Mac, CS2 Mac, Mac latency spikes, Mac jitter, VPN gaming Mac, AWDL Wi-Fi gaming">
     <meta name="author" content="Victor Brandao">
     <meta name="robots" content="index,follow,max-image-preview:large">
     <link rel="canonical" href="https://victorbrandaao.github.io/CloudBoost/">
     <meta property="og:site_name" content="CloudBoost">
-    <meta property="og:title" content="CloudBoost - macOS Gaming Session Optimizer">
-    <meta property="og:description" content="A native macOS menu bar app for cleaner cloud gaming, remote play, native Mac gaming, VPN-aware diagnostics and PRO CrossOver/Whisky checks.">
+    <meta property="og:title" content="CloudBoost - Mac Gaming Session Diagnostics">
+    <meta property="og:description" content="Find the spike, understand the cause, and run a quieter gaming session on macOS.">
     <meta property="og:image" content="https://victorbrandaao.github.io/CloudBoost/assets/cloudboost-clean-social.png">
     <meta property="og:image:alt" content="CloudBoost app interface showing macOS gaming session diagnostics, latency, jitter, profiles and PRO widgets">
     <meta property="og:url" content="https://victorbrandaao.github.io/CloudBoost/">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="CloudBoost - macOS Gaming Session Optimizer">
-    <meta name="twitter:description" content="Cleaner gaming sessions on Mac. Diagnose the spikes normal speed tests miss.">
+    <meta name="twitter:title" content="CloudBoost - Mac Gaming Session Diagnostics">
+    <meta name="twitter:description" content="Find the spike, understand the cause, and run a quieter gaming session on macOS.">
     <meta name="twitter:image" content="https://victorbrandaao.github.io/CloudBoost/assets/cloudboost-clean-social.png">
     <meta name="theme-color" content="#ffffff">
+    <link rel="icon" type="image/png" href="assets/cloudboost-clean-square.png">
     <link rel="sitemap" type="application/xml" href="https://victorbrandaao.github.io/CloudBoost/sitemap.xml">
     <link rel="stylesheet" href="styles.css">
     <script type="application/ld+json">
@@ -31,7 +32,7 @@
         "operatingSystem": "macOS 12 or later",
         "applicationCategory": "UtilitiesApplication",
         "applicationSubCategory": "Gaming utility",
-        "softwareVersion": "4.2.1",
+        "softwareVersion": "4.2.2",
         "description": "CloudBoost is a native macOS menu bar app for cleaner cloud gaming, remote play, native Mac gaming, VPN-aware diagnostics and PRO CrossOver/Whisky checks. It helps diagnose jitter, latency spikes, packet loss, VPN routing, background traffic, AWDL/Wi-Fi noise and local system pressure, then shows what was applied during the session and can copy a Session Proof report for support.",
         "image": "https://victorbrandaao.github.io/CloudBoost/assets/cloudboost-clean-social.png",
         "downloadUrl": "https://github.com/victorbrandaao/CloudBoost/releases/latest",
@@ -102,7 +103,7 @@
             "name": "Does CloudBoost help native Mac games?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Sometimes. It can help when the problem is local macOS pressure, background traffic, Wi-Fi behavior, power state or thermal pressure. It does not modify the game."
+              "text": "Sometimes. It can help when the problem is local macOS pressure, background traffic, Wi-Fi behavior, power state or thermal pressure. It does not modify the game and cannot directly measure shader compilation, asset streaming, renderer frame time, game-engine stalls or Rosetta translation."
             }
           },
           {
@@ -129,7 +130,7 @@
     <div class="page">
       <header class="site-header">
         <a class="brand" href="#">
-          <span class="mark" aria-hidden="true"></span>
+          <span class="mark" aria-hidden="true"><span></span></span>
           <span>CloudBoost</span>
         </a>
         <nav aria-label="Primary">
@@ -146,28 +147,36 @@
       <main>
         <section class="hero" id="download">
           <div class="hero-copy">
-            <p class="eyebrow">CloudBoost 4.2.1 for macOS</p>
-            <h1>Cleaner gaming sessions on Mac.</h1>
-            <p class="lead">A native menu bar app for players who want fewer random spikes and clearer diagnostics, not fake boost promises.</p>
-            <p class="sublead">CloudBoost watches the Mac side of the session: jitter, packet loss, route latency, background traffic, AWDL/Wi-Fi noise, thermal pressure, Low Power Mode and local CPU pressure.</p>
+            <p class="eyebrow">Native macOS menu bar utility · Version 4.2.2</p>
+            <h1>Find the spike. Understand the session.</h1>
+            <p class="lead">CloudBoost shows what is happening around your game when a normal speed test says everything is fine.</p>
+            <p class="sublead">Watch jitter, packet loss, route latency, VPN state, background traffic, AWDL/Wi-Fi noise, thermal pressure, Low Power Mode and local CPU pressure in one place.</p>
             <div class="actions">
-              <a class="button primary" href="https://github.com/victorbrandaao/CloudBoost/releases/latest">Download DMG</a>
-              <a class="button secondary" href="https://payhip.com/b/Jb0XO">Unlock PRO</a>
+              <a class="button primary" href="https://github.com/victorbrandaao/CloudBoost/releases/latest">Download Free</a>
+              <a class="button secondary" href="https://payhip.com/b/Jb0XO">Get PRO · $10</a>
             </div>
             <div class="install-command" aria-label="Homebrew install command">
               <span>Homebrew</span>
               <code>brew tap victorbrandaao/cloudboost<br>brew install --cask cloudboost</code>
             </div>
-            <p class="microcopy">PRO is currently $10. Full v4.x license. One-time payment. No subscription.</p>
+            <p class="microcopy">macOS 12 or later · Intel and Apple Silicon · PRO is a one-time v4.x license</p>
           </div>
 
           <figure class="app-preview">
-            <img src="assets/cloudboost-4-2-spike-timeline.png" alt="CloudBoost 4.2 showing a live Mac gaming session and spike timeline">
+            <img src="assets/cloudboost-4-2-spike-timeline.png" alt="CloudBoost 4.2 showing a real live Mac gaming session and spike timeline">
           </figure>
         </section>
 
+        <section class="proof-strip" aria-label="CloudBoost milestones">
+          <div><strong>1,000+</strong><span>downloads across channels</span></div>
+          <div><strong>4.2.2</strong><span>current stable release</span></div>
+          <div><strong>macOS 12+</strong><span>Intel and Apple Silicon</span></div>
+          <div><strong>Public</strong><span>reviews, releases and support</span></div>
+        </section>
+
         <section class="trust-row" aria-label="Trust signals">
-          <span>Homebrew cask available</span>
+          <span>Free core profiles</span>
+          <span>Homebrew available</span>
           <span>No game injection</span>
           <span>No anti-cheat bypass</span>
           <span>No kernel extension</span>
@@ -180,14 +189,27 @@
           </a>
         </section>
 
+        <section class="section workflow" aria-labelledby="workflow-title">
+          <div class="section-heading">
+            <p class="eyebrow">One session, three answers</p>
+            <h2 id="workflow-title">Watch. Explain. Act.</h2>
+          </div>
+          <ol class="workflow-grid">
+            <li><span>01</span><strong>Watch the Mac side</strong><p>Collect the signals that average ping hides: jitter, packet loss, route state, Wi-Fi noise and local pressure.</p></li>
+            <li><span>02</span><strong>Explain the warning</strong><p>Separate a live problem from an earlier spike and show the likely cause in plain language.</p></li>
+            <li><span>03</span><strong>Act, report, restore</strong><p>Apply selected temporary actions, record what changed, and restore the session when you stop.</p></li>
+          </ol>
+        </section>
+
         <section class="section split" id="use-cases">
           <div>
             <p class="eyebrow">Use Cases</p>
-            <h2>For the moments where average ping is not the whole story.</h2>
+            <h2>Useful when the game is not the only variable.</h2>
           </div>
           <div class="copy">
-            <p>CloudBoost is useful when a game feels fine for a while, then suddenly stutters, spikes, or becomes inconsistent.</p>
-            <p>It helps with cloud gaming, remote play, native Mac gaming, and PRO diagnostics for Windows compatibility layers such as CrossOver, Whisky, Wine and Game Porting Toolkit.</p>
+            <p>CloudBoost is useful when a game feels fine for a while and then stutters, spikes or becomes inconsistent.</p>
+            <p>It covers cloud gaming, remote play, native Mac gaming and PRO diagnostics for CrossOver, Whisky, Wine and Game Porting Toolkit sessions.</p>
+            <p>For local games, it now separates measured Mac-side pressure from causes it cannot observe directly, such as shader compilation, asset streaming, renderer stalls and Rosetta/translation work.</p>
           </div>
         </section>
 
@@ -200,7 +222,7 @@
           <article>
             <span>Native Mac games</span>
             <h3>Dota 2, League, Steam, Epic, Battle.net and local Mac game sessions.</h3>
-            <p>Watch CPU pressure, thermal pressure, Low Power Mode and background work that can make a session feel uneven.</p>
+            <p>Watch CPU pressure, thermal pressure, Low Power Mode and background work, then see when clean Mac-side signals point toward shaders, asset streaming or the game engine instead.</p>
           </article>
           <article>
             <span>PRO compatibility diagnostics</span>
@@ -209,29 +231,37 @@
           </article>
           <article>
             <span>Actionable session help</span>
-            <h3>Test setup, see what was applied, then get a plain-language next step.</h3>
-            <p>CloudBoost now separates issues it can help with from manual checks such as ISP route, VPN/firewall, server region or app-side sync settings.</p>
+            <h3>See what CloudBoost changed and what still needs a manual check.</h3>
+            <p>PRO users can also copy Session Proof with the selected profile, Session Doctor, Session Lab, before/after summary and recent app events.</p>
           </article>
-          <article>
-            <span>Session Proof</span>
-            <h3>Copy a support-ready report instead of explaining everything from scratch.</h3>
-            <p>PRO users can copy a clean report with profile, preset, Session Doctor, Session Lab, before/after summary, and recent app events.</p>
-          </article>
+        </section>
+
+        <section class="section product-proof">
+          <figure>
+            <img src="assets/cloudboost-session-lab-focus.png" alt="Real CloudBoost Session Lab showing a native session score and before-after signal">
+          </figure>
+          <div>
+            <p class="eyebrow">Real app, public feedback</p>
+            <h2>Diagnostics you can inspect and share.</h2>
+            <p class="lead-small">The screenshots are taken from the shipping macOS app. Reviews are public, support is open, and Session Proof gives users a consistent way to report a problem.</p>
+            <blockquote>“Seems to keep my connection more stable on Wi-Fi.”</blockquote>
+            <a class="text-link" href="reviews.html">Read the public review and setup details</a>
+          </div>
         </section>
 
         <section class="section split" id="pro">
           <div>
             <p class="eyebrow">Free and PRO</p>
-            <h2>Free is useful. PRO is for people who use it every week.</h2>
+            <h2>Start free. Pay for depth and automation.</h2>
           </div>
           <div class="plan-grid">
             <article>
               <h3>Free</h3>
-              <p>Manual sessions, Balanced preset, rollback protection, basic signal checks, Stream Advisor, and the core cloud, remote play, native Mac and competitive profiles.</p>
+              <p>Manual sessions, Balanced preset, rollback protection, basic signal checks and the core cloud, remote play, native Mac and competitive profiles.</p>
             </article>
             <article>
               <h3>PRO</h3>
-              <p>Automation, HUD, Session Doctor full reports and Fix actions, VPN Route Doctor, Session Lab, Stream Signal, PRO Widgets, Heat Guard, Keep Alive, Session Proof copy/export, Kernel Watch, background throttle, CrossOver/Whisky diagnostics and priority Discord support.</p>
+              <p>Automation, HUD, full Session Doctor, VPN Route Doctor, Spike Timeline, Session Lab, PRO Widgets, Session Proof, system guards, CrossOver/Whisky diagnostics and priority Discord support.</p>
               <p><strong>PRO:</strong> currently $10. This is the full CloudBoost 4.x PRO license, not a rental or subscription.</p>
               <a class="text-link" href="https://payhip.com/b/Jb0XO">Unlock PRO license on Payhip</a>
             </article>
@@ -240,14 +270,14 @@
 
         <section class="section split">
           <div>
-            <p class="eyebrow">Version 4.2.1</p>
-            <h2>A clearer path from purchase to activation.</h2>
+            <p class="eyebrow">Version 4.2.2</p>
+            <h2>More honest local diagnostics and safer updates.</h2>
           </div>
           <div class="copy">
-            <p>The PRO dialog now gives existing customers a visible license field and separates activation from buying.</p>
-            <p>Payhip validation errors are reported directly, making failed activations easier to understand and resolve.</p>
-            <p>Payhip remains the checkout for new purchases. Existing Gumroad and legacy PRO+ license keys remain supported.</p>
-            <p>The 4.2 Spike Timeline, current-versus-historical health, Session Lab comparisons and non-repeating severe-spike alerts remain included.</p>
+            <p>Payhip activation is repaired, while existing Gumroad and legacy PRO+ license keys remain supported.</p>
+            <p>Session Lab now leads with Mac-side health for native and compatibility sessions instead of presenting ping as the likely cause of every stutter.</p>
+            <p>When measured signals are clean, the app explicitly points toward shader compilation, asset streaming, the game engine or Rosetta/translation as possibilities it cannot measure directly.</p>
+            <p>Rollback, privileged actions, CPU sampling and update-package verification were also hardened.</p>
           </div>
         </section>
 
@@ -274,7 +304,7 @@
           </details>
           <details>
             <summary>Does it work for native Mac games?</summary>
-            <p>Yes, when the problem is around the game rather than inside the game: thermal pressure, Low Power Mode, background traffic, Wi-Fi/AWDL behavior, CPU pressure or uneven local session state.</p>
+            <p>Yes, when the problem is around the game rather than inside it: thermal pressure, Low Power Mode, background traffic, Wi-Fi/AWDL behavior, CPU pressure or uneven local session state. CloudBoost cannot directly measure shader compilation, asset streaming, renderer frame time, engine stalls or Rosetta translation. Version 4.2.2 tells you when measured Mac-side signals are clean enough to investigate those causes next.</p>
           </details>
           <details>
             <summary>Does it work with PS Remote Play and Moonlight?</summary>

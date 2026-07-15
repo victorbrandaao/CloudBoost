@@ -1,25 +1,24 @@
-CloudBoost 4.1 focuses on clearer diagnostics for real Mac gaming setups.
+# CloudBoost 4.2.2
 
-This release adds VPN-aware checks, cleaner support reports, updated app images, and a safer license path while keeping Gumroad as the main checkout. Existing PRO customers keep their access.
+CloudBoost 4.2.2 fixes license activation and makes native-game diagnostics more honest.
 
-### What's New
+## What changed
 
-* **VPN Route Doctor:** CloudBoost can now detect common VPN/tunnel setups and explain when a route, UDP check, packet loss, or jitter issue may be VPN-related.
-* **Clearer Session Doctor wording:** VPN-related issues are called out as route, UDP, packet loss, or jitter problems instead of generic network warnings.
-* **Better support reports:** Session Proof and diagnostics exports now include VPN status and split-tunneling guidance.
-* **Cleaner public images:** README, website, and social preview images now use real app screenshots from the current interface.
-* **License fallback path:** Gumroad remains the main checkout. Payhip/Mercado Pago license validation is available as a fallback path for new purchases.
-* **PRO feature set stays unified:** former PRO+ tools remain included in PRO.
+- Payhip license activation is repaired.
+- Existing Gumroad and legacy PRO+ keys remain supported.
+- Native and compatibility Session Lab reports now lead with measured Mac-side pressure instead of treating ping as the likely cause of every stutter.
+- Clean local results explicitly point users toward shader compilation, asset streaming, game-engine stalls, and Rosetta/translation as possible causes CloudBoost cannot measure directly.
+- Dota 2 guidance now covers first-use shader compilation after game updates.
+- Rollback keeps its recovery snapshot when a restore action fails.
+- Protected system actions report real failures instead of silently appearing successful.
+- The updater verifies the staged app signature before replacing the installed copy.
+- CPU/process sampling and Session Proof details are more accurate.
 
-### Free And PRO
+CloudBoost does not modify games, bypass anti-cheat, install kernel extensions, or claim to fix shader compilation. It diagnoses and reduces measurable macOS-side session interference.
 
-Free includes core cloud, remote play, native Mac, and competitive profiles, manual session mode, Balanced preset, basic signal checks, Stream Advisor, and rollback protection.
+## Install
 
-PRO adds Auto Boost, Auto-Detect, Smart Boost, Stability Guard, HUD, AWDL Guard+, Session Doctor full reports, VPN Route Doctor, UDP Probe, Session Lab, CrossOver/Whisky diagnostics, Stream Signal, PRO Widgets, Heat Guard, Keep Alive, Fastest/Smooth presets, before/after history, Session Proof export, Kernel Watch, background throttle, priority Discord support, and early builds.
-
-### Installation
-
-Download **CloudBoost_v4.1.dmg** from the Assets section, open it, and drag **CloudBoost.app** to `/Applications`.
+Download the DMG, open it, and drag CloudBoost to `/Applications`. Existing users can also use the in-app updater after 4.2.2 is published.
 
 Homebrew users can update with:
 
@@ -28,28 +27,15 @@ brew update
 brew upgrade --cask cloudboost
 ```
 
-If macOS shows an "App is damaged" warning on first launch, open Terminal and run:
+## Support
 
-```bash
-xattr -cr /Applications/"CloudBoost.app"
-```
+Discord: https://discord.gg/kU5trxtRb
 
-### Checksums
+Include your Mac model, macOS version, selected profile, connection type, VPN status, and a Session Proof report when possible.
+
+## Checksums
 
 ```text
-ZIP SHA256: c905c70629519636bd89482534a9886acb0cf65f394000d4dcc272ee7fa4147e
-DMG SHA256: 948454c9a1e2f6cb7aba0c69eb3b8860aa58f15922ff967e1ec39ac54279c12c
+ZIP SHA256: 4427a60256a7d253fb016393daf988a029b6ded7743dfe38fdd08ce96e9bda65
+DMG SHA256: 70fdfe1d0c768391d3acb415e1dc66f746cbafcdb7f2041fed0e703add8cd93d
 ```
-
-### Support
-
-If something is confusing, broken, or unclear, please report it. Screenshots help.
-
-Discord:
-https://discord.gg/kU5trxtRb
-
-Useful details: macOS version, Mac model, selected profile, Wi-Fi/Ethernet status, VPN/firewall/private relay status, and what Session Doctor or Session Lab is showing.
-
-### Note
-
-CloudBoost does not modify games, inject code, bypass anti-cheat, edit CrossOver bottles, or install kernel extensions. It focuses on temporary macOS session tuning and diagnostics around cloud, remote play, native Mac gaming, and Windows compatibility sessions on Mac.

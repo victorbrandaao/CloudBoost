@@ -63,32 +63,19 @@ footer,
 
 .mark {
   position: relative;
-  width: 34px;
+  display: inline-grid;
+  place-items: center;
+  width: 30px;
   height: 34px;
-  border: 3px solid var(--ink);
-  border-radius: 50%;
+  background: var(--accent);
+  clip-path: polygon(50% 0, 92% 14%, 84% 70%, 50% 100%, 16% 70%, 8% 14%);
 }
 
-.mark::before,
-.mark::after {
-  content: "";
-  position: absolute;
-}
-
-.mark::before {
-  inset: 7px;
-  border: 3px solid var(--ink);
-  border-radius: 50%;
-}
-
-.mark::after {
-  right: -5px;
-  bottom: 4px;
-  width: 13px;
-  height: 13px;
-  border-right: 3px solid var(--ink);
-  border-bottom: 3px solid var(--ink);
-  transform: rotate(-22deg);
+.mark span {
+  width: 10px;
+  height: 20px;
+  background: var(--ink);
+  clip-path: polygon(55% 0, 100% 0, 70% 42%, 100% 42%, 25% 100%, 42% 57%, 10% 57%);
 }
 
 nav {
@@ -141,7 +128,7 @@ p {
 
 h1 {
   margin-bottom: 18px;
-  font-size: clamp(54px, 7vw, 84px);
+  font-size: clamp(48px, 5.4vw, 68px);
   line-height: 0.96;
   font-weight: 950;
   letter-spacing: 0;
@@ -255,6 +242,34 @@ h3 {
   height: auto;
 }
 
+.proof-strip {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  border-top: 2px solid var(--ink);
+  border-bottom: 2px solid var(--ink);
+}
+
+.proof-strip div {
+  display: grid;
+  gap: 4px;
+  padding: 20px 18px;
+  border-right: 1px solid var(--line);
+}
+
+.proof-strip div:last-child {
+  border-right: 0;
+}
+
+.proof-strip strong {
+  font-size: 24px;
+  line-height: 1;
+}
+
+.proof-strip span {
+  color: var(--muted);
+  font-size: 12px;
+}
+
 .trust-row {
   flex-wrap: wrap;
   gap: 12px 18px;
@@ -285,6 +300,11 @@ h3 {
   border-top: 2px solid var(--ink);
 }
 
+.proof-strip + .trust-row,
+.trust-row + .section {
+  border-top: 0;
+}
+
 .split {
   display: grid;
   grid-template-columns: minmax(260px, 0.78fr) minmax(0, 1fr);
@@ -294,6 +314,57 @@ h3 {
 .copy p:last-child,
 .plan-grid p:last-child {
   margin-bottom: 0;
+}
+
+.section-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 34px;
+}
+
+.section-heading h2 {
+  max-width: 720px;
+  margin-bottom: 0;
+}
+
+.workflow-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 0;
+  padding: 0;
+  border-top: 2px solid var(--ink);
+  border-bottom: 2px solid var(--ink);
+  list-style: none;
+}
+
+.workflow-grid li {
+  display: grid;
+  align-content: start;
+  gap: 10px;
+  min-height: 210px;
+  padding: 24px 26px;
+  border-right: 1px solid var(--line);
+}
+
+.workflow-grid li:last-child {
+  border-right: 0;
+}
+
+.workflow-grid span {
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.workflow-grid strong {
+  font-size: 20px;
+}
+
+.workflow-grid p {
+  margin: 0;
+  color: var(--muted);
 }
 
 .cards {
@@ -405,6 +476,41 @@ h3 {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   border: 2px solid var(--ink);
+}
+
+.product-proof {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.8fr) minmax(0, 1fr);
+  gap: 64px;
+  align-items: center;
+}
+
+.product-proof figure {
+  max-height: 650px;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: var(--paper);
+}
+
+.product-proof img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.lead-small {
+  max-width: 620px;
+  color: var(--muted);
+  font-size: 18px;
+}
+
+.product-proof blockquote {
+  margin: 28px 0 8px;
+  padding-left: 20px;
+  border-left: 3px solid var(--accent);
+  font-size: 23px;
+  font-weight: 760;
 }
 
 .text-link {
@@ -564,8 +670,25 @@ footer a {
   .cards,
   .plan-grid,
   .review-hero,
-  .featured-feedback {
+  .featured-feedback,
+  .product-proof {
     grid-template-columns: 1fr;
+  }
+
+  .proof-strip,
+  .workflow-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .proof-strip div:nth-child(2),
+  .workflow-grid li:nth-child(2) {
+    border-right: 0;
+  }
+
+  .workflow-grid li:last-child {
+    grid-column: 1 / -1;
+    min-height: 0;
+    border-top: 1px solid var(--line);
   }
 
   .hero {
@@ -618,7 +741,7 @@ footer a {
   }
 
   .mark {
-    width: 32px;
+    width: 28px;
     height: 32px;
   }
 
@@ -638,6 +761,28 @@ footer a {
   .actions,
   .button {
     width: 100%;
+  }
+
+  .proof-strip,
+  .workflow-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .proof-strip div,
+  .proof-strip div:nth-child(2),
+  .workflow-grid li,
+  .workflow-grid li:nth-child(2) {
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .proof-strip div:last-child,
+  .workflow-grid li:last-child {
+    border-bottom: 0;
+  }
+
+  .workflow-grid li:last-child {
+    grid-column: auto;
   }
 
   .button {
