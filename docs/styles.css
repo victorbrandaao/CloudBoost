@@ -232,6 +232,57 @@ h3 {
   height: auto;
 }
 
+.analytics-consent {
+  align-items: center;
+  background: #111111;
+  border: 1px solid #303030;
+  bottom: 18px;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.22);
+  color: #ffffff;
+  display: flex;
+  gap: 18px;
+  justify-content: space-between;
+  left: 18px;
+  max-width: min(560px, calc(100vw - 36px));
+  padding: 13px 14px;
+  position: fixed;
+  right: 18px;
+  z-index: 20;
+}
+
+.analytics-consent p {
+  font-size: 13px;
+  line-height: 1.35;
+  margin: 0;
+}
+
+.analytics-consent div {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 8px;
+}
+
+.analytics-consent button,
+.analytics-consent a {
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  color: #111111;
+  cursor: pointer;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 7px 10px;
+  text-decoration: none;
+}
+
+.analytics-consent .analytics-decline,
+.analytics-consent a {
+  background: transparent;
+  color: #ffffff;
+}
+
 .proof-strip {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -894,6 +945,12 @@ footer a {
 
   .button {
     min-width: 0;
+  }
+
+  .analytics-consent {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
   }
 
   footer {

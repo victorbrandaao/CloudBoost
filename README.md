@@ -132,6 +132,12 @@ CloudBoost can measure macOS pressure, thermal state, power mode, background act
 
 This is one user's experience, not a benchmark or guaranteed result.
 
+## Website Analytics
+
+The GitHub Pages site is prepared for opt-in Google Analytics 4. It records only aggregate visits and these voluntary website actions after consent: `download_clicked`, `buy_pro_clicked`, `discord_clicked`, and `review_clicked`.
+
+To enable it, create a Web data stream for `victorbrandaao.github.io` in Google Analytics, then add its public `G-...` measurement ID to [`docs/analytics-config.js`](docs/analytics-config.js). The site keeps analytics disabled until that value is set. The privacy notice is published at [Privacy](https://victorbrandaao.github.io/CloudBoost/privacy.html).
+
 ## Security And Limits
 
 CloudBoost does not install kernel extensions, hidden daemons, permanent system patches, game injections, or anti-cheat bypasses. Protected temporary actions may ask for the macOS administrator password.
