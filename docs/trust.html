@@ -74,6 +74,12 @@
         </section>
 
         <section class="article-section">
+          <h2>License validation and optional telemetry</h2>
+          <p>New PRO keys are verified through CloudBoost's Supabase Edge Function and Payhip. CloudBoost stores a SHA-256 hash instead of the raw Payhip key, plus the entitlement and app-specific activation device. Existing Gumroad customers remain supported through the legacy validation path.</p>
+          <p>Anonymous Stats is separate and opt-in. It records aggregate product events only after the user enables it. Session Proof reports are never uploaded automatically. Read the complete <a href="privacy.html">privacy notice</a>.</p>
+        </section>
+
+        <section class="article-section">
           <h2>Known limits</h2>
           <p>CloudBoost cannot fix an overloaded ISP route, a bad router, a remote game server issue, a VPN/firewall blocking UDP, or a game engine problem. In those cases it should point the user toward the next check instead of pretending to solve it.</p>
           <p>For native Mac games, CloudBoost does not measure FPS yet. It focuses on local session pressure that can contribute to stutter or uneven frame pacing.</p>
@@ -86,6 +92,7 @@
       <a href="index.html">Home</a>
       <a href="results.html">Results</a>
       <a href="guides.html">Guides</a>
+      <a href="privacy.html">Privacy</a>
       <a href="https://discord.gg/kU5trxtRb">Discord</a>
     </footer>
   </body>

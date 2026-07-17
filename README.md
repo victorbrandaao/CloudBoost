@@ -140,11 +140,11 @@ CloudBoost can measure macOS pressure, thermal state, power mode, background act
 
 This is one user's experience, not a benchmark or guaranteed result.
 
-## Website Analytics
+## Privacy And Analytics
 
-The GitHub Pages site is prepared for opt-in Google Analytics 4. It records only aggregate visits and voluntary website actions after consent, including downloads, PRO checkouts, Session Review interest, Discord support and public reviews.
+The GitHub Pages site uses opt-in Google Analytics 4. It records aggregate visits and voluntary website actions only after consent, including downloads, PRO checkouts, Session Review interest, Discord support and public reviews.
 
-To enable it, create a Web data stream for `victorbrandaao.github.io` in Google Analytics, then add its public `G-...` measurement ID to [`docs/analytics-config.js`](docs/analytics-config.js). The site keeps analytics disabled until that value is set. The privacy notice is published at [Privacy](https://victorbrandaao.github.io/CloudBoost/privacy.html).
+Anonymous Stats inside the app is a separate opt-in setting. License validation sends the entered key securely to the validation service and checkout provider; CloudBoost stores a SHA-256 hash rather than the raw Payhip key. The full disclosure is published at [Privacy](https://victorbrandaao.github.io/CloudBoost/privacy.html), with a [Spanish version](https://victorbrandaao.github.io/CloudBoost/es/privacidad.html).
 
 ## Security And Limits
 

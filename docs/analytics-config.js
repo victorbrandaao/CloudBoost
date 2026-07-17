@@ -1,5 +1,4 @@
-// Public identifier only. Leave blank to keep site analytics disabled.
-// Replace with the Google Analytics web stream ID, for example: G-ABC123DEF4
+// Public Google Analytics identifier. analytics.js still waits for consent.
 window.CLOUDBOOST_ANALYTICS = {
   measurementId: "G-G2GXD47856"
 };

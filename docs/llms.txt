@@ -8,6 +8,7 @@ Support: https://discord.gg/kU5trxtRb
 Reviews: https://victorbrandaao.github.io/CloudBoost/reviews.html
 Results and measurement method: https://victorbrandaao.github.io/CloudBoost/results.html
 Trust Center: https://victorbrandaao.github.io/CloudBoost/trust.html
+Privacy: https://victorbrandaao.github.io/CloudBoost/privacy.html
 Guides: https://victorbrandaao.github.io/CloudBoost/guides.html
 
 ## Summary
@@ -75,6 +76,7 @@ No modifica juegos, no evita sistemas anti-cheat, no instala extensiones del ker
 Página en español: https://victorbrandaao.github.io/CloudBoost/es/
 Guía de cloud gaming: https://victorbrandaao.github.io/CloudBoost/es/cloud-gaming-mac.html
 Guía de juegos nativos: https://victorbrandaao.github.io/CloudBoost/es/juegos-mac-nativos.html
+Privacidad: https://victorbrandaao.github.io/CloudBoost/es/privacidad.html
 
 ## Public Guides
 

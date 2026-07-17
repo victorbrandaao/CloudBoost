@@ -4,9 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Privacy - CloudBoost</title>
-    <meta name="description" content="CloudBoost website analytics and privacy information.">
+    <meta name="description" content="How CloudBoost handles website analytics, optional app telemetry and license validation data.">
     <meta name="robots" content="index,follow">
     <link rel="canonical" href="https://victorbrandaao.github.io/CloudBoost/privacy.html">
+    <link rel="alternate" hreflang="en" href="https://victorbrandaao.github.io/CloudBoost/privacy.html">
+    <link rel="alternate" hreflang="es" href="https://victorbrandaao.github.io/CloudBoost/es/privacidad.html">
+    <link rel="alternate" hreflang="x-default" href="https://victorbrandaao.github.io/CloudBoost/privacy.html">
     <link rel="stylesheet" href="styles.css">
     <script src="analytics-config.js"></script>
     <script src="analytics.js" defer></script>
@@ -14,24 +17,33 @@
   <body>
     <header class="site-header">
       <a class="brand" href="index.html" aria-label="CloudBoost home"><img src="assets/cloudboost-app-icon-v2.png" alt=""><span>CloudBoost</span></a>
-      <nav><a href="index.html#download">Download</a><a href="trust.html">Trust</a><a href="reviews.html">Reviews</a></nav>
+      <nav><a href="index.html#download">Download</a><a href="trust.html">Trust</a><a href="reviews.html">Reviews</a><a href="es/privacidad.html" lang="es" hreflang="es">ES</a></nav>
     </header>
     <main>
       <section class="hero review-hero">
         <p class="eyebrow">Privacy</p>
         <h1>Simple analytics, only with your permission.</h1>
-        <p class="lead">CloudBoost does not sell visitor data, run advertising pixels, or build a personal profile from the website.</p>
+        <p class="lead">CloudBoost does not sell personal data, run advertising pixels, inspect games or upload Session Proof reports automatically.</p>
       </section>
       <section class="content-section prose">
-        <h2>When analytics is enabled</h2>
-        <p>The site asks before loading Google Analytics. If you allow it, we measure page visits and product actions such as downloads, PRO checkout opens, Discord support, Session Review requests and public reviews. These totals help us understand which pages, languages and communities lead people to the right place.</p>
-        <h2>What we do not collect</h2>
-        <p>CloudBoost does not send your license key, Session Proof, game activity, files, browser history or diagnostic data from the app through this website analytics setup.</p>
-        <h2>Your choice</h2>
-        <p>You can decline analytics in the prompt. To change a previous choice, clear this site's local storage in your browser and reload the page.</p>
-        <p>For product telemetry, see the Anonymous Stats setting inside CloudBoost. It is separate from this website preference.</p>
+        <h2>Website analytics</h2>
+        <p>The site asks before loading Google Analytics. If you allow it, CloudBoost measures aggregate page visits and voluntary actions such as downloads, PRO checkout opens, Discord support, Session Review interest and public review links. This helps identify useful pages, languages and referral sources.</p>
+        <p>You can decline the prompt. To change a previous choice, clear this site's local storage and reload the page.</p>
+
+        <h2>Optional Anonymous Stats in the app</h2>
+        <p>Anonymous Stats is off until you choose to enable it inside CloudBoost. When enabled, the app may send an app-generated install identifier, a temporary session identifier, app and macOS versions, selected game or service profile, Free or PRO state, and product events such as session start/stop, diagnostics, updates, locked feature interest and license success or failure. Event properties can include session duration, preset, score, issue category and UDP summary.</p>
+        <p>This telemetry does not include the license key, personal files, browser history, hostnames, game contents or a Session Proof report. You can turn Anonymous Stats off in the app at any time.</p>
+
+        <h2>License validation</h2>
+        <p>License validation is required only when activating or periodically checking PRO access. The key you enter is sent over HTTPS to the CloudBoost validation service and Payhip. The database stores a SHA-256 hash of the normalized key rather than the raw key, along with the provider, product entitlement, status, Payhip customer email when returned, an app-specific device identifier, activation and validation timestamps, and activation limits.</p>
+        <p>Existing Gumroad licenses continue to use the legacy validation path supported by the app. Payment details are handled by the checkout provider and are not stored by CloudBoost.</p>
+
+        <h2>Services and control</h2>
+        <p>CloudBoost uses GitHub Pages for this website, Google Analytics only after website consent, Supabase for optional product telemetry and Payhip license records, and Payhip or Gumroad for checkout and license verification.</p>
+        <p>CloudBoost does not sell this data. For a data question or deletion request, contact support through <a href="https://discord.gg/kU5trxtRb">Discord</a>. Diagnostic reports are shared only when you deliberately copy and send them.</p>
+        <p><strong>Last updated:</strong> July 17, 2026.</p>
       </section>
     </main>
-    <footer><span>CloudBoost</span><a href="index.html">Home</a><a href="trust.html">Trust</a><a href="reviews.html">Reviews</a></footer>
+    <footer><span>CloudBoost</span><a href="index.html">Home</a><a href="trust.html">Trust</a><a href="reviews.html">Reviews</a><a href="es/privacidad.html" lang="es" hreflang="es">Español</a></footer>
   </body>
 </html>
