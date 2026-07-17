@@ -133,6 +133,8 @@ CloudBoost can measure macOS pressure, thermal state, power mode, background act
 - Setup-specific evidence and the Session Lab method are documented on the [Results page](https://victorbrandaao.github.io/CloudBoost/results.html?utm_source=github&utm_medium=organic&utm_campaign=readme_results)
 - The in-app `Review` button opens the public [GitHub review form](https://github.com/victorbrandaao/CloudBoost/issues/new?template=user-review.yml)
 - Free and PRO support is available on [Discord](https://discord.gg/kU5trxtRb)
+- Installation, diagnostics and license help are documented in [SUPPORT.md](SUPPORT.md)
+- Security reports should follow the private process in [SECURITY.md](SECURITY.md)
 
 > “Seems to keep my connection more stable on Wi-Fi. On ethernet I never get high ping but it does stop background processes from hurting your ping.”
 >
