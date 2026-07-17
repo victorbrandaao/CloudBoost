@@ -9,6 +9,9 @@
     <meta name="author" content="Victor Brandao">
     <meta name="robots" content="index,follow,max-image-preview:large">
     <link rel="canonical" href="https://victorbrandaao.github.io/CloudBoost/">
+    <link rel="alternate" hreflang="en" href="https://victorbrandaao.github.io/CloudBoost/">
+    <link rel="alternate" hreflang="es" href="https://victorbrandaao.github.io/CloudBoost/es/">
+    <link rel="alternate" hreflang="x-default" href="https://victorbrandaao.github.io/CloudBoost/">
     <meta property="og:site_name" content="CloudBoost">
     <meta property="og:title" content="CloudBoost - Mac Gaming Session Diagnostics">
     <meta property="og:description" content="Find the spike, understand the cause, and run a quieter gaming session on macOS.">
@@ -32,7 +35,7 @@
         "operatingSystem": "macOS 12 or later",
         "applicationCategory": "UtilitiesApplication",
         "applicationSubCategory": "Gaming utility",
-        "softwareVersion": "4.2.3",
+        "softwareVersion": "4.2.4",
         "description": "CloudBoost is a native macOS menu bar app for cleaner cloud gaming, remote play, native Mac gaming, VPN-aware diagnostics and PRO CrossOver/Whisky checks. It helps diagnose jitter, latency spikes, packet loss, VPN routing, background traffic, AWDL/Wi-Fi noise and local system pressure, then shows what was applied during the session and can copy a Session Proof report for support.",
         "image": "https://victorbrandaao.github.io/CloudBoost/assets/cloudboost-social-v2.png",
         "downloadUrl": "https://github.com/victorbrandaao/CloudBoost/releases/latest",
@@ -144,13 +147,14 @@
           <a href="trust.html">Trust</a>
           <a href="reviews.html">Reviews</a>
           <a href="#support">Support</a>
+          <a class="language-link" href="es/" lang="es" hreflang="es">ES</a>
         </nav>
       </header>
 
       <main>
         <section class="hero" id="download">
           <div class="hero-copy">
-            <p class="eyebrow">Native macOS menu bar utility · Version 4.2.3</p>
+            <p class="eyebrow">Native macOS menu bar utility · Version 4.2.4</p>
             <h1>Find the spike. Understand the session.</h1>
             <p class="lead">CloudBoost shows what is happening around your game when a normal speed test says everything is fine.</p>
             <p class="sublead">Watch jitter, packet loss, route latency, VPN state, background traffic, AWDL/Wi-Fi noise, thermal pressure, Low Power Mode and local CPU pressure in one place.</p>
@@ -172,7 +176,7 @@
 
         <section class="proof-strip" aria-label="CloudBoost milestones">
           <div><strong>1,000+</strong><span>downloads across channels</span></div>
-          <div><strong>4.2.3</strong><span>current stable release</span></div>
+          <div><strong>4.2.4</strong><span>current stable release</span></div>
           <div><strong>macOS 12+</strong><span>Intel and Apple Silicon</span></div>
           <div><strong>Public</strong><span>reviews, releases and support</span></div>
         </section>
@@ -272,16 +276,32 @@
           </div>
         </section>
 
-        <section class="section split">
+        <section class="section split" id="session-review" data-analytics-impression="session_review_offer_viewed">
           <div>
-            <p class="eyebrow">Version 4.2.3</p>
-            <h2>Reviews after real use, not on first launch.</h2>
+            <p class="eyebrow">Five pilot slots</p>
+            <h2>PRO plus a personal Session Review.</h2>
           </div>
           <div class="copy">
-            <p>CloudBoost now waits for five sessions lasting at least three minutes before asking for a review.</p>
-            <p>Free and PRO users can leave a public GitHub review, send private feedback through Discord, or postpone the request for another three sessions.</p>
-            <p>PRO users receive one clear end-of-session dialog instead of a report followed immediately by a second prompt.</p>
-            <p>The new Results page publishes the measurement method, current evidence and limitations without presenting one setup as a universal benchmark.</p>
+            <p><strong>$29 total.</strong> Includes a CloudBoost PRO license and one personal review of a Session Proof report.</p>
+            <p>You receive setup-specific observations and recommended next tests for the Mac, network and gaming client. The review does not promise to repair an ISP route, remote server or game-engine problem.</p>
+            <p>Delivery is by Discord or email within three business days after receiving a complete Session Proof. The pilot is limited to five reviews so each report receives proper attention.</p>
+            <div class="actions small-actions">
+              <a class="button primary" data-analytics-event="session_review_clicked" href="https://payhip.com/b/M1Baw?utm_source=cloudboost_site&amp;utm_medium=organic&amp;utm_campaign=personal_review_pilot">Get PRO + Personal Review</a>
+              <a class="button secondary" href="trust.html">See what Session Proof contains</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="section split">
+          <div>
+            <p class="eyebrow">Version 4.2.4</p>
+            <h2>Useful offers after real sessions.</h2>
+          </div>
+          <div class="copy">
+            <p>Free users with a session lasting at least three minutes only see a PRO diagnosis offer when CloudBoost actually records repeated threshold spikes.</p>
+            <p>The offer is limited to three impressions with a seven-day cooldown, and the app records only opt-in aggregate funnel events.</p>
+            <p>PRO remains a $10 one-time license. A separate five-slot pilot combines PRO with one personal Session Proof review for $29.</p>
+            <p>English and Spanish pages now describe the same plans, limitations and support routes.</p>
           </div>
         </section>
 
@@ -359,6 +379,7 @@
       <a href="trust.html">Trust</a>
       <a href="reviews.html">Reviews</a>
       <a href="https://discord.gg/kU5trxtRb">Discord</a>
+      <a href="es/" lang="es" hreflang="es">Español</a>
     </footer>
   </body>
 </html>

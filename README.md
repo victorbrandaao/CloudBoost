@@ -24,6 +24,7 @@ It does not modify games or promise artificial FPS gains. It helps players run a
 
 - [Download the latest DMG](https://github.com/victorbrandaao/CloudBoost/releases/latest)
 - [Visit the website](https://victorbrandaao.github.io/CloudBoost/)
+- [Leer el sitio en español](https://victorbrandaao.github.io/CloudBoost/es/)
 - [Read the Trust Center](https://victorbrandaao.github.io/CloudBoost/trust.html)
 - [See public results and measurement method](https://victorbrandaao.github.io/CloudBoost/results.html?utm_source=github&utm_medium=organic&utm_campaign=readme)
 - [Join the Discord](https://discord.gg/kU5trxtRb)
@@ -73,6 +74,12 @@ Free is a useful manual session tool. PRO adds automation, deeper diagnostics, r
 
 New purchases use [Payhip](https://payhip.com/b/Jb0XO?utm_source=github&utm_medium=organic&utm_campaign=readme_pro). Existing Gumroad and legacy PRO+ license keys remain supported in the app.
 
+### PRO + Personal Session Review
+
+Five pilot reviews are available at **$29 total**. This includes a CloudBoost PRO license and one personal review of a Session Proof report, with setup-specific observations and recommended next tests delivered by Discord or email within three business days.
+
+This is diagnostic guidance, not a promise to repair an ISP route, remote server, router or game-engine problem. [Get PRO + Personal Session Review on Payhip](https://payhip.com/b/M1Baw?utm_source=github&utm_medium=organic&utm_campaign=readme_personal_review).
+
 ## Install
 
 ### Homebrew
@@ -103,14 +110,15 @@ If macOS reports that the independently distributed app is damaged, clear its qu
 xattr -cr /Applications/"CloudBoost.app"
 ```
 
-## Current Release: 4.2.3
+## Current Release: 4.2.4
 
-- the review request now waits for five sessions lasting at least three minutes
-- Free and PRO users can leave a public review, send private feedback through Discord, or postpone the request
-- choosing `Not Now` waits another three completed sessions before asking again
-- PRO users no longer receive the session report and review request back to back
-- review-funnel telemetry respects the existing Anonymous Stats setting
-- the public Results page documents Session Lab's method, current evidence, limitations, and setup-specific reports
+- contextual PRO diagnosis appears only after a session of at least three minutes with repeated threshold spikes
+- the offer is capped at three impressions with a seven-day cooldown
+- opt-in telemetry now separates offer views, actions, checkout opens and license activations
+- Free sessions collect the local timeline needed for the contextual signal without unlocking PRO reports
+- the $10 PRO license remains unchanged for existing and new customers
+- a separate five-slot $29 pilot includes PRO and one personal Session Proof review
+- Spanish product pages now mirror the English plan details and technical limitations
 
 See the complete notes and checksums on the [release page](https://github.com/victorbrandaao/CloudBoost/releases/latest).
 
@@ -134,7 +142,7 @@ This is one user's experience, not a benchmark or guaranteed result.
 
 ## Website Analytics
 
-The GitHub Pages site is prepared for opt-in Google Analytics 4. It records only aggregate visits and these voluntary website actions after consent: `download_clicked`, `buy_pro_clicked`, `discord_clicked`, and `review_clicked`.
+The GitHub Pages site is prepared for opt-in Google Analytics 4. It records only aggregate visits and voluntary website actions after consent, including downloads, PRO checkouts, Session Review interest, Discord support and public reviews.
 
 To enable it, create a Web data stream for `victorbrandaao.github.io` in Google Analytics, then add its public `G-...` measurement ID to [`docs/analytics-config.js`](docs/analytics-config.js). The site keeps analytics disabled until that value is set. The privacy notice is published at [Privacy](https://victorbrandaao.github.io/CloudBoost/privacy.html).
 

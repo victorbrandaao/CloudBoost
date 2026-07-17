@@ -14,7 +14,7 @@ Guides: https://victorbrandaao.github.io/CloudBoost/guides.html
 
 CloudBoost helps Mac players start a focused gaming session, reduce local macOS interruptions, and understand latency spikes that normal speed tests often miss.
 
-Version 4.2.3 asks for a review only after five sessions lasting at least three minutes, lets Free and PRO users choose public review, private Discord feedback, or postponement, and avoids consecutive end-of-session dialogs. The public Results page documents Session Lab's measurement method, current evidence, and limitations.
+Version 4.2.4 adds a contextual PRO diagnosis offer that appears only after a Free session lasting at least three minutes with repeated threshold spikes. It is limited to three impressions with a seven-day cooldown. The opt-in funnel distinguishes offer views, actions, checkout opens and license activations.
 
 It is built for:
 
@@ -63,6 +63,18 @@ PRO also includes VPN Route Doctor, Session Doctor Fix actions, session end repo
 Session Proof lets PRO users copy a support-ready report with profile, preset, app version, macOS version, selected diagnostics, Session Doctor result, Session Lab result, before/after summary, and recent CloudBoost events. It does not include license keys, personal files, hostnames, or browser history.
 
 CloudBoost PRO is currently $10. It is the full one-time CloudBoost 4.x PRO license, not a rental or subscription.
+
+A five-slot pilot offer is available for $29 total at https://payhip.com/b/M1Baw. It includes a PRO license and one personal review of a Session Proof report, delivered by Discord or email within three business days. This is diagnostic guidance and does not guarantee repair of an ISP route, remote server, router, or game-engine issue.
+
+## Resumen en español
+
+CloudBoost es una aplicación nativa para la barra de menús de macOS. Ayuda a observar picos de latencia, jitter, pérdida de paquetes, rutas VPN, pruebas UDP, Wi-Fi/AWDL, actividad en segundo plano, temperatura y presión local durante sesiones de cloud gaming, juego remoto y juegos nativos de Mac.
+
+No modifica juegos, no evita sistemas anti-cheat, no instala extensiones del kernel y no promete aumentos mágicos de FPS. La versión gratuita incluye los perfiles principales y sesiones manuales. PRO cuesta US$10 una sola vez para la versión 4.x y añade automatización, diagnósticos completos, Session Lab, Spike Timeline, HUD, Session Proof y soporte prioritario.
+
+Página en español: https://victorbrandaao.github.io/CloudBoost/es/
+Guía de cloud gaming: https://victorbrandaao.github.io/CloudBoost/es/cloud-gaming-mac.html
+Guía de juegos nativos: https://victorbrandaao.github.io/CloudBoost/es/juegos-mac-nativos.html
 
 ## Public Guides
 
