@@ -51,14 +51,15 @@ CloudBoost cannot fix an overloaded server, a bad ISP route, a weak router, or a
 
 ## Free And PRO
 
-Free is a useful manual session tool. PRO adds automation, deeper diagnostics, reports, and support features for regular users.
+Free is a basic manual session monitor. PRO adds macOS session tuning, automation, complete diagnostics, reports, and support features for regular users.
 
 | Feature | Free | PRO |
 |---|:---:|:---:|
 | Core cloud, remote play, native Mac, and competitive profiles | Yes | Yes |
 | Manual session and Balanced preset | Yes | Yes |
-| Basic signal checks and rollback protection | Yes | Yes |
-| Test My Setup | Yes | Yes |
+| Basic path/ping checks and safe session stop | Yes | Yes |
+| Test My Setup | Basic | Full network, UDP, VPN, jitter, and loss context |
+| Privileged AWDL, DNS, Time Machine, and process-priority tuning | No | Yes |
 | Auto-detect, Auto Boost, and Smart Boost | No | Yes |
 | Stability Guard, Heat Guard, and Keep Alive | No | Yes |
 | Session Doctor full report, Fix actions, and UDP probe | No | Yes |
@@ -110,15 +111,15 @@ If macOS reports that the independently distributed app is damaged, clear its qu
 xattr -cr /Applications/"CloudBoost.app"
 ```
 
-## Current Release: 4.2.4
+## Current Release: 4.3.0
 
-- contextual PRO diagnosis appears only after a session of at least three minutes with repeated threshold spikes
-- the offer is capped at three impressions with a seven-day cooldown
-- opt-in telemetry now separates offer views, actions, checkout opens and license activations
-- Free sessions collect the local timeline needed for the contextual signal without unlocking PRO reports
-- the $10 PRO license remains unchanged for existing and new customers
-- a separate five-slot $29 pilot includes PRO and one personal Session Proof review
-- Spanish product pages now mirror the English plan details and technical limitations
+- Session, Tools, and Account views replace the previous single long settings flow
+- an always-visible `EN/ES` control switches the main interface and core dialogs between English and Spanish
+- Free sessions keep core profiles, Balanced mode, basic monitoring, and display/idle protection without requesting privileged system tuning
+- PRO now owns AWDL, DNS, Time Machine, process-priority tuning, complete causes, timeline, history, automation, and Session Proof
+- session-end results show the score and next test; locked PRO detail is presented only with frequency caps
+- Payhip checkout and license configuration handling are more defensive, while existing Gumroad and legacy PRO+ keys remain supported
+- the release builder now packages the current SwiftPM product instead of a stale legacy output path
 
 See the complete notes and checksums on the [release page](https://github.com/victorbrandaao/CloudBoost/releases/latest).
 

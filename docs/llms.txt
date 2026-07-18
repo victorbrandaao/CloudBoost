@@ -15,7 +15,7 @@ Guides: https://victorbrandaao.github.io/CloudBoost/guides.html
 
 CloudBoost helps Mac players start a focused gaming session, reduce local macOS interruptions, and understand latency spikes that normal speed tests often miss.
 
-Version 4.2.4 adds a contextual PRO diagnosis offer that appears only after a Free session lasting at least three minutes with repeated threshold spikes. It is limited to three impressions with a seven-day cooldown. The opt-in funnel distinguishes offer views, actions, checkout opens and license activations.
+Version 4.3.0 separates Session, Tools, and Account, adds an always-visible English/Spanish control, and introduces a clearer session-end result. Free keeps core profiles, manual Balanced sessions, basic monitoring, and display/idle protection without privileged tuning. PRO applies AWDL, DNS, Time Machine, and process-priority tuning and unlocks complete causes, timeline, history, automation, and Session Proof. Contextual offers remain frequency-capped. Existing Payhip, Gumroad, and legacy PRO+ keys remain supported.
 
 It is built for:
 
