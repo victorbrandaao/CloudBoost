@@ -9,10 +9,12 @@ CloudBoost is a native macOS menu bar app that shows what is happening around a 
 It does not modify games or promise artificial FPS gains. It helps players run a quieter Mac session, understand a problem, and leave with a useful next step.
 
 <p align="center">
-  <a href="https://github.com/victorbrandaao/CloudBoost/releases/latest"><img src="https://img.shields.io/github/v/release/victorbrandaao/CloudBoost?style=flat-square" alt="Latest release"></a>
-  <img src="https://img.shields.io/github/downloads/victorbrandaao/CloudBoost/latest/total?label=latest%20release&amp;style=flat-square&amp;color=111111" alt="Latest release downloads">
-  <img src="https://img.shields.io/github/downloads/victorbrandaao/CloudBoost/total?label=GitHub%20downloads&amp;style=flat-square&amp;color=111111" alt="All GitHub release downloads">
+  <a href="https://github.com/victorbrandaao/CloudBoost/releases/tag/v4.3.1"><img src="https://img.shields.io/github/v/release/victorbrandaao/CloudBoost?label=release&amp;style=flat-square&amp;color=00a884&amp;cacheSeconds=300" alt="CloudBoost v4.3.1"></a>
+  <a href="https://github.com/victorbrandaao/CloudBoost/releases/tag/v4.3.1"><img src="https://img.shields.io/github/downloads/victorbrandaao/CloudBoost/v4.3.1/total?label=v4.3.1%20downloads&amp;style=flat-square&amp;color=111111&amp;cacheSeconds=300" alt="CloudBoost v4.3.1 downloads"></a>
+  <a href="https://github.com/victorbrandaao/CloudBoost/releases"><img src="https://img.shields.io/github/downloads/victorbrandaao/CloudBoost/total?label=all%20downloads&amp;style=flat-square&amp;color=111111&amp;cacheSeconds=300" alt="All CloudBoost GitHub release downloads"></a>
   <img src="https://img.shields.io/badge/macOS-12%2B-111111?style=flat-square" alt="macOS 12 or later">
+  <img src="https://img.shields.io/badge/Apple%20Silicon-required-111111?style=flat-square&amp;logo=apple" alt="Apple Silicon required">
+  <a href="https://payhip.com/b/Jb0XO"><img src="https://img.shields.io/badge/PRO-%2410%20one--time-00a884?style=flat-square" alt="CloudBoost PRO costs 10 US dollars as a one-time v4 license"></a>
   <a href="https://discord.gg/kU5trxtRb"><img src="https://img.shields.io/badge/Discord-support-5865F2?style=flat-square" alt="Discord support"></a>
 </p>
 

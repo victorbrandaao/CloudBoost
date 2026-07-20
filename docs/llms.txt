@@ -4,6 +4,9 @@ CloudBoost is a native macOS menu bar app for cleaner gaming sessions on Mac.
 
 Primary URL: https://victorbrandaao.github.io/CloudBoost/
 GitHub releases: https://github.com/victorbrandaao/CloudBoost/releases/latest
+Current release: https://github.com/victorbrandaao/CloudBoost/releases/tag/v4.3.1
+Official X profile: https://x.com/getcloudboost
+Product Hunt: https://www.producthunt.com/products/cloudboost-2
 Support: https://discord.gg/kU5trxtRb
 Reviews: https://victorbrandaao.github.io/CloudBoost/reviews.html
 Results and measurement method: https://victorbrandaao.github.io/CloudBoost/results.html
@@ -11,6 +14,7 @@ Measured League of Legends PRO session: https://victorbrandaao.github.io/CloudBo
 Trust Center: https://victorbrandaao.github.io/CloudBoost/trust.html
 Privacy: https://victorbrandaao.github.io/CloudBoost/privacy.html
 Guides: https://victorbrandaao.github.io/CloudBoost/guides.html
+Independent coverage: https://macmagazine.com.br/post/2026/06/01/cloudboost-otimiza-a-experiencia-de-jogos-na-nuvem-no-mac/
 
 ## Summary
 

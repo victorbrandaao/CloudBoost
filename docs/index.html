@@ -30,37 +30,79 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "SoftwareApplication",
-        "name": "CloudBoost",
-        "operatingSystem": "macOS 12 or later",
-        "applicationCategory": "UtilitiesApplication",
-        "applicationSubCategory": "Gaming utility",
-        "softwareVersion": "4.3.1",
-        "description": "CloudBoost is a native macOS menu bar app for cleaner cloud gaming, remote play, native Mac gaming, VPN-aware diagnostics and PRO CrossOver/Whisky checks. It helps diagnose jitter, latency spikes, packet loss, VPN routing, background traffic, AWDL/Wi-Fi noise and local system pressure, then shows what was applied during the session and can copy a Session Proof report for support.",
-        "image": "https://victorbrandaao.github.io/CloudBoost/assets/cloudboost-social-v2.png",
-        "downloadUrl": "https://github.com/victorbrandaao/CloudBoost/releases/latest",
-        "author": {
-          "@type": "Person",
-          "name": "Victor Brandao"
-        },
-        "offers": [
+        "@graph": [
           {
-            "@type": "Offer",
-            "name": "CloudBoost Free",
-            "price": "0",
-            "priceCurrency": "USD"
+            "@type": "Organization",
+            "@id": "https://victorbrandaao.github.io/CloudBoost/#organization",
+            "name": "CloudBoost",
+            "url": "https://victorbrandaao.github.io/CloudBoost/",
+            "logo": "https://victorbrandaao.github.io/CloudBoost/assets/cloudboost-app-icon-v2.png",
+            "sameAs": [
+              "https://github.com/victorbrandaao/CloudBoost",
+              "https://x.com/getcloudboost",
+              "https://www.producthunt.com/products/cloudboost-2"
+            ]
           },
           {
-            "@type": "Offer",
-            "name": "CloudBoost PRO",
-            "url": "https://payhip.com/b/Jb0XO",
-            "price": "10.00",
-            "priceCurrency": "USD"
+            "@type": "Person",
+            "@id": "https://victorbrandaao.github.io/CloudBoost/#founder",
+            "name": "Victor Brandao",
+            "url": "https://github.com/victorbrandaao",
+            "sameAs": [
+              "https://github.com/victorbrandaao",
+              "https://www.linkedin.com/in/victorbrandaao"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://victorbrandaao.github.io/CloudBoost/#website",
+            "url": "https://victorbrandaao.github.io/CloudBoost/",
+            "name": "CloudBoost",
+            "inLanguage": ["en", "es"],
+            "publisher": {"@id": "https://victorbrandaao.github.io/CloudBoost/#organization"}
+          },
+          {
+            "@type": "SoftwareApplication",
+            "@id": "https://victorbrandaao.github.io/CloudBoost/#software",
+            "name": "CloudBoost",
+            "url": "https://victorbrandaao.github.io/CloudBoost/",
+            "operatingSystem": "macOS 12 or later on Apple Silicon",
+            "applicationCategory": "UtilitiesApplication",
+            "applicationSubCategory": "Mac gaming session diagnostics",
+            "softwareVersion": "4.3.1",
+            "dateModified": "2026-07-20",
+            "description": "CloudBoost is a native macOS menu bar app for gaming session diagnostics and temporary local tuning across cloud gaming, remote play, native Mac games and compatibility-layer sessions.",
+            "featureList": "Latency, jitter and packet-loss monitoring; VPN and UDP diagnostics; Wi-Fi and AWDL context; background and thermal pressure; Session Doctor; Session Proof; gaming profiles",
+            "image": "https://victorbrandaao.github.io/CloudBoost/assets/cloudboost-social-v2.png",
+            "screenshot": "https://victorbrandaao.github.io/CloudBoost/assets/evidence/league-pro-proof-wide.png",
+            "downloadUrl": "https://github.com/victorbrandaao/CloudBoost/releases/latest",
+            "releaseNotes": "https://github.com/victorbrandaao/CloudBoost/releases/tag/v4.3.1",
+            "softwareHelp": "https://discord.gg/kU5trxtRb",
+            "author": {"@id": "https://victorbrandaao.github.io/CloudBoost/#founder"},
+            "publisher": {"@id": "https://victorbrandaao.github.io/CloudBoost/#organization"},
+            "offers": [
+              {
+                "@type": "Offer",
+                "name": "CloudBoost Free",
+                "price": "0",
+                "priceCurrency": "USD",
+                "availability": "https://schema.org/InStock"
+              },
+              {
+                "@type": "Offer",
+                "name": "CloudBoost PRO",
+                "url": "https://payhip.com/b/Jb0XO",
+                "price": "10.00",
+                "priceCurrency": "USD",
+                "availability": "https://schema.org/InStock"
+              }
+            ],
+            "subjectOf": {
+              "@type": "NewsArticle",
+              "headline": "CloudBoost otimiza a experiencia de jogos na nuvem no Mac",
+              "url": "https://macmagazine.com.br/post/2026/06/01/cloudboost-otimiza-a-experiencia-de-jogos-na-nuvem-no-mac/"
+            }
           }
-        ],
-        "sameAs": [
-          "https://github.com/victorbrandaao/CloudBoost",
-          "https://macmagazine.com.br/post/2026/06/01/cloudboost-otimiza-a-experiencia-de-jogos-na-nuvem-no-mac/"
         ]
       }
     </script>
@@ -170,7 +212,7 @@
           </div>
 
           <figure class="app-preview">
-            <img src="assets/cloudboost-app-session-branded.png" alt="CloudBoost 4.2 showing a real live Mac gaming session and spike timeline">
+            <img src="assets/cloudboost-app-session-branded.png" alt="CloudBoost 4.3.1 showing a real live Mac gaming session and spike timeline">
           </figure>
         </section>
 
@@ -394,7 +436,9 @@
       <a href="results.html">Results</a>
       <a href="trust.html">Trust</a>
       <a href="reviews.html">Reviews</a>
+      <a href="ai-summary.html">AI summary</a>
       <a href="privacy.html">Privacy</a>
+      <a href="https://x.com/getcloudboost">X</a>
       <a href="https://discord.gg/kU5trxtRb">Discord</a>
       <a href="es/" lang="es" hreflang="es">Español</a>
     </footer>

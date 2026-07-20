@@ -1,0 +1,42 @@
+name: Notify search engines
+
+on:
+  push:
+    branches:
+      - public-main
+    paths:
+      - "docs/**"
+      - ".github/workflows/indexnow.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  indexnow:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Submit sitemap URLs to IndexNow
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          key="72cf835d7bfa33f3f807f3d8e98ad3c4"
+          host="victorbrandaao.github.io"
+          key_location="https://${host}/CloudBoost/${key}.txt"
+          url_list="$(sed -n 's|.*<loc>\(https://victorbrandaao.github.io/CloudBoost/[^<]*\)</loc>.*|\1|p' docs/sitemap.xml | sort -u | jq -R . | jq -s .)"
+
+          payload="$(jq -n \
+            --arg host "$host" \
+            --arg key "$key" \
+            --arg keyLocation "$key_location" \
+            --argjson urlList "$url_list" \
+            '{host: $host, key: $key, keyLocation: $keyLocation, urlList: $urlList}')"
+
+          curl --fail-with-body \
+            --retry 3 \
+            --header "Content-Type: application/json; charset=utf-8" \
+            --data "$payload" \
+            https://api.indexnow.org/indexnow
