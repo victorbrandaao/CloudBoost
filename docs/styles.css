@@ -153,7 +153,7 @@ p {
 
 h1 {
   margin-bottom: 18px;
-  font-size: clamp(46px, 5vw, 66px);
+  font-size: 60px;
   line-height: 1;
   font-weight: 950;
   letter-spacing: 0;
@@ -161,7 +161,7 @@ h1 {
 
 h2 {
   margin-bottom: 16px;
-  font-size: clamp(34px, 4.4vw, 55px);
+  font-size: 48px;
   line-height: 1.02;
   font-weight: 930;
   letter-spacing: 0;
@@ -310,8 +310,8 @@ h3 {
   display: flex;
   gap: 18px;
   justify-content: space-between;
-  left: 18px;
-  max-width: min(560px, calc(100vw - 36px));
+  left: auto;
+  max-width: min(480px, calc(100vw - 36px));
   padding: 13px 14px;
   position: fixed;
   right: 18px;
@@ -588,7 +588,7 @@ h3 {
 }
 
 .review-card h2 {
-  font-size: clamp(36px, 5vw, 58px);
+  font-size: 52px;
 }
 
 .review-card p {
@@ -721,7 +721,7 @@ h3 {
 
 .feedback-quote blockquote {
   margin: 0 0 24px;
-  font-size: clamp(22px, 2.5vw, 31px);
+  font-size: 28px;
   font-weight: 760;
   line-height: 1.24;
 }
@@ -931,7 +931,7 @@ h3 {
 }
 
 .article-section h2 {
-  font-size: clamp(30px, 4vw, 46px);
+  font-size: 42px;
 }
 
 details {
@@ -971,7 +971,7 @@ code {
 .final h2 {
   max-width: 620px;
   margin: 0;
-  font-size: clamp(34px, 4.6vw, 58px);
+  font-size: 52px;
 }
 
 footer {
@@ -1056,6 +1056,11 @@ footer a {
 
   h1 {
     font-size: 52px;
+  }
+
+  h2,
+  .final h2 {
+    font-size: 42px;
   }
 
   .app-preview {
@@ -1175,6 +1180,7 @@ footer a {
     align-items: flex-start;
     flex-direction: column;
     gap: 10px;
+    left: 18px;
   }
 
   footer {
