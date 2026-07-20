@@ -1,0 +1,45 @@
+CloudBoost Session Proof
+Date: 2026-07-20 20:37:43 +0000
+App version: 4.3.1-test1
+macOS: Version 27.0 (Build 26A5378n)
+Plan: PRO
+Session active: no
+Session duration: 42m 38s
+Profile: League of Legends
+Profile focus: Native + cloud stability
+Preset: Balanced
+Network: Wi-Fi
+VPN: No VPN detected
+Thermal: nominal
+
+Session Doctor
+Score: 92/100
+Title: Session looks clean
+Cause: No obvious spike cause detected right now.
+Recommendation: Keep playing. CloudBoost will call out concrete spike causes when they appear.
+Probe: UDP DNS 66ms, jitter 2ms
+
+Session Lab
+Result: 100/100, Native stability
+Stream Signal: 90/100, Native session ready
+Signal detail: Mac nominal, power OK, quiet background, network context 19ms, 3ms jitter
+Diagnostic boundary: Remaining stutter may come from shader compilation, asset streaming, the game engine, or Rosetta/translation; CloudBoost cannot measure those directly.
+
+Before / after
+Start: Optimal, 17ms, 0ms jitter, 0.0% loss, nominal
+Latest: Optimal, 21ms, 2ms jitter, 0.0% loss, nominal
+Trend: Stable
+
+Session benchmark
+Duration sampled: 2555s
+Samples: 180
+League process detection: 100%
+Route: 20ms average, 25ms p95
+Maximum jitter: 8ms
+Maximum packet loss: 0.0%
+Threshold events: 11
+Normalized target CPU signal: 19%
+Thermal pressure: nominal
+Detected interference: iCloud Drive
+
+Privacy: this local report contains diagnostic categories only. It does not include license keys, personal files, hostnames, browser history, or a complete process list.

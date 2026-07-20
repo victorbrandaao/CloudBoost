@@ -1,24 +1,33 @@
-# CloudBoost 4.3.0
+# CloudBoost 4.3.1
 
-CloudBoost 4.3.0 reorganizes the app around a clearer session flow and makes the Free and PRO boundaries easier to understand.
+CloudBoost 4.3.1 focuses on measurable session evidence, safer updates and lower app overhead.
 
 ## What changed
 
-- Session, Tools and Account views replace the previous long single-page flow.
-- An always-visible EN/ES control changes the main interface and core dialogs between English and Spanish.
-- Free keeps core profiles, Balanced manual sessions, basic monitoring and display/idle protection without privileged system tuning.
-- PRO unlocks AWDL, DNS, Time Machine and process-priority tuning, plus complete causes, timeline, history, automation and Session Proof.
-- A new session result summarizes the score and recommended next test when play ends.
-- Contextual PRO details are tied to real session signals and remain frequency-capped.
-- Payhip checkout and license configuration now fail safely and show a useful error when the purchase page cannot be opened.
-- Existing Gumroad and legacy PRO+ licenses keep their access.
-- The release pipeline now verifies the current SwiftPM binary, both Intel and Apple Silicon architectures, the packaged configuration and the self-test before publishing.
+- Session Proof records game-process detection, route p95, maximum jitter, packet loss, thermal state and threshold events.
+- PRO compares the current result with the previous saved run for the same profile.
+- League of Legends detection now covers the native client and game process more reliably.
+- Network probes run concurrently and reuse one process snapshot, reducing duplicated work during play.
+- The updater verifies the expected bundle identifier, version, executable and SHA256 before replacing the installed app.
+- Route-sample and UDP DNS messages are clearer when a VPN, firewall or network policy blocks a probe.
+- Restore and diagnostic states are more explicit when macOS does not allow an operation.
+- Existing Payhip, Gumroad and legacy PRO+ licenses keep their access.
 
-CloudBoost does not modify games, bypass anti-cheat, install kernel extensions, or promise universal performance gains. It applies temporary macOS session tuning and reports the signals it can actually measure.
+CloudBoost does not measure FPS, inject into games, bypass anti-cheat or install a kernel extension. Its evidence is observational network and macOS system data.
+
+## Measured League session
+
+The release was exercised during a 42m 38s League of Legends session on macOS. The recorded result was 92/100, route p95 25 ms, maximum jitter 8 ms and maximum packet loss 0.0%. A separate 60-sample window measured CloudBoost at 1.68% average CPU and 46.1 MB average memory.
+
+Method, screenshots and raw CSV: https://victorbrandaao.github.io/CloudBoost/results/league-of-legends-pro-session.html
+
+This is one observational session, not a universal performance claim.
 
 ## Install
 
-Download the DMG, open it, and drag CloudBoost to `/Applications`. Existing users can also install 4.3.0 through the in-app updater.
+CloudBoost 4.3.1 supports Apple Silicon Macs running macOS 12 or later.
+
+Download the DMG, open it, and drag CloudBoost to `/Applications`. Existing users can also install 4.3.1 through the in-app updater.
 
 Homebrew users can update with:
 
@@ -31,11 +40,9 @@ brew upgrade --cask cloudboost
 
 Discord: https://discord.gg/kU5trxtRb
 
-Public results and measurement method: https://victorbrandaao.github.io/CloudBoost/results.html
-
 ## Checksums
 
 ```text
-ZIP SHA256: 9980378424350b0355e90cfb37e6b0a8a959b9ab5720fa5a8bd219134773fb01
-DMG SHA256: bf9d2826d483c67dccef0f6e29509a762ef285755cb1f16e5a9189c57a01a119
+ZIP SHA256: 22ad6b26b2ddbd68661ecaf4080e18a4791d1b58a2ad30ed6fe96ee1b7cd1831
+DMG SHA256: f2977cefed78874b17f48266f2cd57529e6c39270374f3b05d7ab347cacfc41f
 ```

@@ -32,6 +32,23 @@ It does not modify games or promise artificial FPS gains. It helps players run a
 
 CloudBoost has passed **1,000 downloads across its distribution channels**. GitHub badges above update automatically for release assets.
 
+## Measured League Of Legends Session
+
+On July 20, a 42m 38s native League of Legends session was recorded with CloudBoost PRO and checked against a separate 60-sample window.
+
+- final Session Proof score: **92/100**
+- route p95: **25 ms**
+- maximum jitter: **8 ms**
+- maximum packet loss: **0.0%**
+- League detected in **100% of 180 app samples**
+- CloudBoost averaged **1.68% CPU** in the independent sample
+
+This was an observational PRO session, not a controlled before/after benchmark, so it is not presented as proof of an FPS increase or guaranteed latency reduction. [Inspect the screenshot, method and raw CSV](https://victorbrandaao.github.io/CloudBoost/results/league-of-legends-pro-session.html?utm_source=github&utm_medium=organic&utm_campaign=league_pro_result).
+
+<p align="center">
+  <img src="./assets/evidence/league-pro-proof-wide.png" alt="Measured CloudBoost PRO League of Legends session on macOS" width="760">
+</p>
+
 ## What Happens During A Session
 
 1. **Watch**: CloudBoost samples latency, jitter, packet loss, route state, Wi-Fi/AWDL behavior, thermal pressure, and local load.
@@ -111,15 +128,17 @@ If macOS reports that the independently distributed app is damaged, clear its qu
 xattr -cr /Applications/"CloudBoost.app"
 ```
 
-## Current Release: 4.3.0
+## Current Release: 4.3.1
 
-- Session, Tools, and Account views replace the previous single long settings flow
-- an always-visible `EN/ES` control switches the main interface and core dialogs between English and Spanish
-- Free sessions keep core profiles, Balanced mode, basic monitoring, and display/idle protection without requesting privileged system tuning
-- PRO now owns AWDL, DNS, Time Machine, process-priority tuning, complete causes, timeline, history, automation, and Session Proof
-- session-end results show the score and next test; locked PRO detail is presented only with frequency caps
-- Payhip checkout and license configuration handling are more defensive, while existing Gumroad and legacy PRO+ keys remain supported
-- the release builder now packages the current SwiftPM product instead of a stale legacy output path
+- Session Proof now records game-process detection, route p95, maximum jitter, packet loss, thermal state and threshold events
+- PRO compares the current run with the previous saved run for the same profile
+- the updater verifies the expected app identity, version, executable and SHA256 before replacing CloudBoost
+- network probes run concurrently and reuse one process snapshot to reduce CloudBoost overhead during play
+- League of Legends process detection now covers the native client and game process more reliably
+- route-sample and UDP DNS wording is clearer when a VPN, firewall or network policy blocks a probe
+- existing Payhip, Gumroad and legacy PRO+ licenses keep their access
+
+CloudBoost 4.3.1 currently supports Apple Silicon Macs running macOS 12 or later.
 
 See the complete notes and checksums on the [release page](https://github.com/victorbrandaao/CloudBoost/releases/latest).
 
