@@ -11,6 +11,7 @@
     <link rel="canonical" href="https://victorbrandaao.github.io/CloudBoost/">
     <link rel="alternate" hreflang="en" href="https://victorbrandaao.github.io/CloudBoost/">
     <link rel="alternate" hreflang="es" href="https://victorbrandaao.github.io/CloudBoost/es/">
+    <link rel="alternate" hreflang="pt" href="https://victorbrandaao.github.io/CloudBoost/pt/">
     <link rel="alternate" hreflang="x-default" href="https://victorbrandaao.github.io/CloudBoost/">
     <meta property="og:site_name" content="CloudBoost">
     <meta property="og:title" content="CloudBoost - Mac Gaming Session Diagnostics">
@@ -188,6 +189,7 @@
           <a href="trust.html">Trust</a>
           <a href="#support">Support</a>
           <a class="language-link" href="es/" lang="es" hreflang="es">ES</a>
+          <a class="language-link" href="pt/" lang="pt-BR" hreflang="pt">PT</a>
           <a class="nav-cta" href="https://github.com/victorbrandaao/CloudBoost/releases/latest?utm_source=cloudboost_site&amp;utm_medium=organic&amp;utm_campaign=header_download">Download</a>
         </nav>
       </header>
@@ -215,7 +217,7 @@
           </div>
 
           <figure class="app-preview">
-            <img src="assets/cloudboost-app-session-branded.png" alt="CloudBoost 4.3.1 showing a real live Mac gaming session and spike timeline">
+            <img src="assets/evidence/league-pro-session-result.png" alt="CloudBoost 4.3.1 Session Result from a measured 42-minute League of Legends session on macOS" width="620" height="420" loading="eager">
           </figure>
         </section>
 
@@ -235,6 +237,74 @@
           <a class="made-in-brazil" href="https://feitonobrasil.dev.br" aria-label="Made in Brazil">
             <img src="https://selo.feitonobrasil.dev.br/en/serio/colorido/1x.svg" alt="Made in Brazil" height="42" loading="lazy">
           </a>
+        </section>
+
+        <!-- Interactive Session Doctor Demo Widget -->
+        <section class="interactive-demo" id="demo" aria-labelledby="demo-title">
+          <div class="demo-header">
+            <p class="eyebrow">Interactive App Simulator</p>
+            <h2 id="demo-title">See how Session Doctor diagnoses your run.</h2>
+            <p>Select a common Mac gaming scenario to simulate live signal analysis and real-time cause diagnosis:</p>
+            <div class="demo-tabs">
+              <button class="demo-tab active" data-scenario="cloud">Cloud Gaming (Wi-Fi/AWDL)</button>
+              <button class="demo-tab" data-scenario="native">Native Mac (CPU & Heat)</button>
+              <button class="demo-tab" data-scenario="vpn">VPN & Packet Loss</button>
+            </div>
+          </div>
+
+          <div class="demo-body">
+            <div class="demo-signals-card">
+              <div class="demo-card-title">
+                <span>Measured Signals</span>
+                <span class="demo-badge critical" id="demo-status-badge">Noise Detected</span>
+              </div>
+              <div class="demo-metrics-grid">
+                <div class="demo-metric-box">
+                  <span class="demo-metric-label">Measured Jitter</span>
+                  <div class="demo-metric-value" id="demo-jitter-val">18 ms</div>
+                </div>
+                <div class="demo-metric-box">
+                  <span class="demo-metric-label">Packet Loss</span>
+                  <div class="demo-metric-value" id="demo-loss-val">1.2%</div>
+                </div>
+                <div class="demo-metric-box">
+                  <span class="demo-metric-label">Wi-Fi/AWDL Interruption</span>
+                  <div class="demo-metric-value" id="demo-awdl-val">Active (Spike)</div>
+                </div>
+                <div class="demo-metric-box">
+                  <span class="demo-metric-label">System Pressure</span>
+                  <div class="demo-metric-value" id="demo-cpu-val">Nominal</div>
+                </div>
+              </div>
+              <div class="demo-sparkline-title">Spike Timeline (Last 60s)</div>
+              <div class="demo-sparkline" id="demo-sparkline-bars">
+                <div class="demo-bar" style="height: 25%"></div>
+                <div class="demo-bar" style="height: 30%"></div>
+                <div class="demo-bar spike" style="height: 95%"></div>
+                <div class="demo-bar spike" style="height: 85%"></div>
+                <div class="demo-bar warn" style="height: 55%"></div>
+                <div class="demo-bar" style="height: 30%"></div>
+                <div class="demo-bar" style="height: 25%"></div>
+                <div class="demo-bar spike" style="height: 90%"></div>
+                <div class="demo-bar warn" style="height: 50%"></div>
+                <div class="demo-bar" style="height: 28%"></div>
+              </div>
+            </div>
+
+            <div class="demo-doctor-card">
+              <div class="demo-card-title">
+                <span>Session Doctor Diagnosis</span>
+                <span class="demo-badge">PRO Diagnostic</span>
+              </div>
+              <div class="demo-doctor-message spike-detected" id="demo-doctor-text">
+                <strong>AWDL/AirDrop Warning:</strong> Background Wi-Fi/AWDL discovery scans were detected causing jitter spikes up to 18ms on your cloud gaming stream.
+              </div>
+              <div class="demo-controls">
+                <button class="demo-btn primary" id="demo-act-btn">Apply Temporary Session Action</button>
+                <button class="demo-btn secondary" id="demo-reset-btn">Restore Initial State</button>
+              </div>
+            </div>
+          </div>
         </section>
 
         <section class="section session-picker" aria-labelledby="session-picker-title">
@@ -478,6 +548,7 @@
       <a href="https://x.com/getcloudboost">X</a>
       <a href="https://discord.gg/kU5trxtRb">Discord</a>
       <a href="es/" lang="es" hreflang="es">Español</a>
+      <a href="pt/" lang="pt-BR" hreflang="pt">Português</a>
     </footer>
   </body>
 </html>

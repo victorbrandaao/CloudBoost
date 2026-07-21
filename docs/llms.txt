@@ -14,6 +14,9 @@ Measured League of Legends PRO session: https://victorbrandaao.github.io/CloudBo
 Trust Center: https://victorbrandaao.github.io/CloudBoost/trust.html
 Privacy: https://victorbrandaao.github.io/CloudBoost/privacy.html
 Guides: https://victorbrandaao.github.io/CloudBoost/guides.html
+Portuguese site: https://victorbrandaao.github.io/CloudBoost/pt/
+Portuguese privacy: https://victorbrandaao.github.io/CloudBoost/pt/privacidade.html
+Spanish site: https://victorbrandaao.github.io/CloudBoost/es/
 Independent coverage: https://macmagazine.com.br/post/2026/06/01/cloudboost-otimiza-a-experiencia-de-jogos-na-nuvem-no-mac/
 
 ## Summary

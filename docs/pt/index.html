@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CloudBoost - Diagnósticos de Sessão de Jogos no Mac</title>
+    <meta name="description" content="Descubra o que está afetando suas sessões de jogos no Mac. O CloudBoost monitora jitter, picos de latência, perda de pacotes, rotas VPN, tráfego em segundo plano, ruído Wi-Fi/AWDL, temperatura e carga local do sistema.">
+    <meta name="keywords" content="otimizador de jogos macOS, otimizador de jogos Mac, cloud gaming Mac, GeForce NOW Mac lag, Xbox Cloud Gaming Mac, Boosteroid Mac lag, Shadow PC Mac latência, PS Remote Play Mac, Moonlight Mac, jogos Mac, Dota 2 Mac, League of Legends Mac, picos de latência Mac, jitter Mac">
+    <meta name="author" content="Victor Brandao">
+    <meta name="robots" content="index,follow,max-image-preview:large">
+    <link rel="canonical" href="https://victorbrandaao.github.io/CloudBoost/pt/">
+    <link rel="alternate" hreflang="en" href="https://victorbrandaao.github.io/CloudBoost/">
+    <link rel="alternate" hreflang="es" href="https://victorbrandaao.github.io/CloudBoost/es/">
+    <link rel="alternate" hreflang="pt" href="https://victorbrandaao.github.io/CloudBoost/pt/">
+    <link rel="alternate" hreflang="x-default" href="https://victorbrandaao.github.io/CloudBoost/">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="CloudBoost">
+    <meta property="og:title" content="CloudBoost - Diagnósticos de Sessão de Jogos no Mac">
+    <meta property="og:description" content="Encontre o pico de latência, entenda a causa e jogue com mais estabilidade no macOS.">
+    <meta property="og:image" content="https://victorbrandaao.github.io/CloudBoost/assets/evidence/league-pro-proof-wide.png">
+    <meta property="og:image:alt" content="Sessão medida de 42 minutos do CloudBoost PRO no League of Legends no macOS">
+    <meta property="og:url" content="https://victorbrandaao.github.io/CloudBoost/pt/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CloudBoost - Diagnósticos de Sessão de Jogos no Mac">
+    <meta name="twitter:description" content="Encontre o pico de latência, entenda a causa e jogue com mais estabilidade no macOS.">
+    <meta name="twitter:image" content="https://victorbrandaao.github.io/CloudBoost/assets/evidence/league-pro-proof-wide.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="icon" type="image/png" href="../assets/cloudboost-app-icon-v2.png">
+    <link rel="sitemap" type="application/xml" href="https://victorbrandaao.github.io/CloudBoost/sitemap.xml">
+    <link rel="stylesheet" href="../styles.css">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://victorbrandaao.github.io/CloudBoost/#organization",
+            "name": "CloudBoost",
+            "url": "https://victorbrandaao.github.io/CloudBoost/",
+            "logo": "https://victorbrandaao.github.io/CloudBoost/assets/cloudboost-app-icon-v2.png",
+            "sameAs": [
+              "https://github.com/victorbrandaao/CloudBoost",
+              "https://x.com/getcloudboost",
+              "https://www.producthunt.com/products/cloudboost-2"
+            ]
+          },
+          {
+            "@type": "Person",
+            "@id": "https://victorbrandaao.github.io/CloudBoost/#founder",
+            "name": "Victor Brandao",
+            "url": "https://github.com/victorbrandaao",
+            "sameAs": [
+              "https://github.com/victorbrandaao",
+              "https://www.linkedin.com/in/victorbrandaao"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://victorbrandaao.github.io/CloudBoost/#website",
+            "url": "https://victorbrandaao.github.io/CloudBoost/pt/",
+            "name": "CloudBoost",
+            "inLanguage": ["en", "es", "pt-BR"],
+            "publisher": {"@id": "https://victorbrandaao.github.io/CloudBoost/#organization"}
+          },
+          {
+            "@type": "SoftwareApplication",
+            "@id": "https://victorbrandaao.github.io/CloudBoost/#software",
+            "name": "CloudBoost",
+            "url": "https://victorbrandaao.github.io/CloudBoost/pt/",
+            "operatingSystem": "macOS 12 ou posterior no Apple Silicon",
+            "applicationCategory": "UtilitiesApplication",
+            "applicationSubCategory": "Diagnósticos para jogos no Mac",
+            "softwareVersion": "4.3.1",
+            "dateModified": "2026-07-20",
+            "description": "Aplicativo nativo para barra de menus do macOS para diagnósticos de sessão de jogo e otimização local temporária para cloud gaming, remote play e jogos nativos.",
+            "downloadUrl": "https://github.com/victorbrandaao/CloudBoost/releases/latest",
+            "author": {"@id": "https://victorbrandaao.github.io/CloudBoost/#founder"},
+            "offers": [
+              {
+                "@type": "Offer",
+                "name": "CloudBoost Free",
+                "price": "0",
+                "priceCurrency": "USD"
+              },
+              {
+                "@type": "Offer",
+                "name": "CloudBoost PRO",
+                "url": "https://payhip.com/b/Jb0XO",
+                "price": "10.00",
+                "priceCurrency": "USD"
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+    <script src="../analytics-config.js"></script>
+    <script src="../analytics.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Ir para o conteúdo</a>
+    <div class="page home-page">
+      <header class="site-header">
+        <a class="brand" href="#download" aria-label="Página inicial CloudBoost">
+          <img class="mark" src="../assets/cloudboost-mark-v2.svg" alt="" width="36" height="36">
+          <span>CloudBoost</span>
+        </a>
+        <nav aria-label="Navegação principal">
+          <a href="#demo">Simulador</a>
+          <a href="#use-cases">Casos de Uso</a>
+          <a href="../results.html">Resultados</a>
+          <a href="#pro">Free vs PRO</a>
+          <a href="../trust.html">Segurança</a>
+          <a href="#support">Suporte</a>
+          <a class="language-link" href="../" lang="en" hreflang="en">EN</a>
+          <a class="language-link" href="../es/" lang="es" hreflang="es">ES</a>
+          <a class="language-link active" href="./" lang="pt-BR" hreflang="pt-BR">PT</a>
+          <a class="nav-cta" href="https://github.com/victorbrandaao/CloudBoost/releases/latest?utm_source=cloudboost_site_pt&amp;utm_medium=organic&amp;utm_campaign=header_download">Download</a>
+        </nav>
+      </header>
+
+      <main id="main-content">
+        <section class="hero" id="download">
+          <div class="hero-copy">
+            <p class="eyebrow">Utilitário nativo para a barra de menus do macOS · Versão 4.3.1</p>
+            <h1>CloudBoost para jogar com mais estabilidade no Mac.</h1>
+            <p class="lead">Descubra por que o jogo trava ou oscila quando um teste de velocidade comum diz que a conexão está normal.</p>
+            <p class="sublead">O CloudBoost monitora picos de latência, jitter, perda de pacotes, rotas de VPN, ruído de Wi-Fi/AWDL, processos em segundo plano, temperatura e pressão da CPU sem modificar seus jogos.</p>
+            <div class="actions">
+              <a class="button primary" href="https://github.com/victorbrandaao/CloudBoost/releases/latest?utm_source=cloudboost_site_pt&amp;utm_medium=organic&amp;utm_campaign=homepage">Baixar Grátis</a>
+              <a class="button secondary" href="https://payhip.com/b/Jb0XO?utm_source=cloudboost_site_pt&amp;utm_medium=organic&amp;utm_campaign=homepage_pro">Obter PRO · US$10</a>
+            </div>
+            <div class="hero-links">
+              <a href="../results/league-of-legends-pro-session.html">Ver sessão gravada de 42m no League of Legends</a>
+              <span>Captura real, método e CSV bruto</span>
+            </div>
+            <details class="install-command">
+              <summary>Instalar via Homebrew</summary>
+              <code>brew tap victorbrandaao/cloudboost<br>brew install --cask cloudboost</code>
+            </details>
+            <p class="microcopy">macOS 12+ · Apple Silicon · Perfis básicos grátis · O PRO é uma licença única v4.x</p>
+          </div>
+
+          <figure class="app-preview">
+            <img src="../assets/evidence/league-pro-session-result.png" alt="Resultado de sessão do CloudBoost 4.3.1 no League of Legends no macOS" width="620" height="420" loading="eager">
+          </figure>
+        </section>
+
+        <section class="proof-strip" aria-label="Marcos do CloudBoost">
+          <div><strong>1.000+</strong><span>downloads nos canais</span></div>
+          <div><strong>42m 38s</strong><span>sessão medida no League</span></div>
+          <div><strong>v4.3.1</strong><span>versão pública atual</span></div>
+          <div><strong>Aberto</strong><span>suporte e resultados públicos</span></div>
+        </section>
+
+        <section class="trust-row" aria-label="Sinais de confiança">
+          <span>Sem injeção de código ou burla de anti-cheat</span>
+          <span>Sem extensão de kernel (KEXT)</span>
+          <span>Ações de sessão temporárias e reversíveis</span>
+          <a href="../trust.html">Ler a Central de Confiança</a>
+          <a href="https://macmagazine.com.br/post/2026/06/01/cloudboost-otimiza-a-experiencia-de-jogos-na-nuvem-no-mac/">Matéria no MacMagazine</a>
+          <a class="made-in-brazil" href="https://feitonobrasil.dev.br" aria-label="Feito no Brasil">
+            <img src="https://selo.feitonobrasil.dev.br/en/serio/colorido/1x.svg" alt="Feito no Brasil" height="42" loading="lazy">
+          </a>
+        </section>
+
+        <!-- Interactive Session Doctor Demo Widget -->
+        <section class="interactive-demo" id="demo" aria-labelledby="demo-title">
+          <div class="demo-header">
+            <p class="eyebrow">Simulador Interativo do App</p>
+            <h2 id="demo-title">Veja como o Session Doctor analisa sua sessão.</h2>
+            <p>Selecione um cenário típico de jogo no Mac para ver a análise de sinais e o diagnóstico em tempo real:</p>
+            <div class="demo-tabs">
+              <button class="demo-tab active" data-scenario="cloud">Cloud Gaming (Wi-Fi/AWDL)</button>
+              <button class="demo-tab" data-scenario="native">Jogo Nativo (CPU & Temperatura)</button>
+              <button class="demo-tab" data-scenario="vpn">VPN & Perda de Pacotes</button>
+            </div>
+          </div>
+
+          <div class="demo-body">
+            <div class="demo-signals-card">
+              <div class="demo-card-title">
+                <span>Sinais Medidos</span>
+                <span class="demo-badge critical" id="demo-status-badge">Ruído Detectado</span>
+              </div>
+              <div class="demo-metrics-grid">
+                <div class="demo-metric-box">
+                  <span class="demo-metric-label">Jitter Medido</span>
+                  <div class="demo-metric-value" id="demo-jitter-val">18 ms</div>
+                </div>
+                <div class="demo-metric-box">
+                  <span class="demo-metric-label">Perda de Pacotes</span>
+                  <div class="demo-metric-value" id="demo-loss-val">1.2%</div>
+                </div>
+                <div class="demo-metric-box">
+                  <span class="demo-metric-label">Interrupção Wi-Fi/AWDL</span>
+                  <div class="demo-metric-value" id="demo-awdl-val">Ativo (Spike)</div>
+                </div>
+                <div class="demo-metric-box">
+                  <span class="demo-metric-label">Pressão do Sistema</span>
+                  <div class="demo-metric-value" id="demo-cpu-val">Normal</div>
+                </div>
+              </div>
+              <div class="demo-sparkline-title">Linha do Tempo de Picos (Últimos 60s)</div>
+              <div class="demo-sparkline" id="demo-sparkline-bars">
+                <div class="demo-bar" style="height: 25%"></div>
+                <div class="demo-bar" style="height: 30%"></div>
+                <div class="demo-bar spike" style="height: 95%"></div>
+                <div class="demo-bar spike" style="height: 85%"></div>
+                <div class="demo-bar warn" style="height: 55%"></div>
+                <div class="demo-bar" style="height: 30%"></div>
+                <div class="demo-bar" style="height: 25%"></div>
+                <div class="demo-bar spike" style="height: 90%"></div>
+                <div class="demo-bar warn" style="height: 50%"></div>
+                <div class="demo-bar" style="height: 28%"></div>
+              </div>
+            </div>
+
+            <div class="demo-doctor-card">
+              <div class="demo-card-title">
+                <span>Diagnóstico do Session Doctor</span>
+                <span class="demo-badge">PRO Diagnostic</span>
+              </div>
+              <div class="demo-doctor-message spike-detected" id="demo-doctor-text">
+                <strong>Alerta AWDL/AirDrop:</strong> Foram detectadas varreduras de busca Wi-Fi/AWDL em segundo plano causando instabilidade e picos de jitter de 18ms no stream de jogos em nuvem.
+              </div>
+              <div class="demo-controls">
+                <button class="demo-btn primary" id="demo-act-btn">Aplicar Otimização Temporária</button>
+                <button class="demo-btn secondary" id="demo-reset-btn">Restaurar Estado Inicial</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section session-picker" aria-labelledby="session-picker-title">
+          <div class="section-heading compact-heading">
+            <div>
+              <p class="eyebrow">Escolha o seu ponto de partida</p>
+              <h2 id="session-picker-title">O que você está jogando?</h2>
+            </div>
+            <p>Escolha o tipo de sessão mais próximo. O app utiliza o mesmo fluxo simples para cada um.</p>
+          </div>
+          <div class="session-picker-grid">
+            <a href="#cloud-gaming">
+              <span>01</span>
+              <strong>Cloud gaming ou remoto</strong>
+              <small>GFN, xCloud, Boosteroid, Shadow, Moonlight, PS Remote Play</small>
+            </a>
+            <a href="#native-gaming">
+              <span>02</span>
+              <strong>Jogo nativo no Mac</strong>
+              <small>League, Dota 2, Steam, Epic, Battle.net e jogos locais</small>
+            </a>
+            <a href="#compatibility">
+              <span>03</span>
+              <strong>CrossOver ou Whisky</strong>
+              <small>Diagnósticos PRO para sessões Wine e GPTK sem alterar arquivos</small>
+            </a>
+          </div>
+        </section>
+
+        <section class="section workflow" aria-labelledby="workflow-title">
+          <div class="section-heading">
+            <p class="eyebrow">Uma sessão, três respostas</p>
+            <h2 id="workflow-title">Observe. Entenda. Aja.</h2>
+          </div>
+          <ol class="workflow-grid">
+            <li><span>01</span><strong>Observe o lado do Mac</strong><p>Colete os sinais que o ping médio esconde: jitter, perda de pacotes, rotas, ruído de Wi-Fi e carga local.</p></li>
+            <li><span>02</span><strong>Entenda o alerta</strong><p>Separe um problema ativo de um pico anterior e veja a causa provável em linguagem clara.</p></li>
+            <li><span>03</span><strong>Aja, registre, restaure</strong><p>Alique ações temporárias selecionadas, grave o que mudou e restaure as configurações quando terminar.</p></li>
+          </ol>
+        </section>
+
+        <section class="section split" id="use-cases">
+          <div>
+            <p class="eyebrow">Casos de Uso</p>
+            <h2>Descubra se o problema está ao redor do jogo.</h2>
+          </div>
+          <div class="copy">
+            <p>Use o CloudBoost quando a sessão começar bem e depois apresentar travamentos ou instabilidade. Ele analisa os sinais de rede e do sistema Mac, indicando quando a causa investigada é o jogo, o servidor, o roteador ou a camada de compatibilidade.</p>
+          </div>
+        </section>
+
+        <section class="cards">
+          <article id="cloud-gaming">
+            <span>Cloud e remote play</span>
+            <h3>GeForce NOW, xCloud, Boosteroid, Shadow PC, Moonlight, PS Remote Play e Steam Link.</h3>
+            <p>Reduza o ruído local do macOS e veja se o problema é Wi-Fi, UDP, perda de pacotes, latência de rota ou tráfego em segundo plano.</p>
+          </article>
+          <article id="native-gaming">
+            <span>Jogos nativos do Mac</span>
+            <h3>Dota 2, League, Steam, Epic, Battle.net e jogos nativos do macOS.</h3>
+            <p>Acompanhe pressão da CPU, temperatura, Modo de Pouca Energia e tráfego em segundo plano para entender gargalos do sistema.</p>
+          </article>
+          <article id="compatibility">
+            <span>Diagnósticos de compatibilidade PRO</span>
+            <h3>Análises para CrossOver, Whisky, Wine e GPTK sem modificar o jogo.</h3>
+            <p>O CloudBoost não altera arquivos dos jogos. Ele ajuda a separar problemas da camada de compatibilidade de um ruído de sessão do macOS.</p>
+          </article>
+        </section>
+
+        <section class="section split" id="pro">
+          <div>
+            <p class="eyebrow">Free e PRO</p>
+            <h2>Comece grátis. Atualize quando precisar do diagnóstico completo.</h2>
+            <p class="section-intro">O Free é ideal para sessões manuais básicas. O PRO é para uso contínuo, diagnósticos profundos e otimização temporária automática.</p>
+          </div>
+          <div class="plan-grid">
+            <article class="plan-card">
+              <div class="plan-heading"><h3>Free</h3><strong>US$0</strong></div>
+              <ul class="plan-list">
+                <li>Perfis para nuvem, remoto e jogos nativos</li>
+                <li>Sessões manuais em modo Equilibrado</li>
+                <li>Testes básicos de rota e ping</li>
+                <li>Encerramento seguro de sessão e restauração</li>
+              </ul>
+              <a class="button secondary plan-button" href="https://github.com/victorbrandaao/CloudBoost/releases/latest?utm_source=cloudboost_site_pt&amp;utm_medium=organic&amp;utm_campaign=free_plan">Baixar Grátis</a>
+            </article>
+            <article class="plan-card featured-plan">
+              <div class="plan-heading"><h3>PRO</h3><strong>US$10</strong></div>
+              <p class="plan-note">Licença única da versão 4.x. Sem assinatura.</p>
+              <ul class="plan-list">
+                <li>Automação e ajustes temporários do sistema</li>
+                <li>Session Doctor completo e Linha do Tempo de Picos</li>
+                <li>VPN Route Doctor, UDP Probe e Session Lab</li>
+                <li>HUD, Session Proof e comparação com sessões anteriores</li>
+                <li>Diagnósticos para CrossOver/Whisky e suporte no Discord</li>
+              </ul>
+              <a class="button primary plan-button" href="https://payhip.com/b/Jb0XO?utm_source=cloudboost_site_pt&amp;utm_medium=organic&amp;utm_campaign=pro_section">Obter PRO no Payhip</a>
+            </article>
+          </div>
+        </section>
+
+        <section class="section split" id="support">
+          <div>
+            <p class="eyebrow">Suporte</p>
+            <h2>Traga sua captura de tela. Nós ajudamos a interpretá-la.</h2>
+          </div>
+          <div class="copy">
+            <p>O Discord está aberto para usuários Free e PRO para ajuda na instalação, suporte de licenças, dúvidas e relatórios de bugs.</p>
+            <div class="actions small-actions">
+              <a class="button primary" href="https://discord.gg/kU5trxtRb">Entrar no Discord</a>
+              <a class="button secondary" href="../trust.html">Ler Central de Confiança</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="faq">
+          <details open>
+            <summary>O CloudBoost aumenta o FPS?</summary>
+            <p>Não diretamente. O CloudBoost foca em estabilidade de sessão e diagnóstico. Ele ajuda quando os travamentos vêm de processos em segundo plano, ruído de Wi-Fi ou economia de energia, mas não altera a renderização do jogo.</p>
+          </details>
+          <details>
+            <summary>Funciona para jogos nativos do Mac?</summary>
+            <p>Sim, quando o problema está no sistema ao redor do jogo: pressão térmica, Modo de Pouca Energia, tráfego em segundo plano ou oscilações de Wi-Fi.</p>
+          </details>
+          <details>
+            <summary>Instala extensão de kernel (KEXT)?</summary>
+            <p>Não. O CloudBoost não instala KEXTs, daemons ocultos, patches permanentes ou injeções em jogos. Algumas ações pedem senha de administrador apenas porque o macOS exige autorização para alterações temporárias do sistema.</p>
+          </details>
+          <details>
+            <summary>O que é o Session Proof?</summary>
+            <p>O Session Proof é um relatório de suporte PRO gerado pelo app com os dados da sessão, histórico de picos e diagnósticos técnicos, sem incluir arquivos pessoais ou dados privados.</p>
+          </details>
+        </section>
+
+        <section class="final">
+          <h2>Teste uma sessão e veja o relatório do CloudBoost.</h2>
+          <div class="actions">
+            <a class="button primary" href="https://github.com/victorbrandaao/CloudBoost/releases/latest?utm_source=cloudboost_site_pt&amp;utm_medium=organic&amp;utm_campaign=homepage_footer">Baixar CloudBoost</a>
+            <a class="button secondary" href="https://discord.gg/kU5trxtRb">Tirar dúvidas no Discord</a>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <footer>
+      <span>CloudBoost é um software proprietário.</span>
+      <a href="https://github.com/victorbrandaao/CloudBoost">GitHub</a>
+      <a href="https://payhip.com/b/Jb0XO">PRO</a>
+      <a href="../guides.html">Guias</a>
+      <a href="../results.html">Resultados</a>
+      <a href="../trust.html">Segurança</a>
+      <a href="../reviews.html">Avaliações</a>
+      <a href="../ai-summary.html">AI Summary</a>
+      <a href="./privacidade.html">Privacidade</a>
+      <a href="https://x.com/getcloudboost">X</a>
+      <a href="https://discord.gg/kU5trxtRb">Discord</a>
+      <a href="../" lang="en" hreflang="en">English</a>
+      <a href="../es/" lang="es" hreflang="es">Español</a>
+    </footer>
+  </body>
+</html>

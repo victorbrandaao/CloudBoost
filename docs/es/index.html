@@ -11,6 +11,7 @@
     <link rel="canonical" href="https://victorbrandaao.github.io/CloudBoost/es/">
     <link rel="alternate" hreflang="en" href="https://victorbrandaao.github.io/CloudBoost/">
     <link rel="alternate" hreflang="es" href="https://victorbrandaao.github.io/CloudBoost/es/">
+    <link rel="alternate" hreflang="pt" href="https://victorbrandaao.github.io/CloudBoost/pt/">
     <link rel="alternate" hreflang="x-default" href="https://victorbrandaao.github.io/CloudBoost/">
     <meta property="og:locale" content="es_ES">
     <meta property="og:site_name" content="CloudBoost">
@@ -56,6 +57,7 @@
           <a href="#pro">PRO</a>
           <a href="#soporte">Soporte</a>
           <a class="language-link" href="../" lang="en" hreflang="en">EN</a>
+          <a class="language-link" href="../pt/" lang="pt-BR" hreflang="pt">PT</a>
         </nav>
       </header>
 
@@ -73,7 +75,7 @@
             <p class="microcopy">macOS 12 o posterior · Apple Silicon · PRO es una licencia única para la versión 4.x</p>
           </div>
           <figure class="app-preview">
-            <img src="../assets/cloudboost-app-session-branded.png" alt="CloudBoost mostrando una sesión real de juego en Mac con latencia, jitter y diagnóstico">
+            <img src="../assets/cloudboost-app-session-branded.png" alt="CloudBoost mostrando una sesión real de juego en Mac con latencia, jitter y diagnóstico" width="620" height="420" loading="eager">
           </figure>
         </section>
 
@@ -82,6 +84,74 @@
           <div><strong>US$10</strong><span>PRO, pago único</span></div>
           <div><strong>macOS 12+</strong><span>Apple Silicon</span></div>
           <div><strong>Público</strong><span>reseñas, versiones y soporte</span></div>
+        </section>
+
+        <!-- Interactive Session Doctor Demo Widget -->
+        <section class="interactive-demo" id="demo" aria-labelledby="demo-title">
+          <div class="demo-header">
+            <p class="eyebrow">Simulador Interactivo del App</p>
+            <h2 id="demo-title">Mira cómo Session Doctor analiza tu sesión.</h2>
+            <p>Selecciona un escenario típico de juego en Mac para ver el análisis de señales y diagnóstico en tiempo real:</p>
+            <div class="demo-tabs">
+              <button class="demo-tab active" data-scenario="cloud">Cloud Gaming (Wi-Fi/AWDL)</button>
+              <button class="demo-tab" data-scenario="native">Juego Nativo (CPU y Temperatura)</button>
+              <button class="demo-tab" data-scenario="vpn">VPN y Pérdida de Paquetes</button>
+            </div>
+          </div>
+
+          <div class="demo-body">
+            <div class="demo-signals-card">
+              <div class="demo-card-title">
+                <span>Señales Medidas</span>
+                <span class="demo-badge critical" id="demo-status-badge">Ruido Detectado</span>
+              </div>
+              <div class="demo-metrics-grid">
+                <div class="demo-metric-box">
+                  <span class="demo-metric-label">Jitter Medido</span>
+                  <div class="demo-metric-value" id="demo-jitter-val">18 ms</div>
+                </div>
+                <div class="demo-metric-box">
+                  <span class="demo-metric-label">Pérdida de Paquetes</span>
+                  <div class="demo-metric-value" id="demo-loss-val">1.2%</div>
+                </div>
+                <div class="demo-metric-box">
+                  <span class="demo-metric-label">Interrupción Wi-Fi/AWDL</span>
+                  <div class="demo-metric-value" id="demo-awdl-val">Activo (Spike)</div>
+                </div>
+                <div class="demo-metric-box">
+                  <span class="demo-metric-label">Presión del Sistema</span>
+                  <div class="demo-metric-value" id="demo-cpu-val">Normal</div>
+                </div>
+              </div>
+              <div class="demo-sparkline-title">Línea de Tiempo de Picos (Últimos 60s)</div>
+              <div class="demo-sparkline" id="demo-sparkline-bars">
+                <div class="demo-bar" style="height: 25%"></div>
+                <div class="demo-bar" style="height: 30%"></div>
+                <div class="demo-bar spike" style="height: 95%"></div>
+                <div class="demo-bar spike" style="height: 85%"></div>
+                <div class="demo-bar warn" style="height: 55%"></div>
+                <div class="demo-bar" style="height: 30%"></div>
+                <div class="demo-bar" style="height: 25%"></div>
+                <div class="demo-bar spike" style="height: 90%"></div>
+                <div class="demo-bar warn" style="height: 50%"></div>
+                <div class="demo-bar" style="height: 28%"></div>
+              </div>
+            </div>
+
+            <div class="demo-doctor-card">
+              <div class="demo-card-title">
+                <span>Diagnóstico de Session Doctor</span>
+                <span class="demo-badge">PRO Diagnostic</span>
+              </div>
+              <div class="demo-doctor-message spike-detected" id="demo-doctor-text">
+                <strong>Alerta AWDL/AirDrop:</strong> Se detectaron escaneos Wi-Fi/AWDL en segundo plano causando picos de jitter de 18ms en tu transmisión.
+              </div>
+              <div class="demo-controls">
+                <button class="demo-btn primary" id="demo-act-btn">Aplicar Acción Temporaria</button>
+                <button class="demo-btn secondary" id="demo-reset-btn">Restaurar Estado Inicial</button>
+              </div>
+            </div>
+          </div>
         </section>
 
         <section class="section split" id="casos">

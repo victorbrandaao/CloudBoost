@@ -27,3 +27,5 @@ https://victorbrandaao.github.io/CloudBoost/es/
 https://victorbrandaao.github.io/CloudBoost/es/cloud-gaming-mac.html
 https://victorbrandaao.github.io/CloudBoost/es/juegos-mac-nativos.html
 https://victorbrandaao.github.io/CloudBoost/es/privacidad.html
+https://victorbrandaao.github.io/CloudBoost/pt/
+https://victorbrandaao.github.io/CloudBoost/pt/privacidade.html
