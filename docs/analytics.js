@@ -9,12 +9,24 @@
     if (window.__cloudBoostAnalyticsLoaded) return;
     window.__cloudBoostAnalyticsLoaded = true;
 
+    function getPageCategory() {
+      const path = window.location.pathname;
+      if (path.includes("/guides/")) return "guides";
+      if (path.includes("/results")) return "results";
+      if (path.includes("/pt/")) return "pt_landing";
+      if (path.includes("/es/")) return "es_landing";
+      if (path.includes("privacy") || path.includes("privacidad") || path.includes("trust")) return "legal_trust";
+      return "homepage";
+    }
+
     window.dataLayer = window.dataLayer || [];
     window.gtag = function gtag() { window.dataLayer.push(arguments); };
     window.gtag("js", new Date());
     window.gtag("config", measurementId, {
       allow_google_signals: false,
-      allow_ad_personalization_signals: false
+      allow_ad_personalization_signals: false,
+      content_group: getPageCategory(),
+      page_language: document.documentElement.lang || "en"
     });
 
     const script = document.createElement("script");
@@ -23,7 +35,36 @@
     document.head.appendChild(script);
 
     document.addEventListener("click", trackOutboundClick, true);
+    document.addEventListener("click", trackHomebrewCopy, true);
     observeOfferImpressions();
+    observeScrollDepth();
+  }
+
+  function trackHomebrewCopy(event) {
+    const installCmd = event.target.closest(".install-command");
+    if (!installCmd || typeof window.gtag !== "function") return;
+    window.gtag("event", "homebrew_command_clicked", {
+      page_path: window.location.pathname
+    });
+  }
+
+  function observeScrollDepth() {
+    let scrolled50 = false;
+    let scrolled90 = false;
+
+    window.addEventListener("scroll", () => {
+      if (typeof window.gtag !== "function") return;
+      const scrollPercent = (window.scrollY + window.innerHeight) / document.documentElement.scrollHeight * 100;
+
+      if (!scrolled50 && scrollPercent >= 50) {
+        scrolled50 = true;
+        window.gtag("event", "scroll_depth_50", { page_path: window.location.pathname });
+      }
+      if (!scrolled90 && scrollPercent >= 90) {
+        scrolled90 = true;
+        window.gtag("event", "scroll_depth_90", { page_path: window.location.pathname });
+      }
+    }, { passive: true });
   }
 
   function eventNamesFor(url, link) {
