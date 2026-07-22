@@ -202,10 +202,10 @@
         badgeClass: "critical",
         bars: [25, 30, 95, 85, 55, 30, 25, 90, 50, 28],
         doctorText: lang.startsWith("pt")
-          ? "<strong>Alerta AWDL/AirDrop:</strong> Foram detectadas varreduras de busca Wi-Fi/AWDL em segundo plano causando picos de jitter de 18ms no stream de jogos em nuvem."
+          ? "<strong>Cenário AWDL/AirDrop:</strong> A atividade AWDL coincide com amostras de jitter elevadas. Compare a sessão com o AWDL Guard ativo antes de concluir a causa."
           : (lang.startsWith("es")
-            ? "<strong>Alerta AWDL/AirDrop:</strong> Se detectaron escaneos Wi-Fi/AWDL en segundo plano causando picos de jitter de 18ms en tu transmisión."
-            : "<strong>AWDL/AirDrop Warning:</strong> Background Wi-Fi/AWDL discovery scans were detected causing jitter spikes up to 18ms on your cloud gaming stream.")
+            ? "<strong>Escenario AWDL/AirDrop:</strong> La actividad AWDL coincide con muestras de jitter elevadas. Compara la sesión con AWDL Guard antes de atribuir la causa."
+            : "<strong>AWDL/AirDrop scenario:</strong> AWDL activity overlaps with elevated jitter samples. Compare the session with AWDL Guard before attributing a cause.")
       },
       native: {
         jitter: "2 ms",
@@ -216,10 +216,10 @@
         badgeClass: "warning",
         bars: [60, 65, 70, 85, 90, 92, 88, 85, 90, 92],
         doctorText: lang.startsWith("pt")
-          ? "<strong>Alerta Térmico:</strong> Carga de CPU e temperatura elevadas detectadas. O sistema está reduzindo o clock para proteger o Mac."
+          ? "<strong>Cenário térmico:</strong> Carga de CPU e pressão térmica elevadas coincidem com uma sessão menos estável."
           : (lang.startsWith("es")
-            ? "<strong>Alerta Térmica:</strong> Alta carga de CPU y temperatura detectadas. El sistema está reduciendo la frecuencia para proteger el Mac."
-            : "<strong>Thermal Warning:</strong> High CPU load and thermal pressure detected. System throttling is active to protect thermal limits.")
+            ? "<strong>Escenario térmico:</strong> La carga de CPU y la presión térmica elevadas coinciden con una sesión menos estable."
+            : "<strong>Thermal scenario:</strong> Elevated CPU load and thermal pressure overlap with a less stable session.")
       },
       vpn: {
         jitter: "32 ms",
@@ -230,10 +230,10 @@
         badgeClass: "critical",
         bars: [40, 85, 90, 95, 80, 85, 90, 95, 85, 90],
         doctorText: lang.startsWith("pt")
-          ? "<strong>Alerta VPN Route Doctor:</strong> A rota da VPN está sofrendo perda de pacotes UDP e latência excessiva. Recomenda-se desativar a VPN ou usar split tunneling."
+          ? "<strong>Cenário de VPN:</strong> Amostras ICMP foram perdidas e o teste DNS via UDP ficou instável enquanto o túnel estava ativo. Isso não mede os pacotes do jogo."
           : (lang.startsWith("es")
-            ? "<strong>Alerta VPN Route Doctor:</strong> La ruta VPN presenta pérdida de paquetes UDP y latencia alta. Se recomienda desactivar la VPN o usar split tunneling."
-            : "<strong>VPN Route Doctor Warning:</strong> The VPN tunnel route is experiencing UDP packet loss and route latency. Consider testing with VPN off or split tunneling.")
+            ? "<strong>Escenario de VPN:</strong> Se perdieron muestras ICMP y la prueba DNS por UDP fue inestable con el túnel activo. Esto no mide los paquetes del juego."
+            : "<strong>VPN scenario:</strong> ICMP samples were dropped and the UDP DNS check was unstable while the tunnel was active. This does not measure game packets.")
       }
     };
 
@@ -259,10 +259,10 @@
         statusBadge.className = "demo-badge";
         doctorText.className = "demo-doctor-message";
         doctorText.innerHTML = lang.startsWith("pt")
-          ? "<strong>Sessão Otimizada:</strong> Otimização temporária aplicada. Ruídos e picos de jitter foram neutralizados para a sessão atual."
+          ? "<strong>Ações aplicadas:</strong> Ajustes temporários foram ativados. Execute o mesmo teste novamente para verificar se as amostras melhoraram."
           : (lang.startsWith("es")
-            ? "<strong>Sesión Optimizada:</strong> Optimización temporaria aplicada. Ruido y picos de jitter neutralizados para la sesión actual."
-            : "<strong>Session Tuned:</strong> Temporary session actions applied. Wi-Fi noise and jitter spikes neutralized for active play.");
+            ? "<strong>Acciones aplicadas:</strong> Se activaron ajustes temporales. Repite la misma prueba para comprobar si mejoraron las muestras."
+            : "<strong>Actions applied:</strong> Temporary session adjustments are active. Repeat the same test to see whether the samples improve.");
         
         sparkline.innerHTML = [15, 12, 18, 14, 15, 12, 15, 14, 12, 15]
           .map(h => `<div class="demo-bar" style="height: ${h}%"></div>`).join("");
@@ -322,4 +322,3 @@
 
   window.addEventListener("DOMContentLoaded", initInteractiveDemo);
 })();
-
