@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cyberpunk 2077 on Mac: Stutter, Lag & Diagnostics Guide</title>
+    <meta name="description" content="Diagnose Cyberpunk 2077 performance on Mac across Apple Silicon, CrossOver/Whisky GPTK, and GeForce NOW: thermal throttling, AWDL Wi-Fi noise, jitter and system pressure.">
+    <meta name="robots" content="index,follow,max-image-preview:large">
+    <link rel="canonical" href="https://victorbrandaao.github.io/CloudBoost/guides/cyberpunk-2077-mac-lag.html">
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../analytics-config.js"></script>
+    <script src="../analytics.js" defer></script>
+  </head>
+  <body>
+    <div class="page content-page">
+      <header class="site-header">
+        <a class="brand" href="../index.html"><img class="mark" src="../assets/cloudboost-mark-v2.svg" alt="" width="36" height="36"><span>CloudBoost</span></a>
+        <nav><a href="../guides.html">Guides</a><a href="../trust.html">Trust</a><a href="https://discord.gg/kU5trxtRb">Discord</a></nav>
+      </header>
+      <main>
+        <section class="hero">
+          <p class="eyebrow">Cyberpunk 2077 on Mac</p>
+          <h1>Is the stutter coming from rendering, translation, or network?</h1>
+          <p class="lead">Cyberpunk 2077 demands intense CPU, GPU, and memory performance on macOS. Whether playing via native Apple Silicon, CrossOver / GPTK translation layers, or cloud streaming on GeForce NOW, understanding the root cause is key to a smooth session.</p>
+        </section>
+        <section class="article-section">
+          <h2>Separating Local Pressure from Network Jitter</h2>
+          <p>When Cyberpunk 2077 stutters on a Mac, players often assume frame drops are purely graphics-related. However, on macOS sessions:</p>
+          <ul class="plain-list">
+            <li><strong>CrossOver / Whisky / GPTK:</strong> Translation layer overhead combined with macOS thermal throttling can cause sudden framerate dips during heavy Night City scenes.</li>
+            <li><strong>GeForce NOW / Cloud Streaming:</strong> Background Wi-Fi/AWDL discovery scans cause 15–50 ms jitter spikes, making high-speed driving feel rubber-banded even when FPS looks high.</li>
+            <li><strong>Low Power Mode & Thermal Pressure:</strong> Apple Silicon Macs throttle CPU/GPU clock speeds under prolonged heavy thermal load.</li>
+          </ul>
+        </section>
+        <section class="article-section">
+          <h2>What to check for Cyberpunk 2077 sessions</h2>
+          <ul class="plain-list">
+            <li>Check macOS Thermal Pressure to ensure your Mac isn't actively throttling performance.</li>
+            <li>Turn off Low Power Mode when playing on battery or connected to a charger.</li>
+            <li>If streaming over Wi-Fi, disable location services and AirDrop discovery scans during your session to prevent AWDL jitter.</li>
+            <li>Close heavy background browser tabs and cloud syncing services (iCloud, OneDrive, DropBox).</li>
+          </ul>
+        </section>
+        <section class="article-section">
+          <h2>Where CloudBoost helps</h2>
+          <p>CloudBoost monitors thermal pressure, system load, AWDL/Wi-Fi interference, and route jitter side-by-side without modifying game files, injecting code, or touching CrossOver bottles.</p>
+          <p>Check the <a href="../results.html">public measurement method</a> or try <a href="../index.html">CloudBoost Free</a> to monitor your session.</p>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>World of Warcraft on Mac: Ping Spikes, Lag & Stutter Fixes</title>
+    <meta name="description" content="Fix World of Warcraft (WoW) latency spikes and stutter on macOS: Metal API performance, Battle.net background sync, AWDL Wi-Fi noise, and DNS cache issues.">
+    <meta name="robots" content="index,follow,max-image-preview:large">
+    <link rel="canonical" href="https://victorbrandaao.github.io/CloudBoost/guides/world-of-warcraft-mac-lag.html">
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../analytics-config.js"></script>
+    <script src="../analytics.js" defer></script>
+  </head>
+  <body>
+    <div class="page content-page">
+      <header class="site-header">
+        <a class="brand" href="../index.html"><img class="mark" src="../assets/cloudboost-mark-v2.svg" alt="" width="36" height="36"><span>CloudBoost</span></a>
+        <nav><a href="../guides.html">Guides</a><a href="../trust.html">Trust</a><a href="https://discord.gg/kU5trxtRb">Discord</a></nav>
+      </header>
+      <main>
+        <section class="hero">
+          <p class="eyebrow">World of Warcraft on macOS</p>
+          <h1>Why raids stutter when average ping looks fine.</h1>
+          <p class="lead">World of Warcraft runs natively on Apple Silicon with Metal, but raid encounters, Mythic+ dungeons, and crowded cities are prone to sudden latency spikes, background Battle.net launcher syncs, and Wi-Fi noise.</p>
+        </section>
+        <section class="article-section">
+          <h2>Common causes of WoW stutter on Mac</h2>
+          <p>World of Warcraft relies on real-time UDP communication and quick server synchronization. On macOS, common culprits include:</p>
+          <ul class="plain-list">
+            <li><strong>Battle.net Launcher Background Sync:</strong> Automatic agent updates or patch downloads running in the background while you play.</li>
+            <li><strong>Wi-Fi & AWDL Noise:</strong> AirDrop/Handoff background Wi-Fi polling causes 20–100 ms latency spikes during key boss mechanics.</li>
+            <li><strong>Add-on Sync & Outdated Addons:</strong> Complex UI add-ons triggering high CPU main-thread stalls, mimicking network lag.</li>
+            <li><strong>Thermal Throttling on M-Series Laptops:</strong> Extended raiding sessions under high GPU settings can trigger macOS thermal protection.</li>
+          </ul>
+        </section>
+        <section class="article-section">
+          <h2>Quick troubleshooting steps</h2>
+          <ul class="plain-list">
+            <li>In Battle.net settings, configure the launcher to pause updates or exit completely when a game launches.</li>
+            <li>Use an Ethernet connection or disable AirDrop / AWDL background scans to eliminate local Wi-Fi noise.</li>
+            <li>Flush DNS cache if realm connection or voice chat latency is unusually high.</li>
+            <li>Monitor jitter and p95 latency rather than relying only on the in-game latency meter.</li>
+          </ul>
+        </section>
+        <section class="article-section">
+          <h2>Where CloudBoost helps</h2>
+          <p>CloudBoost monitors local system load, thermal state, AWDL interference, and route jitter in real time while you raid, helping you isolate network drops from game engine stutter.</p>
+          <p>Read about our <a href="../trust.html">Trust Center</a> or try <a href="../index.html">CloudBoost Free</a>.</p>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

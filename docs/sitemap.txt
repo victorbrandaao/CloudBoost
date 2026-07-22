@@ -23,6 +23,8 @@ https://victorbrandaao.github.io/CloudBoost/guides/crossover-whisky-mac-gaming.h
 https://victorbrandaao.github.io/CloudBoost/guides/moonlight-mac-latency.html
 https://victorbrandaao.github.io/CloudBoost/guides/steam-link-mac-latency.html
 https://victorbrandaao.github.io/CloudBoost/guides/vpn-route-doctor-mac-gaming.html
+https://victorbrandaao.github.io/CloudBoost/guides/cyberpunk-2077-mac-lag.html
+https://victorbrandaao.github.io/CloudBoost/guides/world-of-warcraft-mac-lag.html
 https://victorbrandaao.github.io/CloudBoost/es/
 https://victorbrandaao.github.io/CloudBoost/es/cloud-gaming-mac.html
 https://victorbrandaao.github.io/CloudBoost/es/juegos-mac-nativos.html
