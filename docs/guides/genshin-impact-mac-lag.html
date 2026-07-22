@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Genshin Impact on Mac: Fix Lag, Stutter, and FPS Drops</title>
+    <meta name="description" content="Diagnose Genshin Impact performance on Mac via PlayCover or GeForce NOW: fix thermal throttling, translation overhead, and network jitter.">
+    <meta name="robots" content="index,follow,max-image-preview:large">
+    <link rel="canonical" href="https://victorbrandaao.github.io/CloudBoost/guides/genshin-impact-mac-lag.html">
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../analytics-config.js"></script>
+    <script src="../analytics.js" defer></script>
+  </head>
+  <body>
+    <div class="page content-page">
+      <header class="site-header">
+        <a class="brand" href="../index.html"><img class="mark" src="../assets/cloudboost-mark-v2.svg" alt="" width="36" height="36"><span>CloudBoost</span></a>
+        <nav><a href="../guides.html">Guides</a><a href="../trust.html">Trust</a><a href="https://discord.gg/kU5trxtRb">Discord</a></nav>
+      </header>
+      <main>
+        <section class="hero">
+          <p class="eyebrow">Genshin Impact on Mac</p>
+          <h1>Is the stutter coming from PlayCover, Heat, or Network?</h1>
+          <p class="lead">Playing Genshin Impact on a Mac often involves using tools like PlayCover to run the iOS version, or streaming it via GeForce NOW. Both methods can suffer from frustrating stutters and lag spikes if not optimized.</p>
+        </section>
+        <section class="article-section">
+          <h2>Separating Local Pressure from Network Jitter</h2>
+          <p>When Genshin Impact drops frames during combat, the root cause depends on how you are playing:</p>
+          <ul class="plain-list">
+            <li><strong>PlayCover (Local):</strong> Running high graphics on an iOS-translated app can push Apple Silicon Macs into Thermal Throttling. When the Mac gets too hot, it drops CPU speeds, causing immediate FPS loss during intense domain fights.</li>
+            <li><strong>GeForce NOW / Cloud (Network):</strong> If streaming, macOS background Wi-Fi/AWDL discovery scans cause 15–50 ms jitter spikes. This makes dodging and character swapping feel delayed, even with good ping.</li>
+            <li><strong>Low Power Mode:</strong> Apple Silicon Macs cap performance heavily when Low Power Mode is on.</li>
+          </ul>
+        </section>
+        <section class="article-section">
+          <h2>What to check for Genshin Impact sessions</h2>
+          <ul class="plain-list">
+            <li>Check macOS Thermal Pressure to ensure your Mac isn't actively throttling (especially if using PlayCover on 120fps mode).</li>
+            <li>Turn off Low Power Mode when playing on battery or connected to a charger.</li>
+            <li>If streaming over Wi-Fi, disable location services and AirDrop discovery scans during your session to prevent AWDL jitter.</li>
+          </ul>
+        </section>
+        <section class="article-section">
+          <h2>Where CloudBoost helps</h2>
+          <p>CloudBoost monitors thermal pressure, system load, AWDL/Wi-Fi interference, and route jitter side-by-side without modifying game files.</p>
+          <p>Check the <a href="../results.html">public measurement method</a> or try <a href="../index.html">CloudBoost Free</a> to monitor your session.</p>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
