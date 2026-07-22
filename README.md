@@ -9,11 +9,11 @@ CloudBoost is a native macOS menu bar app that shows what is happening around a 
 It does not modify games or promise artificial FPS gains. It helps players run a quieter Mac session, understand a problem, and leave with a useful next step.
 
 <p align="center">
-  <a href="https://github.com/victorbrandaao/CloudBoost/releases/tag/v4.3.1"><img src="https://img.shields.io/github/v/release/victorbrandaao/CloudBoost?label=release&amp;style=flat-square&amp;color=00a884&amp;cacheSeconds=300" alt="CloudBoost v4.3.1"></a>
-  <a href="https://github.com/victorbrandaao/CloudBoost/releases/tag/v4.3.1"><img src="https://img.shields.io/github/downloads/victorbrandaao/CloudBoost/v4.3.1/total?label=v4.3.1%20downloads&amp;style=flat-square&amp;color=111111&amp;cacheSeconds=300" alt="CloudBoost v4.3.1 downloads"></a>
+  <a href="https://github.com/victorbrandaao/CloudBoost/releases/tag/v4.3.2"><img src="https://img.shields.io/github/v/release/victorbrandaao/CloudBoost?label=release&amp;style=flat-square&amp;color=00a884&amp;cacheSeconds=300" alt="CloudBoost v4.3.2"></a>
+  <a href="https://github.com/victorbrandaao/CloudBoost/releases/tag/v4.3.2"><img src="https://img.shields.io/github/downloads/victorbrandaao/CloudBoost/v4.3.2/total?label=v4.3.2%20downloads&amp;style=flat-square&amp;color=111111&amp;cacheSeconds=300" alt="CloudBoost v4.3.2 downloads"></a>
   <a href="https://github.com/victorbrandaao/CloudBoost/releases"><img src="https://img.shields.io/github/downloads/victorbrandaao/CloudBoost/total?label=all%20downloads&amp;style=flat-square&amp;color=111111&amp;cacheSeconds=300" alt="All CloudBoost GitHub release downloads"></a>
   <img src="https://img.shields.io/badge/macOS-12%2B-111111?style=flat-square" alt="macOS 12 or later">
-  <img src="https://img.shields.io/badge/Apple%20Silicon-required-111111?style=flat-square&amp;logo=apple" alt="Apple Silicon required">
+  <img src="https://img.shields.io/badge/Mac-Intel%20%2B%20Apple%20Silicon-111111?style=flat-square&amp;logo=apple" alt="Intel and Apple Silicon supported">
   <a href="https://payhip.com/b/Jb0XO"><img src="https://img.shields.io/badge/PRO-%2410%20one--time-00a884?style=flat-square" alt="CloudBoost PRO costs 10 US dollars as a one-time v4 license"></a>
   <a href="https://discord.gg/kU5trxtRb"><img src="https://img.shields.io/badge/Discord-support-5865F2?style=flat-square" alt="Discord support"></a>
 </p>
@@ -64,8 +64,8 @@ CloudBoost cannot fix an overloaded server, a bad ISP route, a weak router, or a
 | Type | Profiles and scenarios |
 |---|---|
 | Cloud gaming | GeForce NOW, Xbox Cloud Gaming, Boosteroid, Shadow PC |
-| Remote play | Moonlight, PS Remote Play, Steam Link, home streaming |
-| Native Mac gaming | Dota 2, League of Legends, Steam, Epic Games, Battle.net, local games |
+| Remote play | Moonlight and PS Remote Play |
+| Mac and competitive gaming | League of Legends, Dota 2, Minecraft, Roblox, and CS2 cloud/compatibility sessions |
 | Compatibility layers | CrossOver, Whisky, Wine, Game Porting Toolkit diagnostics in PRO |
 
 ## Free And PRO
@@ -130,7 +130,7 @@ If macOS reports that the independently distributed app is damaged, clear its qu
 xattr -cr /Applications/"CloudBoost.app"
 ```
 
-## Current Release: 4.3.1
+## Current Release: 4.3.2
 
 - Session Proof now records game-process detection, route p95, maximum jitter, packet loss, thermal state and threshold events
 - PRO compares the current run with the previous saved run for the same profile
@@ -140,7 +140,7 @@ xattr -cr /Applications/"CloudBoost.app"
 - route-sample and UDP DNS wording is clearer when a VPN, firewall or network policy blocks a probe
 - existing Payhip, Gumroad and legacy PRO+ licenses keep their access
 
-CloudBoost 4.3.1 currently supports Apple Silicon Macs running macOS 12 or later.
+CloudBoost 4.3.2 supports Intel and Apple Silicon Macs running macOS 12 Monterey or later. It adds a dedicated Shadow PC profile, Minecraft and Roblox profiles, and a more focused game/service picker.
 
 See the complete notes and checksums on the [release page](https://github.com/victorbrandaao/CloudBoost/releases/latest).
 
