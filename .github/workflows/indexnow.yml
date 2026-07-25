@@ -3,7 +3,7 @@ name: Notify search engines
 on:
   push:
     branches:
-      - public-main
+      - main
     paths:
       - "docs/**"
       - ".github/workflows/indexnow.yml"
