@@ -300,6 +300,14 @@ h3 {
   height: auto;
 }
 
+.app-preview figcaption {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.45;
+  margin-top: 10px;
+  max-width: 52ch;
+}
+
 .analytics-consent {
   align-items: center;
   background: #111111;
@@ -1112,6 +1120,17 @@ footer a {
     height: 32px;
   }
 
+  nav {
+    flex-wrap: wrap;
+    gap: 10px 16px;
+    overflow-x: visible;
+    padding-bottom: 12px;
+  }
+
+  nav a {
+    font-size: 13px;
+  }
+
   h1 {
     font-size: 42px;
   }
@@ -1188,219 +1207,13 @@ footer a {
   }
 }
 
-/* Interactive Session Doctor Demo Widget */
-.interactive-demo {
-  margin: 50px 0;
-  padding: 32px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--paper);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
-}
-
-.demo-header {
-  margin-bottom: 24px;
-}
-
-.demo-tabs {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 16px;
-}
-
-.demo-tab {
-  padding: 8px 16px;
-  border: 1px solid var(--line);
-  border-radius: 4px;
-  background: var(--page);
-  color: var(--ink);
-  font-size: 14px;
-  font-weight: 700;
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-
-.demo-tab:hover {
-  border-color: var(--ink);
-}
-
-.demo-tab.active {
-  border-color: var(--ink);
-  background: var(--ink);
-  color: var(--page);
-}
-
-.demo-body {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
-  gap: 24px;
-}
-
-@media (max-width: 860px) {
-  .demo-body {
-    grid-template-columns: 1fr;
-  }
-}
-
-.demo-signals-card,
-.demo-doctor-card {
-  padding: 20px;
-  border: 1px solid var(--line);
-  border-radius: 6px;
-  background: var(--page);
-}
-
-.demo-card-title {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0 0 16px;
-  font-size: 14px;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  color: var(--muted);
-}
-
-.demo-badge {
-  display: inline-block;
-  padding: 3px 8px;
-  border-radius: 3px;
-  font-size: 11px;
-  font-weight: 800;
-  text-transform: uppercase;
-  background: #e6f7f3;
-  color: var(--accent);
-}
-
-.demo-badge.warning {
-  background: #fff4e5;
-  color: #d97706;
-}
-
-.demo-badge.critical {
-  background: #fef2f2;
-  color: #dc2626;
-}
-
-.demo-metrics-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 12px;
-  margin-bottom: 20px;
-}
-
-.demo-metric-box {
-  padding: 12px;
-  border: 1px solid var(--soft-line);
-  border-radius: 4px;
-  background: var(--paper);
-}
-
-.demo-metric-label {
-  display: block;
-  font-size: 12px;
-  font-weight: 600;
-  color: var(--muted);
-}
-
-.demo-metric-value {
-  font-size: 20px;
-  font-weight: 900;
-  color: var(--ink);
-  margin-top: 4px;
-}
-
-.demo-sparkline-title {
-  font-size: 12px;
-  font-weight: 700;
-  color: var(--muted);
-  margin-bottom: 8px;
-}
-
-.demo-sparkline {
-  display: flex;
-  align-items: flex-end;
-  gap: 4px;
-  height: 48px;
-  padding: 4px;
-  border-bottom: 1px solid var(--line);
-}
-
-.demo-bar {
-  flex: 1;
-  border-radius: 2px 2px 0 0;
-  background: var(--accent);
-  transition: height 0.3s ease, background 0.3s ease;
-}
-
-.demo-bar.spike {
-  background: #dc2626;
-}
-
-.demo-bar.warn {
-  background: #d97706;
-}
-
-.demo-doctor-message {
-  padding: 16px;
-  border-left: 4px solid var(--accent);
-  border-radius: 0 4px 4px 0;
-  background: var(--paper);
-  font-size: 14px;
-  line-height: 1.5;
-  margin-bottom: 20px;
-}
-
-.demo-doctor-message.spike-detected {
-  border-left-color: #dc2626;
-}
-
-.demo-controls {
-  display: flex;
-  gap: 12px;
-}
-
-.demo-btn {
-  padding: 10px 18px;
-  border: 1px solid var(--ink);
-  border-radius: 4px;
-  font-weight: 700;
-  font-size: 13px;
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-
-.demo-btn.primary {
-  background: var(--ink);
-  color: var(--page);
-}
-
-.demo-btn.primary:hover {
-  opacity: 0.88;
-}
-
-.demo-btn.secondary {
-  background: transparent;
-  color: var(--ink);
-}
-
-.demo-btn.secondary:hover {
-  background: var(--paper);
-}
-
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
   }
 
   .button,
-  .session-picker-grid a,
-  .demo-tab,
-  .demo-bar,
-  .demo-btn {
+  .session-picker-grid a {
     transition: none;
   }
 }
-

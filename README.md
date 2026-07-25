@@ -25,14 +25,14 @@ It does not modify games or promise artificial FPS gains. It helps players run a
 ## Start Here
 
 - [Download the latest DMG](https://github.com/victorbrandaao/CloudBoost/releases/latest)
-- [Visit the website](https://victorbrandaao.github.io/CloudBoost/)
-- [Leer el sitio en español](https://victorbrandaao.github.io/CloudBoost/es/)
-- [Read the Trust Center](https://victorbrandaao.github.io/CloudBoost/trust.html)
-- [See public results and measurement method](https://victorbrandaao.github.io/CloudBoost/results.html?utm_source=github&utm_medium=organic&utm_campaign=readme)
+- [Visit the website](https://getcloudboost.site/)
+- [Leer el sitio en español](https://getcloudboost.site/es/)
+- [Read the Trust Center](https://getcloudboost.site/trust.html)
+- [See public results and measurement method](https://getcloudboost.site/results.html?utm_source=github&utm_medium=organic&utm_campaign=readme)
 - [Join the Discord](https://discord.gg/kU5trxtRb)
 - [Get CloudBoost PRO](https://payhip.com/b/Jb0XO?utm_source=github&utm_medium=organic&utm_campaign=readme_pro)
 
-CloudBoost has passed **1,000 downloads across its distribution channels**. GitHub badges above update automatically for release assets.
+CloudBoost has passed **1,000 public release asset downloads**. GitHub badges above update automatically for release assets; this count is not presented as unique users.
 
 ## Measured League Of Legends Session
 
@@ -45,7 +45,7 @@ On July 20, a 42m 38s native League of Legends session was recorded with CloudBo
 - League detected in **100% of 180 app samples**
 - CloudBoost averaged **1.68% CPU** in the independent sample
 
-This was an observational PRO session, not a controlled before/after benchmark, so it is not presented as proof of an FPS increase or guaranteed latency reduction. [Inspect the screenshot, method and raw CSV](https://victorbrandaao.github.io/CloudBoost/results/league-of-legends-pro-session.html?utm_source=github&utm_medium=organic&utm_campaign=league_pro_result).
+This was an observational PRO session, not a controlled before/after benchmark, so it is not presented as proof of an FPS increase or guaranteed latency reduction. [Inspect the screenshot, method and raw CSV](https://getcloudboost.site/results/league-of-legends-pro-session.html?utm_source=github&utm_medium=organic&utm_campaign=league_pro_result).
 
 <p align="center">
   <img src="./assets/evidence/league-pro-proof-wide.png" alt="Measured CloudBoost PRO League of Legends session on macOS" width="760">
@@ -90,7 +90,7 @@ Free is a basic manual session monitor. PRO adds macOS session tuning, automatio
 | Kernel Watch and background throttle | No | Yes |
 | Priority Discord support | No | Yes |
 
-**CloudBoost PRO costs $10.** It is a one-time CloudBoost 4.x license, not a subscription.
+**CloudBoost PRO costs $10.** It is a one-time CloudBoost 4.x license for one Mac, not a subscription. If you replace the Mac, contact Discord support to request a license transfer.
 
 New purchases use [Payhip](https://payhip.com/b/Jb0XO?utm_source=github&utm_medium=organic&utm_campaign=readme_pro). Existing Gumroad and legacy PRO+ license keys remain supported in the app.
 
@@ -151,8 +151,8 @@ CloudBoost can measure macOS pressure, thermal state, power mode, background act
 ## Public Proof And Support
 
 - Covered by [MacMagazine](https://macmagazine.com.br/post/2026/06/01/cloudboost-otimiza-a-experiencia-de-jogos-na-nuvem-no-mac/)
-- Public user feedback is available on the [reviews page](https://victorbrandaao.github.io/CloudBoost/reviews.html)
-- Setup-specific evidence and the Session Lab method are documented on the [Results page](https://victorbrandaao.github.io/CloudBoost/results.html?utm_source=github&utm_medium=organic&utm_campaign=readme_results)
+- Public user feedback is available on the [reviews page](https://getcloudboost.site/reviews.html)
+- Setup-specific evidence and the Session Lab method are documented on the [Results page](https://getcloudboost.site/results.html?utm_source=github&utm_medium=organic&utm_campaign=readme_results)
 - The in-app `Review` button opens the public [GitHub review form](https://github.com/victorbrandaao/CloudBoost/issues/new?template=user-review.yml)
 - Free and PRO support is available on [Discord](https://discord.gg/kU5trxtRb)
 - Installation, diagnostics and license help are documented in [SUPPORT.md](SUPPORT.md)
@@ -168,13 +168,13 @@ This is one user's experience, not a benchmark or guaranteed result.
 
 The GitHub Pages site uses opt-in Google Analytics 4. It records aggregate visits and voluntary website actions only after consent, including downloads, PRO checkouts, Session Review interest, Discord support and public reviews.
 
-Anonymous Stats inside the app is a separate opt-in setting. License validation sends the entered key securely to the validation service and checkout provider; CloudBoost stores a SHA-256 hash rather than the raw Payhip key. The full disclosure is published at [Privacy](https://victorbrandaao.github.io/CloudBoost/privacy.html), with a [Spanish version](https://victorbrandaao.github.io/CloudBoost/es/privacidad.html).
+Anonymous Stats inside the app is a separate opt-in setting. License validation sends the entered key securely to the validation service and checkout provider; CloudBoost stores a SHA-256 hash rather than the raw Payhip key. The full disclosure is published at [Privacy](https://getcloudboost.site/privacy.html), with a [Spanish version](https://getcloudboost.site/es/privacidad.html).
 
 ## Security And Limits
 
 CloudBoost does not install kernel extensions, hidden daemons, permanent system patches, game injections, or anti-cheat bypasses. Protected temporary actions may ask for the macOS administrator password.
 
-The public repository contains releases, documentation, and binaries, not the full source code. Read the [Trust Center](https://victorbrandaao.github.io/CloudBoost/trust.html) for the exact behavior and permission model.
+The public repository contains releases, documentation, and binaries, not the full source code. Read the [Trust Center](https://getcloudboost.site/trust.html) for the exact behavior and permission model.
 
 Some diagnostic and HUD ideas are inspired by [Better xCloud](https://github.com/redphx/better-xcloud) by redphx. CloudBoost does not use Better xCloud code.
 

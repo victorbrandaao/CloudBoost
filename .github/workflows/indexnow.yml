@@ -24,9 +24,9 @@ jobs:
           set -euo pipefail
 
           key="72cf835d7bfa33f3f807f3d8e98ad3c4"
-          host="victorbrandaao.github.io"
-          key_location="https://${host}/CloudBoost/${key}.txt"
-          url_list="$(sed -n 's|.*<loc>\(https://victorbrandaao.github.io/CloudBoost/[^<]*\)</loc>.*|\1|p' docs/sitemap.xml | sort -u | jq -R . | jq -s .)"
+          host="getcloudboost.site"
+          key_location="https://${host}/${key}.txt"
+          url_list="$(sed -n 's|.*<loc>\(https://getcloudboost.site/[^<]*\)</loc>.*|\1|p' docs/sitemap.xml | sort -u | jq -R . | jq -s .)"
 
           payload="$(jq -n \
             --arg host "$host" \

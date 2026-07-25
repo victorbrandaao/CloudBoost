@@ -46,6 +46,6 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-Sitemap: https://victorbrandaao.github.io/CloudBoost/sitemap.xml
-Sitemap: https://victorbrandaao.github.io/CloudBoost/sitemap.txt
-LLMS: https://victorbrandaao.github.io/CloudBoost/llms.txt
+Sitemap: https://getcloudboost.site/sitemap.xml
+Sitemap: https://getcloudboost.site/sitemap.txt
+LLMS: https://getcloudboost.site/llms.txt

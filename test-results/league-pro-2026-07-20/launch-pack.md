@@ -3,7 +3,7 @@
 ## Links
 
 - Release: https://github.com/victorbrandaao/CloudBoost/releases/tag/v4.3.1
-- Measured session: https://victorbrandaao.github.io/CloudBoost/results/league-of-legends-pro-session.html
+- Measured session: https://getcloudboost.site/results/league-of-legends-pro-session.html
 - PRO: https://payhip.com/b/Jb0XO
 - Discord: https://discord.gg/kU5trxtRb
 
@@ -13,7 +13,7 @@ Use `league-pro-proof-wide.png`.
 
 CloudBoost 4.3.1 is out. I published a real 42-minute League session: 92/100, 25 ms route p95, 8 ms max jitter and 0% loss. The method and raw CSV are public. One observed session, not an FPS claim.
 
-https://victorbrandaao.github.io/CloudBoost/results/league-of-legends-pro-session.html
+https://getcloudboost.site/results/league-of-legends-pro-session.html
 
 ## Discord
 
@@ -33,7 +33,7 @@ I also published the first inspectable League session: 42m 38s, 92/100, 25 ms ro
 
 Release: https://github.com/victorbrandaao/CloudBoost/releases/tag/v4.3.1
 
-Method and raw data: https://victorbrandaao.github.io/CloudBoost/results/league-of-legends-pro-session.html
+Method and raw data: https://getcloudboost.site/results/league-of-legends-pro-session.html
 
 Setup, Free and PRO support: https://discord.gg/kU5trxtRb
 
@@ -59,7 +59,7 @@ This is not presented as proof of an FPS increase. There was no matching control
 That distinction matters. CloudBoost is becoming less about a generic “booster” promise and more about repeatable session evidence, useful diagnostics and reversible macOS tuning.
 
 The full result is public:
-https://victorbrandaao.github.io/CloudBoost/results/league-of-legends-pro-session.html
+https://getcloudboost.site/results/league-of-legends-pro-session.html
 
 #macOS #SoftwareEngineering #IndieDev #Gaming #Swift
 
@@ -75,4 +75,4 @@ Use `league-pro-proof-square.png`.
 
 CloudBoost 4.3.1 ya está disponible. Publiqué una sesión real de League of Legends de 42 minutos: puntuación 92/100, p95 de ruta de 25 ms, jitter máximo de 8 ms y 0% de pérdida. El método y el CSV están abiertos. Es una observación, no una promesa de más FPS.
 
-https://victorbrandaao.github.io/CloudBoost/results/league-of-legends-pro-session.html
+https://getcloudboost.site/results/league-of-legends-pro-session.html

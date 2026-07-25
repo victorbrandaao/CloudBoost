@@ -6,7 +6,7 @@ cask "cloudboost" do
       verified: "github.com/victorbrandaao/CloudBoost/"
   name "CloudBoost"
   desc "macOS menu bar app for cloud and Mac gaming session diagnostics"
-  homepage "https://victorbrandaao.github.io/CloudBoost/"
+  homepage "https://getcloudboost.site/"
 
   depends_on macos: :monterey
   app "CloudBoost.app"

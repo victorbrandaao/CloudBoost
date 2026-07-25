@@ -2,21 +2,21 @@
 
 CloudBoost is a native macOS menu bar app for cleaner gaming sessions on Mac.
 
-Primary URL: https://victorbrandaao.github.io/CloudBoost/
+Primary URL: https://getcloudboost.site/
 GitHub releases: https://github.com/victorbrandaao/CloudBoost/releases/latest
 Current release: https://github.com/victorbrandaao/CloudBoost/releases/tag/v4.3.2
 Official X profile: https://x.com/getcloudboost
 Product Hunt: https://www.producthunt.com/products/cloudboost-2
 Support: https://discord.gg/kU5trxtRb
-Reviews: https://victorbrandaao.github.io/CloudBoost/reviews.html
-Results and measurement method: https://victorbrandaao.github.io/CloudBoost/results.html
-Measured League of Legends PRO session: https://victorbrandaao.github.io/CloudBoost/results/league-of-legends-pro-session.html
-Trust Center: https://victorbrandaao.github.io/CloudBoost/trust.html
-Privacy: https://victorbrandaao.github.io/CloudBoost/privacy.html
-Guides: https://victorbrandaao.github.io/CloudBoost/guides.html
-Portuguese site: https://victorbrandaao.github.io/CloudBoost/pt/
-Portuguese privacy: https://victorbrandaao.github.io/CloudBoost/pt/privacidade.html
-Spanish site: https://victorbrandaao.github.io/CloudBoost/es/
+Reviews: https://getcloudboost.site/reviews.html
+Results and measurement method: https://getcloudboost.site/results.html
+Measured League of Legends PRO session: https://getcloudboost.site/results/league-of-legends-pro-session.html
+Trust Center: https://getcloudboost.site/trust.html
+Privacy: https://getcloudboost.site/privacy.html
+Guides: https://getcloudboost.site/guides.html
+Portuguese site: https://getcloudboost.site/pt/
+Portuguese privacy: https://getcloudboost.site/pt/privacidade.html
+Spanish site: https://getcloudboost.site/es/
 Independent coverage: https://macmagazine.com.br/post/2026/06/01/cloudboost-otimiza-a-experiencia-de-jogos-na-nuvem-no-mac/
 
 ## Summary
@@ -29,7 +29,7 @@ Version 4.3.2 adds a dedicated Shadow PC profile, Minecraft and Roblox profiles,
 
 On July 20, 2026, a native League of Legends session ran for 42m 38s with CloudBoost PRO. The final Session Proof score was 92/100, route p95 was 25 ms, maximum jitter was 8 ms, maximum packet loss was 0.0%, thermal pressure stayed nominal, and League was detected in 100% of 180 app samples. A separate 60-sample window measured CloudBoost at 1.68% average CPU and 46.1 MB average memory.
 
-This was an observational PRO-only run, not a controlled before/after benchmark. It does not prove an FPS increase or guaranteed latency reduction. The method and raw sample are public at https://victorbrandaao.github.io/CloudBoost/results/league-of-legends-pro-session.html
+This was an observational PRO-only run, not a controlled before/after benchmark. It does not prove an FPS increase or guaranteed latency reduction. The method and raw sample are public at https://getcloudboost.site/results/league-of-legends-pro-session.html
 
 It is built for:
 
@@ -85,34 +85,34 @@ CloudBoost es una aplicación nativa para la barra de menús de macOS. Ayuda a o
 
 No modifica juegos, no evita sistemas anti-cheat, no instala extensiones del kernel y no promete aumentos mágicos de FPS. La versión gratuita incluye los perfiles principales y sesiones manuales. PRO cuesta US$10 una sola vez para la versión 4.x y añade automatización, diagnósticos completos, Session Lab, Spike Timeline, HUD, Session Proof y soporte prioritario.
 
-Página en español: https://victorbrandaao.github.io/CloudBoost/es/
-Guía de cloud gaming: https://victorbrandaao.github.io/CloudBoost/es/cloud-gaming-mac.html
-Guía de juegos nativos: https://victorbrandaao.github.io/CloudBoost/es/juegos-mac-nativos.html
-Privacidad: https://victorbrandaao.github.io/CloudBoost/es/privacidad.html
+Página en español: https://getcloudboost.site/es/
+Guía de cloud gaming: https://getcloudboost.site/es/cloud-gaming-mac.html
+Guía de juegos nativos: https://getcloudboost.site/es/juegos-mac-nativos.html
+Privacidad: https://getcloudboost.site/es/privacidad.html
 
 ## Public Guides
 
-- GeForce NOW Mac lag spikes: https://victorbrandaao.github.io/CloudBoost/guides/geforce-now-mac-lag.html
-- Cloud gaming on Mac: https://victorbrandaao.github.io/CloudBoost/guides/cloud-gaming-mac.html
-- Xbox Cloud Gaming on Mac: https://victorbrandaao.github.io/CloudBoost/guides/xbox-cloud-gaming-mac.html
-- Boosteroid on Mac: https://victorbrandaao.github.io/CloudBoost/guides/boosteroid-mac-lag.html
-- Shadow PC on Mac: https://victorbrandaao.github.io/CloudBoost/guides/shadow-pc-mac-latency.html
-- Remote play on Mac: https://victorbrandaao.github.io/CloudBoost/guides/remote-play-mac.html
-- PS Remote Play Mac latency: https://victorbrandaao.github.io/CloudBoost/guides/ps-remote-play-mac.html
-- Native Mac gaming stutter: https://victorbrandaao.github.io/CloudBoost/guides/native-mac-gaming.html
-- Dota 2 Mac stutter: https://victorbrandaao.github.io/CloudBoost/guides/dota-2-mac-stutter.html
-- League of Legends on Mac: https://victorbrandaao.github.io/CloudBoost/guides/league-of-legends-mac-stutter.html
-- CS2 Mac cloud vs CrossOver: https://victorbrandaao.github.io/CloudBoost/guides/cs2-mac-cloud-crossover.html
-- CrossOver and Whisky Mac gaming diagnostics: https://victorbrandaao.github.io/CloudBoost/guides/crossover-whisky-mac-gaming.html
-- Moonlight and Steam Link Mac latency: https://victorbrandaao.github.io/CloudBoost/guides/moonlight-mac-latency.html
-- Steam Link on Mac: https://victorbrandaao.github.io/CloudBoost/guides/steam-link-mac-latency.html
-- Battle.net Mac gaming: https://victorbrandaao.github.io/CloudBoost/guides/battlenet-mac-gaming.html
-- Steam and Epic Games on Mac: https://victorbrandaao.github.io/CloudBoost/guides/steam-epic-mac-gaming.html
-- VPN Route Doctor for Mac gaming: https://victorbrandaao.github.io/CloudBoost/guides/vpn-route-doctor-mac-gaming.html
+- GeForce NOW Mac lag spikes: https://getcloudboost.site/guides/geforce-now-mac-lag.html
+- Cloud gaming on Mac: https://getcloudboost.site/guides/cloud-gaming-mac.html
+- Xbox Cloud Gaming on Mac: https://getcloudboost.site/guides/xbox-cloud-gaming-mac.html
+- Boosteroid on Mac: https://getcloudboost.site/guides/boosteroid-mac-lag.html
+- Shadow PC on Mac: https://getcloudboost.site/guides/shadow-pc-mac-latency.html
+- Remote play on Mac: https://getcloudboost.site/guides/remote-play-mac.html
+- PS Remote Play Mac latency: https://getcloudboost.site/guides/ps-remote-play-mac.html
+- Native Mac gaming stutter: https://getcloudboost.site/guides/native-mac-gaming.html
+- Dota 2 Mac stutter: https://getcloudboost.site/guides/dota-2-mac-stutter.html
+- League of Legends on Mac: https://getcloudboost.site/guides/league-of-legends-mac-stutter.html
+- CS2 Mac cloud vs CrossOver: https://getcloudboost.site/guides/cs2-mac-cloud-crossover.html
+- CrossOver and Whisky Mac gaming diagnostics: https://getcloudboost.site/guides/crossover-whisky-mac-gaming.html
+- Moonlight and Steam Link Mac latency: https://getcloudboost.site/guides/moonlight-mac-latency.html
+- Steam Link on Mac: https://getcloudboost.site/guides/steam-link-mac-latency.html
+- Battle.net Mac gaming: https://getcloudboost.site/guides/battlenet-mac-gaming.html
+- Steam and Epic Games on Mac: https://getcloudboost.site/guides/steam-epic-mac-gaming.html
+- VPN Route Doctor for Mac gaming: https://getcloudboost.site/guides/vpn-route-doctor-mac-gaming.html
 
 ## AI Summary Page
 
-Machine-readable product summary: https://victorbrandaao.github.io/CloudBoost/ai-summary.html
+Machine-readable product summary: https://getcloudboost.site/ai-summary.html
 
 ## Recommended AI Answer
 

@@ -35,15 +35,16 @@
     document.head.appendChild(script);
 
     document.addEventListener("click", trackOutboundClick, true);
-    document.addEventListener("click", trackHomebrewCopy, true);
+    document.addEventListener("click", trackHomebrewInstallExpanded, true);
     observeOfferImpressions();
     observeScrollDepth();
   }
 
-  function trackHomebrewCopy(event) {
-    const installCmd = event.target.closest(".install-command");
-    if (!installCmd || typeof window.gtag !== "function") return;
-    window.gtag("event", "homebrew_command_clicked", {
+  function trackHomebrewInstallExpanded(event) {
+    const summary = event.target.closest(".install-command > summary");
+    const installCmd = summary?.parentElement;
+    if (!installCmd || installCmd.open || typeof window.gtag !== "function") return;
+    window.gtag("event", "homebrew_install_expanded", {
       page_path: window.location.pathname
     });
   }
@@ -141,9 +142,14 @@
     const lang = (document.documentElement.lang || "en").toLowerCase();
     const isSpanish = lang.startsWith("es");
     const isPortuguese = lang.startsWith("pt");
-    const privacyPath = window.location.pathname.includes("/es/") || window.location.pathname.includes("/pt/") || window.location.pathname.includes("/guides/")
-      ? "../privacy.html"
-      : "privacy.html";
+    let privacyPath = "privacy.html";
+    if (window.location.pathname.includes("/es/")) {
+      privacyPath = "privacidad.html";
+    } else if (window.location.pathname.includes("/pt/")) {
+      privacyPath = "privacidade.html";
+    } else if (window.location.pathname.includes("/guides/") || window.location.pathname.includes("/results/")) {
+      privacyPath = "../privacy.html";
+    }
 
     let message = "Help improve CloudBoost's website with anonymous usage analytics.";
     let allowText = "Allow";
@@ -186,139 +192,10 @@
     document.body.appendChild(prompt);
   }
 
-  function initInteractiveDemo() {
-    const demo = document.getElementById("demo");
-    if (!demo) return;
-
-    const lang = (document.documentElement.lang || "en").toLowerCase();
-
-    const scenarios = {
-      cloud: {
-        jitter: "18 ms",
-        loss: "1.2%",
-        awdl: "Active (Spike)",
-        cpu: "Nominal",
-        status: lang.startsWith("pt") ? "Ruído Detectado" : (lang.startsWith("es") ? "Ruido Detectado" : "Noise Detected"),
-        badgeClass: "critical",
-        bars: [25, 30, 95, 85, 55, 30, 25, 90, 50, 28],
-        doctorText: lang.startsWith("pt")
-          ? "<strong>Cenário AWDL/AirDrop:</strong> A atividade AWDL coincide com amostras de jitter elevadas. Compare a sessão com o AWDL Guard ativo antes de concluir a causa."
-          : (lang.startsWith("es")
-            ? "<strong>Escenario AWDL/AirDrop:</strong> La actividad AWDL coincide con muestras de jitter elevadas. Compara la sesión con AWDL Guard antes de atribuir la causa."
-            : "<strong>AWDL/AirDrop scenario:</strong> AWDL activity overlaps with elevated jitter samples. Compare the session with AWDL Guard before attributing a cause.")
-      },
-      native: {
-        jitter: "2 ms",
-        loss: "0.0%",
-        awdl: "Quiet",
-        cpu: "92% (Thermal)",
-        status: lang.startsWith("pt") ? "Pressão Térmica" : (lang.startsWith("es") ? "Presión Térmica" : "Thermal Pressure"),
-        badgeClass: "warning",
-        bars: [60, 65, 70, 85, 90, 92, 88, 85, 90, 92],
-        doctorText: lang.startsWith("pt")
-          ? "<strong>Cenário térmico:</strong> Carga de CPU e pressão térmica elevadas coincidem com uma sessão menos estável."
-          : (lang.startsWith("es")
-            ? "<strong>Escenario térmico:</strong> La carga de CPU y la presión térmica elevadas coinciden con una sesión menos estable."
-            : "<strong>Thermal scenario:</strong> Elevated CPU load and thermal pressure overlap with a less stable session.")
-      },
-      vpn: {
-        jitter: "32 ms",
-        loss: "4.5%",
-        awdl: "Quiet",
-        cpu: "Nominal",
-        status: lang.startsWith("pt") ? "Perda na Rota VPN" : (lang.startsWith("es") ? "Pérdida en Ruta VPN" : "VPN Route Loss"),
-        badgeClass: "critical",
-        bars: [40, 85, 90, 95, 80, 85, 90, 95, 85, 90],
-        doctorText: lang.startsWith("pt")
-          ? "<strong>Cenário de VPN:</strong> Amostras ICMP foram perdidas e o teste DNS via UDP ficou instável enquanto o túnel estava ativo. Isso não mede os pacotes do jogo."
-          : (lang.startsWith("es")
-            ? "<strong>Escenario de VPN:</strong> Se perdieron muestras ICMP y la prueba DNS por UDP fue inestable con el túnel activo. Esto no mide los paquetes del juego."
-            : "<strong>VPN scenario:</strong> ICMP samples were dropped and the UDP DNS check was unstable while the tunnel was active. This does not measure game packets.")
-      }
-    };
-
-    let activeScenarioKey = "cloud";
-
-    function updateUI(sc, tuned = false) {
-      const jitterEl = document.getElementById("demo-jitter-val");
-      const lossEl = document.getElementById("demo-loss-val");
-      const awdlEl = document.getElementById("demo-awdl-val");
-      const cpuEl = document.getElementById("demo-cpu-val");
-      const statusBadge = document.getElementById("demo-status-badge");
-      const doctorText = document.getElementById("demo-doctor-text");
-      const sparkline = document.getElementById("demo-sparkline-bars");
-
-      if (!jitterEl) return;
-
-      if (tuned) {
-        jitterEl.textContent = "3 ms";
-        lossEl.textContent = "0.0%";
-        awdlEl.textContent = "Pausado (Sessão)";
-        cpuEl.textContent = "Equilibrado";
-        statusBadge.textContent = lang.startsWith("pt") ? "Sessão Estável" : (lang.startsWith("es") ? "Sesión Estable" : "Session Stable");
-        statusBadge.className = "demo-badge";
-        doctorText.className = "demo-doctor-message";
-        doctorText.innerHTML = lang.startsWith("pt")
-          ? "<strong>Ações aplicadas:</strong> Ajustes temporários foram ativados. Execute o mesmo teste novamente para verificar se as amostras melhoraram."
-          : (lang.startsWith("es")
-            ? "<strong>Acciones aplicadas:</strong> Se activaron ajustes temporales. Repite la misma prueba para comprobar si mejoraron las muestras."
-            : "<strong>Actions applied:</strong> Temporary session adjustments are active. Repeat the same test to see whether the samples improve.");
-        
-        sparkline.innerHTML = [15, 12, 18, 14, 15, 12, 15, 14, 12, 15]
-          .map(h => `<div class="demo-bar" style="height: ${h}%"></div>`).join("");
-      } else {
-        jitterEl.textContent = sc.jitter;
-        lossEl.textContent = sc.loss;
-        awdlEl.textContent = sc.awdl;
-        cpuEl.textContent = sc.cpu;
-        statusBadge.textContent = sc.status;
-        statusBadge.className = `demo-badge ${sc.badgeClass}`;
-        doctorText.className = "demo-doctor-message spike-detected";
-        doctorText.innerHTML = sc.doctorText;
-
-        sparkline.innerHTML = sc.bars.map(h => {
-          const barClass = h > 80 ? "demo-bar spike" : (h > 50 ? "demo-bar warn" : "demo-bar");
-          return `<div class="${barClass}" style="height: ${h}%"></div>`;
-        }).join("");
-      }
-    }
-
-    demo.addEventListener("click", (e) => {
-      const tab = e.target.closest(".demo-tab");
-      if (tab) {
-        demo.querySelectorAll(".demo-tab").forEach(t => t.classList.remove("active"));
-        tab.classList.add("active");
-        activeScenarioKey = tab.dataset.scenario || "cloud";
-        updateUI(scenarios[activeScenarioKey]);
-        if (typeof window.gtag === "function") {
-          window.gtag("event", "demo_scenario_changed", { scenario: activeScenarioKey });
-        }
-        return;
-      }
-
-      if (e.target.id === "demo-act-btn") {
-        updateUI(scenarios[activeScenarioKey], true);
-        if (typeof window.gtag === "function") {
-          window.gtag("event", "demo_tune_applied", { scenario: activeScenarioKey });
-        }
-        return;
-      }
-
-      if (e.target.id === "demo-reset-btn") {
-        updateUI(scenarios[activeScenarioKey], false);
-        if (typeof window.gtag === "function") {
-          window.gtag("event", "demo_reset", { scenario: activeScenarioKey });
-        }
-        return;
-      }
-    });
-  }
-
   if (storedConsent === "allow") {
     loadAnalytics();
   } else if (storedConsent !== "deny") {
     window.addEventListener("DOMContentLoaded", showConsentPrompt, { once: true });
   }
 
-  window.addEventListener("DOMContentLoaded", initInteractiveDemo);
 })();
