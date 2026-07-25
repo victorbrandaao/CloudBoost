@@ -6,10 +6,10 @@
     <title>Privacy - CloudBoost</title>
     <meta name="description" content="How CloudBoost handles website analytics, optional app telemetry and license validation data.">
     <meta name="robots" content="index,follow">
-    <link rel="canonical" href="https://victorbrandaao.github.io/CloudBoost/privacy.html">
-    <link rel="alternate" hreflang="en" href="https://victorbrandaao.github.io/CloudBoost/privacy.html">
-    <link rel="alternate" hreflang="es" href="https://victorbrandaao.github.io/CloudBoost/es/privacidad.html">
-    <link rel="alternate" hreflang="x-default" href="https://victorbrandaao.github.io/CloudBoost/privacy.html">
+    <link rel="canonical" href="https://getcloudboost.site/privacy.html">
+    <link rel="alternate" hreflang="en" href="https://getcloudboost.site/privacy.html">
+    <link rel="alternate" hreflang="es" href="https://getcloudboost.site/es/privacidad.html">
+    <link rel="alternate" hreflang="x-default" href="https://getcloudboost.site/privacy.html">
     <link rel="stylesheet" href="styles.css">
     <script src="analytics-config.js"></script>
     <script src="analytics.js" defer></script>
@@ -35,7 +35,7 @@
         <p>This telemetry does not include the license key, personal files, browser history, hostnames, game contents or a Session Proof report. You can turn Anonymous Stats off in the app at any time.</p>
 
         <h2>License validation</h2>
-        <p>License validation is required only when activating or periodically checking PRO access. The key you enter is sent over HTTPS to the CloudBoost validation service and Payhip. The database stores a SHA-256 hash of the normalized key rather than the raw key, along with the provider, product entitlement, status, Payhip customer email when returned, an app-specific device identifier, activation and validation timestamps, and activation limits.</p>
+        <p>License validation is required only when activating or periodically checking PRO access. The key you enter is sent over HTTPS to the CloudBoost validation service and Payhip. The database stores a SHA-256 hash of the normalized key rather than the raw key, along with the provider, product entitlement, status, Payhip customer email when returned, an app-specific device identifier, and activation and validation timestamps. New Payhip licenses are limited to one Mac; revalidation on that same Mac remains allowed, and transfers are handled through support.</p>
         <p>Existing Gumroad licenses continue to use the legacy validation path supported by the app. Payment details are handled by the checkout provider and are not stored by CloudBoost.</p>
 
         <h2>Services and control</h2>

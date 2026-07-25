@@ -6,13 +6,13 @@ Use these messages as conversation starters, not repeated advertisements. Link t
 
 CloudBoost now records real threshold spikes during a Mac gaming session instead of relying only on average ping. The latest build separates local Mac pressure, Wi-Fi/AWDL noise, VPN or UDP problems, and route issues, then shows the next test to run. Core profiles remain free; PRO is $10 once.
 
-Website: https://victorbrandaao.github.io/CloudBoost/
+Website: https://getcloudboost.site/
 
 ## Actualización en español
 
 CloudBoost ahora registra picos reales durante una sesión de juego en Mac, en lugar de mostrar solo el ping medio. La versión actual ayuda a separar presión local del Mac, ruido de Wi-Fi/AWDL, problemas de VPN o UDP y latencia de ruta. Los perfiles principales siguen siendo gratis; PRO cuesta US$10 una sola vez.
 
-Sitio en español: https://victorbrandaao.github.io/CloudBoost/es/
+Sitio en español: https://getcloudboost.site/es/
 
 ## Spanish support reply
 
