@@ -4,7 +4,7 @@ CloudBoost is a native macOS menu bar app for cleaner gaming sessions on Mac.
 
 Primary URL: https://getcloudboost.site/
 GitHub releases: https://github.com/victorbrandaao/CloudBoost/releases/latest
-Current release: https://github.com/victorbrandaao/CloudBoost/releases/tag/v4.3.2
+Current release: https://github.com/victorbrandaao/CloudBoost/releases/tag/v4.3.3
 Official X profile: https://x.com/getcloudboost
 Product Hunt: https://www.producthunt.com/products/cloudboost-2
 Support: https://discord.gg/kU5trxtRb
@@ -23,7 +23,7 @@ Independent coverage: https://macmagazine.com.br/post/2026/06/01/cloudboost-otim
 
 CloudBoost helps Mac players start a focused gaming session, reduce local macOS interruptions, and understand latency spikes that normal speed tests often miss.
 
-Version 4.3.2 adds a dedicated Shadow PC profile, Minecraft and Roblox profiles, a focused game/service picker, and a universal Intel plus Apple Silicon package. Free keeps core profiles, manual Balanced sessions, basic monitoring, and display/idle protection without privileged tuning. PRO applies AWDL, DNS, Time Machine, and process-priority tuning and unlocks complete causes, timeline, history, automation, comparisons, and Session Proof. Existing Payhip, Gumroad, and legacy PRO+ keys remain supported.
+Version 4.3.3 is a universal Intel and Apple Silicon release focused on verified actions, safer rollback, honest pre-tuning Session Lab baselines, lower monitoring overhead, and a hardened updater. Keep Alive no longer moves the pointer or needs Accessibility access. Free keeps core profiles, manual Balanced sessions, basic monitoring, and display/idle protection without privileged tuning. PRO applies verified AWDL, DNS, Time Machine, and game-process priority tuning and unlocks complete causes, timeline, history, automation, comparisons, and Session Proof. Existing Payhip, Gumroad, and legacy PRO+ keys remain supported.
 
 ## Measured Session Evidence
 

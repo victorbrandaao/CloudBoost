@@ -9,8 +9,8 @@ CloudBoost is a native macOS menu bar app that shows what is happening around a 
 It does not modify games or promise artificial FPS gains. It helps players run a quieter Mac session, understand a problem, and leave with a useful next step.
 
 <p align="center">
-  <a href="https://github.com/victorbrandaao/CloudBoost/releases/tag/v4.3.2"><img src="https://img.shields.io/github/v/release/victorbrandaao/CloudBoost?label=release&amp;style=flat-square&amp;color=00a884&amp;cacheSeconds=300" alt="CloudBoost v4.3.2"></a>
-  <a href="https://github.com/victorbrandaao/CloudBoost/releases/tag/v4.3.2"><img src="https://img.shields.io/github/downloads/victorbrandaao/CloudBoost/v4.3.2/total?label=v4.3.2%20downloads&amp;style=flat-square&amp;color=111111&amp;cacheSeconds=300" alt="CloudBoost v4.3.2 downloads"></a>
+  <a href="https://github.com/victorbrandaao/CloudBoost/releases/tag/v4.3.3"><img src="https://img.shields.io/github/v/release/victorbrandaao/CloudBoost?label=release&amp;style=flat-square&amp;color=00a884&amp;cacheSeconds=300" alt="CloudBoost v4.3.3"></a>
+  <a href="https://github.com/victorbrandaao/CloudBoost/releases/tag/v4.3.3"><img src="https://img.shields.io/github/downloads/victorbrandaao/CloudBoost/v4.3.3/total?label=v4.3.3%20downloads&amp;style=flat-square&amp;color=111111&amp;cacheSeconds=300" alt="CloudBoost v4.3.3 downloads"></a>
   <a href="https://github.com/victorbrandaao/CloudBoost/releases"><img src="https://img.shields.io/github/downloads/victorbrandaao/CloudBoost/total?label=all%20downloads&amp;style=flat-square&amp;color=111111&amp;cacheSeconds=300" alt="All CloudBoost GitHub release downloads"></a>
   <img src="https://img.shields.io/badge/macOS-12%2B-111111?style=flat-square" alt="macOS 12 or later">
   <img src="https://img.shields.io/badge/Mac-Intel%20%2B%20Apple%20Silicon-111111?style=flat-square&amp;logo=apple" alt="Intel and Apple Silicon supported">
@@ -130,17 +130,18 @@ If macOS reports that the independently distributed app is damaged, clear its qu
 xattr -cr /Applications/"CloudBoost.app"
 ```
 
-## Current Release: 4.3.2
+## Current Release: 4.3.3
 
-- Session Proof now records game-process detection, route p95, maximum jitter, packet loss, thermal state and threshold events
-- PRO compares the current run with the previous saved run for the same profile
-- the updater verifies the expected app identity, version, executable and SHA256 before replacing CloudBoost
-- network probes run concurrently and reuse one process snapshot to reduce CloudBoost overhead during play
-- League of Legends process detection now covers the native client and game process more reliably
-- route-sample and UDP DNS wording is clearer when a VPN, firewall or network policy blocks a probe
-- existing Payhip, Gumroad and legacy PRO+ licenses keep their access
+- Session actions are listed as completed only after CloudBoost verifies their result
+- Session Lab captures its baseline before temporary tuning, producing a more honest before/after view
+- game priority targets the game rather than its launcher, uses a moderate value, and restores the original priority automatically
+- Keep Alive no longer moves the pointer or needs Accessibility access
+- route monitoring runs less often and uses fewer probes to reduce overhead during play
+- the updater hashes files in chunks and runs its installer from a root-owned location
+- mouse, AWDL, Time Machine, network and process-priority state have safer rollback paths
+- Payhip validation and one-Mac activation handling are aligned with the production database
 
-CloudBoost 4.3.2 supports Intel and Apple Silicon Macs running macOS 12 Monterey or later. It adds a dedicated Shadow PC profile, Minecraft and Roblox profiles, and a more focused game/service picker.
+CloudBoost 4.3.3 is a universal build for Intel and Apple Silicon Macs running macOS 12 Monterey or later. Existing Payhip, Gumroad and legacy PRO+ licenses keep their access.
 
 See the complete notes and checksums on the [release page](https://github.com/victorbrandaao/CloudBoost/releases/latest).
 

@@ -70,14 +70,14 @@
             "operatingSystem": "macOS 12 or later on Intel or Apple Silicon",
             "applicationCategory": "UtilitiesApplication",
             "applicationSubCategory": "Mac gaming session diagnostics",
-            "softwareVersion": "4.3.2",
-            "dateModified": "2026-07-20",
+            "softwareVersion": "4.3.3",
+            "dateModified": "2026-07-26",
             "description": "CloudBoost is a native macOS menu bar app for gaming session diagnostics and temporary local tuning across cloud gaming, remote play, native Mac games and compatibility-layer sessions.",
             "featureList": "Latency, jitter and packet-loss monitoring; VPN and UDP diagnostics; Wi-Fi and AWDL context; background and thermal pressure; Session Doctor; Session Proof; gaming profiles",
             "image": "https://getcloudboost.site/assets/cloudboost-social-v2.png",
             "screenshot": "https://getcloudboost.site/assets/evidence/league-pro-proof-wide.png",
             "downloadUrl": "https://github.com/victorbrandaao/CloudBoost/releases/latest",
-            "releaseNotes": "https://github.com/victorbrandaao/CloudBoost/releases/tag/v4.3.2",
+            "releaseNotes": "https://github.com/victorbrandaao/CloudBoost/releases/tag/v4.3.3",
             "softwareHelp": "https://discord.gg/kU5trxtRb",
             "author": {"@id": "https://getcloudboost.site/#founder"},
             "publisher": {"@id": "https://getcloudboost.site/#organization"},
@@ -205,7 +205,7 @@
       <main id="main-content">
         <section class="hero" id="download">
           <div class="hero-copy">
-            <p class="eyebrow">Native macOS menu bar utility · Version 4.3.2</p>
+            <p class="eyebrow">Native macOS menu bar utility · Version 4.3.3</p>
             <h1>CloudBoost for steadier gaming on Mac.</h1>
             <p class="lead">See why a game feels unstable when an ordinary speed test says everything is fine.</p>
             <p class="sublead">CloudBoost watches latency spikes, jitter, packet loss, VPN routing, Wi-Fi/AWDL noise, background work, heat and local CPU pressure without modifying the game.</p>
@@ -233,7 +233,7 @@
         <section class="proof-strip" aria-label="CloudBoost milestones">
           <div><strong>1,000+</strong><span>public release asset downloads</span></div>
           <div><strong>42m 38s</strong><span>measured League session</span></div>
-          <div><strong>v4.3.2</strong><span>current public release</span></div>
+          <div><strong>v4.3.3</strong><span>current public release</span></div>
           <div><strong>Open</strong><span>public support and results</span></div>
         </section>
 
@@ -400,13 +400,13 @@
 
         <section class="section split">
           <div>
-            <p class="eyebrow">Version 4.3.2</p>
-            <h2>Session evidence you can compare.</h2>
+            <p class="eyebrow">Version 4.3.3</p>
+            <h2>Safer sessions, clearer proof.</h2>
           </div>
           <div class="copy">
-            <p>Session Proof now records game-process detection, route p95, maximum jitter, packet loss, thermal state and threshold events.</p>
-            <p>PRO compares the current result with the previous saved run for the same profile, making repeated tests easier to interpret.</p>
-            <p>The updater now verifies app identity, version, executable and SHA256 before replacement. Network and process sampling also use less duplicated work during play.</p>
+            <p>CloudBoost now reports a session action as completed only after verifying it. Session Lab also captures its baseline before temporary tuning starts.</p>
+            <p>Game priority targets the running game instead of launchers and restores the original value automatically. Keep Alive no longer moves the pointer or requests Accessibility access.</p>
+            <p>Network sampling uses fewer probes, rollback covers more temporary state, and the updater runs its verified installer from a root-owned location.</p>
             <p>Existing Payhip, Gumroad and legacy PRO+ license keys remain supported.</p>
           </div>
         </section>
