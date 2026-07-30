@@ -119,6 +119,29 @@ footer a:hover,
   opacity: 0.62;
 }
 
+.update-notice {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  gap: 14px;
+  align-items: center;
+  margin-top: 22px;
+  padding: 13px 16px;
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--accent);
+  background: var(--paper);
+  font-size: 14px;
+}
+
+.update-notice span {
+  color: var(--muted);
+}
+
+.update-notice a {
+  font-weight: 800;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .hero {
   display: grid;
   grid-template-columns: minmax(0, 0.9fr) minmax(420px, 1fr);
@@ -1131,6 +1154,11 @@ footer a {
     font-size: 13px;
   }
 
+  .update-notice {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+
   h1 {
     font-size: 42px;
   }
@@ -1245,7 +1273,8 @@ body {
 }
 
 .home-page .site-header,
-.home-page main > section {
+.home-page main > section,
+.home-page main > .update-notice {
   width: min(1160px, calc(100% - 48px));
   margin-right: auto;
   margin-left: auto;

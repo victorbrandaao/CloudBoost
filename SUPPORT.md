@@ -16,3 +16,16 @@
 - a Session Proof report when available.
 
 Never post a license key, payment receipt, email address or other personal information in a public issue. Send license-specific information privately through Discord support.
+
+## Update Verification Recovery
+
+CloudBoost verifies both the SHA256 checksum and a detached publisher signature before installing an update.
+
+If version 4.3.2 or 4.3.3 reports that it cannot verify the publisher:
+
+1. Download the latest DMG from the [official release page](https://github.com/victorbrandaao/CloudBoost/releases/latest).
+2. Quit CloudBoost.
+3. Open the DMG and drag CloudBoost to Applications, replacing the existing copy.
+4. Open CloudBoost and confirm the new version under `Info`.
+
+This one-time manual update preserves local settings and PRO activation. Do not download CloudBoost from third-party mirrors.
