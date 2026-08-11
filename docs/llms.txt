@@ -4,7 +4,7 @@ CloudBoost is a native macOS menu bar app for cleaner gaming sessions on Mac.
 
 Primary URL: https://getcloudboost.site/
 GitHub releases: https://github.com/victorbrandaao/CloudBoost/releases/latest
-Current release: https://github.com/victorbrandaao/CloudBoost/releases/tag/v4.3.7
+Current release: https://github.com/victorbrandaao/CloudBoost/releases/tag/v4.4.0
 Official X profile: https://x.com/getcloudboost
 Product Hunt: https://www.producthunt.com/products/cloudboost-2
 Support: https://discord.gg/kU5trxtRb
@@ -23,7 +23,7 @@ Independent coverage: https://macmagazine.com.br/post/2026/06/01/cloudboost-otim
 
 CloudBoost helps Mac players start a focused gaming session, reduce local macOS interruptions, and understand latency spikes that normal speed tests often miss.
 
-Version 4.3.7 is a universal Intel and Apple Silicon reliability release. Delayed samples cannot repopulate a stopped session, diagnostics report the running architecture, and release packaging verifies the separate arm64 and x86_64 builds before combining them. Existing Payhip, Gumroad, and legacy PRO+ keys remain supported.
+Version 4.4.0 is a universal Intel and Apple Silicon evidence release. Session Evidence adds latency/jitter timelines, p50/p95 summaries, threshold markers, confidence labels, PNG export, and Session Proof. Network Preflight separates local gateway issues from external route issues and does not treat blocked ICMP as proof of game packet loss. Controller/Game Mode Advisor uses public macOS APIs. The optional Stream Bridge reads token-protected, local-only WebRTC statistics without modifying the stream. Existing Payhip, Gumroad, and legacy PRO+ keys remain supported.
 
 ## Measured Session Evidence
 
@@ -69,7 +69,7 @@ It does not modify games, inject code, bypass anti-cheat, edit CrossOver bottles
 
 Free includes manual sessions, core cloud, remote play, native Mac and competitive profiles, Balanced preset, basic signal checks, Stream Advisor, and rollback protection.
 
-PRO adds automation, HUD, Session Doctor full reports, Session Lab, Stream Signal, PRO Widgets, Heat Guard, Keep Alive, Session Proof, Kernel Watch, background throttle, CrossOver/Whisky diagnostics, priority Discord support, early builds, and deeper diagnostics.
+PRO adds automation, HUD, Session Doctor full reports, Session Evidence, Network Preflight, Controller/Game Mode Advisor, optional Stream Bridge, Session Lab, Stream Signal, PRO Widgets, Heat Guard, Keep Alive, Session Proof, Kernel Watch, background throttle, CrossOver/Whisky diagnostics, priority Discord support, early builds, and deeper diagnostics.
 
 PRO also includes VPN Route Doctor, Session Doctor Fix actions, session end reports, and deeper before/after diagnostics.
 

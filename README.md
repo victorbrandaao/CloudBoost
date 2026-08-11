@@ -9,8 +9,8 @@ CloudBoost is a native macOS menu bar app that shows what is happening around a 
 It does not modify games or promise artificial FPS gains. It helps players run a quieter Mac session, understand a problem, and leave with a useful next step.
 
 <p align="center">
-  <a href="https://github.com/victorbrandaao/CloudBoost/releases/tag/v4.3.7"><img src="https://img.shields.io/github/v/release/victorbrandaao/CloudBoost?label=release&amp;style=flat-square&amp;color=00a884&amp;cacheSeconds=300" alt="CloudBoost v4.3.7"></a>
-  <a href="https://github.com/victorbrandaao/CloudBoost/releases/tag/v4.3.7"><img src="https://img.shields.io/github/downloads/victorbrandaao/CloudBoost/v4.3.7/total?label=v4.3.7%20downloads&amp;style=flat-square&amp;color=111111&amp;cacheSeconds=300" alt="CloudBoost v4.3.7 downloads"></a>
+  <a href="https://github.com/victorbrandaao/CloudBoost/releases/tag/v4.4.0"><img src="https://img.shields.io/github/v/release/victorbrandaao/CloudBoost?label=release&amp;style=flat-square&amp;color=00a884&amp;cacheSeconds=300" alt="CloudBoost v4.4.0"></a>
+  <a href="https://github.com/victorbrandaao/CloudBoost/releases/tag/v4.4.0"><img src="https://img.shields.io/github/downloads/victorbrandaao/CloudBoost/v4.4.0/total?label=v4.4.0%20downloads&amp;style=flat-square&amp;color=111111&amp;cacheSeconds=300" alt="CloudBoost v4.4.0 downloads"></a>
   <a href="https://github.com/victorbrandaao/CloudBoost/releases"><img src="https://img.shields.io/github/downloads/victorbrandaao/CloudBoost/total?label=all%20downloads&amp;style=flat-square&amp;color=111111&amp;cacheSeconds=300" alt="All CloudBoost GitHub release downloads"></a>
   <img src="https://img.shields.io/badge/macOS-12%2B-111111?style=flat-square" alt="macOS 12 or later">
   <img src="https://img.shields.io/badge/Mac-Intel%20%2B%20Apple%20Silicon-111111?style=flat-square&amp;logo=apple" alt="Intel and Apple Silicon supported">
@@ -86,6 +86,10 @@ Free is a basic manual session monitor. PRO adds macOS session tuning, automatio
 | Session Doctor full report, Fix actions, and UDP probe | No | Yes |
 | VPN Route Doctor and AWDL Guard+ | No | Yes |
 | Spike Timeline, Session Lab, and session history | No | Yes |
+| Session Evidence graph, p50/p95, and PNG export | No | Yes |
+| Network Preflight: local hop, route, and optional load test | No | Yes |
+| Controller and Apple Game Mode Advisor | No | Yes |
+| Optional browser Stream Bridge with read-only WebRTC statistics | No | Yes |
 | HUD, Stream Signal, and PRO Widgets | No | Yes |
 | Session Proof copy/export | No | Yes |
 | CrossOver, Whisky, Wine, and GPTK diagnostics | No | Yes |
@@ -132,17 +136,18 @@ If macOS reports that the independently distributed app is damaged, clear its qu
 xattr -cr /Applications/"CloudBoost.app"
 ```
 
-## Current Release: 4.3.7
+## Current Release: 4.4.0
 
-- delayed network and system samples no longer repopulate the interface after a session stops
-- diagnostics now include the running architecture for clearer Intel and Apple Silicon support
-- release packaging independently verifies the `arm64` and `x86_64` builds before combining them
-- CI extracts and checks both slices of the final universal app
-- the app controllers were reorganized internally to make session and UI fixes easier to review
+- **Session Evidence** adds a resizable latency/jitter graph, p50 and p95 summaries, threshold markers, confidence labels, PNG export, and a support-ready Session Proof.
+- **Network Preflight** compares the Mac-to-router hop with the external route and can run an explicit working-conditions test when no game session is active.
+- The preflight does not treat a blocked ICMP endpoint as proof of packet loss.
+- **Controller and Game Mode Advisor** detects connected controllers and explains whether Apple Game Mode is available using public macOS APIs.
+- The optional **Stream Bridge** reads browser WebRTC statistics such as FPS, bitrate, jitter buffer, decode time, loss, and freezes. It runs only on `127.0.0.1`, requires an authenticated helper, and never changes the stream.
+- Session Lab no longer starts a bandwidth load while a game session is active.
 
-CloudBoost 4.3.7 is a universal build for Intel and Apple Silicon Macs running macOS 12 Monterey or later. Existing Payhip, Gumroad and legacy PRO+ licenses keep their access. Pricing and plan entitlements are unchanged.
+CloudBoost 4.4.0 is a universal build for Intel and Apple Silicon Macs running macOS 12 Monterey or later. CI built and inspected both architecture slices independently. Existing Payhip, Gumroad and legacy PRO+ licenses keep their access. Pricing and plan entitlements are unchanged.
 
-Users updating from 4.3.2 or 4.3.3 who see a publisher-verification error should install 4.3.7 manually once from the official release page. Local settings and PRO activation are preserved.
+Users updating from 4.3.2 or 4.3.3 who see a publisher-verification error should install 4.4.0 manually once from the official release page. Local settings and PRO activation are preserved.
 
 See the complete notes and checksums on the [release page](https://github.com/victorbrandaao/CloudBoost/releases/latest).
 

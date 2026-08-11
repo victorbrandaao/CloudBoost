@@ -1,27 +1,31 @@
-# CloudBoost 4.3.7
+# CloudBoost 4.4.0
 
-CloudBoost 4.3.7 is a reliability and maintainability release for session metrics and universal Mac support.
+CloudBoost 4.4.0 focuses on measurable session evidence. It helps separate a local Wi-Fi or router problem from an external route problem, and makes the limits of each measurement visible.
 
 [MIN_VERSION: 4.3.4]
 
 ## What changed
 
-- Delayed network and system samples no longer repopulate the interface after Stop Session.
-- Diagnostics and self-tests now report the running architecture for clearer support on Intel and Apple Silicon Macs.
-- Release packaging independently verifies the `arm64` and `x86_64` builds before creating the universal app.
-- Continuous integration extracts and validates both slices of the final binary and keeps macOS 12 Monterey as the minimum version.
-- Application and popover controllers were reorganized internally so future session and interface fixes can be reviewed in smaller, focused files.
-- Existing Payhip, Gumroad, and legacy PRO+ licenses keep their access. Pricing and plan entitlements are unchanged.
+- Session Evidence adds a resizable latency and jitter graph, p50 and p95 summaries, threshold markers, confidence labels, PNG export, and a support-ready Session Proof.
+- Network Preflight compares the first local hop with the external route. An optional working-conditions test can check responsiveness under load, but CloudBoost will not start that bandwidth test while a game session is active.
+- Blocked ICMP is reported as an unavailable sample, not as proof of game packet loss.
+- Controller and Game Mode Advisor detects connected controllers and explains Apple Game Mode availability using public macOS APIs.
+- The optional browser Stream Bridge reads WebRTC FPS, bitrate, loss, jitter buffer, decode time, freezes, and resolution on supported browser services.
+- Stream Bridge binds only to `127.0.0.1`, requires a local token, accepts an allowlist of supported origins, and never modifies the stream.
+- Session Lab no longer performs a download load check during an active game session.
+- Existing Payhip, Gumroad, and legacy PRO+ licenses keep their access. Pricing is unchanged.
 
-CloudBoost does not modify games, bypass anti-cheat, install a kernel extension, or promise extra FPS. It observes and temporarily tunes the local Mac side of a gaming session.
+CloudBoost does not modify games, bypass anti-cheat, install a kernel extension, or promise extra FPS. Session evidence is observational and shows correlation, not guaranteed causation.
+
+## Compatibility
+
+CloudBoost 4.4.0 supports Intel and Apple Silicon Macs running macOS 12 Monterey or later. CI built the final universal app and independently verified both the `x86_64` and `arm64` slices.
 
 ## Install
 
-CloudBoost 4.3.7 supports Intel and Apple Silicon Macs running macOS 12 Monterey or later.
-
 Download the DMG, open it, and drag CloudBoost to `/Applications`.
 
-If CloudBoost 4.3.2 or 4.3.3 reports that it could not verify who published the update, install 4.3.7 manually from this official release once. Your local settings and PRO activation remain stored on the Mac.
+Users on 4.3.2 or 4.3.3 who see a publisher-verification error should install 4.4.0 manually once. Local settings and PRO activation remain stored on the Mac.
 
 Homebrew users can update with:
 
@@ -39,6 +43,6 @@ GitHub Issues: https://github.com/victorbrandaao/CloudBoost/issues
 ## Checksums
 
 ```text
-ZIP SHA256: c9656e6eb9ae42ac76b6967d4645ac77aa51b8a3f5f7b80198008d6b21231cdd
-DMG SHA256: dcaa5f536551bc032415e4c1b81da3c5931adc6adee79a14c95a268fe3fd9be6
+ZIP SHA256: 644412f56a8c2dd848b258ef40526d7b4a136c8c598860e2894d15108035cb28
+DMG SHA256: 1a8479f315b6d4d876c8b17f049f2dc096e3ce3bb8d965ff787e35ab9d2cb72b
 ```

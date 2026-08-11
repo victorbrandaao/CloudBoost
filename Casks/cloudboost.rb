@@ -1,6 +1,6 @@
 cask "cloudboost" do
-  version "4.3.6"
-  sha256 "accaf4da6ff55bb3bd8a0d2013ae43d009a0bfdd83f19a1a45f921543bc1ccbd"
+  version "4.4.0"
+  sha256 "1a8479f315b6d4d876c8b17f049f2dc096e3ce3bb8d965ff787e35ab9d2cb72b"
 
   url "https://github.com/victorbrandaao/CloudBoost/releases/download/v#{version}/CloudBoost_v#{version}.dmg",
       verified: "github.com/victorbrandaao/CloudBoost/"
