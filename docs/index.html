@@ -27,7 +27,7 @@
     <meta name="theme-color" content="#ffffff">
     <link rel="icon" type="image/png" href="assets/cloudboost-app-icon-v2.png">
     <link rel="sitemap" type="application/xml" href="https://getcloudboost.site/sitemap.xml">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=20260812">
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -71,7 +71,7 @@
             "applicationCategory": "UtilitiesApplication",
             "applicationSubCategory": "Mac gaming session diagnostics",
             "softwareVersion": "4.4.0",
-            "dateModified": "2026-08-11",
+            "dateModified": "2026-08-12",
             "description": "CloudBoost is a native macOS menu bar app for gaming session diagnostics and temporary local tuning across cloud gaming, remote play, native Mac games and compatibility-layer sessions.",
             "featureList": "Latency, jitter and packet-loss monitoring; VPN and UDP diagnostics; Wi-Fi and AWDL context; background and thermal pressure; Session Doctor; Session Proof; gaming profiles",
             "image": "https://getcloudboost.site/assets/cloudboost-social-v2.png",
@@ -191,11 +191,10 @@
           <span>CloudBoost</span>
         </a>
         <nav aria-label="Primary">
-          <a class="nav-secondary" href="#use-cases">Use cases</a>
-          <a class="nav-secondary" href="results.html">Results</a>
-          <a href="#pro">Free vs PRO</a>
+          <a class="nav-secondary" href="#product">Product</a>
+          <a class="nav-secondary" href="#evidence">Evidence</a>
+          <a href="#pricing">Pricing</a>
           <a class="nav-secondary" href="trust.html">Trust</a>
-          <a class="nav-secondary" href="#support">Support</a>
           <a class="language-link" href="es/" lang="es" hreflang="es">ES</a>
           <a class="language-link" href="pt/" lang="pt-BR" hreflang="pt">PT</a>
           <a class="nav-cta" href="https://github.com/victorbrandaao/CloudBoost/releases/latest?utm_source=cloudboost_site&amp;utm_medium=organic&amp;utm_campaign=header_download">Download</a>
@@ -203,188 +202,160 @@
       </header>
 
       <main id="main-content">
-        <aside class="update-notice" aria-label="Update help">
-          <strong>Updating from 4.3.2 or 4.3.3?</strong>
-          <span>If publisher verification fails, install the latest DMG manually once. Settings and PRO activation are preserved.</span>
-          <a href="https://github.com/victorbrandaao/CloudBoost/releases/latest?utm_source=cloudboost_site&amp;utm_medium=organic&amp;utm_campaign=legacy_updater">Open official release</a>
-        </aside>
-
-        <section class="hero" id="download">
-          <div class="hero-copy">
-            <p class="eyebrow">Mac gaming session diagnostics · Version 4.4.0</p>
-            <h1>See what is hurting your game session.</h1>
-            <p class="lead">CloudBoost watches the Mac and network signals that an ordinary speed test misses.</p>
-            <p class="sublead">Track latency spikes, jitter, packet loss, VPN routing, Wi-Fi/AWDL noise, background work, heat and CPU pressure without modifying the game.</p>
+        <section class="hero-new" id="download">
+          <div class="hero-new-copy">
+            <p class="eyebrow">CloudBoost 4.4 · Native macOS utility</p>
+            <h1>Mac gaming session diagnostics.</h1>
+            <p class="hero-statement">See the spike. Separate Mac-side pressure from network trouble. End the session with evidence.</p>
             <div class="actions">
               <a class="button primary" href="https://github.com/victorbrandaao/CloudBoost/releases/latest?utm_source=cloudboost_site&amp;utm_medium=organic&amp;utm_campaign=homepage">Download Free</a>
-              <a class="button secondary" href="https://payhip.com/b/Jb0XO?utm_source=cloudboost_site&amp;utm_medium=organic&amp;utm_campaign=homepage_pro">Get PRO · $10</a>
+              <a class="button secondary" href="https://payhip.com/b/Jb0XO?utm_source=cloudboost_site&amp;utm_medium=organic&amp;utm_campaign=homepage_pro">Get PRO · $10 once</a>
             </div>
-            <div class="hero-links">
-              <a href="results/league-of-legends-pro-session.html">See a measured 42-minute League session</a>
-              <span>Real screenshot, method and raw CSV</span>
-            </div>
+            <ul class="hero-facts" aria-label="Compatibility and pricing">
+              <li>macOS 12+</li>
+              <li>Intel + Apple Silicon</li>
+              <li>No subscription</li>
+            </ul>
           </div>
 
-          <figure class="app-preview">
-            <img src="assets/evidence/league-pro-proof-wide.png" alt="CloudBoost measured League of Legends session showing score, route latency, jitter, packet loss and app CPU use" width="1600" height="900" loading="eager">
-            <figcaption>One real League of Legends session. Screenshot, method and raw CSV are public.</figcaption>
+          <figure class="product-stage">
+            <img src="assets/evidence/league-pro-proof-wide.png" alt="Measured CloudBoost PRO League of Legends session showing route latency, jitter, packet loss and app CPU use" width="1600" height="900" loading="eager">
+            <figcaption>
+              <span>Real 42-minute League session</span>
+              <a href="results/league-of-legends-pro-session.html">Method, screenshot and raw CSV</a>
+            </figcaption>
           </figure>
         </section>
 
-        <section class="proof-strip" aria-label="CloudBoost milestones">
-          <div><strong>1,000+</strong><span>public release asset downloads</span></div>
-          <div><strong>42m 38s</strong><span>measured League session</span></div>
-          <div><strong>v4.4.0</strong><span>current public release</span></div>
-          <div><strong>macOS 12+</strong><span>Intel and Apple Silicon</span></div>
+        <section class="proof-rail" aria-label="CloudBoost facts">
+          <div><strong>1,000+</strong><span>public release downloads</span></div>
+          <div><strong>92/100</strong><span>measured session score</span></div>
+          <div><strong>Universal</strong><span>native Intel and Apple Silicon</span></div>
+          <div><strong>Independent</strong><span>covered by MacMagazine</span></div>
         </section>
 
-        <section class="install-meta" aria-label="Install and compatibility">
-          <details class="install-command">
-            <summary>Install with Homebrew</summary>
-            <code>brew tap victorbrandaao/cloudboost<br>brew install --cask cloudboost</code>
-          </details>
-          <p class="microcopy">Intel and Apple Silicon · Free core profiles · PRO is a one-time v4.x license for one Mac</p>
-        </section>
-
-        <section class="trust-row" aria-label="Trust signals">
-          <span>No game injection or anti-cheat bypass</span>
-          <span>No kernel extension</span>
-          <span>Temporary, reversible session actions</span>
-          <a href="trust.html">Read the Trust Center</a>
-          <a href="https://macmagazine.com.br/post/2026/06/01/cloudboost-otimiza-a-experiencia-de-jogos-na-nuvem-no-mac/">Covered by MacMagazine</a>
-          <a class="made-in-brazil" href="https://feitonobrasil.dev.br" aria-label="Made in Brazil">
-            <img src="https://selo.feitonobrasil.dev.br/en/serio/colorido/1x.svg" alt="Made in Brazil" height="42" loading="lazy">
-          </a>
-        </section>
-
-        <section class="section workflow" aria-labelledby="workflow-title">
-          <div class="section-heading">
-            <p class="eyebrow">How it works</p>
-            <h2 id="workflow-title">Watch. Explain. Restore.</h2>
+        <section class="section product-section" id="product">
+          <div class="section-kicker">
+            <p class="eyebrow">What the app answers</p>
+            <h2>One session. Three useful answers.</h2>
           </div>
-          <ol class="workflow-grid">
-            <li><span>01</span><strong>Watch the Mac side</strong><p>Collect the signals that average ping hides: jitter, packet loss, route state, Wi-Fi noise and local pressure.</p></li>
-            <li><span>02</span><strong>Explain the warning</strong><p>Separate a live problem from an earlier spike and show the likely cause in plain language.</p></li>
-            <li><span>03</span><strong>Act, report, restore</strong><p>Apply selected temporary actions, record what changed, and restore the session when you stop.</p></li>
+          <ol class="answer-list">
+            <li>
+              <span>01</span>
+              <div><h3>What happened?</h3><p>CloudBoost records latency, jitter, route state, packet loss, Wi-Fi/AWDL activity, background traffic and local system pressure.</p></div>
+            </li>
+            <li>
+              <span>02</span>
+              <div><h3>Where should I look?</h3><p>Network Preflight separates the first local hop from the external route. Clean Mac-side signals point you back toward the game, shaders or server.</p></div>
+            </li>
+            <li>
+              <span>03</span>
+              <div><h3>What changed?</h3><p>Selected actions are temporary, visible in the session report and restored when the session stops.</p></div>
+            </li>
           </ol>
         </section>
 
-        <section class="section split" id="use-cases">
-          <div>
-            <p class="eyebrow">Use Cases</p>
-            <h2>Know when the problem is around the game.</h2>
-          </div>
-          <div class="copy">
-            <p>Use CloudBoost when a session starts well and later stutters, spikes or becomes inconsistent. It checks the Mac and network signals it can measure, then tells you when the next place to investigate is the game, server, router or compatibility layer.</p>
-          </div>
-        </section>
-
-        <section class="cards">
-          <article id="cloud-gaming">
-            <span>Cloud and remote play</span>
-            <h3>GeForce NOW, xCloud, Boosteroid, Shadow PC, Moonlight and PS Remote Play.</h3>
-            <p>Reduce local macOS noise and see whether the issue looks like Wi-Fi, UDP, packet loss, route latency or background traffic.</p>
-          </article>
-          <article id="native-gaming">
-            <span>Native Mac games</span>
-            <h3>League of Legends, Dota 2, Minecraft, Roblox and CS2 cloud or compatibility sessions.</h3>
-            <p>Watch CPU pressure, thermal pressure, Low Power Mode and background work, then see when clean Mac-side signals point toward shaders, asset streaming or the game engine instead.</p>
-          </article>
-          <article id="compatibility">
-            <span>PRO compatibility diagnostics</span>
-            <h3>CrossOver, Whisky, Wine and GPTK checks without touching the bottle.</h3>
-            <p>CloudBoost does not patch games. It helps separate a compatibility-layer issue from a noisy macOS session.</p>
-          </article>
-          <article>
-            <span>Actionable session help</span>
-            <h3>Session Evidence shows the observed timeline, not a generic promise.</h3>
-            <p>PRO adds a resizable latency/jitter graph, p50 and p95 summaries, event markers, Network Preflight, PNG export and a support-ready Session Proof.</p>
-          </article>
-        </section>
-
-        <section class="section product-proof measured-session">
-          <figure>
-            <img src="assets/evidence/league-pro-proof-square.png" alt="Real CloudBoost PRO League of Legends session with measured route p95, jitter, packet loss and app CPU overhead">
-          </figure>
-          <div>
-            <p class="eyebrow">Measured on July 20</p>
-            <h2>A real 42-minute League session.</h2>
-            <p class="lead-small">CloudBoost recorded a 92/100 session score, 25 ms route p95, 8 ms maximum jitter and 0.0% maximum loss. A separate sample measured the app at 1.68% average CPU.</p>
-            <p>The result is observational, not a before/after FPS claim. The screenshot, method, sanitized proof and raw CSV are public.</p>
-            <blockquote>“Seems to keep my connection more stable on Wi-Fi.”</blockquote>
-            <a class="text-link" href="reviews.html">Read the public review</a>
-            <div class="actions small-actions">
-              <a class="button primary" href="results/league-of-legends-pro-session.html">Inspect the result</a>
-              <a class="button secondary" href="https://payhip.com/b/Jb0XO?utm_source=cloudboost_site&amp;utm_medium=organic&amp;utm_campaign=league_result_pro">Get PRO · $10</a>
+        <section class="service-band" aria-labelledby="service-title">
+          <div class="band-inner">
+            <div class="section-kicker">
+              <p class="eyebrow">Cloud, remote and local</p>
+              <h2 id="service-title">Built around how Mac gamers actually play.</h2>
+            </div>
+            <div class="service-list">
+              <div><span>Cloud + remote</span><strong>GFN · xCloud · Boosteroid · Shadow · Moonlight · PS Remote Play</strong></div>
+              <div><span>Native Mac</span><strong>League · Dota 2 · Minecraft · Roblox</strong></div>
+              <div><span>Compatibility · PRO</span><strong>CrossOver · Whisky · Wine · GPTK</strong></div>
             </div>
           </div>
         </section>
 
-        <section class="section split" id="pro">
-          <div>
-            <p class="eyebrow">Free and PRO</p>
-            <h2>Start free. Upgrade when you need the full explanation.</h2>
-            <p class="section-intro">Free is enough to run a manual session. PRO is for repeated use, deeper diagnostics and automatic temporary tuning.</p>
+        <section class="evidence-band" id="evidence">
+          <div class="band-inner evidence-layout">
+            <div class="evidence-copy">
+              <p class="eyebrow">Evidence, not a magic claim</p>
+              <h2>Make the bad moment visible.</h2>
+              <p>Session Evidence plots observed latency and jitter, marks threshold events and summarizes p50 and p95. Export a PNG or copy Session Proof for support.</p>
+              <dl class="metric-list">
+                <div><dt>Route p95</dt><dd>25 ms</dd></div>
+                <div><dt>Max jitter</dt><dd>8 ms</dd></div>
+                <div><dt>Packet loss</dt><dd>0.0%</dd></div>
+                <div><dt>App CPU sample</dt><dd>1.68%</dd></div>
+              </dl>
+              <p class="evidence-note">Observed in one published League session. It is not a claim of extra FPS or guaranteed latency reduction.</p>
+              <div class="actions small-actions">
+                <a class="button light" href="results/league-of-legends-pro-session.html">Inspect the evidence</a>
+                <a class="text-action" href="reviews.html">Read the public review</a>
+              </div>
+            </div>
+            <figure class="evidence-image">
+              <img src="assets/evidence/league-pro-session-result.png" alt="CloudBoost Session Result with score, duration, trend and before-after evidence" width="1208" height="1528" loading="lazy">
+            </figure>
           </div>
-          <div class="plan-grid">
-            <article class="plan-card">
-              <div class="plan-heading"><h3>Free</h3><strong>$0</strong></div>
-              <ul class="plan-list">
-                <li>Cloud, remote play and native Mac profiles</li>
+        </section>
+
+        <section class="section pricing-section" id="pricing">
+          <div class="section-kicker pricing-heading">
+            <div>
+              <p class="eyebrow">Simple pricing</p>
+              <h2>Use it free. Pay once for the full evidence.</h2>
+            </div>
+            <p>No account is required for Free. PRO is a one-time CloudBoost 4.x license for one Mac.</p>
+          </div>
+          <div class="pricing-grid">
+            <article class="price-panel">
+              <div class="price-title"><h3>Free</h3><strong>$0</strong></div>
+              <p>For checking a session manually.</p>
+              <ul>
+                <li>Cloud, remote and native profiles</li>
                 <li>Manual Balanced sessions</li>
                 <li>Basic path and ping checks</li>
-                <li>Safe session stop and rollback</li>
+                <li>Safe stop and rollback</li>
               </ul>
-              <a class="button secondary plan-button" href="https://github.com/victorbrandaao/CloudBoost/releases/latest?utm_source=cloudboost_site&amp;utm_medium=organic&amp;utm_campaign=free_plan">Download Free</a>
+              <a class="button secondary" href="https://github.com/victorbrandaao/CloudBoost/releases/latest?utm_source=cloudboost_site&amp;utm_medium=organic&amp;utm_campaign=free_plan">Download Free</a>
             </article>
-            <article class="plan-card featured-plan">
-              <div class="plan-heading"><h3>PRO</h3><strong>$10</strong></div>
-              <p class="plan-note">One-time CloudBoost 4.x license for one Mac. No subscription. Transfers are handled through support.</p>
-              <ul class="plan-list">
-                <li>Automation and temporary system tuning</li>
-                <li>Full Session Doctor and Spike Timeline</li>
-                <li>VPN Route Doctor, UDP Probe and Session Lab</li>
-                <li>Session Evidence, Network Preflight and PNG export</li>
-                <li>Controller/Game Mode Advisor and optional Stream Bridge</li>
-                <li>HUD, Session Proof and previous-run comparison</li>
-                <li>CrossOver/Whisky diagnostics and priority support</li>
+            <article class="price-panel pro-panel">
+              <div class="price-title"><h3>PRO</h3><strong>$10</strong></div>
+              <p>One payment. Full v4.x access on one Mac.</p>
+              <ul>
+                <li>Automation and temporary session tuning</li>
+                <li>Session Evidence, p50/p95 and PNG export</li>
+                <li>Network Preflight, VPN Route Doctor and UDP Probe</li>
+                <li>HUD, Session Lab and previous-run comparison</li>
+                <li>Stream Bridge and compatibility diagnostics</li>
+                <li>Priority Discord support</li>
               </ul>
-              <a class="button primary plan-button" href="https://payhip.com/b/Jb0XO?utm_source=cloudboost_site&amp;utm_medium=organic&amp;utm_campaign=pro_section">Get PRO on Payhip</a>
+              <a class="button light" href="https://payhip.com/b/Jb0XO?utm_source=cloudboost_site&amp;utm_medium=organic&amp;utm_campaign=pro_section">Get PRO on Payhip</a>
             </article>
           </div>
         </section>
 
-        <section class="section split" id="session-review" data-analytics-impression="session_review_offer_viewed">
+        <section class="review-offer" id="session-review" data-analytics-impression="session_review_offer_viewed">
+          <div><p class="eyebrow">Limited personal review</p><h2>Want a human reading of your Session Proof?</h2></div>
           <div>
-            <p class="eyebrow">Five pilot slots</p>
-            <h2>PRO plus a personal Session Review.</h2>
-          </div>
-          <div class="copy">
-            <p><strong>$29 total.</strong> Includes a CloudBoost PRO license and one personal review of a Session Proof report.</p>
-            <p>You receive setup-specific observations and recommended next tests for the Mac, network and gaming client. The review does not promise to repair an ISP route, remote server or game-engine problem.</p>
-            <p>Delivery is by Discord or email within three business days after receiving a complete Session Proof. The pilot is limited to five reviews so each report receives proper attention.</p>
-            <div class="actions small-actions">
-              <a class="button primary" data-analytics-event="session_review_clicked" href="https://payhip.com/b/M1Baw?utm_source=cloudboost_site&amp;utm_medium=organic&amp;utm_campaign=personal_review_pilot">Get PRO + Personal Review</a>
-              <a class="button secondary" href="trust.html">See what Session Proof contains</a>
-            </div>
+            <p><strong>$29 total</strong> includes PRO and one setup-specific review delivered through Discord or email within three business days. Five pilot slots.</p>
+            <a class="text-action" data-analytics-event="session_review_clicked" href="https://payhip.com/b/M1Baw?utm_source=cloudboost_site&amp;utm_medium=organic&amp;utm_campaign=personal_review_pilot">See PRO + Personal Review</a>
           </div>
         </section>
 
-        <section class="section split" id="support">
+        <section class="section trust-support" id="support">
           <div>
-            <p class="eyebrow">Support</p>
+            <p class="eyebrow">Straight answers</p>
+            <h2>No injection. No KEXT. No hidden promise.</h2>
+            <p>CloudBoost does not modify games, bypass anti-cheat or install a kernel extension. Administrator permission is requested only for protected temporary system actions.</p>
+            <a class="text-action" href="trust.html">Open the Trust Center</a>
+          </div>
+          <div>
+            <p class="eyebrow">Support for everyone</p>
             <h2>Bring the screenshot. We will help read it.</h2>
-          </div>
-          <div class="copy">
-            <p>Discord is open to Free and PRO users for install help, license support, bug reports, confusing diagnostics and feature requests.</p>
-            <p>For faster help, include macOS version, Mac model, selected profile, Wi-Fi or Ethernet, VPN/firewall status, and a screenshot of Session Doctor or Session Lab.</p>
-            <p>PRO users can also paste the Session Proof report from the app, which is usually faster than describing the whole setup manually.</p>
-            <div class="actions small-actions">
-              <a class="button primary" href="https://discord.gg/kU5trxtRb">Join Discord</a>
-              <a class="button secondary" href="trust.html">Read Trust Center</a>
-            </div>
+            <p>Discord is open to Free and PRO users for installation, licenses, bugs and confusing diagnostics. PRO users can paste the complete Session Proof.</p>
+            <a class="button primary" href="https://discord.gg/kU5trxtRb">Join Discord</a>
           </div>
         </section>
+
+        <details class="legacy-update">
+          <summary>Updating from CloudBoost 4.3.2 or 4.3.3?</summary>
+          <p>If publisher verification fails, install the latest DMG manually once. Settings and PRO activation are preserved. <a href="https://github.com/victorbrandaao/CloudBoost/releases/latest?utm_source=cloudboost_site&amp;utm_medium=organic&amp;utm_campaign=legacy_updater">Open the official release.</a></p>
+        </details>
 
         <section class="faq">
           <details open>
@@ -430,29 +401,20 @@
         </section>
 
         <section class="final">
-          <h2>Try one session and see what CloudBoost reports.</h2>
+          <div><p class="eyebrow">CloudBoost 4.4</p><h2>Stop guessing at the next spike.</h2></div>
           <div class="actions">
-            <a class="button primary" href="https://github.com/victorbrandaao/CloudBoost/releases/latest?utm_source=cloudboost_site&amp;utm_medium=organic&amp;utm_campaign=homepage_footer">Download CloudBoost</a>
-            <a class="button secondary" href="https://discord.gg/kU5trxtRb">Ask in Discord</a>
+            <a class="button light" href="https://github.com/victorbrandaao/CloudBoost/releases/latest?utm_source=cloudboost_site&amp;utm_medium=organic&amp;utm_campaign=homepage_footer">Download Free</a>
+            <a class="button dark-outline" href="https://payhip.com/b/Jb0XO?utm_source=cloudboost_site&amp;utm_medium=organic&amp;utm_campaign=homepage_footer_pro">Get PRO · $10</a>
           </div>
         </section>
       </main>
     </div>
 
     <footer>
-      <span>CloudBoost is proprietary software.</span>
-      <a href="https://github.com/victorbrandaao/CloudBoost">GitHub</a>
-      <a href="https://payhip.com/b/Jb0XO">PRO</a>
-      <a href="guides.html">Guides</a>
-      <a href="results.html">Results</a>
-      <a href="trust.html">Trust</a>
-      <a href="reviews.html">Reviews</a>
-      <a href="ai-summary.html">AI summary</a>
-      <a href="privacy.html">Privacy</a>
-      <a href="https://x.com/getcloudboost">X</a>
-      <a href="https://discord.gg/kU5trxtRb">Discord</a>
-      <a href="es/" lang="es" hreflang="es">Español</a>
-      <a href="pt/" lang="pt-BR" hreflang="pt">Português</a>
+      <div class="footer-brand"><strong>CloudBoost</strong><span>Proprietary macOS software. Made in Brazil.</span></div>
+      <div class="footer-links">
+        <a href="guides.html">Guides</a><a href="results.html">Results</a><a href="trust.html">Trust</a><a href="reviews.html">Reviews</a><a href="privacy.html">Privacy</a><a href="https://discord.gg/kU5trxtRb">Discord</a><a href="https://github.com/victorbrandaao/CloudBoost">GitHub</a><a href="es/" lang="es" hreflang="es">ES</a><a href="pt/" lang="pt-BR" hreflang="pt">PT</a>
+      </div>
     </footer>
   </body>
 </html>
