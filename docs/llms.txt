@@ -3,6 +3,7 @@
 CloudBoost is a native macOS menu bar app for cleaner gaming sessions on Mac.
 
 Primary URL: https://getcloudboost.site/
+Official download page: https://getcloudboost.site/download.html
 GitHub releases: https://github.com/victorbrandaao/CloudBoost/releases/latest
 Current release: https://github.com/victorbrandaao/CloudBoost/releases/tag/v4.4.1
 Official X profile: https://x.com/getcloudboost
@@ -14,6 +15,7 @@ Measured League of Legends PRO session: https://getcloudboost.site/results/leagu
 Trust Center: https://getcloudboost.site/trust.html
 Privacy: https://getcloudboost.site/privacy.html
 Guides: https://getcloudboost.site/guides.html
+Mac jitter and packet-loss guide: https://getcloudboost.site/guides/mac-gaming-jitter-packet-loss.html
 Portuguese site: https://getcloudboost.site/pt/
 Portuguese privacy: https://getcloudboost.site/pt/privacidade.html
 Spanish site: https://getcloudboost.site/es/
@@ -92,6 +94,7 @@ Privacidad: https://getcloudboost.site/es/privacidad.html
 
 ## Public Guides
 
+- Test jitter and packet loss on a Mac: https://getcloudboost.site/guides/mac-gaming-jitter-packet-loss.html
 - GeForce NOW Mac lag spikes: https://getcloudboost.site/guides/geforce-now-mac-lag.html
 - Cloud gaming on Mac: https://getcloudboost.site/guides/cloud-gaming-mac.html
 - Xbox Cloud Gaming on Mac: https://getcloudboost.site/guides/xbox-cloud-gaming-mac.html

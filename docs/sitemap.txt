@@ -1,4 +1,5 @@
 https://getcloudboost.site/
+https://getcloudboost.site/download.html
 https://getcloudboost.site/ai-summary.html
 https://getcloudboost.site/reviews.html
 https://getcloudboost.site/privacy.html
@@ -6,6 +7,7 @@ https://getcloudboost.site/results.html
 https://getcloudboost.site/results/league-of-legends-pro-session.html
 https://getcloudboost.site/trust.html
 https://getcloudboost.site/guides.html
+https://getcloudboost.site/guides/mac-gaming-jitter-packet-loss.html
 https://getcloudboost.site/guides/cloud-gaming-mac.html
 https://getcloudboost.site/guides/geforce-now-mac-lag.html
 https://getcloudboost.site/guides/xbox-cloud-gaming-mac.html
@@ -17,18 +19,12 @@ https://getcloudboost.site/guides/native-mac-gaming.html
 https://getcloudboost.site/guides/dota-2-mac-stutter.html
 https://getcloudboost.site/guides/league-of-legends-mac-stutter.html
 https://getcloudboost.site/guides/cs2-mac-cloud-crossover.html
-https://getcloudboost.site/guides/battlenet-mac-gaming.html
-https://getcloudboost.site/guides/steam-epic-mac-gaming.html
 https://getcloudboost.site/guides/crossover-whisky-mac-gaming.html
 https://getcloudboost.site/guides/moonlight-mac-latency.html
 https://getcloudboost.site/guides/steam-link-mac-latency.html
 https://getcloudboost.site/guides/vpn-route-doctor-mac-gaming.html
-https://getcloudboost.site/guides/cyberpunk-2077-mac-lag.html
-https://getcloudboost.site/guides/world-of-warcraft-mac-lag.html
 https://getcloudboost.site/guides/roblox-mac-lag.html
 https://getcloudboost.site/guides/minecraft-mac-lag.html
-https://getcloudboost.site/guides/the-sims-4-mac-lag.html
-https://getcloudboost.site/guides/genshin-impact-mac-lag.html
 https://getcloudboost.site/es/
 https://getcloudboost.site/es/cloud-gaming-mac.html
 https://getcloudboost.site/es/juegos-mac-nativos.html

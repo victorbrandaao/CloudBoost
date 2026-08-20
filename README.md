@@ -24,8 +24,9 @@ It does not modify games or promise artificial FPS gains. It helps players run a
 
 ## Start Here
 
-- [Download the latest DMG](https://github.com/victorbrandaao/CloudBoost/releases/latest)
+- [Download CloudBoost for Intel or Apple Silicon](https://getcloudboost.site/download.html?utm_source=github&utm_medium=organic&utm_campaign=readme_download)
 - [Visit the website](https://getcloudboost.site/)
+- [Test jitter and packet loss on a Mac](https://getcloudboost.site/guides/mac-gaming-jitter-packet-loss.html?utm_source=github&utm_medium=organic&utm_campaign=readme_guide)
 - [Leer el sitio en español](https://getcloudboost.site/es/)
 - [Read the Trust Center](https://getcloudboost.site/trust.html)
 - [See public results and measurement method](https://getcloudboost.site/results.html?utm_source=github&utm_medium=organic&utm_campaign=readme)

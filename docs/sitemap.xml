@@ -13,13 +13,15 @@
       <image:caption>A real 42-minute League of Legends session on macOS with score, route p95, jitter, packet loss and independent CloudBoost CPU sampling.</image:caption>
     </image:image>
   </url>
+  <url><loc>https://getcloudboost.site/download.html</loc><lastmod>2026-08-20</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://getcloudboost.site/ai-summary.html</loc><lastmod>2026-08-11</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://getcloudboost.site/reviews.html</loc><lastmod>2026-07-06</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://getcloudboost.site/privacy.html</loc><lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.4</priority></url>
   <url><loc>https://getcloudboost.site/results.html</loc><lastmod>2026-07-20</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://getcloudboost.site/results/league-of-legends-pro-session.html</loc><lastmod>2026-07-20</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://getcloudboost.site/trust.html</loc><lastmod>2026-07-06</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://getcloudboost.site/guides.html</loc><lastmod>2026-07-06</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://getcloudboost.site/guides.html</loc><lastmod>2026-08-20</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://getcloudboost.site/guides/mac-gaming-jitter-packet-loss.html</loc><lastmod>2026-08-20</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://getcloudboost.site/guides/cloud-gaming-mac.html</loc><lastmod>2026-07-06</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://getcloudboost.site/guides/geforce-now-mac-lag.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://getcloudboost.site/guides/xbox-cloud-gaming-mac.html</loc><lastmod>2026-07-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
@@ -31,18 +33,12 @@
   <url><loc>https://getcloudboost.site/guides/dota-2-mac-stutter.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://getcloudboost.site/guides/league-of-legends-mac-stutter.html</loc><lastmod>2026-07-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://getcloudboost.site/guides/cs2-mac-cloud-crossover.html</loc><lastmod>2026-07-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://getcloudboost.site/guides/battlenet-mac-gaming.html</loc><lastmod>2026-07-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://getcloudboost.site/guides/steam-epic-mac-gaming.html</loc><lastmod>2026-07-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://getcloudboost.site/guides/crossover-whisky-mac-gaming.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://getcloudboost.site/guides/moonlight-mac-latency.html</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://getcloudboost.site/guides/steam-link-mac-latency.html</loc><lastmod>2026-07-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://getcloudboost.site/guides/vpn-route-doctor-mac-gaming.html</loc><lastmod>2026-07-06</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://getcloudboost.site/guides/cyberpunk-2077-mac-lag.html</loc><lastmod>2026-07-21</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://getcloudboost.site/guides/world-of-warcraft-mac-lag.html</loc><lastmod>2026-07-21</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://getcloudboost.site/guides/roblox-mac-lag.html</loc><lastmod>2026-07-22</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://getcloudboost.site/guides/minecraft-mac-lag.html</loc><lastmod>2026-07-22</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://getcloudboost.site/guides/the-sims-4-mac-lag.html</loc><lastmod>2026-07-22</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://getcloudboost.site/guides/genshin-impact-mac-lag.html</loc><lastmod>2026-07-22</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://getcloudboost.site/es/</loc><lastmod>2026-08-20</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://getcloudboost.site/es/cloud-gaming-mac.html</loc><lastmod>2026-07-16</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://getcloudboost.site/es/juegos-mac-nativos.html</loc><lastmod>2026-07-16</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
