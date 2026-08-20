@@ -1,0 +1,11 @@
+{
+  "version": "4.4.1",
+  "zip": {
+    "sha256": "ca0a4dd4803ba3d0acc3bcbbd479d0e42563b3d9c5d0db0ac6cc0e0829765acf",
+    "signature": "CloudBoost_v4.4.1.zip.sig"
+  },
+  "dmg": {
+    "sha256": "9b46a47a43543b63e0cadec3ff009adf3d0063f1dfd5ee82f6d3d8f134f4b0d9",
+    "signature": "CloudBoost_v4.4.1.dmg.sig"
+  }
+}
