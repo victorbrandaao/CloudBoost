@@ -22,6 +22,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
 
       - name: Resolve release
         id: release
@@ -82,4 +84,4 @@ jobs:
             exit 0
           fi
           git commit -m "chore: mirror update signatures for ${TAG}"
-          git push
+          git push origin HEAD:main
