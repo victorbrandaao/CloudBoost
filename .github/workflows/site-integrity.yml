@@ -1,0 +1,56 @@
+name: Check public site
+
+on:
+  push:
+    paths:
+      - "docs/**"
+      - ".github/workflows/site-integrity.yml"
+  pull_request:
+    paths:
+      - "docs/**"
+      - ".github/workflows/site-integrity.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Verify required discovery files
+        run: |
+          test "$(tr -d '[:space:]' < docs/CNAME)" = "getcloudboost.site"
+          test -s docs/index.html
+          test -s docs/es/index.html
+          test -s docs/pt/index.html
+          test -s docs/sitemap.xml
+          test -s docs/robots.txt
+          test -s docs/llms.txt
+          test -s docs/trust.html
+          grep -q 'https://getcloudboost.site/' docs/index.html
+          grep -q 'https://getcloudboost.site/es/' docs/es/index.html
+          grep -q 'Sitemap: https://getcloudboost.site/sitemap.xml' docs/robots.txt
+          if grep -R -n 'rel="canonical"[^>]*victorbrandaao.github.io' docs --include='*.html'; then
+            echo "Legacy GitHub Pages canonical URL found"
+            exit 1
+          fi
+
+      - name: Validate sitemap XML
+        run: |
+          ruby -r rexml/document -e 'REXML::Document.new(File.read("docs/sitemap.xml"))'
+          grep -q '<loc>https://getcloudboost.site/</loc>' docs/sitemap.xml
+          grep -q '<loc>https://getcloudboost.site/es/</loc>' docs/sitemap.xml
+
+      - name: Validate update mirror metadata
+        run: |
+          find docs/updates -name manifest.json -print0 | while IFS= read -r -d '' manifest; do
+            jq -e '.version | type == "string"' "$manifest" >/dev/null
+            jq -e '.zip.sha256 | test("^[0-9a-f]{64}$")' "$manifest" >/dev/null
+            jq -e '.dmg.sha256 | test("^[0-9a-f]{64}$")' "$manifest" >/dev/null
+            dir="$(dirname "$manifest")"
+            test -s "$dir/$(jq -r '.zip.signature' "$manifest")"
+            test -s "$dir/$(jq -r '.dmg.signature' "$manifest")"
+          done
