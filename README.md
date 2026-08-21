@@ -15,7 +15,7 @@ It does not modify games or promise artificial FPS gains. It helps players run a
   <img src="https://img.shields.io/badge/macOS-12%2B-111111?style=flat-square" alt="macOS 12 or later">
   <img src="https://img.shields.io/badge/Mac-Intel%20%2B%20Apple%20Silicon-111111?style=flat-square&amp;logo=apple" alt="Intel and Apple Silicon supported">
   <a href="https://payhip.com/b/Jb0XO"><img src="https://img.shields.io/badge/PRO-%2410%20one--time-00a884?style=flat-square" alt="CloudBoost PRO costs 10 US dollars as a one-time v4 license"></a>
-  <a href="https://discord.gg/kU5trxtRb"><img src="https://img.shields.io/badge/Discord-support-5865F2?style=flat-square" alt="Discord support"></a>
+  <a href="https://getcloudboost.site/discord/"><img src="https://img.shields.io/badge/Discord-support-5865F2?style=flat-square" alt="Discord support"></a>
 </p>
 
 <p align="center">
@@ -30,7 +30,7 @@ It does not modify games or promise artificial FPS gains. It helps players run a
 - [Leer el sitio en español](https://getcloudboost.site/es/)
 - [Read the Trust Center](https://getcloudboost.site/trust.html)
 - [See public results and measurement method](https://getcloudboost.site/results.html?utm_source=github&utm_medium=organic&utm_campaign=readme)
-- [Join the Discord](https://discord.gg/kU5trxtRb)
+- [Join the Discord](https://getcloudboost.site/discord/)
 - [Get CloudBoost PRO](https://payhip.com/b/Jb0XO?utm_source=github&utm_medium=organic&utm_campaign=readme_pro)
 
 > **Updating from 4.3.2 or 4.3.3?** If the old updater cannot verify the publisher, install the latest DMG manually once from the official release page. Drag CloudBoost to Applications and replace the existing copy. Your settings and PRO activation remain on the Mac.
@@ -163,7 +163,7 @@ CloudBoost can measure macOS pressure, thermal state, power mode, background act
 - Public user feedback is available on the [reviews page](https://getcloudboost.site/reviews.html)
 - Setup-specific evidence and the Session Lab method are documented on the [Results page](https://getcloudboost.site/results.html?utm_source=github&utm_medium=organic&utm_campaign=readme_results)
 - The in-app `Review` button opens the public [GitHub review form](https://github.com/victorbrandaao/CloudBoost/issues/new?template=user-review.yml)
-- Free and PRO support is available on [Discord](https://discord.gg/kU5trxtRb)
+- Free and PRO support is available on [Discord](https://getcloudboost.site/discord/)
 - Installation, diagnostics and license help are documented in [SUPPORT.md](SUPPORT.md)
 - Security reports should follow the private process in [SECURITY.md](SECURITY.md)
 

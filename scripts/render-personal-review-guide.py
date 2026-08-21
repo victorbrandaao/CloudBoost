@@ -118,7 +118,7 @@ def main() -> None:
     c.line(margin, 54, page_width - margin, 54)
     c.setFont("Helvetica", 8.5)
     c.setFillColor(HexColor(muted))
-    c.drawString(margin, 37, "Support: discord.gg/kU5trxtRb")
+    c.drawString(margin, 37, "Support: getcloudboost.site/discord")
     c.drawRightString(page_width - margin, 37, "CloudBoost - macOS gaming session tools")
 
     c.showPage()

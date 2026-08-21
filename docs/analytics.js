@@ -81,7 +81,9 @@
     if (url.hostname === "payhip.com" && url.pathname === "/b/Jb0XO") {
       return ["buy_pro_clicked", "pro_checkout_opened"];
     }
-    if (url.hostname === "discord.gg" && url.pathname === "/kU5trxtRb") {
+    const isDiscordInvite = url.hostname === "discord.gg" && url.pathname === "/YMAg8tpUG";
+    const isDiscordShortcut = url.hostname === "getcloudboost.site" && url.pathname === "/discord/";
+    if (isDiscordInvite || isDiscordShortcut) {
       return ["discord_clicked"];
     }
     if (url.hostname === "github.com" && /\/CloudBoost\/issues\/new/.test(url.pathname)) {

@@ -5,7 +5,7 @@
 - Release: https://github.com/victorbrandaao/CloudBoost/releases/tag/v4.3.1
 - Measured session: https://getcloudboost.site/results/league-of-legends-pro-session.html
 - PRO: https://payhip.com/b/Jb0XO
-- Discord: https://discord.gg/kU5trxtRb
+- Discord: https://getcloudboost.site/discord/
 
 ## X
 
@@ -35,7 +35,7 @@ Release: https://github.com/victorbrandaao/CloudBoost/releases/tag/v4.3.1
 
 Method and raw data: https://getcloudboost.site/results/league-of-legends-pro-session.html
 
-Setup, Free and PRO support: https://discord.gg/kU5trxtRb
+Setup, Free and PRO support: https://getcloudboost.site/discord/
 
 ## LinkedIn
 

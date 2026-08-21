@@ -8,7 +8,7 @@ GitHub releases: https://github.com/victorbrandaao/CloudBoost/releases/latest
 Current release: https://github.com/victorbrandaao/CloudBoost/releases/tag/v4.4.1
 Official X profile: https://x.com/getcloudboost
 Product Hunt: https://www.producthunt.com/products/cloudboost-2
-Support: https://discord.gg/kU5trxtRb
+Support: https://getcloudboost.site/discord/
 Reviews: https://getcloudboost.site/reviews.html
 Results and measurement method: https://getcloudboost.site/results.html
 Measured League of Legends PRO session: https://getcloudboost.site/results/league-of-legends-pro-session.html

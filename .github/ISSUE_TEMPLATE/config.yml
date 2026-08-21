@@ -1,7 +1,7 @@
 blank_issues_enabled: true
 contact_links:
   - name: CloudBoost Discord
-    url: https://discord.gg/kU5trxtRb
+    url: https://getcloudboost.site/discord/
     about: Fast support, setup help, license questions, and feature suggestions.
   - name: Leave a public review
     url: https://github.com/victorbrandaao/CloudBoost/issues/new?template=user-review.yml

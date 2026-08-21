@@ -36,7 +36,7 @@ brew upgrade --cask cloudboost
 
 ## Support
 
-Discord: https://discord.gg/kU5trxtRb
+Discord: https://getcloudboost.site/discord/
 
 GitHub Issues: https://github.com/victorbrandaao/CloudBoost/issues
 
