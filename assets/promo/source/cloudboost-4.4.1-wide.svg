@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <filter id="shadow" x="-30%" y="-20%" width="170%" height="170%">
+      <feDropShadow dx="0" dy="22" stdDeviation="22" flood-color="#07110e" flood-opacity="0.22"/>
+    </filter>
+    <clipPath id="screen-a"><rect x="878" y="54" width="398" height="794" rx="18"/></clipPath>
+    <clipPath id="screen-b"><rect x="1200" y="120" width="330" height="658" rx="16"/></clipPath>
+  </defs>
+  <rect width="1600" height="900" fill="#f4f5f2"/>
+  <rect x="0" y="0" width="800" height="900" fill="#0c0f0e"/>
+  <image href="../../brand/cloudboost-mark-v2.svg" x="66" y="58" width="44" height="44"/>
+  <text x="128" y="93" fill="#f7f8f5" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="34" font-weight="750">CloudBoost</text>
+  <text x="66" y="212" fill="#26d3a2" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="750">CLOUDBOOST 4.4.1</text>
+  <text x="66" y="302" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="72" font-weight="760">
+    <tspan x="66" dy="0">See what happened</tspan>
+    <tspan x="66" dy="80">during your Mac</tspan>
+    <tspan x="66" dy="80">gaming session.</tspan>
+  </text>
+  <text x="66" y="586" fill="#bdc4bf" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="27" font-weight="430">
+    <tspan x="66" dy="0">Latency, jitter, packet loss and local</tspan>
+    <tspan x="66" dy="40">Mac pressure in one focused timeline.</tspan>
+  </text>
+  <line x1="66" y1="702" x2="716" y2="702" stroke="#313633"/>
+  <text x="66" y="760" fill="#f2f4f1" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="650">macOS 12+</text>
+  <text x="218" y="760" fill="#f2f4f1" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="650">Intel + Apple Silicon</text>
+  <text x="493" y="760" fill="#f2f4f1" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="650">Free core</text>
+  <text x="66" y="827" fill="#26d3a2" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="21" font-weight="730">getcloudboost.site</text>
+  <rect x="840" y="0" width="760" height="900" fill="#e8ece8"/>
+  <g filter="url(#shadow)" clip-path="url(#screen-b)">
+    <image href="cloudboost-4.4.1-diagnose.png" x="1200" y="120" width="330" height="658" preserveAspectRatio="xMidYMid slice"/>
+  </g>
+  <g filter="url(#shadow)" clip-path="url(#screen-a)">
+    <image href="cloudboost-4.4.1-play.png" x="878" y="54" width="398" height="794" preserveAspectRatio="xMidYMid slice"/>
+  </g>
+  <text x="1384" y="835" text-anchor="middle" fill="#111512" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="720">REAL 4.4.1 INTERFACE</text>
+</svg>

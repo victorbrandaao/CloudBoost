@@ -19,7 +19,7 @@ It does not modify games or promise artificial FPS gains. It helps players run a
 </p>
 
 <p align="center">
-  <img src="./assets/evidence/league-pro-proof-wide.png" alt="Measured CloudBoost PRO League of Legends session with score, route p95, jitter, packet loss and app CPU sampling" width="760">
+  <img src="./assets/promo/cloudboost-4.4.1-wide.png" alt="CloudBoost 4.4.1 real Play and Diagnose interfaces for Mac gaming session diagnostics" width="760">
 </p>
 
 ## Start Here

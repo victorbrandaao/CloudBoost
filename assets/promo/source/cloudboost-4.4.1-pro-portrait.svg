@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350">
+  <defs>
+    <filter id="shadow" x="-30%" y="-20%" width="170%" height="170%">
+      <feDropShadow dx="0" dy="24" stdDeviation="24" flood-color="#0b1511" flood-opacity="0.24"/>
+    </filter>
+    <clipPath id="pro"><rect x="580" y="332" width="433" height="864" rx="22"/></clipPath>
+  </defs>
+  <rect width="1080" height="1350" fill="#f3f5f1"/>
+  <rect x="0" y="0" width="1080" height="16" fill="#1fd39e"/>
+  <image href="../../brand/cloudboost-mark-v2.svg" x="64" y="58" width="42" height="42"/>
+  <text x="124" y="92" fill="#101411" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="34" font-weight="760">CloudBoost</text>
+  <text x="64" y="206" fill="#008f70" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="760">CLOUDBOOST PRO</text>
+  <text x="64" y="292" fill="#0d110e" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="68" font-weight="770">
+    <tspan x="64" dy="0">Turn each session</tspan>
+    <tspan x="64" dy="76">into evidence.</tspan>
+  </text>
+  <text x="64" y="475" fill="#58605a" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="25" font-weight="430">
+    <tspan x="64" dy="0">Previous-run comparison, complete timeline,</tspan>
+    <tspan x="64" dy="38">Session Lab, fixes and exportable proof.</tspan>
+  </text>
+  <rect x="64" y="594" width="430" height="1" fill="#cbd0cb"/>
+  <text x="64" y="660" fill="#101411" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="700">Complete session timeline</text>
+  <text x="64" y="716" fill="#101411" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="700">Before-and-after comparison</text>
+  <text x="64" y="772" fill="#101411" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="700">Session Proof export</text>
+  <text x="64" y="828" fill="#101411" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="700">Priority Discord support</text>
+  <text x="64" y="960" fill="#008f70" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="34" font-weight="800">$10 once</text>
+  <text x="64" y="1004" fill="#68706a" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="600">CloudBoost 4.x license · no subscription</text>
+  <text x="64" y="1258" fill="#101411" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="740">getcloudboost.site</text>
+  <g filter="url(#shadow)" clip-path="url(#pro)">
+    <image href="cloudboost-4.4.1-pro.png" x="580" y="332" width="433" height="864" preserveAspectRatio="xMidYMid slice"/>
+  </g>
+  <text x="796" y="1240" text-anchor="middle" fill="#68706a" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="17" font-weight="690">REAL 4.4.1 PRO SCREEN</text>
+</svg>
