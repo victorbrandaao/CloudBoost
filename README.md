@@ -9,8 +9,8 @@ CloudBoost is a native macOS menu bar app that shows what is happening around a 
 It does not modify games or promise artificial FPS gains. It helps players run a quieter Mac session, understand a problem, and leave with a useful next step.
 
 <p align="center">
-  <a href="https://github.com/victorbrandaao/CloudBoost/releases/tag/v4.4.1"><img src="https://img.shields.io/github/v/release/victorbrandaao/CloudBoost?label=release&amp;style=flat-square&amp;color=00a884&amp;cacheSeconds=300" alt="CloudBoost v4.4.1"></a>
-  <a href="https://github.com/victorbrandaao/CloudBoost/releases/tag/v4.4.1"><img src="https://img.shields.io/github/downloads/victorbrandaao/CloudBoost/v4.4.1/total?label=v4.4.1%20downloads&amp;style=flat-square&amp;color=111111&amp;cacheSeconds=300" alt="CloudBoost v4.4.1 downloads"></a>
+  <a href="https://github.com/victorbrandaao/CloudBoost/releases/tag/v4.4.2"><img src="https://img.shields.io/github/v/release/victorbrandaao/CloudBoost?label=release&amp;style=flat-square&amp;color=00a884&amp;cacheSeconds=300" alt="CloudBoost v4.4.2"></a>
+  <a href="https://github.com/victorbrandaao/CloudBoost/releases/tag/v4.4.2"><img src="https://img.shields.io/github/downloads/victorbrandaao/CloudBoost/v4.4.2/total?label=v4.4.2%20downloads&amp;style=flat-square&amp;color=111111&amp;cacheSeconds=300" alt="CloudBoost v4.4.2 downloads"></a>
   <a href="https://github.com/victorbrandaao/CloudBoost/releases"><img src="https://img.shields.io/github/downloads/victorbrandaao/CloudBoost/total?label=all%20downloads&amp;style=flat-square&amp;color=111111&amp;cacheSeconds=300" alt="All CloudBoost GitHub release downloads"></a>
   <img src="https://img.shields.io/badge/macOS-12%2B-111111?style=flat-square" alt="macOS 12 or later">
   <img src="https://img.shields.io/badge/Mac-Intel%20%2B%20Apple%20Silicon-111111?style=flat-square&amp;logo=apple" alt="Intel and Apple Silicon supported">
@@ -19,7 +19,7 @@ It does not modify games or promise artificial FPS gains. It helps players run a
 </p>
 
 <p align="center">
-  <img src="./assets/promo/cloudboost-4.4.1-wide.png" alt="CloudBoost 4.4.1 real Play and Diagnose interfaces for Mac gaming session diagnostics" width="760">
+  <img src="./assets/promo/cloudboost-4.4.1-wide.png" alt="Real CloudBoost Play and Diagnose interfaces for Mac gaming session diagnostics" width="760">
 </p>
 
 ## Start Here
@@ -33,7 +33,7 @@ It does not modify games or promise artificial FPS gains. It helps players run a
 - [Join the Discord](https://getcloudboost.site/discord/)
 - [Get CloudBoost PRO](https://payhip.com/b/Jb0XO?utm_source=github&utm_medium=organic&utm_campaign=readme_pro)
 
-> **Updating from 4.3.2 or 4.3.3?** If the old updater cannot verify the publisher, install the latest DMG manually once from the official release page. Drag CloudBoost to Applications and replace the existing copy. Your settings and PRO activation remain on the Mac.
+> **Does an older updater reject the publisher?** Install 4.4.2 manually once from the official release page. Starting with 4.4.2, signed update metadata travels with the GitHub release and the updater has independent fallback routes. Your settings remain on the Mac. Existing PRO users may need to use `Reconnect existing PRO` once to migrate the old Keychain entry into CloudBoost's encrypted local license vault.
 
 CloudBoost has passed **1,000 public release asset downloads**. GitHub badges above update automatically for release assets; this count is not presented as unique users.
 
@@ -137,19 +137,16 @@ If macOS reports that the independently distributed app is damaged, clear its qu
 xattr -cr /Applications/"CloudBoost.app"
 ```
 
-## Current Release: 4.4.1
+## Current Release: 4.4.2
 
-- The updater now checks an independent signature mirror when GitHub signature routes are unavailable and installs only to `/Applications/CloudBoost.app`.
-- Telemetry uses Supabase's current publishable-key flow and no longer sends that key as a bearer token.
-- Payhip validation rejects malformed requests before counting them against activation limits.
-- AWDL and process-priority watchdog state has stronger ownership, symlink, stale-session, and automatic-rollback protection.
-- Quitting no longer risks presenting a late administrator-password prompt.
-- License grace periods reject implausible future timestamps, and first-run consent state is saved only after the dialog completes.
-- Spanish coverage now includes the updater, license, diagnostic, Session Doctor, Session Lab, and trust flows.
+- Update signatures are embedded in the GitHub release notes, so verification no longer depends on a separate mirror being available first.
+- The updater keeps direct asset, GitHub API, and website-mirror fallback routes while requiring a valid signature before installation.
+- Releases are published as complete drafts and only then marked latest, preventing clients from seeing a half-uploaded update.
+- CloudBoost no longer reads several legacy Keychain entries automatically at every launch.
+- Existing PRO users get an explicit one-time `Reconnect existing PRO` path that migrates the old license into an encrypted, machine-bound local vault.
+- Payhip, Gumroad, and legacy PRO+ customers retain their existing access. Pricing and plan entitlements are unchanged.
 
-CloudBoost 4.4.1 is a universal build for Intel and Apple Silicon Macs running macOS 12 Monterey or later. Automated validation covers both architecture slices and 53 tests. Existing Payhip, Gumroad and legacy PRO+ licenses keep their access. Pricing and plan entitlements are unchanged.
-
-Users on an older build who see a publisher-verification error should install 4.4.1 manually once from the official release page. Local settings and PRO activation are preserved.
+CloudBoost 4.4.2 is a universal build for Intel and Apple Silicon Macs running macOS 12 Monterey or later. Automated validation covers both architecture slices and 53 tests.
 
 See the complete notes and checksums on the [release page](https://github.com/victorbrandaao/CloudBoost/releases/latest).
 

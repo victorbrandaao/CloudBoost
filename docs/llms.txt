@@ -5,7 +5,7 @@ CloudBoost is a native macOS menu bar app for cleaner gaming sessions on Mac.
 Primary URL: https://getcloudboost.site/
 Official download page: https://getcloudboost.site/download.html
 GitHub releases: https://github.com/victorbrandaao/CloudBoost/releases/latest
-Current release: https://github.com/victorbrandaao/CloudBoost/releases/tag/v4.4.1
+Current release: https://github.com/victorbrandaao/CloudBoost/releases/tag/v4.4.2
 Official X profile: https://x.com/getcloudboost
 Product Hunt: https://www.producthunt.com/products/cloudboost-2
 Support: https://getcloudboost.site/discord/
@@ -25,7 +25,7 @@ Independent coverage: https://macmagazine.com.br/post/2026/06/01/cloudboost-otim
 
 CloudBoost helps Mac players start a focused gaming session, reduce local macOS interruptions, and understand latency spikes that normal speed tests often miss.
 
-Version 4.4.1 is a universal Intel and Apple Silicon maintenance release. It adds an independent updater-signature mirror, strengthens privileged rollback and watchdog state, restores current Supabase telemetry and license validation, and expands Spanish coverage. Session Evidence, Network Preflight, Controller/Game Mode Advisor, and the optional local-only Stream Bridge remain available. Existing Payhip, Gumroad, and legacy PRO+ keys remain supported.
+Version 4.4.2 is a universal Intel and Apple Silicon maintenance release. It embeds updater signatures in GitHub release metadata, publishes complete releases atomically, removes automatic multi-entry Keychain access, and provides a one-time explicit migration for older PRO licenses. Session Evidence, Network Preflight, Controller/Game Mode Advisor, and the optional local-only Stream Bridge remain available. Existing Payhip, Gumroad, and legacy PRO+ keys remain supported.
 
 ## Measured Session Evidence
 
