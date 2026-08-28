@@ -4,7 +4,7 @@
   xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://getcloudboost.site/</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -13,8 +13,8 @@
       <image:caption>A real 42-minute League of Legends session on macOS with score, route p95, jitter, packet loss and independent CloudBoost CPU sampling.</image:caption>
     </image:image>
   </url>
-  <url><loc>https://getcloudboost.site/download.html</loc><lastmod>2026-08-25</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://getcloudboost.site/ai-summary.html</loc><lastmod>2026-08-25</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://getcloudboost.site/download.html</loc><lastmod>2026-08-28</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://getcloudboost.site/ai-summary.html</loc><lastmod>2026-08-28</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://getcloudboost.site/reviews.html</loc><lastmod>2026-07-06</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://getcloudboost.site/privacy.html</loc><lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.4</priority></url>
   <url><loc>https://getcloudboost.site/results.html</loc><lastmod>2026-07-20</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
@@ -39,10 +39,10 @@
   <url><loc>https://getcloudboost.site/guides/vpn-route-doctor-mac-gaming.html</loc><lastmod>2026-07-06</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://getcloudboost.site/guides/roblox-mac-lag.html</loc><lastmod>2026-07-22</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://getcloudboost.site/guides/minecraft-mac-lag.html</loc><lastmod>2026-07-22</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://getcloudboost.site/es/</loc><lastmod>2026-08-25</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://getcloudboost.site/es/</loc><lastmod>2026-08-28</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://getcloudboost.site/es/cloud-gaming-mac.html</loc><lastmod>2026-07-16</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://getcloudboost.site/es/juegos-mac-nativos.html</loc><lastmod>2026-07-16</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://getcloudboost.site/es/privacidad.html</loc><lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.4</priority></url>
-  <url><loc>https://getcloudboost.site/pt/</loc><lastmod>2026-08-25</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://getcloudboost.site/pt/</loc><lastmod>2026-08-28</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://getcloudboost.site/pt/privacidade.html</loc><lastmod>2026-07-21</lastmod><changefreq>monthly</changefreq><priority>0.4</priority></url>
 </urlset>
