@@ -19,7 +19,7 @@ It does not modify games or promise artificial FPS gains. It helps players run a
 </p>
 
 <p align="center">
-  <img src="./assets/promo/cloudboost-4.4.1-wide.png" alt="Real CloudBoost Play and Diagnose interfaces for Mac gaming session diagnostics" width="760">
+  <img src="./assets/evidence/league-pro-proof-wide.png" alt="Measured CloudBoost PRO League session with score, route latency, jitter and packet loss" width="760">
 </p>
 
 ## Start Here
@@ -33,9 +33,9 @@ It does not modify games or promise artificial FPS gains. It helps players run a
 - [Join the Discord](https://getcloudboost.site/discord/)
 - [Get CloudBoost PRO](https://payhip.com/b/Jb0XO?utm_source=github&utm_medium=organic&utm_campaign=readme_pro)
 
-> **Does an older updater reject the publisher?** Install 4.4.3 manually once from the official release page. Signed update metadata and independent verification fallbacks remain built in. Your settings stay on the Mac. CloudBoost does not inspect old Keychain entries at launch; recovery is available only when an existing customer explicitly chooses `Recover earlier PRO`.
+> **Using 4.4.1 or earlier?** Install 4.4.3 manually once from the official release page. Those builds contain an updater that cannot use the newer embedded-signature and website-mirror routes. Your settings and PRO activation stay on the Mac. Releases are now checked after publication through the same GitHub and mirror routes used by the app.
 
-CloudBoost has passed **1,000 public release asset downloads**. GitHub badges above update automatically for release assets; this count is not presented as unique users.
+CloudBoost has passed **1,500 installer downloads**. GitHub badges above update automatically for release assets; this count is not presented as unique users.
 
 ## Measured League Of Legends Session
 

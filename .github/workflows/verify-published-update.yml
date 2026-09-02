@@ -1,0 +1,153 @@
+name: Verify published update
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Published release tag, for example v4.4.3
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+concurrency:
+  group: verify-published-update-${{ github.event.release.tag_name || inputs.tag }}
+  cancel-in-progress: false
+
+jobs:
+  verify:
+    runs-on: macos-15
+    timeout-minutes: 15
+    env:
+      GH_TOKEN: ${{ github.token }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Resolve release
+        id: release
+        env:
+          EVENT_TAG: ${{ github.event.release.tag_name }}
+          INPUT_TAG: ${{ inputs.tag }}
+        run: |
+          TAG="${EVENT_TAG:-$INPUT_TAG}"
+          [[ "$TAG" =~ ^v[0-9]+(\.[0-9]+){1,3}(-[A-Za-z0-9][A-Za-z0-9.-]*)?$ ]]
+          echo "tag=$TAG" >> "$GITHUB_OUTPUT"
+          echo "version=${TAG#v}" >> "$GITHUB_OUTPUT"
+
+      - name: Download the public release exactly as customers receive it
+        env:
+          TAG: ${{ steps.release.outputs.tag }}
+          VERSION: ${{ steps.release.outputs.version }}
+        run: |
+          mkdir -p /tmp/cloudboost-published
+          gh release download "$TAG" --dir /tmp/cloudboost-published \
+            --pattern "CloudBoost_v${VERSION}.zip" \
+            --pattern "CloudBoost_v${VERSION}.zip.sig" \
+            --pattern "CloudBoost_v${VERSION}.dmg" \
+            --pattern "CloudBoost_v${VERSION}.dmg.sig"
+          curl --fail --location --silent --show-error \
+            --header 'Accept: application/vnd.github+json' \
+            --user-agent 'CloudBoost-Updater' \
+            --output /tmp/cloudboost-release.json \
+            "https://api.github.com/repos/${GITHUB_REPOSITORY}/releases/latest"
+          test "$(jq -r '.tag_name' /tmp/cloudboost-release.json)" = "$TAG"
+          for suffix in zip zip.sig dmg dmg.sig; do
+            test -s "/tmp/cloudboost-published/CloudBoost_v${VERSION}.${suffix}"
+          done
+
+      - name: Verify GitHub checksums and embedded release signatures
+        env:
+          VERSION: ${{ steps.release.outputs.version }}
+        run: |
+          ZIP="/tmp/cloudboost-published/CloudBoost_v${VERSION}.zip"
+          DMG="/tmp/cloudboost-published/CloudBoost_v${VERSION}.dmg"
+          ZIP_SHA="$(shasum -a 256 "$ZIP" | awk '{print $1}')"
+          DMG_SHA="$(shasum -a 256 "$DMG" | awk '{print $1}')"
+          API_ZIP_SHA="$(jq -r --arg name "CloudBoost_v${VERSION}.zip" '.assets[] | select(.name == $name) | .digest' /tmp/cloudboost-release.json | sed 's/^sha256://')"
+          API_DMG_SHA="$(jq -r --arg name "CloudBoost_v${VERSION}.dmg" '.assets[] | select(.name == $name) | .digest' /tmp/cloudboost-release.json | sed 's/^sha256://')"
+          test "$ZIP_SHA" = "$API_ZIP_SHA"
+          test "$DMG_SHA" = "$API_DMG_SHA"
+
+          BODY="$(jq -r '.body' /tmp/cloudboost-release.json)"
+          EMBEDDED_ZIP="$(printf '%s\n' "$BODY" | sed -nE 's/^[[:space:]]*ZIP ED25519:[[:space:]]*([A-Za-z0-9+\/=]+)[[:space:]]*$/\1/p' | head -1)"
+          EMBEDDED_DMG="$(printf '%s\n' "$BODY" | sed -nE 's/^[[:space:]]*DMG ED25519:[[:space:]]*([A-Za-z0-9+\/=]+)[[:space:]]*$/\1/p' | head -1)"
+          test "$EMBEDDED_ZIP" = "$(tr -d '[:space:]' < "${ZIP}.sig")"
+          test "$EMBEDDED_DMG" = "$(tr -d '[:space:]' < "${DMG}.sig")"
+
+      - name: Verify the app bundle and publisher signatures
+        env:
+          VERSION: ${{ steps.release.outputs.version }}
+        run: |
+          ZIP="/tmp/cloudboost-published/CloudBoost_v${VERSION}.zip"
+          DMG="/tmp/cloudboost-published/CloudBoost_v${VERSION}.dmg"
+          mkdir -p /tmp/cloudboost-extracted
+          ditto -x -k "$ZIP" /tmp/cloudboost-extracted
+          APP="$(find /tmp/cloudboost-extracted -type d -name CloudBoost.app | head -1)"
+          test -n "$APP"
+          test "$(plutil -extract CFBundleShortVersionString raw "$APP/Contents/Info.plist")" = "$VERSION"
+          PUBLIC_KEY="$(plutil -extract CloudBoostUpdatePublicKey raw "$APP/Contents/Info.plist")"
+          test -n "$PUBLIC_KEY"
+          swift .github/scripts/verify-update-signature.swift "$PUBLIC_KEY" "$ZIP" "${ZIP}.sig"
+          swift .github/scripts/verify-update-signature.swift "$PUBLIC_KEY" "$DMG" "${DMG}.sig"
+          codesign --verify --deep --strict --verbose=2 "$APP"
+          ARCHS="$(lipo -archs "$APP/Contents/MacOS/CloudBoost")"
+          [[ "$ARCHS" == *arm64* ]]
+          [[ "$ARCHS" == *x86_64* ]]
+          "$APP/Contents/MacOS/CloudBoost" --self-test
+
+      - name: Verify both GitHub signature routes
+        env:
+          TAG: ${{ steps.release.outputs.tag }}
+          VERSION: ${{ steps.release.outputs.version }}
+        run: |
+          for kind in zip dmg; do
+            PACKAGE="/tmp/cloudboost-published/CloudBoost_v${VERSION}.${kind}"
+            PACKAGE_DIRECT="https://github.com/${GITHUB_REPOSITORY}/releases/download/${TAG}/CloudBoost_v${VERSION}.${kind}"
+            curl --fail --location --silent --show-error \
+              --user-agent 'CloudBoost-Updater' \
+              --output "/tmp/direct-${kind}" "$PACKAGE_DIRECT"
+            cmp "$PACKAGE" "/tmp/direct-${kind}"
+
+            EXPECTED="/tmp/cloudboost-published/CloudBoost_v${VERSION}.${kind}.sig"
+            DIRECT="https://github.com/${GITHUB_REPOSITORY}/releases/download/${TAG}/CloudBoost_v${VERSION}.${kind}.sig"
+            curl --fail --location --silent --show-error \
+              --header 'Accept: application/octet-stream' \
+              --user-agent 'CloudBoost-Updater' \
+              --output "/tmp/direct-${kind}.sig" "$DIRECT"
+            cmp "$EXPECTED" "/tmp/direct-${kind}.sig"
+
+            ASSET_ID="$(jq -r --arg name "CloudBoost_v${VERSION}.${kind}.sig" '.assets[] | select(.name == $name) | .id' /tmp/cloudboost-release.json)"
+            test -n "$ASSET_ID"
+            curl --fail --location --silent --show-error \
+              --header 'Accept: application/octet-stream' \
+              --user-agent 'CloudBoost-Updater' \
+              --output "/tmp/api-${kind}.sig" \
+              "https://api.github.com/repos/${GITHUB_REPOSITORY}/releases/assets/${ASSET_ID}"
+            cmp "$EXPECTED" "/tmp/api-${kind}.sig"
+          done
+
+      - name: Verify the independent website mirror
+        env:
+          VERSION: ${{ steps.release.outputs.version }}
+        run: |
+          MIRROR="https://getcloudboost.site/updates/v${VERSION}"
+          for attempt in {1..60}; do
+            if curl --fail --location --silent --show-error \
+              --output /tmp/cloudboost-mirror-manifest.json "$MIRROR/manifest.json"; then
+              break
+            fi
+            sleep 5
+          done
+          test -s /tmp/cloudboost-mirror-manifest.json
+          for kind in zip dmg; do
+            EXPECTED="/tmp/cloudboost-published/CloudBoost_v${VERSION}.${kind}.sig"
+            curl --fail --location --silent --show-error \
+              --output "/tmp/mirror-${kind}.sig" "$MIRROR/CloudBoost_v${VERSION}.${kind}.sig"
+            cmp "$EXPECTED" "/tmp/mirror-${kind}.sig"
+            ACTUAL_SHA="$(shasum -a 256 "/tmp/cloudboost-published/CloudBoost_v${VERSION}.${kind}" | awk '{print $1}')"
+            test "$ACTUAL_SHA" = "$(jq -r ".${kind}.sha256" /tmp/cloudboost-mirror-manifest.json)"
+          done
