@@ -4,10 +4,14 @@ on:
   push:
     paths:
       - "docs/**"
+      - "scripts/**"
+      - "Casks/**"
       - ".github/workflows/site-integrity.yml"
   pull_request:
     paths:
       - "docs/**"
+      - "scripts/**"
+      - "Casks/**"
       - ".github/workflows/site-integrity.yml"
   workflow_dispatch:
 
@@ -19,6 +23,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
+      - name: Test release synchronization
+        run: python3 scripts/test_sync_release.py
 
       - name: Verify required discovery files
         run: |

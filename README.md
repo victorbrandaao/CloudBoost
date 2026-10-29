@@ -139,14 +139,12 @@ xattr -cr /Applications/"CloudBoost.app"
 
 ## Current Release: 4.4.3
 
-- License startup now restores only from CloudBoost's machine-bound local vault and performs zero Keychain operations.
-- Automatic legacy Keychain migration and cleanup have been removed from launch, including on macOS 12 Monterey.
-- Older PRO licenses can be recovered only after the customer chooses `Recover earlier PRO` and confirms the action.
-- Legacy entries are left untouched, avoiding the authorization-dialog cascade caused by trying to inspect or remove them.
-- The packaged self-test fails if license initialization performs a Keychain operation.
-- Payhip, Gumroad, and legacy PRO+ customers retain their existing access. Pricing and plan entitlements are unchanged.
+- Game/service and mode selection sit next to Start Session.
+- Navigation remains visible while scrolling; session transitions have clear progress labels.
+- Free installations can try three complete PRO sessions without an account or card. Sessions shorter than one minute do not consume the trial.
+- The download page includes an actual app preview, installation guidance, and copyable Homebrew commands.
 
-CloudBoost 4.4.3 is a universal build for Intel and Apple Silicon Macs running macOS 12 Monterey or later. Automated validation covers both architecture slices and 58 tests.
+CloudBoost 4.4.3 is a universal build for Intel and Apple Silicon Macs running macOS 12 Monterey or later.
 
 See the complete notes and checksums on the [release page](https://github.com/victorbrandaao/CloudBoost/releases/latest).
 

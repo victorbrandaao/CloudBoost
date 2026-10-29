@@ -17,8 +17,8 @@
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
     <link rel="icon" type="image/png" href="assets/cloudboost-app-icon-v2.png">
-    <link rel="stylesheet" href="styles.css?v=20260820">
-    <link rel="stylesheet" href="content-modern.css?v=20260820-2">
+    <link rel="stylesheet" href="styles.css?v=20261028">
+    <link rel="stylesheet" href="content-modern.css?v=20261028">
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -52,6 +52,7 @@
     </script>
     <script src="analytics-config.js"></script>
     <script src="analytics.js" defer></script>
+    <script src="download.js" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
@@ -62,15 +63,32 @@
       </header>
 
       <main id="main-content">
-        <section class="content-hero">
+        <section class="content-hero download-layout">
+          <div class="download-copy">
           <p class="eyebrow">Official download · CloudBoost 4.4.3</p>
           <h1>Download CloudBoost for Mac.</h1>
-          <p class="lead">One universal build for Intel and Apple Silicon Macs. CloudBoost runs from the menu bar on macOS 12 Monterey or later.</p>
+          <p class="lead">Choose your game, pick a mode, and start from the menu bar. One universal app for Intel and Apple Silicon, on macOS 12 or later.</p>
           <div class="actions">
-            <a class="button primary" href="https://github.com/victorbrandaao/CloudBoost/releases/download/v4.4.3/CloudBoost_v4.4.3.dmg?utm_source=cloudboost_download_page&amp;utm_medium=organic&amp;utm_campaign=direct_dmg">Download DMG</a>
+            <a class="button primary" href="https://github.com/victorbrandaao/CloudBoost/releases/download/v4.4.3/CloudBoost_v4.4.3.dmg?utm_source=cloudboost_download_page&amp;utm_medium=organic&amp;utm_campaign=direct_dmg">Download for Mac</a>
             <a class="button secondary" href="https://github.com/victorbrandaao/CloudBoost/releases/tag/v4.4.3?utm_source=cloudboost_download_page&amp;utm_medium=organic&amp;utm_campaign=release_notes">Release notes &amp; checksums</a>
           </div>
           <ul class="content-meta"><li>Version 4.4.3</li><li>macOS 12+</li><li>Intel + Apple Silicon</li><li>Free core features</li></ul>
+          <p class="download-reassurance">Free to start. Three PRO sessions to try. No card required.</p>
+          </div>
+          <figure class="app-preview">
+            <img src="assets/app/cloudboost-session-controls.png" alt="CloudBoost session controls with game and mode selectors, Start Session, and the three-session PRO trial shortcut" width="360" height="720" fetchpriority="high">
+            <figcaption>The app interface · no session running</figcaption>
+          </figure>
+        </section>
+
+        <section class="content-band alt" id="trial" aria-labelledby="trial-title">
+          <p class="eyebrow">Your first session</p>
+          <h2 id="trial-title">Try the full workflow before deciding.</h2>
+          <div class="first-session-grid">
+            <article><span class="step-number">01</span><h3>Choose your game</h3><p>Open CloudBoost from the menu bar. Select your game or cloud service and start with Balanced mode.</p></article>
+            <article><span class="step-number">02</span><h3>Try three PRO sessions</h3><p>Select “Try 3 PRO sessions” in the app. No account or card is needed. A session counts only after one minute.</p></article>
+            <article><span class="step-number">03</span><h3>Review what happened</h3><p>Check the timeline and Session Proof. Stop the session to restore your previous settings. Continue Free or keep PRO for $10 once.</p></article>
+          </div>
         </section>
 
         <section class="content-band" aria-labelledby="install-title">
@@ -86,8 +104,12 @@
             <article class="install-option">
               <h3>Homebrew</h3>
               <p>Install or update from the public CloudBoost tap.</p>
-              <code class="command">brew tap victorbrandaao/cloudboost<br>brew install --cask cloudboost</code>
-              <p>Later, run <code>brew upgrade --cask cloudboost</code>.</p>
+              <code class="command" id="install-command" tabindex="0">brew tap victorbrandaao/cloudboost<br>brew install --cask cloudboost</code>
+              <button class="copy-command" type="button" data-copy-target="install-command" data-copy-label="Copy install command" hidden>Copy install command</button>
+              <p>Already installed? Update your tap, then upgrade:</p>
+              <code class="command" id="update-command" tabindex="0">brew update<br>brew upgrade --cask cloudboost</code>
+              <button class="copy-command" type="button" data-copy-target="update-command" data-copy-label="Copy update command" hidden>Copy update command</button>
+              <p class="copy-status" role="status" aria-live="polite" id="copy-status"></p>
             </article>
           </div>
         </section>

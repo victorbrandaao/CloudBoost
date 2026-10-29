@@ -73,15 +73,26 @@ jobs:
             > "$DEST/manifest.json"
           jq -e --arg version "$VERSION" '.version == $version and (.zip.sha256 | length) == 64 and (.dmg.sha256 | length) == 64' "$DEST/manifest.json"
 
+      - name: Synchronize the latest stable release on the website and cask
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ steps.release.outputs.tag }}
+          VERSION: ${{ steps.release.outputs.version }}
+        run: |
+          LATEST="$(gh api "repos/${GITHUB_REPOSITORY}/releases/latest" --jq '.tag_name')"
+          if [[ "$TAG" == "$LATEST" && "$VERSION" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+            python3 scripts/sync-release.py "$VERSION" "docs/updates/v${VERSION}/manifest.json"
+          fi
+
       - name: Publish mirror files
         env:
           TAG: ${{ steps.release.outputs.tag }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs/updates
+          git add docs README.md Casks/cloudboost.rb
           if git diff --cached --quiet; then
             exit 0
           fi
-          git commit -m "chore: mirror update signatures for ${TAG}"
+          git commit -m "chore: synchronize release and update signatures for ${TAG}"
           git push origin HEAD:main

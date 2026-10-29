@@ -49,11 +49,9 @@ jobs:
             --pattern "CloudBoost_v${VERSION}.zip.sig" \
             --pattern "CloudBoost_v${VERSION}.dmg" \
             --pattern "CloudBoost_v${VERSION}.dmg.sig"
-          curl --fail --location --silent --show-error \
-            --header 'Accept: application/vnd.github+json' \
-            --user-agent 'CloudBoost-Updater' \
-            --output /tmp/cloudboost-release.json \
-            "https://api.github.com/repos/${GITHUB_REPOSITORY}/releases/latest"
+          # Use the workflow token for API metadata to avoid shared-runner rate limits.
+          # Direct package and signature downloads below remain unauthenticated.
+          gh api "repos/${GITHUB_REPOSITORY}/releases/latest" > /tmp/cloudboost-release.json
           test "$(jq -r '.tag_name' /tmp/cloudboost-release.json)" = "$TAG"
           for suffix in zip zip.sig dmg dmg.sig; do
             test -s "/tmp/cloudboost-published/CloudBoost_v${VERSION}.${suffix}"
@@ -122,11 +120,8 @@ jobs:
 
             ASSET_ID="$(jq -r --arg name "CloudBoost_v${VERSION}.${kind}.sig" '.assets[] | select(.name == $name) | .id' /tmp/cloudboost-release.json)"
             test -n "$ASSET_ID"
-            curl --fail --location --silent --show-error \
-              --header 'Accept: application/octet-stream' \
-              --user-agent 'CloudBoost-Updater' \
-              --output "/tmp/api-${kind}.sig" \
-              "https://api.github.com/repos/${GITHUB_REPOSITORY}/releases/assets/${ASSET_ID}"
+            gh api --header 'Accept: application/octet-stream' \
+              "repos/${GITHUB_REPOSITORY}/releases/assets/${ASSET_ID}" > "/tmp/api-${kind}.sig"
             cmp "$EXPECTED" "/tmp/api-${kind}.sig"
           done
 
