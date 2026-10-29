@@ -1,52 +1,25 @@
-# CloudBoost 4.4.3
+# CloudBoost 4.4.5
 
-CloudBoost 4.4.3 completes the fix for repeated Keychain password prompts after an update, especially on macOS 12 Monterey.
+Choose your game or service, select a mode, and start from one session panel.
 
 [MIN_VERSION: 4.3.4]
 
 ## What changed
 
-- CloudBoost performs zero Keychain reads, writes, or deletes during license startup.
-- Automatic legacy migration has been removed from launch. The previous non-interactive Security query could still display one password dialog per old item on Monterey.
-- Existing customers can recover an older license only from `PRO > Recover earlier PRO`, after explicit confirmation.
-- Legacy Keychain entries are left untouched because trying to remove them can also trigger authorization dialogs on older macOS versions.
-- Active licenses in CloudBoost's machine-bound local vault continue to restore normally.
-- A packaged self-test now fails if `ProManager` initialization touches the Keychain.
-- Publisher-signature verification, complete draft publishing, and the three authenticated update routes from 4.4.2 remain active.
-- Existing Payhip, Gumroad, and legacy PRO+ licenses keep their access. Pricing and plan entitlements are unchanged.
+- Game/service and mode selectors now sit next to Start Session.
+- Navigation stays visible while scrolling, and switching tabs returns to the top.
+- Ready, preparing, active, and restoring states explain what the app is doing.
+- Profile and mode changes are blocked during session transitions.
+- The session panel includes a shortcut to the three-session PRO trial.
+- The download page shows the actual app interface, explains the trial, and includes copyable Homebrew install/update commands.
+- Release publishing synchronizes current site versions and the public Homebrew cask from checksummed release metadata.
 
-## Important upgrade note
+## Installation and compatibility
 
-If an older CloudBoost build still shows `CloudBoost could not verify who published this update`, install 4.4.3 manually once from the official DMG. Drag CloudBoost to Applications and replace the existing copy.
+Download the DMG and drag CloudBoost to Applications, replacing the previous copy. Existing settings and PRO activation are preserved. Requires macOS 12 Monterey or later; supports Intel and Apple Silicon.
 
-Opening CloudBoost must not display a Keychain password prompt. If an older PRO license is not restored automatically, open the PRO screen and choose `Recover earlier PRO`. That intentional recovery may request access to the old license and device entries once each.
+If an older updater cannot verify the publisher, install this official DMG manually once.
 
-## Compatibility
+## Distribution
 
-CloudBoost 4.4.3 supports Intel and Apple Silicon Macs running macOS 12 Monterey or later. The release workflow built and verified both architecture slices and passed all 58 automated tests.
-
-## Install
-
-Download the DMG, open it, and drag CloudBoost to `/Applications`.
-
-Homebrew users can update with:
-
-```bash
-brew update
-brew upgrade --cask cloudboost
-```
-
-## Support
-
-Discord: https://getcloudboost.site/discord/
-
-GitHub Issues: https://github.com/victorbrandaao/CloudBoost/issues
-
-## Verification
-
-```text
-ZIP SHA256: 2a45ce6b399d0ae544401fd9317f29ccc02768c9b84df5fa519b3554dbec9589
-DMG SHA256: 8931394c8ecf769010fe7b4ae4ac1e4185561d5b23a93f33eec63973ffa29d01
-ZIP ED25519: s6nM37P1OmXe61752g+TN+KWY5TvMHoajBHbD1Fiiz5p1uWu2rTPCVcNBsveF9EHpEPX1AOOxkinVhWBUyiOBg==
-DMG ED25519: zvNfwyOedE6ka+5OxeQ83Q39mUC0V0PeGLLTHKUweK5TRXgJqBEOJ3ogMyZBaFfmfYOFRP9t640uV/KEHIAGCg==
-```
+CloudBoost retains its existing ad-hoc macOS signing model; this release is not Developer ID signed or notarized. Both update archives are independently signed with Ed25519 and verified by CloudBoost before installation.

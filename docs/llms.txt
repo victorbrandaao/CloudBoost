@@ -5,7 +5,7 @@ CloudBoost is a native macOS menu bar app for cleaner gaming sessions on Mac.
 Primary URL: https://getcloudboost.site/
 Official download page: https://getcloudboost.site/download.html
 GitHub releases: https://github.com/victorbrandaao/CloudBoost/releases/latest
-Current release: https://github.com/victorbrandaao/CloudBoost/releases/tag/v4.4.3
+Current release: https://github.com/victorbrandaao/CloudBoost/releases/tag/v4.4.5
 Official X profile: https://x.com/getcloudboost
 Product Hunt: https://www.producthunt.com/products/cloudboost-2
 Support: https://getcloudboost.site/discord/
@@ -25,7 +25,7 @@ Independent coverage: https://macmagazine.com.br/post/2026/06/01/cloudboost-otim
 
 CloudBoost helps Mac players start a focused gaming session, reduce local macOS interruptions, and understand latency spikes that normal speed tests often miss.
 
-Version 4.4.3 is a universal Intel and Apple Silicon build for macOS 12 or later. The session panel combines game/service and mode selection, navigation stays visible, and session transitions show preparing/restoring progress. Eligible Free installations can explicitly try three full PRO sessions without an account or card; sessions under one minute do not count. Existing Payhip, Gumroad, and legacy PRO+ keys remain supported.
+Version 4.4.5 is a universal Intel and Apple Silicon build for macOS 12 or later. The session panel combines game/service and mode selection, navigation stays visible, and session transitions show preparing/restoring progress. Eligible Free installations can explicitly try three full PRO sessions without an account or card; sessions under one minute do not count. Existing Payhip, Gumroad, and legacy PRO+ keys remain supported.
 
 ## Measured Session Evidence
 
