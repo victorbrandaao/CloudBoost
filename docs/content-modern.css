@@ -269,3 +269,31 @@
     padding: 12px 8px;
   }
 }
+
+.content-modern .download-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(240px, 330px);
+  align-items: center;
+  gap: 64px;
+  padding-top: 48px;
+}
+.content-modern .download-layout h1 { font-size: clamp(44px, 5.4vw, 68px); }
+.download-copy { min-width: 0; }
+.download-reassurance { margin-top: 22px; color: #40574c; font-size: 14px; }
+.app-preview { margin: 0; text-align: center; }
+.app-preview img { display: block; width: 100%; height: auto; border-radius: 15px; box-shadow: 0 22px 60px #0c221a24; }
+.app-preview figcaption { margin-top: 14px; color: var(--muted); font-size: 12px; }
+.first-session-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; margin-top: 34px; }
+.first-session-grid h3 { margin: 14px 0 8px; font-size: 21px; }
+.first-session-grid p { margin: 0; color: var(--muted); }
+.step-number { color: #007b60; font-size: 13px; font-weight: 800; letter-spacing: .1em; }
+.copy-command { padding: 10px 14px; border: 1px solid #a8b5ad; border-radius: 6px; background: #f2f7f4; color: #123c2a; font: inherit; font-size: 13px; font-weight: 700; cursor: pointer; }
+.copy-command:hover { background: #e0eee6; }
+.copy-command:focus-visible, .command:focus-visible { outline: 3px solid #008267; outline-offset: 3px; }
+.copy-command[hidden] { display: none; }
+.copy-status { min-height: 1.5em; font-size: 13px; }
+@media (max-width: 760px) {
+  .content-modern .download-layout { grid-template-columns: minmax(0, 1fr); gap: 32px; }
+  .app-preview { width: min(100%, 300px); margin: 0 auto; }
+  .first-session-grid { grid-template-columns: minmax(0, 1fr); gap: 26px; }
+}

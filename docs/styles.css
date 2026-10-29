@@ -2654,3 +2654,23 @@ body > footer {
     border-right: 0;
   }
 }
+
+/* A concise path from the download to the in-app trial. */
+.trial-notice {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 24px 28px;
+  margin: 0 0 28px;
+  border: 1px solid #c4dfd5;
+  border-left: 4px solid var(--accent);
+  background: #edf7f2;
+}
+.trial-notice strong { font-size: 19px; }
+.trial-notice p { margin: 5px 0 0; color: #40574c; font-size: 14px; }
+.trial-notice a { flex-shrink: 0; font-weight: 700; text-decoration: underline; text-underline-offset: 4px; }
+@media (max-width: 700px) {
+  .trial-notice { flex-direction: column; align-items: flex-start; padding: 22px; gap: 14px; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
