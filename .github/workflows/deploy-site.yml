@@ -1,0 +1,49 @@
+name: Deploy public site
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'docs/**'
+      - '.github/workflows/deploy-site.yml'
+  workflow_run:
+    workflows: ['Publish update signature mirror']
+    types: [completed]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    if: github.ref == 'refs/heads/main' && (github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      # Always deploy the trusted main branch, including after the mirror bot commits.
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/configure-pages@v5
+      - name: Check published source
+        run: |
+          test "$(tr -d '[:space:]' < docs/CNAME)" = 'getcloudboost.site'
+          test -s docs/index.html
+          test -s docs/download.html
+          python3 scripts/test_sync_release.py
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: docs
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
