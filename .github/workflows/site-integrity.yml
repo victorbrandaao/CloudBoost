@@ -27,6 +27,11 @@ jobs:
       - name: Test release synchronization
         run: python3 scripts/test_sync_release.py
 
+      - name: Validate SEO and release references
+        run: |
+          python3 scripts/check-site.py
+          node scripts/test-analytics.cjs
+
       - name: Verify required discovery files
         run: |
           test "$(tr -d '[:space:]' < docs/CNAME)" = "getcloudboost.site"

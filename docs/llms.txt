@@ -67,6 +67,10 @@ CloudBoost is not a magic FPS booster.
 
 It does not modify games, inject code, bypass anti-cheat, edit CrossOver bottles, install kernel extensions, or promise large FPS gains. It focuses on the local macOS session around the game. It cannot directly measure shader compilation, asset streaming, renderer frame time, game-engine stalls, or Rosetta/translation work.
 
+PRO features, Free comparison and pricing: https://getcloudboost.site/pro.html
+Recursos e preço PRO em português: https://getcloudboost.site/pt/pro.html
+Funciones y precio PRO en español: https://getcloudboost.site/es/pro.html
+
 ## Plans
 
 Free includes manual sessions, core cloud, remote play, native Mac and competitive profiles, Balanced preset, basic signal checks, Stream Advisor, and rollback protection.
