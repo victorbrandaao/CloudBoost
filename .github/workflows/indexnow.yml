@@ -1,12 +1,9 @@
 name: Notify search engines
 
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - "docs/**"
-      - ".github/workflows/indexnow.yml"
+  workflow_run:
+    workflows: ["Deploy public site"]
+    types: [completed]
   workflow_dispatch:
 
 permissions:
@@ -14,9 +11,12 @@ permissions:
 
 jobs:
   indexnow:
+    if: github.ref == 'refs/heads/main' && (github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
 
       - name: Submit sitemap URLs to IndexNow
         shell: bash

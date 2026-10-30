@@ -40,6 +40,22 @@ class ReleaseSyncTests(unittest.TestCase):
         module.sync(self.root, '4.4.5', self.manifest)
         self.assertEqual(first, self.snapshot())
 
+    def test_release_refreshes_only_changed_page_dates(self):
+        page = self.root / 'docs/download.html'
+        page.write_text('<link rel="canonical" href="https://getcloudboost.site/download.html">'
+                        '\n"softwareVersion": "4.4.4", "dateModified": "2026-01-01"')
+        sitemap = self.root / 'docs/sitemap.xml'
+        sitemap.write_text('<urlset><url><loc>https://getcloudboost.site/download.html</loc>'
+                           '<lastmod>2026-01-01</lastmod></url><url><loc>https://getcloudboost.site/privacy.html</loc>'
+                           '<lastmod>2025-12-01</lastmod></url></urlset>')
+        module.sync(self.root, '4.4.5', self.manifest, modified_date='2026-10-30')
+        self.assertIn('"dateModified": "2026-10-30"', page.read_text())
+        self.assertIn('<lastmod>2026-10-30</lastmod>', sitemap.read_text())
+        self.assertIn('<lastmod>2025-12-01</lastmod>', sitemap.read_text())
+        first = self.snapshot()
+        module.sync(self.root, '4.4.5', self.manifest, modified_date='2026-10-31')
+        self.assertEqual(first, self.snapshot())
+
     def test_invalid_input_or_cask_never_changes_files(self):
         for version in ('4.4.3', '4.4.5-rc1', '../bad'):
             before = self.snapshot()

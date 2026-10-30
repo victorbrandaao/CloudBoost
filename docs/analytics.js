@@ -11,6 +11,8 @@
 
     function getPageCategory() {
       const path = window.location.pathname;
+      if (path.endsWith("/pro.html")) return "pro_pricing";
+      if (path.endsWith("/download.html")) return "download";
       if (path.includes("/guides/")) return "guides";
       if (path.includes("/results")) return "results";
       if (path.includes("/pt/")) return "pt_landing";
@@ -75,8 +77,14 @@
       if (url.hostname === "payhip.com") names.push("pro_checkout_opened");
       return names;
     }
-    if (url.hostname === "github.com" && /\/CloudBoost\/releases(?:\/latest)?/.test(url.pathname)) {
-      return ["download_clicked"];
+    if (url.hostname === window.location.hostname && url.pathname.endsWith("/pro.html")) {
+      return ["pro_details_clicked"];
+    }
+    if (url.hostname === window.location.hostname && url.pathname.endsWith("/download.html")) {
+      return ["download_page_opened"];
+    }
+    if (url.hostname === "github.com" && url.pathname.startsWith("/victorbrandaao/CloudBoost/releases/")) {
+      return /\.(dmg|zip)$/.test(url.pathname) ? ["download_clicked"] : ["release_page_opened"];
     }
     if (url.hostname === "payhip.com" && url.pathname === "/b/Jb0XO") {
       return ["buy_pro_clicked", "pro_checkout_opened"];

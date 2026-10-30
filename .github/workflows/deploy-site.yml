@@ -41,6 +41,8 @@ jobs:
           test -s docs/index.html
           test -s docs/download.html
           python3 scripts/test_sync_release.py
+          python3 scripts/check-site.py
+          node scripts/test-analytics.cjs
       - uses: actions/upload-pages-artifact@v4
         with:
           path: docs

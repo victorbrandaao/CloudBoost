@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Synchronize current release references; never rewrite historical update mirrors."""
 import argparse
+from datetime import date, datetime, timezone
 import json
 from pathlib import Path
 import re
@@ -9,7 +10,9 @@ CURRENT_FILES = ['README.md', 'docs/index.html', 'docs/download.html',
                  'docs/pt/index.html', 'docs/es/index.html', 'docs/ai-summary.html', 'docs/llms.txt']
 
 
-def sync(root, version, manifest):
+def sync(root, version, manifest, modified_date=None):
+    modified_date = modified_date or datetime.now(timezone.utc).date().isoformat()
+    date.fromisoformat(modified_date)
     if not re.fullmatch(r'\d+\.\d+\.\d+', version) or manifest.get('version') != version:
         raise ValueError('Expected a stable semantic version matching the manifest')
     for kind in ('zip', 'dmg'):
@@ -33,6 +36,23 @@ def sync(root, version, manifest):
     if count != 1:
         raise ValueError('Expected exactly one cask checksum')
     changes[cask] = content
+    # Only refresh dates when visible release metadata actually changes.
+    changed_urls = []
+    for path, content in list(changes.items()):
+        if path.suffix != '.html' or content == path.read_text():
+            continue
+        changes[path] = re.sub(r'("dateModified":\s*")[^"]+(")',
+                               lambda match: match[1] + modified_date + match[2], content)
+        canonical = re.search(r'rel="canonical" href="([^"]+)"', content)
+        if canonical:
+            changed_urls.append(canonical[1])
+    sitemap = root / 'docs/sitemap.xml'
+    if sitemap.exists():
+        content = sitemap.read_text()
+        for url in changed_urls:
+            pattern = r'(<url>\s*<loc>' + re.escape(url) + r'</loc>\s*<lastmod>)[^<]+'
+            content = re.sub(pattern, lambda match: match[1] + modified_date, content)
+        changes[sitemap] = content
     for path, content in changes.items():
         path.write_text(content)
 
