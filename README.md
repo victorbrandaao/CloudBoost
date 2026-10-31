@@ -189,3 +189,11 @@ Some diagnostic and HUD ideas are inspired by [Better xCloud](https://github.com
 ## License
 
 CloudBoost is proprietary software. No permission is granted to copy, modify, distribute, or create derivative works from the code or app without prior written authorization. See [LICENSE](LICENSE).
+
+## GunBound GIS community profile
+
+Play on Mac? [Start with the community guide](https://getcloudboost.site/gunbound.html) ([Português](https://getcloudboost.site/pt/gunbound.html)), select GunBound GIS manually, and compare a network baseline with session conditions. Route probes are not necessarily the game server ping. Automatic process detection and client compatibility remain unvalidated. Basic profile guidance is available without PRO; complete session history is part of PRO.
+
+[Share feedback](https://github.com/victorbrandaao/CloudBoost/issues/new) with your Mac model, macOS version, connection type and symptom timing. Remove IP addresses and personal information before attaching diagnostics.
+
+CloudBoost is independent: no partnership, affiliation or endorsement from GunBound GIS, Softnyx or Bratty Studios. No promised FPS gain or ping reduction.
