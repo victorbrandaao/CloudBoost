@@ -51,7 +51,13 @@ jobs:
             --pattern "CloudBoost_v${VERSION}.dmg.sig"
           # Use the workflow token for API metadata to avoid shared-runner rate limits.
           # Direct package and signature downloads below remain unauthenticated.
-          gh api "repos/${GITHUB_REPOSITORY}/releases/latest" > /tmp/cloudboost-release.json
+          # Validate the selected release even when it is an optional preview.
+          gh api "repos/${GITHUB_REPOSITORY}/releases/tags/${TAG}" > /tmp/cloudboost-release.json
+          test "$(jq -r '.draft' /tmp/cloudboost-release.json)" = "false"
+          if [[ "$VERSION" == 5.* ]]; then
+            LEGACY_TAG="$(gh api "repos/${GITHUB_REPOSITORY}/releases/latest" --jq '.tag_name')"
+            [[ "$LEGACY_TAG" == v4.* ]]
+          fi
           test "$(jq -r '.tag_name' /tmp/cloudboost-release.json)" = "$TAG"
           for suffix in zip zip.sig dmg dmg.sig; do
             test -s "/tmp/cloudboost-published/CloudBoost_v${VERSION}.${suffix}"
