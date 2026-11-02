@@ -1,0 +1,91 @@
+/* Shared calm palette. Keep marketing pages on one luminance level. */
+:root {
+  --cb-background: #edf0eb;
+  --cb-surface: #e3e9e2;
+  --cb-card: #f3f5f0;
+  --cb-text: #26382f;
+  --cb-muted: #536459;
+  --cb-border: #bdcbbf;
+  --cb-accent: #326b53;
+  --cb-button-text: #f3f5f0;
+}
+body.calm-theme, .calm-theme .home-page {
+  color-scheme: light;
+  --ink: var(--cb-text); --page: var(--cb-background); --paper: var(--cb-surface);
+  --muted: var(--cb-muted); --line: var(--cb-border); --accent: var(--cb-accent);
+  --gold: var(--cb-accent); --green: var(--cb-accent);
+  background: var(--cb-background); color: var(--cb-text);
+}
+.calm-theme .site-header, .calm-theme header.nav {
+  background: var(--cb-background); border-color: var(--cb-border);
+  backdrop-filter: none; -webkit-backdrop-filter: none;
+}
+.calm-theme .home-page main > .hero-new,
+.calm-theme .hero-zone, .calm-theme .content,
+.calm-theme .home-page .evidence-band, .calm-theme .home-page .final {
+  background: var(--cb-background); color: var(--cb-text);
+}
+.calm-theme .home-page h1, .calm-theme .home-page h2,
+.calm-theme .home-page h3, .calm-theme .home-page .proof-rail strong,
+.calm-theme h1 em, .calm-theme .status strong {color: var(--cb-text)}
+.calm-theme .home-page .hero-statement, .calm-theme .home-page .sublead,
+.calm-theme .home-page .hero-new .hero-facts, .calm-theme .home-page .hero-release,
+.calm-theme .home-page .hero-release a, .calm-theme .home-page .hero-new .product-stage figcaption,
+.calm-theme .home-page .hero-new .product-stage figcaption a,
+.calm-theme .home-page .community-preview p:not(.eyebrow),
+.calm-theme .home-page .generation-choice p, .calm-theme .home-page .proof-rail span,
+.calm-theme .home-page .evidence-copy > p, .calm-theme .home-page .evidence-copy .text-action,
+.calm-theme .home-page .metric-list dt, .calm-theme .home-page .pro-panel > p,
+.calm-theme .home-page .pro-panel li,
+.calm-theme .v5 p, .calm-theme .v5-faq details p, .calm-theme .micro,
+.calm-theme .status, .calm-theme .credit, .calm-theme footer,
+.calm-theme .visual-tag span {color: var(--cb-muted)}
+.calm-theme .home-page .eyebrow, .calm-theme .home-page .community-preview .eyebrow,
+.calm-theme .home-page .metric-list dd, .calm-theme .v5-features article:before,
+.calm-theme .kicker, .calm-theme .pro .kicker, .calm-theme .visual-tag strong {color: var(--cb-accent)}
+.calm-theme .home-page main > .generation-choice,
+.calm-theme .home-page main > .community-preview,
+.calm-theme .home-page .trial-notice, .calm-theme .trial-notice,
+.calm-theme .v5-license, .calm-theme .pro {
+  background: var(--cb-surface); color: var(--cb-text);
+  border: 1px solid var(--cb-border); box-shadow: none;
+}
+.calm-theme .trial-notice p, .calm-theme .trial-notice a,
+.calm-theme .pro p, .calm-theme .v5-license p {color: var(--cb-muted)}
+.calm-theme .home-page .proof-rail, .calm-theme .home-page .session-picker-grid a,
+.calm-theme .home-page .plan-card, .calm-theme .home-page .cards article,
+.calm-theme .home-page .price-panel, .calm-theme .home-page .discovery-links a,
+.calm-theme .v5-features article, .calm-theme .visual-tag {
+  background: var(--cb-card); color: var(--cb-text);
+  border-color: var(--cb-border); box-shadow: none;
+}
+.calm-theme .home-page .button.primary, .calm-theme .home-page .button.light,
+.calm-theme .home-page .hero-new .button.primary, .calm-theme .btn.primary,
+.calm-theme .pro .btn, .calm-theme .home-page .nav-cta {
+  background: var(--cb-accent); color: var(--cb-button-text);
+  border-color: var(--cb-accent); box-shadow: none;
+}
+.calm-theme .home-page .button.secondary, .calm-theme .home-page .button.dark-outline,
+.calm-theme .home-page .hero-new .button.secondary,
+.calm-theme .home-page .community-preview .button, .calm-theme .btn.secondary,
+.calm-theme .nav-download {
+  background: transparent; color: var(--cb-text)!important;
+  border-color: var(--cb-border); box-shadow: none;
+}
+.calm-theme .home-page .button:hover, .calm-theme .btn:hover,
+.calm-theme .home-page .hero-new .button.primary:hover {
+  background: #d5e0d5; color: var(--cb-text); border-color: var(--cb-accent);
+}
+.calm-theme .home-page .hero-new .product-stage {transform:none}
+.calm-theme .home-page .hero-new .product-stage img {
+  background: var(--cb-surface); border-color: var(--cb-border);
+  box-shadow: 0 12px 32px #26382f12; filter:none;
+}
+.calm-theme .home-page .hero-new .product-stage figcaption {background:transparent}
+.calm-theme .home-page .proof-rail div, .calm-theme .home-page .metric-list,
+.calm-theme .home-page .metric-list div, .calm-theme .v5 details,
+.calm-theme .support-note, .calm-theme .status, .calm-theme footer {border-color:var(--cb-border)}
+.calm-theme .cover {box-shadow:none;border-color:var(--cb-border)}
+.calm-theme .disc {background:#d8dfcc;box-shadow:none}
+.calm-theme .disc:after {border-color:#a9b9a1}
+.calm-theme a:focus-visible, .calm-theme summary:focus-visible {outline:3px solid var(--cb-accent);outline-offset:4px}
