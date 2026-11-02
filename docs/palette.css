@@ -8,9 +8,12 @@
   --cb-border: #bdcbbf;
   --cb-accent: #326b53;
   --cb-button-text: #f3f5f0;
+  --cb-hover: #d5e0d5;
+  --cb-art: #d8dfcc;
+  color-scheme: light;
 }
 body.calm-theme, .calm-theme .home-page {
-  color-scheme: light;
+  color-scheme: inherit;
   --ink: var(--cb-text); --page: var(--cb-background); --paper: var(--cb-surface);
   --muted: var(--cb-muted); --line: var(--cb-border); --accent: var(--cb-accent);
   --gold: var(--cb-accent); --green: var(--cb-accent);
@@ -74,7 +77,7 @@ body.calm-theme, .calm-theme .home-page {
 }
 .calm-theme .home-page .button:hover, .calm-theme .btn:hover,
 .calm-theme .home-page .hero-new .button.primary:hover {
-  background: #d5e0d5; color: var(--cb-text); border-color: var(--cb-accent);
+  background: var(--cb-hover); color: var(--cb-text); border-color: var(--cb-accent);
 }
 .calm-theme .home-page .hero-new .product-stage {transform:none}
 .calm-theme .home-page .hero-new .product-stage img {
@@ -86,6 +89,40 @@ body.calm-theme, .calm-theme .home-page {
 .calm-theme .home-page .metric-list div, .calm-theme .v5 details,
 .calm-theme .support-note, .calm-theme .status, .calm-theme footer {border-color:var(--cb-border)}
 .calm-theme .cover {box-shadow:none;border-color:var(--cb-border)}
-.calm-theme .disc {background:#d8dfcc;box-shadow:none}
-.calm-theme .disc:after {border-color:#a9b9a1}
+.calm-theme .disc {background:var(--cb-art);box-shadow:none}
+.calm-theme .disc:after {border-color:var(--cb-border)}
 .calm-theme a:focus-visible, .calm-theme summary:focus-visible {outline:3px solid var(--cb-accent);outline-offset:4px}
+
+/* Native preference: updates immediately when the OS appearance changes. */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --cb-background: #18211e;
+    --cb-surface: #202c26;
+    --cb-card: #25322c;
+    --cb-text: #e2e9e2;
+    --cb-muted: #b0bfb3;
+    --cb-border: #4c6355;
+    --cb-accent: #99c5a8;
+    --cb-button-text: #18251d;
+    --cb-hover: #344b3c;
+    --cb-art: #3a4b3e;
+  }
+}
+/* These components previously used fixed colors outside the shared palette. */
+.calm-theme nav, .calm-theme .nav-right .selected,
+.calm-theme .home-page .plan-heading strong {color:var(--cb-text)}
+.calm-theme .nav-right a, .calm-theme .section-head > p,
+.calm-theme .signal p, .calm-theme .how-intro p,
+.calm-theme .steps p, .calm-theme details p {color:var(--cb-muted)}
+.calm-theme .signal-icon, .calm-theme .steps li:before {color:var(--cb-accent)}
+.calm-theme .signals, .calm-theme .signal, .calm-theme .signal + .signal,
+.calm-theme .steps li, .calm-theme .steps li:before,
+.calm-theme details {border-color:var(--cb-border)}
+.calm-theme .home-page .install-command,
+.calm-theme .home-page .answer-list li:hover,
+.calm-theme .home-page .discovery-links a:hover,
+.calm-theme .home-page .discovery-links a:focus-visible {
+  background:var(--cb-surface);color:var(--cb-text);border-color:var(--cb-border);
+}
+.calm-theme .home-page .hero-new .hero-facts li + li::before {color:var(--cb-muted)}
