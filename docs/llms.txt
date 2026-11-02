@@ -28,7 +28,7 @@ Portuguese: https://getcloudboost.site/pt/pro-v5.html
 Spanish: https://getcloudboost.site/es/pro-v5.html
 Preview download: https://github.com/victorbrandaao/CloudBoost/releases/tag/v5.0.0
 
-Version 5.0.0 is an optional public preview for macOS 12+, Intel and Apple Silicon. PRO 5 requires a new one-time purchase starting at US$12 for every customer, including previous paying customers. Purchases are not open yet pending end-to-end activation verification. Previous purchases remain valid in all 4.x releases; the stable updater remains on 4.x. Optional US$12 monthly support is separate, does not include PRO, and is coming soon. GunBound GIS is an independent coming-soon community profile with no official partnership or validated client compatibility.
+Version 5.0.0 is an optional public preview for macOS 12+, Intel and Apple Silicon. PRO 5 requires a new one-time purchase starting at US$12 for every customer, including previous paying customers. PRO 5 checkout is https://payhip.com/b/Lu0qc . A zero-cost test order verified key delivery and production activation, repeat activation and device limits. Previous purchases remain valid in all 4.x releases; the stable updater remains on 4.x. Optional US$12 monthly support is separate, does not include PRO, and is coming soon. GunBound GIS is an independent coming-soon community profile with no official partnership or validated client compatibility.
 
 ## Summary
 
