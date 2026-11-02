@@ -5,7 +5,7 @@ CloudBoost is a native macOS menu bar app for cleaner gaming sessions on Mac.
 Primary URL: https://getcloudboost.site/
 Official download page: https://getcloudboost.site/download.html
 GitHub releases: https://github.com/victorbrandaao/CloudBoost/releases/latest
-Current release: https://github.com/victorbrandaao/CloudBoost/releases/tag/v4.4.6
+Current stable release: https://github.com/victorbrandaao/CloudBoost/releases/tag/v4.4.6
 Official X profile: https://x.com/getcloudboost
 Product Hunt: https://www.producthunt.com/products/cloudboost-2
 Support: https://getcloudboost.site/discord/
@@ -20,6 +20,15 @@ Portuguese site: https://getcloudboost.site/pt/
 Portuguese privacy: https://getcloudboost.site/pt/privacidade.html
 Spanish site: https://getcloudboost.site/es/
 Independent coverage: https://macmagazine.com.br/post/2026/06/01/cloudboost-otimiza-a-experiencia-de-jogos-na-nuvem-no-mac/
+
+## CloudBoost 5 public preview
+
+English: https://getcloudboost.site/pro-v5.html
+Portuguese: https://getcloudboost.site/pt/pro-v5.html
+Spanish: https://getcloudboost.site/es/pro-v5.html
+Preview download: https://github.com/victorbrandaao/CloudBoost/releases/tag/v5.0.0
+
+Version 5.0.0 is an optional public preview for macOS 12+, Intel and Apple Silicon. PRO 5 requires a new one-time purchase starting at US$12 for every customer, including previous paying customers. Purchases are not open yet pending end-to-end activation verification. Previous purchases remain valid in all 4.x releases; the stable updater remains on 4.x. Optional US$12 monthly support is separate, does not include PRO, and is coming soon. GunBound GIS is an independent coming-soon community profile with no official partnership or validated client compatibility.
 
 ## Summary
 
