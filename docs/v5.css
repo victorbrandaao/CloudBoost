@@ -1,1 +1,20 @@
 .v5 section{padding:48px 0}.v5 h1{max-width:900px}.v5 .lead{max-width:780px}.v5 .actions{margin-top:26px}.v5 .cover{width:100%;height:auto;border-radius:18px;display:block;margin-top:30px}.v5-features{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;margin-top:30px}.v5-features h3{font-size:21px;line-height:1.3}.v5 p{color:#becad7}.v5-license{padding:32px!important;background:#172e32;border:1px solid #77e2ad55;border-radius:16px}.v5-faq{max-width:860px}.v5-faq details p{color:#becad7}.v5 .release-status{font-size:14px;max-width:800px}.v5 .support-note{border-top:1px solid #ffffff22}.v5 .micro{margin-bottom:20px}@media(max-width:700px){.v5-features{grid-template-columns:1fr;gap:8px}.v5 h1{font-size:44px}.v5 section{padding:32px 0}.v5 .btn{width:100%;text-align:center}.v5-license{padding:24px!important}}
+/* A quieter, consistent product launch surface. */
+.v5-page{background:#101c1a;--gold:#9cf3c4;--muted:#b5c8be}
+.v5-page .nav{min-height:76px}.v5-page .nav nav a{padding:8px;text-decoration:none;font-size:13px}
+.v5-page .v5-hero{padding-top:76px;padding-bottom:64px;text-align:center}
+.v5-page .v5-hero .eyebrow{justify-content:center}
+.v5-page .v5-hero h1{margin:0 auto 26px;font-size:clamp(44px,6.4vw,82px);letter-spacing:-3px}
+.v5-page .v5-hero .lead{margin:0 auto 24px;font-size:20px}
+.v5-page .v5-hero .actions{justify-content:center}
+.v5-page .release-status{margin:24px auto;color:#a5bcb0;font-size:13px}
+.v5-page .cover{box-shadow:0 24px 70px #0004;border:1px solid #ffffff18}
+.v5-page .v5-features{gap:18px;counter-reset:feature}
+.v5-page .v5-features article{padding:28px;border:1px solid #ffffff1c;background:#192a24;border-radius:16px;counter-increment:feature}
+.v5-page .v5-features article:before{content:'0' counter(feature);font-size:12px;font-weight:700;letter-spacing:2px;color:#9cf3c4}
+.v5-page .v5-features h3{margin:18px 0 12px}.v5-page .v5-features p{font-size:15px;margin:0}
+.v5-page .v5-license{background:#e8f3eb;border:0;color:#163e2c;padding:40px!important;margin:28px 0}
+.v5-page .v5-license p{color:#345846;max-width:880px}
+.v5-page .v5-faq{margin:auto}.v5-page details{border-color:#ffffff25;padding:24px 0}
+.v5-page .support-note{margin:40px auto 0}
+@media(max-width:700px){.v5-page .v5-hero{padding-top:44px}.v5-page .v5-hero h1{letter-spacing:-2px}.v5-page .v5-hero .lead{font-size:17px}.v5-page .v5-license{padding:24px!important}.v5-page .v5-features article{padding:24px}}

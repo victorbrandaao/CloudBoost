@@ -2,7 +2,15 @@
   <img src="./assets/brand/cloudboost-logo-v2.svg" alt="CloudBoost" width="480">
 </p>
 
-# CloudBoost
+# CloudBoost 5
+
+**Know what’s behind the lag.** A new generation of Mac gaming diagnostics, available as a public preview.
+
+[Explore CloudBoost 5](https://getcloudboost.site/pro-v5.html) · [Download the 5.0.0 preview](https://github.com/victorbrandaao/CloudBoost/releases/tag/v5.0.0) · [Keep 4.4.6](https://github.com/victorbrandaao/CloudBoost/releases/tag/v4.4.6)
+
+![CloudBoost 5](./docs/assets/v5/cloudboost-5-cover.png)
+
+> **PRO 5 starts at US$12, paid once for one Mac.** Everyone needs a new purchase for PRO 5, including existing paying customers. Previous purchases remain valid throughout 4.x. You can voluntarily pay more for the same features. Optional US$12/month community support is coming soon and is separate from PRO.
 
 CloudBoost is a native macOS menu bar app that shows what is happening around a gaming session: latency spikes, jitter, packet loss, Wi-Fi/AWDL noise, VPN routing, background activity, thermal pressure, and local system load.
 
@@ -14,7 +22,7 @@ It does not modify games or promise artificial FPS gains. It helps players run a
   <a href="https://github.com/victorbrandaao/CloudBoost/releases"><img src="https://img.shields.io/github/downloads/victorbrandaao/CloudBoost/total?label=all%20downloads&amp;style=flat-square&amp;color=111111&amp;cacheSeconds=300" alt="All CloudBoost GitHub release downloads"></a>
   <img src="https://img.shields.io/badge/macOS-12%2B-111111?style=flat-square" alt="macOS 12 or later">
   <img src="https://img.shields.io/badge/Mac-Intel%20%2B%20Apple%20Silicon-111111?style=flat-square&amp;logo=apple" alt="Intel and Apple Silicon supported">
-  <a href="https://payhip.com/b/Jb0XO"><img src="https://img.shields.io/badge/PRO-%2410%20one--time-00a884?style=flat-square" alt="CloudBoost PRO costs 10 US dollars as a one-time v4 license"></a>
+  <a href="https://payhip.com/b/Lu0qc"><img src="https://img.shields.io/badge/PRO%205-%2412%2B%20one--time-00a884?style=flat-square" alt="CloudBoost PRO 5 starts at 12 US dollars as a one-time v5 license"></a>
   <a href="https://getcloudboost.site/discord/"><img src="https://img.shields.io/badge/Discord-support-5865F2?style=flat-square" alt="Discord support"></a>
 </p>
 
@@ -31,7 +39,7 @@ It does not modify games or promise artificial FPS gains. It helps players run a
 - [Read the Trust Center](https://getcloudboost.site/trust.html)
 - [See public results and measurement method](https://getcloudboost.site/results.html?utm_source=github&utm_medium=organic&utm_campaign=readme)
 - [Join the Discord](https://getcloudboost.site/discord/)
-- [Get CloudBoost PRO](https://payhip.com/b/Jb0XO?utm_source=github&utm_medium=organic&utm_campaign=readme_pro)
+- [Get CloudBoost PRO](https://payhip.com/b/Lu0qc?utm_source=github&utm_medium=organic&utm_campaign=readme_pro)
 
 > **Using 4.4.1 or earlier?** Install 4.4.6 manually once from the official release page. Those builds contain an updater that cannot use the newer embedded-signature and website-mirror routes. Your settings and PRO activation stay on the Mac. Releases are now checked after publication through the same GitHub and mirror routes used by the app.
 
@@ -97,13 +105,13 @@ Free is a basic manual session monitor. PRO adds macOS session tuning, automatio
 | Kernel Watch and background throttle | No | Yes |
 | Priority Discord support | No | Yes |
 
-**CloudBoost PRO costs $10.** It is a one-time CloudBoost 4.x license for one Mac, not a subscription. If you replace the Mac, contact Discord support to request a license transfer.
+**CloudBoost PRO 5 starts at US$12.** It is a one-time CloudBoost 5.x license for one Mac, not a subscription. If you replace the Mac, contact Discord support to request a license transfer.
 
-New purchases use [Payhip](https://payhip.com/b/Jb0XO?utm_source=github&utm_medium=organic&utm_campaign=readme_pro). Existing Gumroad and legacy PRO+ license keys remain supported in the app.
+New purchases use [Payhip](https://payhip.com/b/Lu0qc?utm_source=github&utm_medium=organic&utm_campaign=readme_pro). Existing Gumroad and legacy PRO+ keys remain supported in version 4.x; they do not activate PRO 5.
 
-### PRO + Personal Session Review
+### Legacy 4.x: PRO + Personal Session Review
 
-Five pilot reviews are available at **$29 total**. This includes a CloudBoost PRO license and one personal review of a Session Proof report, with setup-specific observations and recommended next tests delivered by Discord or email within three business days.
+This legacy 4.x offer is **$29 total** and does not include a PRO 5 license. This includes a CloudBoost PRO license and one personal review of a Session Proof report, with setup-specific observations and recommended next tests delivered by Discord or email within three business days.
 
 This is diagnostic guidance, not a promise to repair an ISP route, remote server, router or game-engine problem. [Get PRO + Personal Session Review on Payhip](https://payhip.com/b/M1Baw?utm_source=github&utm_medium=organic&utm_campaign=readme_personal_review).
 
@@ -125,7 +133,7 @@ brew upgrade --cask cloudboost
 
 ### DMG
 
-1. Download the latest `CloudBoost_v4.x.dmg` from [GitHub Releases](https://github.com/victorbrandaao/CloudBoost/releases/latest).
+1. Download `CloudBoost_v5.0.0.dmg` from the [public preview release](https://github.com/victorbrandaao/CloudBoost/releases/tag/v5.0.0), or keep [stable 4.4.6](https://github.com/victorbrandaao/CloudBoost/releases/tag/v4.4.6) with your previous license.
 2. Open the DMG and drag `CloudBoost.app` to `/Applications`.
 3. Open CloudBoost from the macOS menu bar.
 
@@ -192,7 +200,7 @@ CloudBoost is proprietary software. No permission is granted to copy, modify, di
 
 ## GunBound GIS community profile
 
-Play on Mac? [Start with the community guide](https://getcloudboost.site/gunbound.html) ([Português](https://getcloudboost.site/pt/gunbound.html)), select GunBound GIS manually, and compare a network baseline with session conditions. Route probes are not necessarily the game server ping. Automatic process detection and client compatibility remain unvalidated. Basic profile guidance is available without PRO; complete session history is part of PRO.
+Play on Mac? [Start with the community guide](https://getcloudboost.site/gunbound.html) ([Português](https://getcloudboost.site/pt/gunbound.html)), help shape an independent community profile marked **coming soon**. There is no official partnership. You can already compare general network baselines with session conditions. Route probes are not necessarily the game server ping. Automatic process detection and client compatibility remain unvalidated. The GunBound-specific integration is not announced as ready.
 
 [Share feedback](https://github.com/victorbrandaao/CloudBoost/issues/new) with your Mac model, macOS version, connection type and symptom timing. Remove IP addresses and personal information before attaching diagnostics.
 
