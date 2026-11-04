@@ -79,3 +79,11 @@ const refused = boot(null, '/es/start.html', {blockStorage:true,readyState:'comp
 refused.prompt().click({target:{closest:()=>({dataset:{analyticsChoice:'deny'}})}});
 assert.equal(refused.scripts.length,0);
 console.log('PASS: privacy links and explicit consent work when local storage is unavailable');
+
+const discord = boot('allow');
+discord.click('https://discord.gg/KdxtPQRSB');
+assert.deepEqual(Array.from(discord.events()),['discord_clicked']);
+const redirect = fs.readFileSync(path.join(__dirname,'../docs/discord/index.html'),'utf8');
+assert.equal((redirect.match(/https:\/\/discord\.gg\/KdxtPQRSB/g)||[]).length,3);
+assert.equal(redirect.includes('YMAg8tpUG'),false);
+console.log('PASS: current Discord invite and canonical support redirect');

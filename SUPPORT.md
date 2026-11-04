@@ -2,7 +2,7 @@
 
 ## Get Help
 
-- [Discord](https://getcloudboost.site/discord/) for setup, diagnostics and license support.
+- [Discord](https://discord.gg/KdxtPQRSB) for setup, diagnostics and license support. The [website support shortcut](https://getcloudboost.site/discord/) points to the current invitation.
 - [GitHub Issues](https://github.com/victorbrandaao/CloudBoost/issues) for reproducible bugs and public feature requests.
 - [Trust Center](https://getcloudboost.site/trust.html) for permissions, privacy and product limits.
 

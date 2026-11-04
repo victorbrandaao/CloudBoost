@@ -99,7 +99,7 @@
     if (url.hostname === "payhip.com" && ["/b/Jb0XO", "/b/Lu0qc"].includes(url.pathname)) {
       return ["buy_pro_clicked", "pro_checkout_opened"];
     }
-    const isDiscordInvite = url.hostname === "discord.gg" && url.pathname === "/YMAg8tpUG";
+    const isDiscordInvite = url.hostname === "discord.gg" && ["/YMAg8tpUG", "/KdxtPQRSB"].includes(url.pathname);
     const isDiscordShortcut = url.hostname === "getcloudboost.site" && url.pathname === "/discord/";
     if (isDiscordInvite || isDiscordShortcut) {
       return ["discord_clicked"];
