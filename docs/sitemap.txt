@@ -40,3 +40,6 @@ https://getcloudboost.site/es/gunbound.html
 https://getcloudboost.site/pro-v5.html
 https://getcloudboost.site/pt/pro-v5.html
 https://getcloudboost.site/es/pro-v5.html
+https://getcloudboost.site/start.html
+https://getcloudboost.site/pt/start.html
+https://getcloudboost.site/es/start.html

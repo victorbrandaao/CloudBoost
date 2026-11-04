@@ -2,8 +2,11 @@
   const measurementId = window.CLOUDBOOST_ANALYTICS?.measurementId?.trim();
   if (!/^G-[A-Z0-9]+$/i.test(measurementId || "")) return;
 
+  if (window.__cloudBoostAnalyticsInitialized) return;
+  window.__cloudBoostAnalyticsInitialized = true;
   const consentKey = "cloudboost_site_analytics_consent";
-  const storedConsent = window.localStorage.getItem(consentKey);
+  let storedConsent;
+  try { storedConsent = window.localStorage.getItem(consentKey); } catch (_) { /* Session-only consent remains available. */ }
 
   function loadAnalytics() {
     if (window.__cloudBoostAnalyticsLoaded) return;
@@ -11,6 +14,9 @@
 
     function getPageCategory() {
       const path = window.location.pathname;
+      if (path.endsWith("/pro-v5.html")) return "pro_v5_pricing";
+      if (path.endsWith("/start.html")) return "first_session";
+      if (path.endsWith("/gunbound.html")) return "gunbound_community";
       if (path.endsWith("/pro.html")) return "pro_pricing";
       if (path.endsWith("/download.html")) return "download";
       if (path.includes("/guides/")) return "guides";
@@ -74,11 +80,15 @@
     const explicitEvent = link?.dataset.analyticsEvent;
     if (/^[a-z0-9_]+$/.test(explicitEvent || "")) {
       const names = [explicitEvent];
-      if (url.hostname === "payhip.com") names.push("pro_checkout_opened");
-      return names;
+      if (url.hostname === "payhip.com" && ["/b/Jb0XO", "/b/Lu0qc"].includes(url.pathname)) names.push("buy_pro_clicked", "pro_checkout_opened");
+      if (url.hostname === "github.com" && url.pathname.startsWith("/victorbrandaao/CloudBoost/releases/download/") && /\.(dmg|zip)$/.test(url.pathname)) names.push("download_clicked");
+      return [...new Set(names)];
     }
-    if (url.hostname === window.location.hostname && url.pathname.endsWith("/pro.html")) {
+    if (url.hostname === window.location.hostname && ["/pro.html", "/pro-v5.html"].some(path => url.pathname.endsWith(path))) {
       return ["pro_details_clicked"];
+    }
+    if (url.hostname === window.location.hostname && url.pathname.endsWith("/start.html")) {
+      return ["first_session_guide_opened"];
     }
     if (url.hostname === window.location.hostname && url.pathname.endsWith("/download.html")) {
       return ["download_page_opened"];
@@ -86,7 +96,7 @@
     if (url.hostname === "github.com" && url.pathname.startsWith("/victorbrandaao/CloudBoost/releases/")) {
       return /\.(dmg|zip)$/.test(url.pathname) ? ["download_clicked"] : ["release_page_opened"];
     }
-    if (url.hostname === "payhip.com" && url.pathname === "/b/Jb0XO") {
+    if (url.hostname === "payhip.com" && ["/b/Jb0XO", "/b/Lu0qc"].includes(url.pathname)) {
       return ["buy_pro_clicked", "pro_checkout_opened"];
     }
     const isDiscordInvite = url.hostname === "discord.gg" && url.pathname === "/YMAg8tpUG";
@@ -139,7 +149,9 @@
         link_host: url.hostname,
         link_path: url.pathname,
         page_path: window.location.pathname,
-        page_language: document.documentElement.lang || "en"
+        page_language: document.documentElement.lang || "en",
+        placement: /^[a-z0-9_]{1,48}$/.test(link.dataset.analyticsSource || "") ? link.dataset.analyticsSource : "unspecified",
+        product_generation: url.pathname === "/b/Lu0qc" || /v5\.0\.0/.test(url.pathname) ? "5" : "unspecified"
       });
     });
   }
@@ -152,11 +164,11 @@
     const lang = (document.documentElement.lang || "en").toLowerCase();
     const isSpanish = lang.startsWith("es");
     const isPortuguese = lang.startsWith("pt");
-    let privacyPath = "privacy.html";
+    let privacyPath = "/privacy.html";
     if (window.location.pathname.includes("/es/")) {
-      privacyPath = "privacidad.html";
+      privacyPath = "/es/privacidad.html";
     } else if (window.location.pathname.includes("/pt/")) {
-      privacyPath = "privacidade.html";
+      privacyPath = "/pt/privacidade.html";
     } else if (window.location.pathname.includes("/guides/") || window.location.pathname.includes("/results/")) {
       privacyPath = "../privacy.html";
     }
@@ -194,7 +206,7 @@
     prompt.addEventListener("click", (event) => {
       const choice = event.target.closest("[data-analytics-choice]")?.dataset.analyticsChoice;
       if (!choice) return;
-      window.localStorage.setItem(consentKey, choice);
+      try { window.localStorage.setItem(consentKey, choice); } catch (_) { /* Do not block consent in private storage contexts. */ }
       removeConsentPrompt();
       if (choice === "allow") loadAnalytics();
     });
@@ -205,7 +217,8 @@
   if (storedConsent === "allow") {
     loadAnalytics();
   } else if (storedConsent !== "deny") {
-    window.addEventListener("DOMContentLoaded", showConsentPrompt, { once: true });
+    if (document.readyState === "loading") window.addEventListener("DOMContentLoaded", showConsentPrompt, { once: true });
+    else showConsentPrompt();
   }
 
 })();

@@ -126,3 +126,11 @@ body.calm-theme, .calm-theme .home-page {
   background:var(--cb-surface);color:var(--cb-text);border-color:var(--cb-border);
 }
 .calm-theme .home-page .hero-new .hero-facts li + li::before {color:var(--cb-muted)}
+/* Consent UI must remain legible on launch pages that do not load styles.css. */
+.calm-theme .analytics-consent{position:fixed;z-index:100;left:16px;right:16px;bottom:16px;max-width:640px;margin:0 auto;padding:18px 22px;background:var(--cb-card);color:var(--cb-text);border:1px solid var(--cb-border);border-radius:12px;box-shadow:0 8px 32px #0003;font-size:13px;line-height:1.5}
+.calm-theme .analytics-consent p{margin:0 0 12px;color:var(--cb-text)}
+.calm-theme .analytics-consent > div{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.calm-theme .analytics-consent button{font:inherit;font-weight:650;border:1px solid var(--cb-accent);border-radius:6px;padding:9px 14px;background:var(--cb-accent);color:var(--cb-button-text);cursor:pointer;min-height:40px}
+.calm-theme .analytics-consent .analytics-decline{background:transparent;color:var(--cb-text);border-color:var(--cb-border)}
+.calm-theme .analytics-consent a{color:var(--cb-muted);text-underline-offset:3px}
+.calm-theme .analytics-consent button:focus-visible{outline:3px solid var(--cb-accent);outline-offset:3px}

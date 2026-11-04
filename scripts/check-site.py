@@ -74,6 +74,18 @@ def main():
         assert app['offers']['price']=='10.00' and app['offers']['priceCurrency']=='USD'
         assert app['offers']['url']=='https://payhip.com/b/Jb0XO'
         assert 'aggregateRating' not in app, 'Do not invent ratings'
+    preview_download = 'https://github.com/victorbrandaao/CloudBoost/releases/download/v5.0.0/CloudBoost_v5.0.0.dmg'
+    guides = {'en': ORIGIN+'/start.html', 'pt-BR': ORIGIN+'/pt/start.html', 'es': ORIGIN+'/es/start.html', 'x-default': ORIGIN+'/start.html'}
+    for prefix in ('', 'pt/', 'es/'):
+        guide = pages[ORIGIN+'/'+prefix+'start.html']
+        offer = pages[ORIGIN+'/'+prefix+'pro-v5.html']
+        assert guide.alternates == guides, 'First-session guide hreflang reciprocity'
+        assert preview_download in guide.refs and preview_download in offer.refs, 'First session needs a direct preview download'
+        assert 'https://payhip.com/b/Lu0qc' in offer.refs
+        schema = next(x for x in offer.schemas if x['@type']=='SoftwareApplication')
+        assert schema['offers']['price']=='12.00' and schema['offers']['url']=='https://payhip.com/b/Lu0qc'
+        for page in (guide, offer):
+            assert sum('/analytics.js?' in ref for ref in page.refs)==1, 'Conversion pages need exactly one consent-gated analytics script'
     download = (DOCS/'download.html').read_text()
     version = re.search(r'"softwareVersion":\s*"([\d.]+)"',download)[1]
     manifest = json.loads((DOCS/f'updates/v{version}/manifest.json').read_text())
