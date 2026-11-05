@@ -4,6 +4,7 @@
 
 [License recovery and Mac transfer guide](https://getcloudboost.site/support.html). Stop the current session before releasing a Mac. Wait for server confirmation; keep the original purchase email and key. PRO 5 keys cover 5.x updates, while 4.x purchases remain valid for 4.x.
 
+- [Recover a Payhip receipt](https://help.payhip.com/article/379-did-not-receive-files-or-orders) if the purchase email or download link is missing. Receipt recovery does not transfer a device activation or upgrade a 4.x license. Current-Mac release is available in CloudBoost 5.1 or later; earlier versions and lost-device cases need private support.
 - [Discord](https://discord.gg/KdxtPQRSB) for setup, diagnostics and license support. The [website support shortcut](https://getcloudboost.site/discord/) points to the current invitation.
 - [GitHub Issues](https://github.com/victorbrandaao/CloudBoost/issues) for reproducible bugs and public feature requests.
 - [Trust Center](https://getcloudboost.site/trust.html) for permissions, privacy and product limits.
