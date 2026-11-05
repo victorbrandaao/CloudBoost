@@ -4,9 +4,9 @@
 
 # CloudBoost 5
 
-**Know what’s behind the lag.** A new generation of Mac gaming diagnostics, available as a public preview.
+**Find the interference. Choose an action. Check what changed.** CloudBoost 5.1 adds Session Center for actionable Mac gaming sessions.
 
-[Explore CloudBoost 5](https://getcloudboost.site/pro-v5.html) · [Download the 5.0.0 preview](https://github.com/victorbrandaao/CloudBoost/releases/tag/v5.0.0) · [Keep 4.4.6](https://github.com/victorbrandaao/CloudBoost/releases/tag/v4.4.6)
+[Explore Session Center](https://getcloudboost.site/session-center.html) · [Explore CloudBoost 5](https://getcloudboost.site/pro-v5.html) · [Download the 5.1.0 preview](https://github.com/victorbrandaao/CloudBoost/releases/tag/v5.1.0) · [Keep 4.4.6](https://github.com/victorbrandaao/CloudBoost/releases/tag/v4.4.6)
 
 ![CloudBoost 5](./docs/assets/v5/cloudboost-5-cover.png)
 
@@ -29,6 +29,20 @@ It does not modify games or promise artificial FPS gains. It helps players run a
 <p align="center">
   <img src="./assets/evidence/league-pro-proof-wide.png" alt="Measured CloudBoost PRO League session with score, route latency, jitter and packet loss" width="760">
 </p>
+
+## New in CloudBoost 5.1 · Session Center
+
+- **App traffic:** see real receive/send rates by process, grouped into apps where attribution is available.
+- **Your choice:** open an app's own controls or request a normal exit from an eligible app, then reopen it. Selected games and system services are protected.
+- **Check the result:** compare observed traffic after an app exit. Single samples are not proof of a latency improvement.
+- **Display setup:** compare reported Hz with your chosen stream FPS. Preview a supported rate at the same resolution; unconfirmed changes revert after 15 seconds.
+- **PRO game setups:** save a preset and FPS target per game. Display changes still need confirmation.
+- **Shareable summaries:** measured numbers without personal/network identifiers or full support logs.
+- **License support:** release the current Mac after server confirmation; lost-device recovery stays private.
+
+Manual traffic and display tools are Free. Existing PRO 5 keys cover 5.x updates. [See the workflow and limits](https://getcloudboost.site/session-center.html).
+
+![CloudBoost 5.1 Session Center workflow](./docs/assets/v5/session-center-en.png)
 
 ## Start Here
 
@@ -133,7 +147,7 @@ brew upgrade --cask cloudboost
 
 ### DMG
 
-1. Download `CloudBoost_v5.0.0.dmg` from the [public preview release](https://github.com/victorbrandaao/CloudBoost/releases/tag/v5.0.0), or keep [stable 4.4.6](https://github.com/victorbrandaao/CloudBoost/releases/tag/v4.4.6) with your previous license.
+1. Download `CloudBoost_v5.1.0.dmg` from the [public preview release](https://github.com/victorbrandaao/CloudBoost/releases/tag/v5.1.0), or keep [stable 4.4.6](https://github.com/victorbrandaao/CloudBoost/releases/tag/v4.4.6) with your previous license.
 2. Open the DMG and drag `CloudBoost.app` to `/Applications`.
 3. Open CloudBoost from the macOS menu bar.
 

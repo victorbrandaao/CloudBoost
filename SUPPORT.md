@@ -2,6 +2,8 @@
 
 ## Get Help
 
+[License recovery and Mac transfer guide](https://getcloudboost.site/support.html). Stop the current session before releasing a Mac. Wait for server confirmation; keep the original purchase email and key. PRO 5 keys cover 5.x updates, while 4.x purchases remain valid for 4.x.
+
 - [Discord](https://discord.gg/KdxtPQRSB) for setup, diagnostics and license support. The [website support shortcut](https://getcloudboost.site/discord/) points to the current invitation.
 - [GitHub Issues](https://github.com/victorbrandaao/CloudBoost/issues) for reproducible bugs and public feature requests.
 - [Trust Center](https://getcloudboost.site/trust.html) for permissions, privacy and product limits.

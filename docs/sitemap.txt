@@ -43,3 +43,9 @@ https://getcloudboost.site/es/pro-v5.html
 https://getcloudboost.site/start.html
 https://getcloudboost.site/pt/start.html
 https://getcloudboost.site/es/start.html
+https://getcloudboost.site/session-center.html
+https://getcloudboost.site/support.html
+https://getcloudboost.site/pt/session-center.html
+https://getcloudboost.site/pt/support.html
+https://getcloudboost.site/es/session-center.html
+https://getcloudboost.site/es/support.html

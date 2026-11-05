@@ -74,7 +74,7 @@ def main():
         assert app['offers']['price']=='10.00' and app['offers']['priceCurrency']=='USD'
         assert app['offers']['url']=='https://payhip.com/b/Jb0XO'
         assert 'aggregateRating' not in app, 'Do not invent ratings'
-    preview_download = 'https://github.com/victorbrandaao/CloudBoost/releases/download/v5.0.0/CloudBoost_v5.0.0.dmg'
+    preview_download = 'https://github.com/victorbrandaao/CloudBoost/releases/download/v5.1.0/CloudBoost_v5.1.0.dmg'
     guides = {'en': ORIGIN+'/start.html', 'pt-BR': ORIGIN+'/pt/start.html', 'es': ORIGIN+'/es/start.html', 'x-default': ORIGIN+'/start.html'}
     for prefix in ('', 'pt/', 'es/'):
         guide = pages[ORIGIN+'/'+prefix+'start.html']
