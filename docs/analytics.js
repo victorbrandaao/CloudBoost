@@ -80,7 +80,7 @@
     const explicitEvent = link?.dataset.analyticsEvent;
     if (/^[a-z0-9_]+$/.test(explicitEvent || "")) {
       const names = [explicitEvent];
-      if (url.hostname === "payhip.com" && ["/b/Jb0XO", "/b/Lu0qc"].includes(url.pathname)) names.push("buy_pro_clicked", "pro_checkout_opened");
+      if (url.hostname === "payhip.com" && ["/b/Jb0XO", "/b/Lu0qc"].includes(url.pathname)) names.push("buy_pro_clicked");
       if (url.hostname === "github.com" && url.pathname.startsWith("/victorbrandaao/CloudBoost/releases/download/") && /\.(dmg|zip)$/.test(url.pathname)) names.push("download_clicked");
       return [...new Set(names)];
     }
@@ -97,7 +97,7 @@
       return /\.(dmg|zip)$/.test(url.pathname) ? ["download_clicked"] : ["release_page_opened"];
     }
     if (url.hostname === "payhip.com" && ["/b/Jb0XO", "/b/Lu0qc"].includes(url.pathname)) {
-      return ["buy_pro_clicked", "pro_checkout_opened"];
+      return ["buy_pro_clicked"];
     }
     const isDiscordInvite = url.hostname === "discord.gg" && ["/YMAg8tpUG", "/KdxtPQRSB"].includes(url.pathname);
     const isDiscordShortcut = url.hostname === "getcloudboost.site" && url.pathname === "/discord/";
@@ -151,7 +151,8 @@
         page_path: window.location.pathname,
         page_language: document.documentElement.lang || "en",
         placement: /^[a-z0-9_]{1,48}$/.test(link.dataset.analyticsSource || "") ? link.dataset.analyticsSource : "unspecified",
-        product_generation: url.pathname === "/b/Lu0qc" || /v5\.0\.0/.test(url.pathname) ? "5" : "unspecified"
+        product_generation: url.pathname === "/b/Lu0qc" || /\/v5\.\d+\.\d+\//.test(url.pathname) ? "5" :
+          ["/b/Jb0XO", "/b/M1Baw"].includes(url.pathname) ? "4" : "unspecified"
       });
     });
   }

@@ -39,23 +39,23 @@ app.click('https://getcloudboost.site/download.html#trial','pro_trial_download_c
 app.click('https://github.com/victorbrandaao/CloudBoost/releases/tag/v4.4.5');
 app.click('https://github.com/victorbrandaao/CloudBoost/releases/download/v4.4.5/CloudBoost_v4.4.5.dmg');
 app.click('https://payhip.com/b/Jb0XO?utm_source=test');
-assert.deepEqual(Array.from(app.events()),['pro_details_clicked','pro_trial_download_clicked','release_page_opened','download_clicked','buy_pro_clicked','pro_checkout_opened']);
+assert.deepEqual(Array.from(app.events()),['pro_details_clicked','pro_trial_download_clicked','release_page_opened','download_clicked','buy_pro_clicked']);
 assert.equal(boot('allow','/download.html').window.dataLayer.find(a=>a[0]==='config')[2].content_group,'download');
 console.log('PASS: consent gating, PRO attribution and archive vs release-page clicks');
 
 const v5 = boot('allow', '/pt/pro-v5.html');
 assert.equal(v5.window.dataLayer.find(a=>a[0]==='config')[2].content_group,'pro_v5_pricing');
 v5.click('https://payhip.com/b/Lu0qc?utm_source=website');
-assert.deepEqual(Array.from(v5.events()), ['buy_pro_clicked','pro_checkout_opened']);
+assert.deepEqual(Array.from(v5.events()), ['buy_pro_clicked']);
 v5.click('https://getcloudboost.site/pt/start.html');
-v5.click('https://github.com/victorbrandaao/CloudBoost/releases/download/v5.0.0/CloudBoost_v5.0.0.dmg', 'trial_download_clicked');
-assert.deepEqual(Array.from(v5.events()).slice(2), ['first_session_guide_opened','trial_download_clicked','download_clicked']);
+v5.click('https://github.com/victorbrandaao/CloudBoost/releases/download/v5.1.0/CloudBoost_v5.1.0.dmg', 'trial_download_clicked');
+assert.deepEqual(Array.from(v5.events()).slice(1), ['first_session_guide_opened','trial_download_clicked','download_clicked']);
 const downloadEvent = v5.window.dataLayer.filter(a=>a[0]==='event' && a[1]==='download_clicked')[0][2];
 assert.equal(downloadEvent.product_generation,'5');
 assert.equal(downloadEvent.link_path.includes('?'),false);
 const explicit = boot('allow');
 explicit.click('https://payhip.com/b/Lu0qc','buy_pro_clicked');
-assert.deepEqual(Array.from(explicit.events()),['buy_pro_clicked','pro_checkout_opened']);
+assert.deepEqual(Array.from(explicit.events()),['buy_pro_clicked']);
 for (const lang of ['', 'pt/', 'es/']) {
  const guide = boot('allow', '/' + lang + 'start.html');
  assert.equal(guide.window.dataLayer.find(a=>a[0]==='config')[2].content_group,'first_session');
@@ -68,7 +68,7 @@ for (const lang of ['', 'pt/', 'es/']) {
 }
 vm.runInNewContext(source, {window:v5.window,document:v5.document,URL});
 assert.equal(v5.scripts.length,1);
-console.log('PASS: v5 checkout, trial download, localized first session, consent and duplicate initialization');
+console.log('PASS: v5 offer clicks, trial download, localized first session, consent and duplicate initialization');
 
 const restricted = boot(null, '/pt/start.html', {blockStorage:true,readyState:'complete'});
 assert.equal(restricted.scripts.length,0);
