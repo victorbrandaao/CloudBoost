@@ -3,8 +3,8 @@
   xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://getcloudboost.site/</loc><lastmod>2026-11-11</lastmod>
-    <lastmod>2026-11-05</lastmod>
+    <loc>https://getcloudboost.site/</loc>
+    <lastmod>2026-11-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -16,7 +16,7 @@
   <url><loc>https://getcloudboost.site/download.html</loc><lastmod>2026-11-11</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://getcloudboost.site/ai-summary.html</loc><lastmod>2026-11-11</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://getcloudboost.site/reviews.html</loc><lastmod>2026-07-06</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://getcloudboost.site/privacy.html</loc><lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://getcloudboost.site/privacy.html</loc><lastmod>2026-11-11</lastmod><changefreq>monthly</changefreq><priority>0.4</priority></url>
   <url><loc>https://getcloudboost.site/results.html</loc><lastmod>2026-11-11</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://getcloudboost.site/results/league-of-legends-pro-session.html</loc><lastmod>2026-11-11</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://getcloudboost.site/trust.html</loc><lastmod>2026-07-06</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
@@ -42,9 +42,9 @@
   <url><loc>https://getcloudboost.site/es/</loc><lastmod>2026-11-11</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://getcloudboost.site/es/cloud-gaming-mac.html</loc><lastmod>2026-07-16</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://getcloudboost.site/es/juegos-mac-nativos.html</loc><lastmod>2026-07-16</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://getcloudboost.site/es/privacidad.html</loc><lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://getcloudboost.site/es/privacidad.html</loc><lastmod>2026-11-11</lastmod><changefreq>monthly</changefreq><priority>0.4</priority></url>
   <url><loc>https://getcloudboost.site/pt/</loc><lastmod>2026-11-11</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://getcloudboost.site/pt/privacidade.html</loc><lastmod>2026-07-21</lastmod><changefreq>monthly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://getcloudboost.site/pt/privacidade.html</loc><lastmod>2026-11-11</lastmod><changefreq>monthly</changefreq><priority>0.4</priority></url>
   <url><loc>https://getcloudboost.site/es/pro.html</loc><lastmod>2026-11-11</lastmod></url>
   <url><loc>https://getcloudboost.site/pro.html</loc><lastmod>2026-11-11</lastmod></url>
   <url><loc>https://getcloudboost.site/pt/pro.html</loc><lastmod>2026-11-11</lastmod></url>
@@ -63,4 +63,8 @@
 <url><loc>https://getcloudboost.site/pt/support.html</loc><lastmod>2026-11-05</lastmod></url>
 <url><loc>https://getcloudboost.site/es/session-center.html</loc><lastmod>2026-11-05</lastmod></url>
 <url><loc>https://getcloudboost.site/es/support.html</loc><lastmod>2026-11-05</lastmod></url>
+  <url><loc>https://getcloudboost.site/pt/ai-summary.html</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://getcloudboost.site/es/ai-summary.html</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://getcloudboost.site/pt/download.html</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://getcloudboost.site/es/download.html</loc><lastmod>2026-11-11</lastmod></url>
 </urlset>

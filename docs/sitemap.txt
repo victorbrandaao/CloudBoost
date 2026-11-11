@@ -49,3 +49,7 @@ https://getcloudboost.site/pt/session-center.html
 https://getcloudboost.site/pt/support.html
 https://getcloudboost.site/es/session-center.html
 https://getcloudboost.site/es/support.html
+https://getcloudboost.site/pt/ai-summary.html
+https://getcloudboost.site/es/ai-summary.html
+https://getcloudboost.site/pt/download.html
+https://getcloudboost.site/es/download.html

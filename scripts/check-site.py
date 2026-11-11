@@ -42,7 +42,10 @@ class Page(HTMLParser):
 
 def main():
     sitemap = ET.parse(DOCS/'sitemap.xml')
-    urls = [e.text for e in sitemap.findall('.//{http://www.sitemaps.org/schemas/sitemap/0.9}loc')]
+    namespace = {'s': 'http://www.sitemaps.org/schemas/sitemap/0.9'}
+    entries = sitemap.findall('s:url', namespace)
+    assert all(len(entry.findall('s:lastmod', namespace)) <= 1 for entry in entries), 'Duplicate sitemap date'
+    urls = [entry.findtext('s:loc', namespaces=namespace) for entry in entries]
     assert len(urls) == len(set(urls)), 'Duplicate sitemap URLs'
     assert set(urls) == set((DOCS/'sitemap.txt').read_text().splitlines()), 'Sitemap formats disagree'
     pages, titles = {}, set()
@@ -66,6 +69,12 @@ def main():
             assert target.exists(), (path, 'missing link/asset', ref)
         pages[canonical] = page
     assert set(urls) == set(pages), 'Sitemap has excluded/missing pages'
+    for url, page in pages.items():
+        for lang, alternate in page.alternates.items():
+            assert alternate in pages, (url, 'alternate is not canonical and discoverable', alternate)
+            assert pages[alternate].alternates == page.alternates, (url, 'hreflang reciprocity', alternate)
+            if lang != 'x-default':
+                assert pages[alternate].lang == lang, (url, 'alternate language', alternate)
     expected = {'en':ORIGIN+'/pro.html','pt-BR':ORIGIN+'/pt/pro.html','es':ORIGIN+'/es/pro.html','x-default':ORIGIN+'/pro.html'}
     for lang, url in expected.items():
         page = pages[url]
@@ -99,5 +108,8 @@ def main():
         guide = pages[ORIGIN+'/'+prefix+'gunbound.html']
         assert '/'+prefix+'pro-v5.html#compare' in guide.refs, 'GunBound must link to the PRO 5 offer'
         assert any(ref.endswith('/v5.1.1/CloudBoost_v5.1.1.dmg') for ref in guide.refs), 'GunBound needs its Apple Silicon download'
+        summary = pages[ORIGIN+'/'+prefix+'ai-summary.html']
+        assert '/'+prefix+'download.html#versions' in summary.refs, 'Overview must link to localized downloads'
+        assert '/'+prefix+'ai-summary.html' in pages[ORIGIN+'/'+prefix].refs, 'Homepage must link to the overview'
     print(f'PASS: {len(pages)} indexed pages, links/assets, JSON-LD, PRO hreflang/offers and release {version}')
 if __name__=='__main__': main()

@@ -25,6 +25,9 @@ Allow: /
 User-agent: ClaudeBot
 Allow: /
 
+User-agent: Claude-SearchBot
+Allow: /
+
 User-agent: Claude-User
 Allow: /
 
@@ -40,6 +43,9 @@ Allow: /
 User-agent: Bingbot
 Allow: /
 
+User-agent: DuckDuckBot
+Allow: /
+
 User-agent: DuckAssistBot
 Allow: /
 
@@ -48,4 +54,3 @@ Allow: /
 
 Sitemap: https://getcloudboost.site/sitemap.xml
 Sitemap: https://getcloudboost.site/sitemap.txt
-LLMS: https://getcloudboost.site/llms.txt

@@ -14,6 +14,8 @@
 
 ![CloudBoost 5](./docs/assets/v5/cloudboost-5-cover.png)
 
+Project overview · [English](https://getcloudboost.site/ai-summary.html) · [Português](https://getcloudboost.site/pt/ai-summary.html) · [Español](https://getcloudboost.site/es/ai-summary.html)
+
 > **PRO 5 starts at US$12, paid once for one Mac.** Everyone needs a new purchase for PRO 5, including existing paying customers. Previous purchases remain valid throughout 4.x. You can voluntarily pay more for the same features. Optional US$12/month community support is coming soon and is separate from PRO.
 
 CloudBoost is a native macOS menu bar app that shows what is happening around a gaming session: latency spikes, jitter, packet loss, Wi-Fi/AWDL noise, VPN routing, background activity, thermal pressure, and local system load.
