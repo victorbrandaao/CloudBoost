@@ -92,6 +92,11 @@ def main():
     cask = (ROOT/'Casks/cloudboost.rb').read_text()
     assert manifest['version']==version and f'version "{version}"' in cask
     assert manifest['dmg']['sha256'] in cask
-    assert all(v==version for v in re.findall(r'CloudBoost_v([\d.]+)\.dmg',download))
+    listed_versions = set(re.findall(r'CloudBoost_v([\d.]+)\.dmg', download))
+    assert {version, '5.1.0', '5.1.1'} <= listed_versions, 'Download page must distinguish stable and preview builds'
+    for prefix in ('', 'pt/', 'es/'):
+        guide = pages[ORIGIN+'/'+prefix+'gunbound.html']
+        assert '/'+prefix+'pro-v5.html#compare' in guide.refs, 'GunBound must link to the PRO 5 offer'
+        assert any(ref.endswith('/v5.1.1/CloudBoost_v5.1.1.dmg') for ref in guide.refs), 'GunBound needs its Apple Silicon download'
     print(f'PASS: {len(pages)} indexed pages, links/assets, JSON-LD, PRO hreflang/offers and release {version}')
 if __name__=='__main__': main()

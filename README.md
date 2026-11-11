@@ -6,7 +6,9 @@
 
 **Find the interference. Choose an action. Check what changed.** CloudBoost 5.1 adds Session Center for actionable Mac gaming sessions.
 
-[Explore Session Center](https://getcloudboost.site/session-center.html) · [Explore CloudBoost 5](https://getcloudboost.site/pro-v5.html) · [Download the 5.1.0 preview](https://github.com/victorbrandaao/CloudBoost/releases/tag/v5.1.0) · [Keep 4.4.6](https://github.com/victorbrandaao/CloudBoost/releases/tag/v4.4.6)
+[Run a free traffic check](https://getcloudboost.site/start.html#traffic-check) · [Compare Free and PRO 5](https://getcloudboost.site/pro-v5.html#compare) · [Choose your download](https://getcloudboost.site/download.html?utm_source=github&utm_medium=referral&utm_campaign=readme_download#versions)
+
+**Intel and Apple Silicon:** [5.1.0 universal preview](https://github.com/victorbrandaao/CloudBoost/releases/tag/v5.1.0) · **Apple Silicon:** [5.1.1 GunBound preview](https://github.com/victorbrandaao/CloudBoost/releases/tag/v5.1.1) · **Existing PRO 4.x licenses:** [4.4.6 stable](https://github.com/victorbrandaao/CloudBoost/releases/tag/v4.4.6)
 
 ![CloudBoost 5](./docs/assets/v5/cloudboost-5-cover.png)
 

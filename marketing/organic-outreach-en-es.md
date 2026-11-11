@@ -1,25 +1,47 @@
-# CloudBoost Organic Outreach
+# CloudBoost organic outreach
 
-Use these messages as conversation starters, not repeated advertisements. Link to the most relevant guide first; mention the product only when it directly answers the discussion.
+Use one link per post and keep the guide or demo useful on its own. Disclose that you develop CloudBoost. Use the community’s own showcase thread when it requires one.
 
-## English update
+## GunBound communities · English
 
-CloudBoost now records real threshold spikes during a Mac gaming session instead of relying only on average ping. The latest build separates local Mac pressure, Wi-Fi/AWDL noise, VPN or UDP problems, and route issues, then shows the next test to run. Core profiles remain free; PRO is $10 once.
+**GunBound GIS on an M1 Mac with Wine — setup notes and a free launcher check**
 
-Website: https://getcloudboost.site/
+I grew up playing GunBound and wanted to see if I could get back into GIS on my M1. I signed in and got into the game with Wine Staging 11.20, DXVK for macOS and launcher 1.1.0.1123. I wrote down what to copy from Windows and added a free check to CloudBoost 5.1.1 that shows missing files and opens your local launcher.
 
-## Actualización en español
+The guide and the setup check are free. I’m the CloudBoost developer, and this is an independent community project. I’d like to hear from someone who can repeat the setup on a second Apple Silicon Mac. Which macOS version are you using, and where did you get stuck?
 
-CloudBoost ahora registra picos reales durante una sesión de juego en Mac, en lugar de mostrar solo el ping medio. La versión actual ayuda a separar presión local del Mac, ruido de Wi-Fi/AWDL, problemas de VPN o UDP y latencia de ruta. Los perfiles principales siguen siendo gratis; PRO cuesta US$10 una sola vez.
+Guide and setup demo: https://getcloudboost.site/gunbound.html?utm_source=reddit&utm_medium=social&utm_campaign=gunbound_wine&utm_content=gunbound_en#wine
 
-Sitio en español: https://getcloudboost.site/es/
+## Comunidades de GunBound · Português
 
-## Spanish support reply
+**GunBound GIS no Mac M1 com Wine — guia e checagem grátis**
 
-Si puedes compartir el modelo de Mac, si usas Wi-Fi o Ethernet, el servicio o juego y una captura del diagnóstico, puedo ayudarte a interpretar el resultado. CloudBoost no promete arreglar el servidor o la ruta del proveedor; intenta mostrar si el problema parece estar del lado del Mac o fuera de él.
+Jogo GunBound desde os 12 anos e quis ver se dava para voltar ao GIS no meu M1. Consegui fazer login e entrar no jogo com Wine Staging 11.20, DXVK para macOS e o launcher 1.1.0.1123. Anotei o que precisa copiar do Windows e fiz uma aba gratuita no CloudBoost 5.1.1 que confere os arquivos da instalação e abre o launcher local.
 
-## Outreach note
+Sou o desenvolvedor do CloudBoost. É um projeto independente, e tanto o guia quanto a checagem são gratuitos. Se você tentar em outro Mac com chip Apple, me conta a versão do macOS e em qual etapa travou.
 
-Hi, I build CloudBoost, a small macOS gaming-session diagnostics utility. I am looking for a few Spanish-speaking Mac or cloud-gaming users who are willing to test the free profiles and share honest setup details. There is no requirement to post a positive review. May I share the Spanish guide with your community?
+Guia e demonstração: https://getcloudboost.site/pt/gunbound.html?utm_source=discord&utm_medium=community&utm_campaign=gunbound_wine&utm_content=gunbound_pt#wine
 
-Hola, desarrollo CloudBoost, una pequeña utilidad de diagnóstico para sesiones de juego en macOS. Busco algunos usuarios de habla hispana que quieran probar los perfiles gratuitos y compartir datos honestos sobre su configuración. No es necesario publicar una reseña positiva. ¿Puedo compartir la guía en español con su comunidad?
+## Mac cloud gaming · English
+
+**GeForce NOW stutters on Mac even when the ping looks fine?**
+
+When stutter comes and goes, I start with one repeatable test: check the app’s network stats when it happens, look for active uploads on the Mac, pause one nonessential app and replay the same segment. If that makes no difference, the guide walks through Wi-Fi, jitter, packet loss and routing checks. I develop CloudBoost, which includes an optional free app traffic check.
+
+Guide: https://getcloudboost.site/guides/geforce-now-mac-lag.html?utm_source=reddit&utm_medium=social&utm_campaign=mac_stutter&utm_content=geforce_now_en
+
+## Juegos en la nube · Español
+
+**¿Se corta el juego en Mac aunque el ping parezca normal?**
+
+Empieza con una prueba sencilla: revisa las estadísticas cuando aparezca el tirón, comprueba si otra app está subiendo datos, pausa una sola app y repite la misma escena. Desarrollé CloudBoost para ver el tráfico por app durante la sesión. La guía sirve para hacer la primera comprobación gratis.
+
+Guía: https://getcloudboost.site/es/start.html?utm_source=reddit&utm_medium=social&utm_campaign=mac_stutter&utm_content=traffic_check_es#traffic-check
+
+## Video description
+
+Use the recorded CloudBoost setup demo from the 5.1.1 release. It shows the local setup check and launcher flow. The written guide explains the separate M1 test. Link the description to the matching language with `utm_source=youtube&utm_medium=video&utm_campaign=gunbound_wine`. If you use the Google AI Plus tools you already have, use the transcript to draft a shorter caption or outline, and check the result against the recording before publishing.
+
+## Weekly measurement
+
+Compare complete weeks by campaign in the existing CloudBoost GA4 property, which records consenting visitors. Look for guide views, `download_clicked`, `pro_details_clicked`, and `buy_pro_clicked`. A click takes the visitor to the Payhip offer. Use Payhip for checkout starts and paid orders.
