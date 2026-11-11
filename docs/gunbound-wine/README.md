@@ -2,6 +2,8 @@
 
 [Português](#português) · [Installer source](instalar-gunbound-wine.sh) · [Official GunBound website](https://gunbound.gg/en/)
 
+[Watch the CloudBoost setup check](https://github.com/victorbrandaao/CloudBoost/releases/download/v5.1.1/CloudBoost-GunBound-demo-en.mp4) using a test folder. [Get the Apple Silicon preview](https://github.com/victorbrandaao/CloudBoost/releases/tag/v5.1.1).
+
 The CloudBoost maintainer signed in and entered the game on one Apple Silicon M1 Mac using Wine Staging 11.20, DXVK for macOS and GunBound launcher 1.1.0.1123. The script below reproduces the reported layout. A fresh end-to-end installation using the script still needs independent testing. This is an independent community guide.
 
 1. Install and update GunBound on Windows from the official website. Copy `C:\Program Files\GunBound` from your own installation. From `C:\ProgramData\GunBound`, copy only `installed.json` and `environment` into a separate folder called `GunBound-ProgramData`. Keep both folders on your devices.
@@ -23,6 +25,8 @@ The CloudBoost maintainer signed in and entered the game on one Apple Silicon M1
 Sign in and select **Play** in the launcher. If the script stops midway, keep the incomplete folder for troubleshooting or rename it before retrying. Share only your Mac model, macOS version, launcher version and the step where it stopped. Keep credentials, session files and game files on your devices.
 
 ## Português
+
+[Veja a verificação no CloudBoost](https://github.com/victorbrandaao/CloudBoost/releases/download/v5.1.1/CloudBoost-GunBound-demo-pt.mp4) com uma pasta de teste. [Baixe a prévia para Apple Silicon](https://github.com/victorbrandaao/CloudBoost/releases/tag/v5.1.1).
 
 O responsável pelo CloudBoost fez login e entrou no jogo em um Mac M1 com Wine Staging 11.20, DXVK para macOS e launcher 1.1.0.1123. O roteiro reproduz a estrutura usada nesse teste. A instalação completa pelo script em um segundo Mac ainda precisa ser reproduzida. É uma iniciativa independente da comunidade.
 
