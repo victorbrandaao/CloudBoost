@@ -8,7 +8,9 @@
 
 [Run a free traffic check](https://getcloudboost.site/start.html#traffic-check) · [Compare Free and PRO 5](https://getcloudboost.site/pro-v5.html#compare) · [Choose your download](https://getcloudboost.site/download.html?utm_source=github&utm_medium=referral&utm_campaign=readme_download#versions)
 
-**Intel and Apple Silicon:** [5.1.0 universal preview](https://github.com/victorbrandaao/CloudBoost/releases/tag/v5.1.0) · **Apple Silicon:** [5.1.1 GunBound preview](https://github.com/victorbrandaao/CloudBoost/releases/tag/v5.1.1) · **Existing PRO 4.x licenses:** [4.4.6 stable](https://github.com/victorbrandaao/CloudBoost/releases/tag/v4.4.6)
+**Current CloudBoost 5 preview for Apple Silicon** · [5.1.1 with GunBound GIS](https://github.com/victorbrandaao/CloudBoost/releases/tag/v5.1.1)
+
+**Intel and Apple Silicon** · [5.1.0 universal preview](https://github.com/victorbrandaao/CloudBoost/releases/tag/v5.1.0) · [4.4.6 stable for PRO 4.x licenses](https://github.com/victorbrandaao/CloudBoost/releases/tag/v4.4.6)
 
 ![CloudBoost 5](./docs/assets/v5/cloudboost-5-cover.png)
 
@@ -149,7 +151,7 @@ brew upgrade --cask cloudboost
 
 ### DMG
 
-1. Download `CloudBoost_v5.1.0.dmg` from the [public preview release](https://github.com/victorbrandaao/CloudBoost/releases/tag/v5.1.0), or keep [stable 4.4.6](https://github.com/victorbrandaao/CloudBoost/releases/tag/v4.4.6) with your previous license.
+1. Download the [5.1.1 GunBound preview for Apple Silicon](https://github.com/victorbrandaao/CloudBoost/releases/tag/v5.1.1), the [5.1.0 universal preview](https://github.com/victorbrandaao/CloudBoost/releases/tag/v5.1.0), or [stable 4.4.6](https://github.com/victorbrandaao/CloudBoost/releases/tag/v4.4.6) for your previous license.
 2. Open the DMG and drag `CloudBoost.app` to `/Applications`.
 3. Open CloudBoost from the macOS menu bar.
 
