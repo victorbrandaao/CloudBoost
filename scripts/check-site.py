@@ -48,6 +48,7 @@ def main():
     pages, titles = {}, set()
     for path in DOCS.rglob('*.html'):
         page = Page(path)
+        assert not re.search(r'payhip\.com/b/(?:Jb0XO|M1Baw)\b', path.read_text()), (path, 'retired checkout')
         if page.noindex or path.name.startswith('google'): continue
         relative = path.relative_to(DOCS).as_posix()
         canonical = ORIGIN + '/' + re.sub(r'(^|/)index\.html$', r'\1', relative)
@@ -70,10 +71,8 @@ def main():
         page = pages[url]
         assert page.alternates == expected, (url, 'hreflang reciprocity')
         if lang != 'x-default': assert page.lang == lang
-        app = next(x for x in page.schemas[0]['@graph'] if x['@type']=='SoftwareApplication')
-        assert app['offers']['price']=='10.00' and app['offers']['priceCurrency']=='USD'
-        assert app['offers']['url']=='https://payhip.com/b/Jb0XO'
-        assert 'aggregateRating' not in app, 'Do not invent ratings'
+        assert any(ref.endswith('/v4.4.6/CloudBoost_v4.4.6.dmg') for ref in page.refs), (url, 'legacy download')
+        assert any(ref.endswith('/pro-v5.html#compare') for ref in page.refs), (url, 'PRO 5 comparison')
     preview_download = 'https://github.com/victorbrandaao/CloudBoost/releases/download/v5.1.0/CloudBoost_v5.1.0.dmg'
     guides = {'en': ORIGIN+'/start.html', 'pt-BR': ORIGIN+'/pt/start.html', 'es': ORIGIN+'/es/start.html', 'x-default': ORIGIN+'/start.html'}
     for prefix in ('', 'pt/', 'es/'):
@@ -88,12 +87,14 @@ def main():
             assert sum('/analytics.js?' in ref for ref in page.refs)==1, 'Conversion pages need exactly one consent-gated analytics script'
     download = (DOCS/'download.html').read_text()
     version = re.search(r'"softwareVersion":\s*"([\d.]+)"',download)[1]
-    manifest = json.loads((DOCS/f'updates/v{version}/manifest.json').read_text())
+    assert json.loads((DOCS/f'updates/v{version}/manifest.json').read_text())['version'] == version
     cask = (ROOT/'Casks/cloudboost.rb').read_text()
-    assert manifest['version']==version and f'version "{version}"' in cask
-    assert manifest['dmg']['sha256'] in cask
+    cask_version = re.search(r'(?m)^  version "([\d.]+)"$', cask)[1]
+    cask_manifest = json.loads((DOCS/f'updates/v{cask_version}/manifest.json').read_text())
+    assert cask_manifest['dmg']['sha256'] in cask
     listed_versions = set(re.findall(r'CloudBoost_v([\d.]+)\.dmg', download))
-    assert {version, '5.1.0', '5.1.1'} <= listed_versions, 'Download page must distinguish stable and preview builds'
+    assert {version, '5.1.0', '5.1.1'} <= listed_versions, 'Download page must offer both CloudBoost 5 builds'
+    assert '4.4.6' not in listed_versions, 'The legacy installer belongs in the 4.x archive'
     for prefix in ('', 'pt/', 'es/'):
         guide = pages[ORIGIN+'/'+prefix+'gunbound.html']
         assert '/'+prefix+'pro-v5.html#compare' in guide.refs, 'GunBound must link to the PRO 5 offer'

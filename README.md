@@ -10,7 +10,7 @@
 
 **Current CloudBoost 5 preview for Apple Silicon** · [5.1.1 with GunBound GIS](https://github.com/victorbrandaao/CloudBoost/releases/tag/v5.1.1)
 
-**Intel and Apple Silicon** · [5.1.0 universal preview](https://github.com/victorbrandaao/CloudBoost/releases/tag/v5.1.0) · [4.4.6 stable for PRO 4.x licenses](https://github.com/victorbrandaao/CloudBoost/releases/tag/v4.4.6)
+**Intel and Apple Silicon** · [5.1.0 universal preview](https://github.com/victorbrandaao/CloudBoost/releases/tag/v5.1.0) · [4.4.6 archive for existing PRO 4.x licenses](https://github.com/victorbrandaao/CloudBoost/releases/tag/v4.4.6)
 
 ![CloudBoost 5](./docs/assets/v5/cloudboost-5-cover.png)
 
@@ -21,7 +21,7 @@ CloudBoost is a native macOS menu bar app that shows what is happening around a 
 It does not modify games or promise artificial FPS gains. It helps players run a quieter Mac session, understand a problem, and leave with a useful next step.
 
 <p align="center">
-  <a href="https://github.com/victorbrandaao/CloudBoost/releases/tag/v4.4.6"><img src="https://img.shields.io/github/v/release/victorbrandaao/CloudBoost?label=release&amp;style=flat-square&amp;color=00a884&amp;cacheSeconds=300" alt="CloudBoost v4.4.6"></a>
+  <a href="https://github.com/victorbrandaao/CloudBoost/releases/tag/v5.1.1"><img src="https://img.shields.io/badge/preview-5.1.1-00a884?style=flat-square" alt="CloudBoost 5.1.1 preview"></a>
   <a href="https://github.com/victorbrandaao/CloudBoost/releases/tag/v4.4.6"><img src="https://img.shields.io/github/downloads/victorbrandaao/CloudBoost/v4.4.6/total?label=v4.4.6%20downloads&amp;style=flat-square&amp;color=111111&amp;cacheSeconds=300" alt="CloudBoost v4.4.6 downloads"></a>
   <a href="https://github.com/victorbrandaao/CloudBoost/releases"><img src="https://img.shields.io/github/downloads/victorbrandaao/CloudBoost/total?label=all%20downloads&amp;style=flat-square&amp;color=111111&amp;cacheSeconds=300" alt="All CloudBoost GitHub release downloads"></a>
   <img src="https://img.shields.io/badge/macOS-12%2B-111111?style=flat-square" alt="macOS 12 or later">
@@ -127,11 +127,9 @@ Free is a basic manual session monitor. PRO adds macOS session tuning, automatio
 
 New purchases use [Payhip](https://payhip.com/b/Lu0qc?utm_source=github&utm_medium=organic&utm_campaign=readme_pro). Existing Gumroad and legacy PRO+ keys remain supported in version 4.x; they do not activate PRO 5.
 
-### Legacy 4.x: PRO + Personal Session Review
+### Existing PRO 4.x customers
 
-This legacy 4.x offer is **$29 total** and does not include a PRO 5 license. This includes a CloudBoost PRO license and one personal review of a Session Proof report, with setup-specific observations and recommended next tests delivered by Discord or email within three business days.
-
-This is diagnostic guidance, not a promise to repair an ISP route, remote server, router or game-engine problem. [Get PRO + Personal Session Review on Payhip](https://payhip.com/b/M1Baw?utm_source=github&utm_medium=organic&utm_campaign=readme_personal_review).
+Existing CloudBoost 4.x license holders can reinstall the last build or get private help with a previous purchase. [4.x archive](https://getcloudboost.site/pro.html#buy) · [Private support](https://payhip.com/CloudBoost/contact).
 
 ## Install
 
@@ -163,7 +161,7 @@ If macOS reports that the independently distributed app is damaged, clear its qu
 xattr -cr /Applications/"CloudBoost.app"
 ```
 
-## Current Release: 4.4.6
+## CloudBoost 4.x archive
 
 - Game/service and mode selection sit next to Start Session.
 - Navigation remains visible while scrolling; session transitions have clear progress labels.
