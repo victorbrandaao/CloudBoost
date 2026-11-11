@@ -214,7 +214,9 @@ CloudBoost is proprietary software. No permission is granted to copy, modify, di
 
 ## GunBound GIS community profile
 
-Play on Mac? [Start with the community guide](https://getcloudboost.site/gunbound.html) ([Português](https://getcloudboost.site/pt/gunbound.html)), help shape an independent community profile marked **coming soon**. There is no official partnership. You can already compare general network baselines with session conditions. Route probes are not necessarily the game server ping. Automatic process detection and client compatibility remain unvalidated. The GunBound-specific integration is not announced as ready.
+The CloudBoost maintainer signed in and entered GunBound GIS on one Mac M1 with Wine Staging 11.20, DXVK for macOS and launcher 1.1.0.1123. The [English and Portuguese community guide](docs/gunbound-wine/README.md) includes the installer source and the steps to check your own Windows files. A fresh install with the script still needs testing on a second Mac.
+
+The [CloudBoost 5.1.1 manual preview](https://github.com/victorbrandaao/CloudBoost/releases/tag/v5.1.1) includes a free GunBound setup check for Apple Silicon. Open **Session Center → GunBound GIS**, check your dedicated Wine folder and launch your own copy. Use the PRO history to compare the Mac and route measurements across sessions.
 
 [Share feedback](https://github.com/victorbrandaao/CloudBoost/issues/new) with your Mac model, macOS version, connection type and symptom timing. Remove IP addresses and personal information before attaching diagnostics.
 
