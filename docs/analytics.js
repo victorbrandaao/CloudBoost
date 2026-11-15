@@ -13,17 +13,17 @@
     window.__cloudBoostAnalyticsLoaded = true;
 
     function getPageCategory() {
-      const path = window.location.pathname;
-      if (path.endsWith("/pro-v5.html")) return "pro_v5_pricing";
-      if (path.endsWith("/start.html")) return "first_session";
-      if (path.endsWith("/gunbound.html")) return "gunbound_community";
-      if (path.endsWith("/pro.html")) return "pro_pricing";
-      if (path.endsWith("/download.html")) return "download";
+      const path = pagePath(window.location.pathname);
+      if (path.endsWith("/pro-v5")) return "pro_v5_pricing";
+      if (path.endsWith("/start")) return "first_session";
+      if (path.endsWith("/gunbound")) return "gunbound_community";
+      if (path.endsWith("/pro")) return "pro_pricing";
+      if (path.endsWith("/download")) return "download";
       if (path.includes("/guides/")) return "guides";
       if (path.includes("/results")) return "results";
-      if (path.includes("/pt/")) return "pt_landing";
-      if (path.includes("/es/")) return "es_landing";
       if (path.includes("privacy") || path.includes("privacidad") || path.includes("trust")) return "legal_trust";
+      if (path === "/pt" || path.startsWith("/pt/")) return "pt_landing";
+      if (path === "/es" || path.startsWith("/es/")) return "es_landing";
       return "homepage";
     }
 
@@ -46,6 +46,10 @@
     document.addEventListener("click", trackHomebrewInstallExpanded, true);
     observeOfferImpressions();
     observeScrollDepth();
+  }
+
+  function pagePath(path) {
+    return path.replace(/\/$/, "").replace(/\.html$/, "");
   }
 
   function trackHomebrewInstallExpanded(event) {
@@ -84,14 +88,12 @@
       if (url.hostname === "github.com" && url.pathname.startsWith("/victorbrandaao/CloudBoost/releases/download/") && /\.(dmg|zip)$/.test(url.pathname)) names.push("download_clicked");
       return [...new Set(names)];
     }
-    if (url.hostname === window.location.hostname && ["/pro.html", "/pro-v5.html"].some(path => url.pathname.endsWith(path))) {
-      return ["pro_details_clicked"];
-    }
-    if (url.hostname === window.location.hostname && url.pathname.endsWith("/start.html")) {
-      return ["first_session_guide_opened"];
-    }
-    if (url.hostname === window.location.hostname && url.pathname.endsWith("/download.html")) {
-      return ["download_page_opened"];
+    if (url.hostname === window.location.hostname) {
+      const path = pagePath(url.pathname);
+      if (path.endsWith("/pro-v5")) return ["pro_details_clicked"];
+      if (path.endsWith("/pro")) return ["archive_opened"];
+      if (path.endsWith("/start")) return ["first_session_guide_opened"];
+      if (path.endsWith("/download")) return ["download_page_opened"];
     }
     if (url.hostname === "github.com" && url.pathname.startsWith("/victorbrandaao/CloudBoost/releases/")) {
       return /\.(dmg|zip)$/.test(url.pathname) ? ["download_clicked"] : ["release_page_opened"];
@@ -100,7 +102,7 @@
       return ["buy_pro_clicked"];
     }
     const isDiscordInvite = url.hostname === "discord.gg" && ["/YMAg8tpUG", "/KdxtPQRSB"].includes(url.pathname);
-    const isDiscordShortcut = url.hostname === "getcloudboost.site" && url.pathname === "/discord/";
+    const isDiscordShortcut = url.hostname === "getcloudboost.site" && pagePath(url.pathname) === "/discord";
     if (isDiscordInvite || isDiscordShortcut) {
       return ["discord_clicked"];
     }
@@ -117,7 +119,8 @@
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (!entry.isIntersecting || typeof window.gtag !== "function") return;
-        const eventName = entry.target.dataset.analyticsImpression;
+        const offer = entry.target.closest("[data-analytics-impression]");
+        const eventName = offer?.dataset.analyticsImpression;
         if (!/^[a-z0-9_]+$/.test(eventName || "")) return;
         window.gtag("event", eventName, {
           page_path: window.location.pathname,
@@ -127,7 +130,7 @@
       });
     }, { threshold: 0.35 });
 
-    offers.forEach((offer) => observer.observe(offer));
+    offers.forEach((offer) => observer.observe(offer.querySelector("h2") || offer));
   }
 
   function trackOutboundClick(event) {

@@ -88,7 +88,9 @@ def main():
         guide = pages[ORIGIN+'/'+prefix+'start.html']
         offer = pages[ORIGIN+'/'+prefix+'pro-v5.html']
         assert guide.alternates == guides, 'First-session guide hreflang reciprocity'
-        assert preview_download in guide.refs and preview_download in offer.refs, 'First session needs a direct preview download'
+        assert preview_download in guide.refs, 'First session needs a direct Intel-compatible download'
+        assert any(ref.endswith('/v5.1.1/CloudBoost_v5.1.1.dmg') for ref in guide.refs), 'First session needs the current Apple Silicon download'
+        assert '/' + prefix + 'download.html#versions' in offer.refs, 'The offer must lead to localized installer guidance'
         assert 'https://payhip.com/b/Lu0qc' in offer.refs
         schema = next(x for x in offer.schemas if x['@type']=='SoftwareApplication')
         assert schema['offers']['price']=='12.00' and schema['offers']['url']=='https://payhip.com/b/Lu0qc'

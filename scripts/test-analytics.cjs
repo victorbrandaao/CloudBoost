@@ -39,7 +39,7 @@ app.click('https://getcloudboost.site/download.html#trial','pro_trial_download_c
 app.click('https://github.com/victorbrandaao/CloudBoost/releases/tag/v4.4.5');
 app.click('https://github.com/victorbrandaao/CloudBoost/releases/download/v4.4.5/CloudBoost_v4.4.5.dmg');
 app.click('https://payhip.com/b/Jb0XO?utm_source=test');
-assert.deepEqual(Array.from(app.events()),['pro_details_clicked','pro_trial_download_clicked','release_page_opened','download_clicked','buy_pro_clicked']);
+assert.deepEqual(Array.from(app.events()),['archive_opened','pro_trial_download_clicked','release_page_opened','download_clicked','buy_pro_clicked']);
 assert.equal(boot('allow','/download.html').window.dataLayer.find(a=>a[0]==='config')[2].content_group,'download');
 console.log('PASS: consent gating, PRO attribution and archive vs release-page clicks');
 
@@ -69,6 +69,19 @@ for (const lang of ['', 'pt/', 'es/']) {
 vm.runInNewContext(source, {window:v5.window,document:v5.document,URL});
 assert.equal(v5.scripts.length,1);
 console.log('PASS: v5 offer clicks, trial download, localized first session, consent and duplicate initialization');
+
+const clean = boot('allow', '/pt/pro-v5');
+assert.equal(clean.window.dataLayer.find(a=>a[0]==='config')[2].content_group,'pro_v5_pricing');
+clean.click('https://getcloudboost.site/pt/start#traffic-check');
+clean.click('https://getcloudboost.site/pt/download#versions');
+clean.click('https://getcloudboost.site/pt/pro#buy');
+clean.click('https://getcloudboost.site/pt/pro-v5#buy');
+clean.click('https://getcloudboost.site/discord');
+assert.deepEqual(Array.from(clean.events()), [
+  'first_session_guide_opened','download_page_opened','archive_opened','pro_details_clicked','discord_clicked',
+]);
+assert.equal(boot('allow','/pt/').window.dataLayer.find(a=>a[0]==='config')[2].content_group,'pt_landing');
+console.log('PASS: production clean URLs, archive attribution and localized landing page');
 
 const restricted = boot(null, '/pt/start.html', {blockStorage:true,readyState:'complete'});
 assert.equal(restricted.scripts.length,0);
