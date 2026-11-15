@@ -10,7 +10,7 @@
 
 **Current CloudBoost 5 preview for Apple Silicon** · [5.1.1 with GunBound GIS](https://github.com/victorbrandaao/CloudBoost/releases/tag/v5.1.1)
 
-**Intel and Apple Silicon** · [5.1.0 universal preview](https://github.com/victorbrandaao/CloudBoost/releases/tag/v5.1.0) · [4.4.6 archive for existing PRO 4.x licenses](https://github.com/victorbrandaao/CloudBoost/releases/tag/v4.4.6)
+**Intel and Apple Silicon** · [5.1.0 universal preview](https://github.com/victorbrandaao/CloudBoost/releases/tag/v5.1.0)
 
 ![CloudBoost 5](./docs/assets/v5/cloudboost-5-cover.png)
 
@@ -24,7 +24,6 @@ It does not modify games or promise artificial FPS gains. It helps players run a
 
 <p align="center">
   <a href="https://github.com/victorbrandaao/CloudBoost/releases/tag/v5.1.1"><img src="https://img.shields.io/badge/preview-5.1.1-00a884?style=flat-square" alt="CloudBoost 5.1.1 preview"></a>
-  <a href="https://github.com/victorbrandaao/CloudBoost/releases/tag/v4.4.6"><img src="https://img.shields.io/github/downloads/victorbrandaao/CloudBoost/v4.4.6/total?label=v4.4.6%20downloads&amp;style=flat-square&amp;color=111111&amp;cacheSeconds=300" alt="CloudBoost v4.4.6 downloads"></a>
   <a href="https://github.com/victorbrandaao/CloudBoost/releases"><img src="https://img.shields.io/github/downloads/victorbrandaao/CloudBoost/total?label=all%20downloads&amp;style=flat-square&amp;color=111111&amp;cacheSeconds=300" alt="All CloudBoost GitHub release downloads"></a>
   <img src="https://img.shields.io/badge/macOS-12%2B-111111?style=flat-square" alt="macOS 12 or later">
   <img src="https://img.shields.io/badge/Mac-Intel%20%2B%20Apple%20Silicon-111111?style=flat-square&amp;logo=apple" alt="Intel and Apple Silicon supported">
@@ -60,8 +59,6 @@ Manual traffic and display tools are Free. Existing PRO 5 keys cover 5.x updates
 - [See public results and measurement method](https://getcloudboost.site/results.html?utm_source=github&utm_medium=organic&utm_campaign=readme)
 - [Join the Discord](https://getcloudboost.site/discord/)
 - [Get CloudBoost PRO](https://payhip.com/b/Lu0qc?utm_source=github&utm_medium=organic&utm_campaign=readme_pro)
-
-> **Using 4.4.1 or earlier?** Install 4.4.6 manually once from the official release page. Those builds contain an updater that cannot use the newer embedded-signature and website-mirror routes. Your settings and PRO activation stay on the Mac. Releases are now checked after publication through the same GitHub and mirror routes used by the app.
 
 CloudBoost has passed **1,500 installer downloads**. GitHub badges above update automatically for release assets; this count is not presented as unique users.
 
@@ -127,31 +124,11 @@ Free is a basic manual session monitor. PRO adds macOS session tuning, automatio
 
 **CloudBoost PRO 5 starts at US$12.** It is a one-time CloudBoost 5.x license for one Mac, not a subscription. If you replace the Mac, contact Discord support to request a license transfer.
 
-New purchases use [Payhip](https://payhip.com/b/Lu0qc?utm_source=github&utm_medium=organic&utm_campaign=readme_pro). Existing Gumroad and legacy PRO+ keys remain supported in version 4.x; they do not activate PRO 5.
+New purchases use [Payhip](https://payhip.com/b/Lu0qc?utm_source=github&utm_medium=organic&utm_campaign=readme_pro). Use a CloudBoost 5 key from your Payhip receipt to activate PRO 5.
 
-### Existing PRO 4.x customers
+## Install CloudBoost 5
 
-Existing CloudBoost 4.x license holders can reinstall the last build or get private help with a previous purchase. [4.x archive](https://getcloudboost.site/pro.html#buy) · [Private support](https://payhip.com/CloudBoost/contact).
-
-## Install
-
-### Homebrew
-
-```bash
-brew tap victorbrandaao/cloudboost
-brew install --cask cloudboost
-```
-
-Update later with:
-
-```bash
-brew update
-brew upgrade --cask cloudboost
-```
-
-### DMG
-
-1. Download the [5.1.1 GunBound preview for Apple Silicon](https://github.com/victorbrandaao/CloudBoost/releases/tag/v5.1.1), the [5.1.0 universal preview](https://github.com/victorbrandaao/CloudBoost/releases/tag/v5.1.0), or [stable 4.4.6](https://github.com/victorbrandaao/CloudBoost/releases/tag/v4.4.6) for your previous license.
+1. Download the [5.1.1 GunBound preview for Apple Silicon](https://github.com/victorbrandaao/CloudBoost/releases/tag/v5.1.1) or the [5.1.0 universal preview](https://github.com/victorbrandaao/CloudBoost/releases/tag/v5.1.0).
 2. Open the DMG and drag `CloudBoost.app` to `/Applications`.
 3. Open CloudBoost from the macOS menu bar.
 
@@ -163,20 +140,9 @@ If macOS reports that the independently distributed app is damaged, clear its qu
 xattr -cr /Applications/"CloudBoost.app"
 ```
 
-## CloudBoost 4.x archive
-
-- Game/service and mode selection sit next to Start Session.
-- Navigation remains visible while scrolling; session transitions have clear progress labels.
-- Free installations can try three complete PRO sessions without an account or card. Sessions shorter than one minute do not consume the trial.
-- The download page includes an actual app preview, installation guidance, and copyable Homebrew commands.
-
-CloudBoost 4.4.6 is a universal build for Intel and Apple Silicon Macs running macOS 12 Monterey or later.
-
-See the complete notes and checksums on the [release page](https://github.com/victorbrandaao/CloudBoost/releases/latest).
-
 ### A note about native-game stutter
 
-CloudBoost can measure macOS pressure, thermal state, power mode, background activity, and network context. It cannot directly measure shader compilation, asset streaming, renderer frame time, game-engine stalls, or Rosetta/translation work. Since version 4.2.2, Session Lab makes that boundary visible instead of treating every stutter as a network problem.
+CloudBoost can measure macOS pressure, thermal state, power mode, background activity, and network context. It cannot directly measure shader compilation, asset streaming, renderer frame time, game-engine stalls, or Rosetta/translation work. Session Lab makes that boundary visible instead of treating every stutter as a network problem.
 
 ## Public Proof And Support
 
@@ -193,6 +159,10 @@ CloudBoost can measure macOS pressure, thermal state, power mode, background act
 > CloudBoost PRO user on a MacBook Air M4. [Read the full public review](https://github.com/victorbrandaao/CloudBoost/issues/18).
 
 This is one user's experience, not a benchmark or guaranteed result.
+
+## Earlier versions and licenses
+
+Your existing PRO 4.x license still works on the archived build. See the [4.x archive](https://getcloudboost.site/pro.html#buy) for reinstall and recovery instructions, or [contact private support](https://payhip.com/CloudBoost/contact).
 
 ## Privacy And Analytics
 

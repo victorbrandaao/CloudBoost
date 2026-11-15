@@ -2,9 +2,9 @@
 
 > CloudBoost is an independent macOS menu bar app for diagnosing gaming stutter, app traffic, latency, jitter and packet loss during cloud gaming, remote play and native Mac gaming sessions.
 
-CloudBoost requires macOS 12 or later. The current 5.1.1 preview is for Apple Silicon. The universal 5.1.0 preview supports Intel and Apple Silicon. Version 4.4.6 is archived for existing 4.x customers.
+CloudBoost requires macOS 12 or later. The current 5.1.1 preview is for Apple Silicon. The universal 5.1.0 preview supports Intel and Apple Silicon.
 
-Free includes manual app traffic checks and basic session monitoring. Eligible users can try three complete PRO sessions without an account or card. CloudBoost 5 PRO starts at US$12, paid once for one Mac. It adds saved game setups, session history, comparisons and automation. Existing PRO 4.x licenses remain valid on the archived generation.
+Free includes manual app traffic checks and basic session monitoring. Eligible users can try three complete PRO sessions without an account or card. CloudBoost 5 PRO starts at US$12, paid once for one Mac. It adds saved game setups, session history, comparisons and automation. PRO 5 requires a version 5 license.
 
 The app can help isolate local and network conditions around a stutter. Route latency can differ from game-server ping. Public results describe observed sessions and do not establish guaranteed FPS or latency improvements.
 
@@ -13,7 +13,7 @@ The app can help isolate local and network conditions around a stutter. Route la
 - [CloudBoost in English](https://getcloudboost.site/ai-summary.html): Purpose, compatibility, diagnostics, measured evidence and support.
 - [Sobre o CloudBoost em português](https://getcloudboost.site/pt/ai-summary.html): Recursos, versões, preços e suporte.
 - [Acerca de CloudBoost en español](https://getcloudboost.site/es/ai-summary.html): Funciones, versiones, precios y soporte.
-- [Official downloads](https://getcloudboost.site/download.html): The installers, supported Mac architectures and archived releases.
+- [Official downloads](https://getcloudboost.site/download.html): CloudBoost 5 installers and supported Mac architectures.
 - [Downloads in Portuguese](https://getcloudboost.site/pt/download.html): Instaladores para Apple Silicon e Intel.
 - [Downloads in Spanish](https://getcloudboost.site/es/download.html): Instaladores para Apple Silicon e Intel.
 - [Free and PRO 5 comparison](https://getcloudboost.site/pro-v5.html): Trial, features and the official purchase path.
