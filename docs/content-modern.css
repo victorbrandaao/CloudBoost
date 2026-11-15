@@ -177,25 +177,37 @@
 }
 
 .content-modern .related-links {
+  --related-border: var(--line);
+  --related-ink: var(--ink);
+  --related-hover: var(--paper);
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   margin-top: 28px;
-  border-top: 1px solid #343835;
-  border-left: 1px solid #343835;
+  border-top: 1px solid var(--related-border);
+  border-left: 1px solid var(--related-border);
+}
+
+.content-modern .dark .related-links {
+  --related-border: #343835;
+  --related-ink: #ffffff;
+  --related-hover: #171b18;
 }
 
 .content-modern .related-links a {
-  min-height: 118px;
-  padding: 22px;
-  border-right: 1px solid #343835;
-  border-bottom: 1px solid #343835;
-  color: #ffffff;
+  padding: 20px 22px;
+  border-right: 1px solid var(--related-border);
+  border-bottom: 1px solid var(--related-border);
+  color: var(--related-ink);
   font-weight: 800;
+}
+
+.content-modern .dark .related-links a {
+  min-height: 118px;
 }
 
 .content-modern .related-links a:hover,
 .content-modern .related-links a:focus-visible {
-  background: #171b18;
+  background: var(--related-hover);
 }
 
 .guide-hub .guide-grid {
