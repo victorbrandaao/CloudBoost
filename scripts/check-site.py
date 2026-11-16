@@ -82,34 +82,34 @@ def main():
         if lang != 'x-default': assert page.lang == lang
         assert any(ref.endswith('/v4.4.6/CloudBoost_v4.4.6.dmg') for ref in page.refs), (url, 'legacy download')
         assert any(ref.endswith('/pro-v5.html#compare') for ref in page.refs), (url, 'PRO 5 comparison')
-    preview_download = 'https://github.com/victorbrandaao/CloudBoost/releases/download/v5.1.0/CloudBoost_v5.1.0.dmg'
+    download = (DOCS/'download.html').read_text()
+    version = re.search(r'"softwareVersion":\s*"([\d.]+)"',download)[1]
+    official_download = f'https://github.com/victorbrandaao/CloudBoost/releases/download/v{version}/CloudBoost_v{version}.dmg'
     guides = {'en': ORIGIN+'/start.html', 'pt-BR': ORIGIN+'/pt/start.html', 'es': ORIGIN+'/es/start.html', 'x-default': ORIGIN+'/start.html'}
     for prefix in ('', 'pt/', 'es/'):
         guide = pages[ORIGIN+'/'+prefix+'start.html']
         offer = pages[ORIGIN+'/'+prefix+'pro-v5.html']
         assert guide.alternates == guides, 'First-session guide hreflang reciprocity'
-        assert preview_download in guide.refs, 'First session needs a direct Intel-compatible download'
-        assert any(ref.endswith('/v5.1.1/CloudBoost_v5.1.1.dmg') for ref in guide.refs), 'First session needs the current Apple Silicon download'
+        assert official_download in guide.refs, 'First session needs the stable universal download'
+        assert official_download in pages[ORIGIN+'/'+prefix+'download.html'].refs, 'Downloads need the stable universal installer'
         assert '/' + prefix + 'download.html#versions' in offer.refs, 'The offer must lead to localized installer guidance'
         assert 'https://payhip.com/b/Lu0qc' in offer.refs
         schema = next(x for x in offer.schemas if x['@type']=='SoftwareApplication')
+        assert schema['softwareVersion'] == version, 'The offer must advertise the current release'
         assert schema['offers']['price']=='12.00' and schema['offers']['url']=='https://payhip.com/b/Lu0qc'
         for page in (guide, offer):
             assert sum('/analytics.js?' in ref for ref in page.refs)==1, 'Conversion pages need exactly one consent-gated analytics script'
-    download = (DOCS/'download.html').read_text()
-    version = re.search(r'"softwareVersion":\s*"([\d.]+)"',download)[1]
     assert json.loads((DOCS/f'updates/v{version}/manifest.json').read_text())['version'] == version
     cask = (ROOT/'Casks/cloudboost.rb').read_text()
     cask_version = re.search(r'(?m)^  version "([\d.]+)"$', cask)[1]
     cask_manifest = json.loads((DOCS/f'updates/v{cask_version}/manifest.json').read_text())
     assert cask_manifest['dmg']['sha256'] in cask
     listed_versions = set(re.findall(r'CloudBoost_v([\d.]+)\.dmg', download))
-    assert {version, '5.1.0', '5.1.1'} <= listed_versions, 'Download page must offer both CloudBoost 5 builds'
-    assert '4.4.6' not in listed_versions, 'The legacy installer belongs in the 4.x archive'
+    assert listed_versions == {version}, 'The main download page must offer the current release only'
     for prefix in ('', 'pt/', 'es/'):
         guide = pages[ORIGIN+'/'+prefix+'gunbound.html']
         assert '/'+prefix+'pro-v5.html#compare' in guide.refs, 'GunBound must link to the PRO 5 offer'
-        assert any(ref.endswith('/v5.1.1/CloudBoost_v5.1.1.dmg') for ref in guide.refs), 'GunBound needs its Apple Silicon download'
+        assert official_download in guide.refs, 'GunBound needs the current CloudBoost installer'
         summary = pages[ORIGIN+'/'+prefix+'ai-summary.html']
         assert '/'+prefix+'download.html#versions' in summary.refs, 'Overview must link to localized downloads'
         assert '/'+prefix+'ai-summary.html' in pages[ORIGIN+'/'+prefix].refs, 'Homepage must link to the overview'

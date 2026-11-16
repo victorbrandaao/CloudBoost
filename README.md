@@ -8,9 +8,7 @@
 
 [Run a free traffic check](https://getcloudboost.site/start.html#traffic-check) · [Compare Free and PRO 5](https://getcloudboost.site/pro-v5.html#compare) · [Choose your download](https://getcloudboost.site/download.html?utm_source=github&utm_medium=referral&utm_campaign=readme_download#versions)
 
-**Current CloudBoost 5 preview for Apple Silicon** · [5.1.1 with GunBound GIS](https://github.com/victorbrandaao/CloudBoost/releases/tag/v5.1.1)
-
-**Intel and Apple Silicon** · [5.1.0 universal preview](https://github.com/victorbrandaao/CloudBoost/releases/tag/v5.1.0)
+**CloudBoost 5.1.2 stable for Apple Silicon and Intel** · [Official release](https://github.com/victorbrandaao/CloudBoost/releases/tag/v5.1.2)
 
 ![CloudBoost 5](./docs/assets/v5/cloudboost-5-cover.png)
 
@@ -23,7 +21,7 @@ CloudBoost is a native macOS menu bar app that shows what is happening around a 
 It does not modify games or promise artificial FPS gains. It helps players run a quieter Mac session, understand a problem, and leave with a useful next step.
 
 <p align="center">
-  <a href="https://github.com/victorbrandaao/CloudBoost/releases/tag/v5.1.1"><img src="https://img.shields.io/badge/preview-5.1.1-00a884?style=flat-square" alt="CloudBoost 5.1.1 preview"></a>
+  <a href="https://github.com/victorbrandaao/CloudBoost/releases/tag/v5.1.2"><img src="https://img.shields.io/badge/stable-5.1.2-00a884?style=flat-square" alt="CloudBoost 5.1.2 stable"></a>
   <a href="https://github.com/victorbrandaao/CloudBoost/releases"><img src="https://img.shields.io/github/downloads/victorbrandaao/CloudBoost/total?label=all%20downloads&amp;style=flat-square&amp;color=111111&amp;cacheSeconds=300" alt="All CloudBoost GitHub release downloads"></a>
   <img src="https://img.shields.io/badge/macOS-12%2B-111111?style=flat-square" alt="macOS 12 or later">
   <img src="https://img.shields.io/badge/Mac-Intel%20%2B%20Apple%20Silicon-111111?style=flat-square&amp;logo=apple" alt="Intel and Apple Silicon supported">
@@ -39,7 +37,7 @@ It does not modify games or promise artificial FPS gains. It helps players run a
 
 - **App traffic:** see real receive/send rates by process, grouped into apps where attribution is available.
 - **Your choice:** open an app's own controls or request a normal exit from an eligible app, then reopen it. Selected games and system services are protected.
-- **Check the result:** compare observed traffic after an app exit. Single samples are not proof of a latency improvement.
+- **Check the result:** record traffic before and after pausing a transfer, or compare it after an app exit. Single samples are not proof of a latency improvement.
 - **Display setup:** compare reported Hz with your chosen stream FPS. Preview a supported rate at the same resolution; unconfirmed changes revert after 15 seconds.
 - **PRO game setups:** save a preset and FPS target per game. Display changes still need confirmation.
 - **Shareable summaries:** measured numbers without personal/network identifiers or full support logs.
@@ -128,7 +126,7 @@ New purchases use [Payhip](https://payhip.com/b/Lu0qc?utm_source=github&utm_medi
 
 ## Install CloudBoost 5
 
-1. Download the [5.1.1 GunBound preview for Apple Silicon](https://github.com/victorbrandaao/CloudBoost/releases/tag/v5.1.1) or the [5.1.0 universal preview](https://github.com/victorbrandaao/CloudBoost/releases/tag/v5.1.0).
+1. Download the [CloudBoost 5.1.2 universal DMG](https://github.com/victorbrandaao/CloudBoost/releases/download/v5.1.2/CloudBoost_v5.1.2.dmg) for Intel or Apple Silicon.
 2. Open the DMG and drag `CloudBoost.app` to `/Applications`.
 3. Open CloudBoost from the macOS menu bar.
 
@@ -190,7 +188,7 @@ CloudBoost is proprietary software. No permission is granted to copy, modify, di
 
 The CloudBoost maintainer signed in and entered GunBound GIS on one Mac M1 with Wine Staging 11.20, DXVK for macOS and launcher 1.1.0.1123. The [English and Portuguese community guide](docs/gunbound-wine/README.md) includes the installer source and the steps to check your own Windows files. A fresh install with the script still needs testing on a second Mac.
 
-The [CloudBoost 5.1.1 manual preview](https://github.com/victorbrandaao/CloudBoost/releases/tag/v5.1.1) includes a free GunBound setup check for Apple Silicon. Open **Session Center → GunBound GIS**, check your dedicated Wine folder and launch your own copy. Use the PRO history to compare the Mac and route measurements across sessions.
+The [CloudBoost 5.1.2 release](https://github.com/victorbrandaao/CloudBoost/releases/tag/v5.1.2) includes a free GunBound setup check for Apple Silicon. Open **Session Center → GunBound GIS**, check your dedicated Wine folder and launch your own copy. Use the PRO history to compare the Mac and route measurements across sessions.
 
 [Share feedback](https://github.com/victorbrandaao/CloudBoost/issues/new) with your Mac model, macOS version, connection type and symptom timing. Remove IP addresses and personal information before attaching diagnostics.
 

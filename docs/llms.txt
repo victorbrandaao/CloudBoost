@@ -2,7 +2,7 @@
 
 > CloudBoost is an independent macOS menu bar app for diagnosing gaming stutter, app traffic, latency, jitter and packet loss during cloud gaming, remote play and native Mac gaming sessions.
 
-CloudBoost requires macOS 12 or later. The current 5.1.1 preview is for Apple Silicon. The universal 5.1.0 preview supports Intel and Apple Silicon.
+CloudBoost requires macOS 12 or later. The stable 5.1.2 release supports Intel and Apple Silicon. Session Center can compare observed local traffic before and after pausing a transfer.
 
 Free includes manual app traffic checks and basic session monitoring. Eligible users can try three complete PRO sessions without an account or card. CloudBoost 5 PRO starts at US$12, paid once for one Mac. It adds saved game setups, session history, comparisons and automation. PRO 5 requires a version 5 license.
 
@@ -20,8 +20,7 @@ The app can help isolate local and network conditions around a stutter. Route la
 - [PRO 5 in Portuguese](https://getcloudboost.site/pt/pro-v5.html): Recursos e preço.
 - [PRO 5 in Spanish](https://getcloudboost.site/es/pro-v5.html): Funciones y precio.
 - [Public repository](https://github.com/victorbrandaao/CloudBoost): Release notes, checksums, issue reporting and community documentation.
-- [5.1.1 release](https://github.com/victorbrandaao/CloudBoost/releases/tag/v5.1.1): Current Apple Silicon preview with the GunBound GIS setup check.
-- [5.1.0 release](https://github.com/victorbrandaao/CloudBoost/releases/tag/v5.1.0): Universal preview for Intel and Apple Silicon.
+- [5.1.2 release](https://github.com/victorbrandaao/CloudBoost/releases/tag/v5.1.2): Stable universal build with the traffic comparison and the GunBound GIS setup check.
 
 ## Guides and evidence
 
